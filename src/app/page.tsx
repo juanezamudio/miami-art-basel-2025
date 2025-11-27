@@ -40,6 +40,18 @@ export default function HomePage() {
     setDate('');
   };
 
+  const scrollToSection = (sectionId: string) => {
+    // Clear filters first so the section exists
+    clearFilters();
+    // Use setTimeout to allow React to re-render with cleared filters
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
+  };
+
   // Group events by type for display
   const groupedEvents = useMemo(() => {
     const groups: Record<string, typeof filteredEvents> = {};
@@ -69,60 +81,60 @@ export default function HomePage() {
 
       {/* Stats */}
       <div className="grid grid-cols-3 sm:grid-cols-6 gap-2 sm:gap-3 mb-8">
-        <a
-          href="#art-show"
+        <button
+          onClick={() => scrollToSection('art-show')}
           className="bg-[#1a1a2e] rounded-xl shadow-lg p-3 sm:p-4 text-center border border-purple-500/20 hover:border-purple-500/50 hover:bg-purple-500/10 transition-all cursor-pointer"
         >
           <div className="text-2xl sm:text-3xl font-bold text-purple-400">
             {allEvents.filter((e) => e.eventType === 'Art Show').length}
           </div>
           <div className="text-gray-400 text-xs sm:text-sm">Art Shows</div>
-        </a>
-        <a
-          href="#party"
+        </button>
+        <button
+          onClick={() => scrollToSection('party')}
           className="bg-[#1a1a2e] rounded-xl shadow-lg p-3 sm:p-4 text-center border border-pink-500/20 hover:border-pink-500/50 hover:bg-pink-500/10 transition-all cursor-pointer"
         >
           <div className="text-2xl sm:text-3xl font-bold text-pink-400">
             {allEvents.filter((e) => e.eventType === 'Party').length}
           </div>
           <div className="text-gray-400 text-xs sm:text-sm">Parties</div>
-        </a>
-        <a
-          href="#wellness"
+        </button>
+        <button
+          onClick={() => scrollToSection('wellness')}
           className="bg-[#1a1a2e] rounded-xl shadow-lg p-3 sm:p-4 text-center border border-green-500/20 hover:border-green-500/50 hover:bg-green-500/10 transition-all cursor-pointer"
         >
           <div className="text-2xl sm:text-3xl font-bold text-green-400">
             {allEvents.filter((e) => e.eventType === 'Wellness').length}
           </div>
           <div className="text-gray-400 text-xs sm:text-sm">Wellness</div>
-        </a>
-        <a
-          href="#conference"
+        </button>
+        <button
+          onClick={() => scrollToSection('conference')}
           className="bg-[#1a1a2e] rounded-xl shadow-lg p-3 sm:p-4 text-center border border-blue-500/20 hover:border-blue-500/50 hover:bg-blue-500/10 transition-all cursor-pointer"
         >
           <div className="text-2xl sm:text-3xl font-bold text-blue-400">
             {allEvents.filter((e) => e.eventType === 'Conference').length}
           </div>
           <div className="text-gray-400 text-xs sm:text-sm">Conferences</div>
-        </a>
-        <a
-          href="#networking"
+        </button>
+        <button
+          onClick={() => scrollToSection('networking')}
           className="bg-[#1a1a2e] rounded-xl shadow-lg p-3 sm:p-4 text-center border border-orange-500/20 hover:border-orange-500/50 hover:bg-orange-500/10 transition-all cursor-pointer"
         >
           <div className="text-2xl sm:text-3xl font-bold text-orange-400">
             {allEvents.filter((e) => e.eventType === 'Networking').length}
           </div>
           <div className="text-gray-400 text-xs sm:text-sm">Networking</div>
-        </a>
-        <a
-          href="#pop-up"
+        </button>
+        <button
+          onClick={() => scrollToSection('pop-up')}
           className="bg-[#1a1a2e] rounded-xl shadow-lg p-3 sm:p-4 text-center border border-cyan-500/20 hover:border-cyan-500/50 hover:bg-cyan-500/10 transition-all cursor-pointer"
         >
           <div className="text-2xl sm:text-3xl font-bold text-cyan-400">
             {allEvents.filter((e) => e.eventType === 'Pop Up').length}
           </div>
           <div className="text-gray-400 text-xs sm:text-sm">Pop Ups</div>
-        </a>
+        </button>
       </div>
 
       {/* Filters */}
@@ -159,7 +171,7 @@ export default function HomePage() {
           const anchorId = type.toLowerCase().replace(/\s+/g, '-');
 
           return (
-            <div key={type} id={anchorId} className="mb-8 scroll-mt-4">
+            <div key={type} id={anchorId} className="mb-8 scroll-mt-20">
               <h2 className="text-2xl font-bold text-gray-100 mb-4 flex items-center gap-2">
                 <span className={`w-3 h-3 rounded-full ${typeColors[type] || 'bg-gray-500'}`} />
                 {pluralizeType(type)}
