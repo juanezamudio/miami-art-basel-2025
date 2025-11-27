@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import path from "path";
 
 const nextConfig: NextConfig = {
   // Webpack configuration for web3 compatibility
@@ -12,24 +13,25 @@ const nextConfig: NextConfig = {
         tls: false,
         crypto: false,
       };
-
-      // Handle optional wagmi connector dependencies as empty modules
-      config.resolve.alias = {
-        ...config.resolve.alias,
-        '@base-org/account': false,
-        '@gemini-wallet/core': false,
-        '@metamask/sdk': false,
-        'porto': false,
-        '@safe-global/safe-apps-sdk': false,
-        '@safe-global/safe-apps-provider': false,
-      };
     }
 
-    // Exclude problematic packages from bundling
-    config.externals = config.externals || [];
-    if (Array.isArray(config.externals)) {
-      config.externals.push('pino', 'pino-pretty', 'thread-stream');
-    }
+    // Handle optional wagmi connector dependencies as empty modules
+    // and provide browser-compatible pino stub (for both client and server)
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@base-org/account': false,
+      '@gemini-wallet/core': false,
+      '@metamask/sdk': false,
+      'porto': false,
+      'porto/internal': false,
+      '@safe-global/safe-apps-sdk': false,
+      '@safe-global/safe-apps-provider': false,
+      // Pino browser stub for WalletConnect (needed client-side)
+      ...(isServer ? {} : {
+        'pino': path.resolve(__dirname, 'src/lib/pino-browser.js'),
+        'pino-pretty': path.resolve(__dirname, 'src/lib/pino-browser.js'),
+      }),
+    };
 
     return config;
   },
