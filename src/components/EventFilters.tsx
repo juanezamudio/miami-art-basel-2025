@@ -49,11 +49,11 @@ export default function EventFilters({
         </div>
 
         {/* Filters */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-row gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-3 lg:flex lg:flex-row gap-3 min-w-0">
           <select
             value={eventType}
             onChange={(e) => onEventTypeChange(e.target.value)}
-            className={selectClasses}
+            className={`${selectClasses} min-w-0`}
           >
             <option value="All">All Types</option>
             {eventTypes.map((type) => (
@@ -66,7 +66,7 @@ export default function EventFilters({
           <select
             value={neighborhood}
             onChange={(e) => onNeighborhoodChange(e.target.value)}
-            className={selectClasses}
+            className={`${selectClasses} min-w-0`}
           >
             <option value="All">All Neighborhoods</option>
             {neighborhoods.map((n) => (
@@ -82,7 +82,7 @@ export default function EventFilters({
             onChange={(e) => onDateChange(e.target.value)}
             min="2025-11-30"
             max="2025-12-09"
-            className="w-full lg:w-auto px-4 py-2 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 bg-[#0a0a0f] text-gray-200"
+            className="w-full lg:w-auto min-w-0 px-4 py-2 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 bg-[#0a0a0f] text-gray-200"
           />
 
           {hasActiveFilters && (

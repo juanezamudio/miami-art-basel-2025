@@ -1,7 +1,8 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { Event } from '@/types/event';
-import { Calendar, MapPin, Clock, ExternalLink, Ticket } from 'lucide-react';
+import { Calendar, MapPin, Clock, ExternalLink, Ticket, Share2, Check, Copy } from 'lucide-react';
 
 interface EventCardProps {
   event: Event;
@@ -18,7 +19,17 @@ const eventTypeColors: Record<string, string> = {
 };
 
 export default function EventCard({ event, compact = false }: EventCardProps) {
+  const [copied, setCopied] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const typeColor = eventTypeColors[event.eventType] || 'bg-gray-500/20 text-gray-300 border-gray-500/30';
+
+  useEffect(() => {
+    // Check if device is mobile/tablet (has touch and small screen)
+    const checkMobile = () => {
+      setIsMobile(window.matchMedia('(max-width: 768px)').matches || 'ontouchstart' in window);
+    };
+    checkMobile();
+  }, []);
 
   const formatDate = (dateStr: string | null) => {
     if (!dateStr) return null;
@@ -31,6 +42,41 @@ export default function EventCard({ event, compact = false }: EventCardProps) {
       ? `${formatDate(event.startDate)} - ${formatDate(event.endDate)}`
       : formatDate(event.startDate)
     : 'Date TBA';
+
+  const getShareText = () => {
+    const shareText = `${event.event}${event.neighborhood ? ` - ${event.neighborhood}` : ''}${event.startDate ? ` (${dateDisplay})` : ''}`;
+    const shareUrl = event.ticketsLink || event.link || '';
+    return { shareText, shareUrl };
+  };
+
+  const handleShare = async () => {
+    const { shareText, shareUrl } = getShareText();
+
+    const shareData = {
+      title: event.event,
+      text: shareText,
+      url: shareUrl || window.location.href,
+    };
+
+    if (navigator.share && navigator.canShare?.(shareData)) {
+      try {
+        await navigator.share(shareData);
+      } catch {
+        // User cancelled or share failed - silently ignore
+      }
+    } else {
+      // Fallback for browsers without Web Share API
+      await handleCopy();
+    }
+  };
+
+  const handleCopy = async () => {
+    const { shareText, shareUrl } = getShareText();
+    const clipboardText = shareUrl ? `${shareText}\n${shareUrl}` : shareText;
+    await navigator.clipboard.writeText(clipboardText);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   if (compact) {
     return (
@@ -49,8 +95,8 @@ export default function EventCard({ event, compact = false }: EventCardProps) {
   }
 
   return (
-    <div className="bg-[#1a1a2e] rounded-xl shadow-lg hover:shadow-xl transition-all overflow-hidden border border-gray-700/50 hover:border-purple-500/30">
-      <div className="p-5">
+    <div className="h-full flex flex-col bg-[#1a1a2e] rounded-xl shadow-lg hover:shadow-xl transition-all overflow-hidden border border-gray-700/50 hover:border-purple-500/30">
+      <div className="p-5 flex flex-col flex-1">
         <div className="flex justify-between items-start gap-3 mb-3">
           <h3 className="text-lg font-semibold text-gray-100 leading-tight">
             {event.event}
@@ -60,7 +106,7 @@ export default function EventCard({ event, compact = false }: EventCardProps) {
           </span>
         </div>
 
-        <div className="space-y-2 text-sm text-gray-300">
+        <div className="space-y-2 text-sm text-gray-300 flex-1">
           <div className="flex items-center gap-2">
             <Calendar size={16} className="text-gray-500 flex-shrink-0" />
             <span>{dateDisplay}</span>
@@ -112,6 +158,22 @@ export default function EventCard({ event, compact = false }: EventCardProps) {
               <span>More Info</span>
             </a>
           )}
+          {!isMobile && (
+            <button
+              onClick={handleCopy}
+              className="flex items-center gap-1 text-sm text-gray-300 hover:text-white px-3 py-2 border border-gray-600 rounded-lg hover:border-gray-500 hover:bg-gray-700/50 transition-colors ml-auto"
+            >
+              {copied ? <Check size={14} className="text-green-400" /> : <Copy size={14} />}
+              <span>{copied ? 'Copied!' : 'Copy'}</span>
+            </button>
+          )}
+          <button
+            onClick={handleShare}
+            className={`flex items-center gap-1 text-sm text-gray-300 hover:text-white px-3 py-2 border border-gray-600 rounded-lg hover:border-gray-500 hover:bg-gray-700/50 transition-colors ${isMobile ? 'ml-auto' : ''}`}
+          >
+            <Share2 size={14} />
+            <span>Share</span>
+          </button>
         </div>
       </div>
     </div>

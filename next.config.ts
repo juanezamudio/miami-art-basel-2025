@@ -44,6 +44,9 @@ const nextConfig: NextConfig = {
     '@walletconnect/ethereum-provider',
     '@walletconnect/universal-provider',
   ],
+  // Empty turbopack config to silence warning about webpack config in dev mode
+  // Dev uses Turbopack (faster), build uses Webpack (for web3 compatibility)
+  turbopack: {},
 };
 
 export default nextConfig;
