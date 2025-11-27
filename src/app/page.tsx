@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react';
 import { getEvents, getEventTypes, getNeighborhoods, filterEvents } from '@/lib/events';
 import EventCard from '@/components/EventCard';
 import EventFilters from '@/components/EventFilters';
+import DonationBar from '@/components/DonationBar';
 
 // Pluralize event type names correctly
 function pluralizeType(type: string): string {
@@ -62,6 +63,9 @@ export default function HomePage() {
           November 30 - December 9, 2025.
         </p>
       </div>
+
+      {/* Donation Bar */}
+      <DonationBar />
 
       {/* Stats */}
       <div className="grid grid-cols-3 sm:grid-cols-6 gap-2 sm:gap-3 mb-8">
