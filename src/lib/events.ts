@@ -80,14 +80,22 @@ export function filterEvents(
 
     // Date filter
     if (filters.date) {
-      const filterDate = new Date(filters.date);
-      const startDate = event.startDate ? new Date(event.startDate) : null;
-      const endDate = event.endDate ? new Date(event.endDate) : startDate;
+      // Handle "TBA" filter - show events with no date
+      if (filters.date === 'tba') {
+        if (event.startDate) return false;
+      } else {
+        const filterDate = new Date(filters.date);
+        const startDate = event.startDate ? new Date(event.startDate) : null;
+        const endDate = event.endDate ? new Date(event.endDate) : startDate;
 
-      if (startDate && endDate) {
-        if (filterDate < startDate || filterDate > endDate) return false;
-      } else if (startDate) {
-        if (filterDate.toDateString() !== startDate.toDateString()) return false;
+        if (startDate && endDate) {
+          if (filterDate < startDate || filterDate > endDate) return false;
+        } else if (startDate) {
+          if (filterDate.toDateString() !== startDate.toDateString()) return false;
+        } else {
+          // No start date means TBA - exclude from specific date filters
+          return false;
+        }
       }
     }
 

@@ -76,14 +76,24 @@ export default function EventFilters({
             ))}
           </select>
 
-          <input
-            type="date"
+          <select
             value={date}
             onChange={(e) => onDateChange(e.target.value)}
-            min="2025-11-30"
-            max="2025-12-09"
-            className="w-full lg:w-auto min-w-0 max-w-full box-border px-3 py-2 border border-gray-700 rounded-lg focus:outline-none bg-[#0a0a0f] text-gray-200 [&::-webkit-calendar-picker-indicator]:invert [&::-webkit-datetime-edit]:min-w-0 [&::-webkit-date-and-time-value]:min-w-0 text-sm"
-          />
+            className={`${selectClasses} min-w-0`}
+          >
+            <option value="">All Dates</option>
+            <option value="2025-11-30">Nov 30</option>
+            <option value="2025-12-01">Dec 1</option>
+            <option value="2025-12-02">Dec 2</option>
+            <option value="2025-12-03">Dec 3</option>
+            <option value="2025-12-04">Dec 4</option>
+            <option value="2025-12-05">Dec 5</option>
+            <option value="2025-12-06">Dec 6</option>
+            <option value="2025-12-07">Dec 7</option>
+            <option value="2025-12-08">Dec 8</option>
+            <option value="2025-12-09">Dec 9</option>
+            <option value="tba">Date TBA</option>
+          </select>
 
           {hasActiveFilters && (
             <button
