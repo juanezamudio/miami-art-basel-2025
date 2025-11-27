@@ -16,7 +16,7 @@ export default function ClientLayout({
 
   return (
     <Web3Provider>
-      <div className="min-h-screen bg-[#0a0a0f]">
+      <div className="min-h-screen bg-[#0a0a0f] overflow-x-hidden">
         <Header onChatToggle={toggleChat} />
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           {children}

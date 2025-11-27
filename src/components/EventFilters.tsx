@@ -34,8 +34,8 @@ export default function EventFilters({
   const selectClasses = "w-full lg:w-auto pl-4 pr-10 py-2 border border-gray-700 rounded-lg focus:outline-none bg-[#0a0a0f] text-gray-200 appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%239ca3af%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:20px] bg-[right_0.5rem_center] bg-no-repeat";
 
   return (
-    <div className="bg-[#1a1a2e] rounded-xl shadow-lg p-4 mb-6 border border-gray-700/50 overflow-hidden">
-      <div className="flex flex-col lg:flex-row gap-4 min-w-0">
+    <div className="bg-[#1a1a2e] rounded-xl shadow-lg p-4 mb-6 border border-gray-700/50">
+      <div className="flex flex-col lg:flex-row gap-4">
         {/* Search */}
         <div className="flex-1 relative">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" size={20} />
@@ -49,7 +49,7 @@ export default function EventFilters({
         </div>
 
         {/* Filters */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 lg:flex lg:flex-row gap-3 min-w-0 overflow-hidden">
+        <div className="grid grid-cols-1 sm:grid-cols-3 lg:flex lg:flex-row gap-3">
           <select
             value={eventType}
             onChange={(e) => onEventTypeChange(e.target.value)}
@@ -82,7 +82,7 @@ export default function EventFilters({
             onChange={(e) => onDateChange(e.target.value)}
             min="2025-11-30"
             max="2025-12-09"
-            className="w-full lg:w-auto min-w-0 max-w-full px-4 py-2 border border-gray-700 rounded-lg focus:outline-none bg-[#0a0a0f] text-gray-200 [&::-webkit-calendar-picker-indicator]:invert"
+            className="w-full lg:w-auto min-w-0 max-w-full box-border px-3 py-2 border border-gray-700 rounded-lg focus:outline-none bg-[#0a0a0f] text-gray-200 [&::-webkit-calendar-picker-indicator]:invert [&::-webkit-datetime-edit]:min-w-0 [&::-webkit-date-and-time-value]:min-w-0 text-sm"
           />
 
           {hasActiveFilters && (
