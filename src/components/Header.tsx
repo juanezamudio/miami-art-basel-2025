@@ -1,8 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
-import { Menu, X, Calendar, List, Map, MessageCircle } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Menu, X, Calendar, List, Map, MessageCircle, PlusCircle } from 'lucide-react';
 
 interface HeaderProps {
   onChatToggle: () => void;
@@ -10,6 +10,21 @@ interface HeaderProps {
 
 export default function Header({ onChatToggle }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showSubmitModal, setShowSubmitModal] = useState(false);
+
+  // Load YouForm script when modal opens
+  useEffect(() => {
+    if (showSubmitModal) {
+      const script = document.createElement('script');
+      script.src = 'https://app.youform.com/embed.js';
+      script.async = true;
+      document.body.appendChild(script);
+
+      return () => {
+        document.body.removeChild(script);
+      };
+    }
+  }, [showSubmitModal]);
 
   return (
     <header className="bg-gradient-to-r from-purple-900 via-pink-800 to-orange-700 text-white shadow-lg">
@@ -42,6 +57,13 @@ export default function Header({ onChatToggle }: HeaderProps) {
               <Map size={18} />
               <span>Map</span>
             </Link>
+            <button
+              onClick={() => setShowSubmitModal(true)}
+              className="flex items-center space-x-1 hover:text-pink-200 transition-colors"
+            >
+              <PlusCircle size={18} />
+              <span>Submit Event</span>
+            </button>
             <button
               onClick={onChatToggle}
               className="flex items-center space-x-1 bg-white/20 hover:bg-white/30 px-4 py-2 rounded-full transition-colors"
@@ -89,6 +111,16 @@ export default function Header({ onChatToggle }: HeaderProps) {
             </Link>
             <button
               onClick={() => {
+                setShowSubmitModal(true);
+                setMobileMenuOpen(false);
+              }}
+              className="flex items-center space-x-2 py-2 hover:text-pink-200 w-full"
+            >
+              <PlusCircle size={18} />
+              <span>Submit Event</span>
+            </button>
+            <button
+              onClick={() => {
                 onChatToggle();
                 setMobileMenuOpen(false);
               }}
@@ -100,6 +132,35 @@ export default function Header({ onChatToggle }: HeaderProps) {
           </nav>
         )}
       </div>
+
+      {/* Submit Event Modal */}
+      {showSubmitModal && (
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4">
+          <div
+            className="absolute inset-0 bg-black/70"
+            onClick={() => setShowSubmitModal(false)}
+          />
+          <div className="relative bg-[#1a1a2e] rounded-xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-hidden border border-gray-700/50">
+            <div className="flex items-center justify-between p-4 border-b border-gray-700/50">
+              <h2 className="text-xl font-bold text-gray-100">Submit Your Event</h2>
+              <button
+                onClick={() => setShowSubmitModal(false)}
+                className="p-2 text-gray-400 hover:text-white hover:bg-gray-700/50 rounded-lg transition-colors"
+              >
+                <X size={20} />
+              </button>
+            </div>
+            <div className="overflow-y-auto" style={{ maxHeight: 'calc(90vh - 70px)' }}>
+              <div
+                data-youform-embed
+                data-form="symq8qwz"
+                data-width="100%"
+                data-height="700"
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </header>
   );
 }

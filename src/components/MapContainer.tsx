@@ -15,6 +15,9 @@ const eventTypeColors: Record<string, string> = {
   'Art Show': '#9333ea',
   'Party': '#ec4899',
   'Wellness': '#22c55e',
+  'Conference': '#3b82f6',
+  'Networking': '#f97316',
+  'Pop Up': '#06b6d4',
 };
 
 export default function MapContainer({
@@ -120,6 +123,18 @@ export default function MapContainer({
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#22c55e' }} />
             <span className="text-xs text-gray-400">Wellness</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#3b82f6' }} />
+            <span className="text-xs text-gray-400">Conference</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#f97316' }} />
+            <span className="text-xs text-gray-400">Networking</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#06b6d4' }} />
+            <span className="text-xs text-gray-400">Pop Up</span>
           </div>
         </div>
       </div>

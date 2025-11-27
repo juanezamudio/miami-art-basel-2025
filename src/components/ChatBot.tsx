@@ -121,17 +121,17 @@ export default function ChatBot({ isOpen, onToggle }: ChatBotProps) {
       {!isOpen && (
         <button
           onClick={onToggle}
-          className="fixed bottom-6 right-6 w-14 h-14 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full shadow-lg flex items-center justify-center z-50 hover:from-purple-700 hover:to-pink-700 transition-all hover:scale-105"
+          className="fixed bottom-6 right-6 w-14 h-14 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full shadow-lg flex items-center justify-center z-[9999] hover:from-purple-700 hover:to-pink-700 transition-all hover:scale-105"
         >
           <MessageCircle size={24} />
         </button>
       )}
 
-      {/* Chat window */}
+      {/* Chat window - full screen on mobile, floating modal on desktop */}
       {isOpen && (
-        <div className="fixed bottom-6 right-6 w-96 max-w-[calc(100vw-2rem)] h-[600px] max-h-[calc(100vh-6rem)] bg-white rounded-2xl shadow-2xl flex flex-col z-50 border border-gray-200 overflow-hidden">
+        <div className="fixed inset-0 md:inset-auto md:bottom-6 md:right-6 md:w-96 md:h-[600px] md:max-h-[calc(100vh-6rem)] bg-white md:rounded-2xl shadow-2xl flex flex-col z-[9999] border-0 md:border md:border-gray-200 overflow-hidden">
           {/* Header */}
-          <div className="flex items-center justify-between p-4 border-b bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-t-2xl flex-shrink-0">
+          <div className="flex items-center justify-between p-4 border-b bg-gradient-to-r from-purple-600 to-pink-600 text-white md:rounded-t-2xl flex-shrink-0">
             <div className="flex items-center gap-2">
               <Bot size={24} />
               <div>
@@ -198,7 +198,7 @@ export default function ChatBot({ isOpen, onToggle }: ChatBotProps) {
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder="Ask about events, parties, art shows..."
-                className="flex-1 px-4 py-2.5 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500 min-w-0 text-sm"
+                className="flex-1 px-4 py-2.5 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500 min-w-0 text-base md:text-sm"
                 disabled={isLoading}
               />
               <button

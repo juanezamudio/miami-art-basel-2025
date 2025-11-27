@@ -48,6 +48,9 @@ export default function CalendarView({ events }: CalendarViewProps) {
     'Art Show': 'bg-purple-500',
     'Party': 'bg-pink-500',
     'Wellness': 'bg-green-500',
+    'Conference': 'bg-blue-500',
+    'Networking': 'bg-orange-500',
+    'Pop Up': 'bg-cyan-500',
   };
 
   const selectedEvents = selectedDate ? getEventsForDate(selectedDate) : [];
@@ -139,6 +142,18 @@ export default function CalendarView({ events }: CalendarViewProps) {
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 rounded-full bg-green-500" />
             <span className="text-gray-400">Wellness</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-3 h-3 rounded-full bg-blue-500" />
+            <span className="text-gray-400">Conference</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-3 h-3 rounded-full bg-orange-500" />
+            <span className="text-gray-400">Networking</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-3 h-3 rounded-full bg-cyan-500" />
+            <span className="text-gray-400">Pop Up</span>
           </div>
         </div>
       </div>

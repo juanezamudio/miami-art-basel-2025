@@ -12,6 +12,9 @@ const eventTypeColors: Record<string, string> = {
   'Art Show': 'bg-purple-500/20 text-purple-300 border-purple-500/30',
   'Party': 'bg-pink-500/20 text-pink-300 border-pink-500/30',
   'Wellness': 'bg-green-500/20 text-green-300 border-green-500/30',
+  'Conference': 'bg-blue-500/20 text-blue-300 border-blue-500/30',
+  'Networking': 'bg-orange-500/20 text-orange-300 border-orange-500/30',
+  'Pop Up': 'bg-cyan-500/20 text-cyan-300 border-cyan-500/30',
 };
 
 export default function EventCard({ event, compact = false }: EventCardProps) {
