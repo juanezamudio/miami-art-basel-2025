@@ -1,8 +1,9 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Event } from '@/types/event';
-import { Calendar, MapPin, Clock, ExternalLink, Ticket, Share2, Check, Copy } from 'lucide-react';
+import { Calendar, MapPin, Clock, Tag, Ticket, Share2, Copy, MoreVertical, Flag, Check } from 'lucide-react';
+import ReportIssueModal from './ReportIssueModal';
 
 interface EventCardProps {
   event: Event;
@@ -19,17 +20,19 @@ const eventTypeColors: Record<string, string> = {
 };
 
 export default function EventCard({ event, compact = false }: EventCardProps) {
-  const [copied, setCopied] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+  const [showReportModal, setShowReportModal] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+  const [showToast, setShowToast] = useState(false);
+  const [showMapsMenu, setShowMapsMenu] = useState(false);
   const typeColor = eventTypeColors[event.eventType] || 'bg-gray-500/20 text-gray-300 border-gray-500/30';
 
-  useEffect(() => {
-    // Check if device is mobile/tablet (has touch and small screen)
-    const checkMobile = () => {
-      setIsMobile(window.matchMedia('(max-width: 768px)').matches || 'ontouchstart' in window);
-    };
-    checkMobile();
-  }, []);
+  const getGoogleMapsUrl = (address: string) => {
+    return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+  };
+
+  const getAppleMapsUrl = (address: string) => {
+    return `https://maps.apple.com/?q=${encodeURIComponent(address)}`;
+  };
 
   const formatDate = (dateStr: string | null) => {
     if (!dateStr) return null;
@@ -45,7 +48,7 @@ export default function EventCard({ event, compact = false }: EventCardProps) {
 
   const getShareText = () => {
     const shareText = `${event.event}${event.neighborhood ? ` - ${event.neighborhood}` : ''}${event.startDate ? ` (${dateDisplay})` : ''}`;
-    const shareUrl = event.ticketsLink || event.link || '';
+    const shareUrl = event.ticketsLink || '';
     return { shareText, shareUrl };
   };
 
@@ -74,8 +77,8 @@ export default function EventCard({ event, compact = false }: EventCardProps) {
     const { shareText, shareUrl } = getShareText();
     const clipboardText = shareUrl ? `${shareText}\n${shareUrl}` : shareText;
     await navigator.clipboard.writeText(clipboardText);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    setShowToast(true);
+    setTimeout(() => setShowToast(false), 2000);
   };
 
   if (compact) {
@@ -107,6 +110,10 @@ export default function EventCard({ event, compact = false }: EventCardProps) {
         </div>
 
         <div className="space-y-2 text-sm text-gray-300 flex-1">
+          {event.notes && (
+            <p className="text-orange-400 text-xs italic">{event.notes}</p>
+          )}
+
           <div className="flex items-center gap-2">
             <Calendar size={16} className="text-gray-500 flex-shrink-0" />
             <span>{dateDisplay}</span>
@@ -119,6 +126,13 @@ export default function EventCard({ event, compact = false }: EventCardProps) {
             </div>
           )}
 
+          {event.ticketPrice && event.ticketPrice.toLowerCase() !== 'tbd' && (
+            <div className="flex items-center gap-2">
+              <Tag size={16} className="text-gray-500 flex-shrink-0" />
+              <span>{event.ticketPrice.toLowerCase() === 'free' ? 'Free' : `Starting at ${event.ticketPrice}`}</span>
+            </div>
+          )}
+
           {event.neighborhood && (
             <div className="flex items-center gap-2">
               <MapPin size={16} className="text-gray-500 flex-shrink-0" />
@@ -127,11 +141,48 @@ export default function EventCard({ event, compact = false }: EventCardProps) {
           )}
 
           {event.address && (
-            <p className="text-gray-500 text-xs pl-6 line-clamp-2">{event.address}</p>
-          )}
-
-          {event.notes && (
-            <p className="text-orange-400 text-xs italic mt-2">{event.notes}</p>
+            <div className="relative pl-6">
+              <button
+                onClick={() => setShowMapsMenu(!showMapsMenu)}
+                className="text-gray-500 text-xs text-left line-clamp-2 hover:text-purple-400 hover:underline transition-colors cursor-pointer"
+              >
+                {event.address}
+              </button>
+              {showMapsMenu && (
+                <>
+                  <div
+                    className="fixed inset-0 z-10"
+                    onClick={() => setShowMapsMenu(false)}
+                  />
+                  <div className="absolute left-6 top-full mt-1 bg-[#252542] border border-gray-700 rounded-lg shadow-xl z-20 py-1 min-w-[150px]">
+                    <a
+                      href={getGoogleMapsUrl(event.address)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setShowMapsMenu(false)}
+                      className="w-full flex items-center gap-2 px-3 py-2 text-sm text-gray-300 hover:bg-gray-700/50 hover:text-white transition-colors"
+                    >
+                      <svg viewBox="0 0 24 24" className="w-4 h-4" fill="currentColor">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                      </svg>
+                      <span>Google Maps</span>
+                    </a>
+                    <a
+                      href={getAppleMapsUrl(event.address)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setShowMapsMenu(false)}
+                      className="w-full flex items-center gap-2 px-3 py-2 text-sm text-gray-300 hover:bg-gray-700/50 hover:text-white transition-colors"
+                    >
+                      <svg viewBox="0 0 24 24" className="w-4 h-4" fill="currentColor">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 1.74.5 3.37 1.41 4.84.95 1.54 2.2 2.86 3.16 4.4.47.75.81 1.45 1.17 2.26.26.55.47 1.5 1.26 1.5s1-.95 1.25-1.5c.37-.81.7-1.51 1.17-2.26.96-1.53 2.21-2.85 3.16-4.4C18.5 12.37 19 10.74 19 9c0-3.87-3.13-7-7-7zm0 9.75c-1.52 0-2.75-1.23-2.75-2.75S10.48 6.25 12 6.25s2.75 1.23 2.75 2.75-1.23 2.75-2.75 2.75z"/>
+                      </svg>
+                      <span>Apple Maps</span>
+                    </a>
+                  </div>
+                </>
+              )}
+            </div>
           )}
         </div>
 
@@ -147,35 +198,70 @@ export default function EventCard({ event, compact = false }: EventCardProps) {
               <span>Tickets</span>
             </a>
           )}
-          {event.link && event.link !== event.ticketsLink && (
-            <a
-              href={event.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 text-sm text-gray-300 hover:text-white px-3 py-2 border border-gray-600 rounded-lg hover:border-gray-500 hover:bg-gray-700/50 transition-colors"
-            >
-              <ExternalLink size={14} />
-              <span>More Info</span>
-            </a>
-          )}
-          {!isMobile && (
+          <div className="relative ml-auto">
             <button
-              onClick={handleCopy}
-              className="flex items-center gap-1 text-sm text-gray-300 hover:text-white px-3 py-2 border border-gray-600 rounded-lg hover:border-gray-500 hover:bg-gray-700/50 transition-colors ml-auto"
+              onClick={() => setShowMenu(!showMenu)}
+              className="text-gray-400 hover:text-gray-200 transition-colors p-2 rounded-lg hover:bg-gray-700/50"
             >
-              {copied ? <Check size={14} className="text-green-400" /> : <Copy size={14} />}
-              <span>{copied ? 'Copied!' : 'Copy'}</span>
+              <MoreVertical size={18} />
             </button>
-          )}
-          <button
-            onClick={handleShare}
-            className={`flex items-center gap-1 text-sm text-gray-300 hover:text-white px-3 py-2 border border-gray-600 rounded-lg hover:border-gray-500 hover:bg-gray-700/50 transition-colors ${isMobile ? 'ml-auto' : ''}`}
-          >
-            <Share2 size={14} />
-            <span>Share</span>
-          </button>
+            {showMenu && (
+              <>
+                <div
+                  className="fixed inset-0 z-10"
+                  onClick={() => setShowMenu(false)}
+                />
+                <div className="absolute right-0 bottom-full mb-1 bg-[#252542] border border-gray-700 rounded-lg shadow-xl z-20 py-1 min-w-[140px]">
+                  <button
+                    onClick={() => {
+                      handleCopy();
+                      setShowMenu(false);
+                    }}
+                    className="w-full flex items-center gap-2 px-3 py-2 text-sm text-gray-300 hover:bg-gray-700/50 hover:text-white transition-colors"
+                  >
+                    <Copy size={14} />
+                    <span>Copy</span>
+                  </button>
+                  <button
+                    onClick={() => {
+                      handleShare();
+                      setShowMenu(false);
+                    }}
+                    className="w-full flex items-center gap-2 px-3 py-2 text-sm text-gray-300 hover:bg-gray-700/50 hover:text-white transition-colors"
+                  >
+                    <Share2 size={14} />
+                    <span>Share</span>
+                  </button>
+                  <button
+                    onClick={() => {
+                      setShowReportModal(true);
+                      setShowMenu(false);
+                    }}
+                    className="w-full flex items-center gap-2 px-3 py-2 text-sm text-gray-300 hover:bg-orange-500/20 hover:text-orange-400 transition-colors"
+                  >
+                    <Flag size={14} />
+                    <span>Report Issue</span>
+                  </button>
+                </div>
+              </>
+            )}
+          </div>
         </div>
+
+        {/* Copy Toast */}
+        {showToast && (
+          <div className="absolute bottom-20 left-1/2 -translate-x-1/2 bg-green-500/90 text-white text-sm px-4 py-2 rounded-lg flex items-center gap-2 shadow-lg animate-fade-in">
+            <Check size={16} />
+            <span>Copied to clipboard!</span>
+          </div>
+        )}
       </div>
+
+      <ReportIssueModal
+        event={event}
+        isOpen={showReportModal}
+        onClose={() => setShowReportModal(false)}
+      />
     </div>
   );
 }

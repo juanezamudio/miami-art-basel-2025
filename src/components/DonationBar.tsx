@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import { Heart, Copy, Check, Mail, Wallet, Phone, Send } from 'lucide-react';
+import { Heart, Copy, Check, Mail, Wallet, Phone, Send, Coins } from 'lucide-react';
 import { useWeb3Modal } from '@web3modal/wagmi/react';
 import { useAccount, useDisconnect, useSendTransaction } from 'wagmi';
 import { parseEther } from 'viem';
@@ -124,8 +124,8 @@ export default function DonationBar() {
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 px-3 py-1.5 bg-[#003087] hover:bg-[#002369] text-white text-sm font-medium rounded-lg transition-colors"
           >
-            <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current">
-              <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944 2.78A.77.77 0 0 1 5.704 2h7.246c3.142 0 5.328 2.019 5.054 5.085-.3 3.385-2.944 5.334-6.058 5.334H9.158l-.95 8.918zm4.998-14.165h-2.92l-.68 6.487h2.556c2.144 0 3.818-1.247 4.016-3.476.15-1.697-.898-3.011-2.972-3.011z"/>
+            <svg viewBox="0 0 24 24" className="w-4 h-4" fill="currentColor">
+              <path d="M6.908 24H3.804a.547.547 0 0 1-.54-.635L6.38 3.15A.848.848 0 0 1 7.216 2.4h5.604c2.656 0 4.584.616 5.72 1.828.976 1.04 1.392 2.476 1.236 4.272-.016.156-.036.316-.06.48a7.262 7.262 0 0 1-.728 2.376c-.716 1.4-1.832 2.432-3.32 3.064-1.356.576-3.06.868-5.064.868h-1.3a.848.848 0 0 0-.836.716l-.032.168-.78 4.94-.024.124a.272.272 0 0 1-.268.232l-.456-.468zM19.06 7.94l-.012.076c-.868 4.46-3.836 6.004-7.632 6.004H9.744a.94.94 0 0 0-.928.796l-.984 6.252-.28 1.772a.494.494 0 0 0 .488.572h3.424a.744.744 0 0 0 .736-.628l.032-.16.58-3.68.036-.2a.744.744 0 0 1 .736-.632h.464c3 0 5.352-1.22 6.04-4.748.288-1.476.14-2.708-.624-3.576a2.98 2.98 0 0 0-.852-.648 8.202 8.202 0 0 1 .448 1.8z"/>
             </svg>
             <span>PayPal</span>
           </a>
@@ -137,8 +137,8 @@ export default function DonationBar() {
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 px-3 py-1.5 bg-[#00D632] hover:bg-[#00B82B] text-white text-sm font-medium rounded-lg transition-colors"
           >
-            <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current">
-              <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm3.5 8.5c0 1.38-1.12 2.5-2.5 2.5h-1v2h1.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1 0-1H11v-2h-1c-1.38 0-2.5-1.12-2.5-2.5v-1a.5.5 0 0 1 1 0v1c0 .827.673 1.5 1.5 1.5h3c.827 0 1.5-.673 1.5-1.5v-1c0-.827-.673-1.5-1.5-1.5h-3C8.62 8 7.5 6.88 7.5 5.5v1a.5.5 0 0 1-1 0v-1C6.5 4.12 7.62 3 9 3h1V1h-1.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1H11v2h1c1.38 0 2.5 1.12 2.5 2.5v1z"/>
+            <svg viewBox="0 0 24 24" className="w-4 h-4" fill="currentColor">
+              <path d="M23.59 3.47A5.1 5.1 0 0 0 20.55.42 5.07 5.07 0 0 0 17.11 0H6.89a5.07 5.07 0 0 0-3.44.42A5.1 5.1 0 0 0 .42 3.47 5.07 5.07 0 0 0 0 6.91v10.18a5.07 5.07 0 0 0 .42 3.44 5.1 5.1 0 0 0 3.03 3.05 5.07 5.07 0 0 0 3.44.42h10.22a5.07 5.07 0 0 0 3.44-.42 5.1 5.1 0 0 0 3.03-3.05 5.07 5.07 0 0 0 .42-3.44V6.91a5.07 5.07 0 0 0-.41-3.44zm-6.17 4.53l-.93.93a.5.5 0 0 1-.67.01 4 4 0 0 0-2.78-1.05c-1.23 0-2.09.53-2.09 1.37 0 .87.89 1.18 2.28 1.53 2.16.52 4.04 1.34 4.04 3.85 0 2.37-1.89 3.97-4.66 4.23v1.44a.5.5 0 0 1-.5.5h-1.27a.5.5 0 0 1-.5-.5v-1.5a5.95 5.95 0 0 1-3.86-1.68.5.5 0 0 1 0-.69l.93-.93a.5.5 0 0 1 .68-.02 4.4 4.4 0 0 0 3.02 1.23c1.55 0 2.35-.68 2.35-1.54 0-.85-.67-1.27-2.37-1.67-2.26-.53-3.95-1.47-3.95-3.75 0-2.12 1.67-3.74 4.2-4.07V4.28a.5.5 0 0 1 .5-.5h1.27a.5.5 0 0 1 .5.5v1.4a5.42 5.42 0 0 1 3.29 1.44.5.5 0 0 1 .02.68z"/>
             </svg>
             <span>Cash App</span>
           </a>
@@ -148,9 +148,7 @@ export default function DonationBar() {
             onClick={() => setIsExpanded(!isExpanded)}
             className="flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white text-sm font-medium rounded-lg transition-colors"
           >
-            <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
-            </svg>
+            <Coins size={16} />
             <span>Crypto</span>
             <svg
               className={`w-3 h-3 transition-transform ${isExpanded ? 'rotate-180' : ''}`}

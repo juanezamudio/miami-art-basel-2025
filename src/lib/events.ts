@@ -47,6 +47,21 @@ export function getNeighborhoods(): string[] {
   return Array.from(neighborhoods).sort();
 }
 
+// Helper to extract numeric price from price string
+function extractPrice(priceStr: string): number | null {
+  if (!priceStr) return null;
+  const lower = priceStr.toLowerCase();
+  if (lower === 'free') return 0;
+  if (lower === 'tbd' || lower === 'n/a') return null;
+
+  // Extract first number from string (e.g., "$25+" -> 25, "$50 - $100" -> 50)
+  const match = priceStr.match(/\$?(\d+)/);
+  if (match) {
+    return parseInt(match[1], 10);
+  }
+  return null;
+}
+
 export function filterEvents(
   events: Event[],
   filters: {
@@ -54,6 +69,7 @@ export function filterEvents(
     eventType?: string;
     neighborhood?: string;
     date?: string;
+    priceRange?: string;
   }
 ): Event[] {
   return events.filter(event => {
@@ -96,6 +112,30 @@ export function filterEvents(
           // No start date means TBA - exclude from specific date filters
           return false;
         }
+      }
+    }
+
+    // Price range filter
+    if (filters.priceRange) {
+      const price = extractPrice(event.ticketPrice);
+
+      switch (filters.priceRange) {
+        case 'free':
+          // Show only free events
+          if (event.ticketPrice?.toLowerCase() !== 'free') return false;
+          break;
+        case '0-50':
+          // Show events under $50 (including free)
+          if (price === null || price >= 50) return false;
+          break;
+        case '50-100':
+          // Show events $50 - $100
+          if (price === null || price < 50 || price > 100) return false;
+          break;
+        case '100+':
+          // Show events $100+
+          if (price === null || price < 100) return false;
+          break;
       }
     }
 

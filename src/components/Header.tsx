@@ -31,7 +31,7 @@ export default function Header({ onChatToggle }: HeaderProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-lg sm:text-2xl font-bold tracking-tight">Miami Art Basel 2025</span>
+            <span className="text-xl sm:text-3xl font-bold tracking-tight" style={{ fontFamily: 'var(--font-space-grotesk)' }}>BaselAI</span>
           </Link>
 
           {/* Desktop Navigation */}

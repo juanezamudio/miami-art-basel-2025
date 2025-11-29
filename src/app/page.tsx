@@ -19,25 +19,30 @@ function pluralizeType(type: string): string {
   return plurals[type] || `${type}s`;
 }
 
+type SortOption = 'date' | 'alphabetical';
+
 export default function HomePage() {
   const [search, setSearch] = useState('');
   const [eventType, setEventType] = useState('All');
   const [neighborhood, setNeighborhood] = useState('All');
   const [date, setDate] = useState('');
+  const [priceRange, setPriceRange] = useState('');
+  const [sortBy, setSortBy] = useState<SortOption>('date');
 
   const allEvents = useMemo(() => getEvents(), []);
   const eventTypes = useMemo(() => getEventTypes(), []);
   const neighborhoods = useMemo(() => getNeighborhoods(), []);
 
   const filteredEvents = useMemo(() => {
-    return filterEvents(allEvents, { search, eventType, neighborhood, date });
-  }, [allEvents, search, eventType, neighborhood, date]);
+    return filterEvents(allEvents, { search, eventType, neighborhood, date, priceRange });
+  }, [allEvents, search, eventType, neighborhood, date, priceRange]);
 
   const clearFilters = () => {
     setSearch('');
     setEventType('All');
     setNeighborhood('All');
     setDate('');
+    setPriceRange('');
   };
 
   const scrollToSection = (sectionId: string) => {
@@ -52,27 +57,55 @@ export default function HomePage() {
     }, 100);
   };
 
+  // Sort events based on selected option
+  const sortedEvents = useMemo(() => {
+    const sorted = [...filteredEvents];
+
+    if (sortBy === 'date') {
+      // Sort by date (chronological), then alphabetically within same date
+      // Events with no date (TBA) go to the end
+      sorted.sort((a, b) => {
+        const dateA = a.startDate ? new Date(a.startDate).getTime() : Infinity;
+        const dateB = b.startDate ? new Date(b.startDate).getTime() : Infinity;
+
+        if (dateA !== dateB) {
+          return dateA - dateB;
+        }
+        // Same date or both TBA - sort alphabetically
+        return a.event.localeCompare(b.event);
+      });
+    } else {
+      // Sort alphabetically
+      sorted.sort((a, b) => a.event.localeCompare(b.event));
+    }
+
+    return sorted;
+  }, [filteredEvents, sortBy]);
+
   // Group events by type for display
   const groupedEvents = useMemo(() => {
-    const groups: Record<string, typeof filteredEvents> = {};
-    filteredEvents.forEach((event) => {
+    const groups: Record<string, typeof sortedEvents> = {};
+    sortedEvents.forEach((event) => {
       const type = event.eventType || 'Other';
       if (!groups[type]) groups[type] = [];
       groups[type].push(event);
     });
     return groups;
-  }, [filteredEvents]);
+  }, [sortedEvents]);
 
   return (
     <div>
       {/* Hero Section */}
       <div className="text-center mb-8">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 bg-clip-text text-transparent mb-4">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 bg-clip-text text-transparent mb-4" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
+          Your Complete AI-Powered Guide to
+          <br />
           Miami Art Basel 2025
         </h1>
-        <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto px-4">
-          Your complete guide to art shows, parties, and wellness events during Miami Art Week.
-          November 30 - December 9, 2025.
+        <p className="text-gray-400 text-base sm:text-lg max-w-3xl mx-auto px-4">
+          Discover art shows, parties, and wellness events during Miami Art Week.
+          <br />
+          <span className="text-gray-300 font-bold">November 30 - December 9, 2025</span>
         </p>
       </div>
 
@@ -147,14 +180,29 @@ export default function HomePage() {
         onNeighborhoodChange={setNeighborhood}
         date={date}
         onDateChange={setDate}
+        priceRange={priceRange}
+        onPriceRangeChange={setPriceRange}
         eventTypes={eventTypes}
         neighborhoods={neighborhoods}
         onClearFilters={clearFilters}
       />
 
-      {/* Results count */}
-      <div className="mb-4 text-gray-400">
-        Showing {filteredEvents.length} of {allEvents.length} events
+      {/* Results count and sort */}
+      <div className="mb-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+        <div className="text-gray-400">
+          Showing {filteredEvents.length} of {allEvents.length} events
+        </div>
+        <div className="flex items-center gap-2">
+          <span className="text-gray-500 text-sm">Sort by:</span>
+          <select
+            value={sortBy}
+            onChange={(e) => setSortBy(e.target.value as SortOption)}
+            className="px-3 py-1.5 bg-[#1a1a2e] border border-gray-700 rounded-lg text-gray-200 text-sm focus:outline-none appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%239ca3af%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:16px] bg-[right_0.5rem_center] bg-no-repeat pr-8"
+          >
+            <option value="date">Date</option>
+            <option value="alphabetical">A-Z</option>
+          </select>
+        </div>
       </div>
 
       {/* Event Grid */}

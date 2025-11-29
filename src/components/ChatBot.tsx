@@ -198,7 +198,7 @@ export default function ChatBot({ isOpen, onToggle }: ChatBotProps) {
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder="Ask about events, parties, art shows..."
-                className="flex-1 px-4 py-2.5 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500 min-w-0 text-base md:text-sm"
+                className="flex-1 px-4 py-2.5 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500 min-w-0 text-base md:text-sm text-gray-900 placeholder-gray-500"
                 disabled={isLoading}
               />
               <button

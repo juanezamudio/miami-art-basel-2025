@@ -1,8 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 
-// Read from root CSV file
-const csvPath = path.join(__dirname, '..', 'art-basel-2025.csv');
+// Check if preprocessed file exists, otherwise use original
+const preprocessedPath = path.join(__dirname, '..', 'art-basel-2025-preprocessed.csv');
+const originalPath = path.join(__dirname, '..', 'art-basel-2025.csv');
+const csvPath = fs.existsSync(preprocessedPath) ? preprocessedPath : originalPath;
 const jsonPath = path.join(__dirname, '..', 'src', 'data', 'events.json');
 
 const csvContent = fs.readFileSync(csvPath, 'utf-8');
@@ -46,8 +48,8 @@ for (let i = 1; i < lines.length; i++) {
     neighborhood: values[6] || '',
     address: values[7] || '',
     notes: values[8] || '',
-    ticketsLink: values[9] || '',
-    link: values[9] || '', // Use tickets link as fallback
+    ticketPrice: values[9] || '',
+    ticketsLink: values[10] || '',
   };
 
   events.push(event);

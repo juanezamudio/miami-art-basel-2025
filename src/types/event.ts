@@ -8,8 +8,8 @@ export interface Event {
   neighborhood: string;
   address: string;
   notes: string;
+  ticketPrice: string;
   ticketsLink: string;
-  link: string;
   coordinates?: {
     lat: number;
     lng: number;

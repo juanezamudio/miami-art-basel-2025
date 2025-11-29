@@ -2,15 +2,15 @@
   {
     "id": 1,
     "event": "AI + Web3 $44,000 Pitch Competition & VC Networking by Ga^3in Ventures х Boosty Labs",
-    "eventType": "Party",
+    "eventType": "Networking",
     "startDate": "12/5/2025",
     "endDate": "12/5/2025",
     "schedule": "10AM - 12PM",
     "neighborhood": "",
     "address": "",
-    "notes": "",
-    "ticketsLink": "https://luma.com/pbs3n297",
-    "link": "https://luma.com/pbs3n297"
+    "notes": "Location Revealed to Ticket Holders",
+    "ticketPrice": "$50+",
+    "ticketsLink": "https://luma.com/pbs3n297"
   },
   {
     "id": 2,
@@ -20,10 +20,10 @@
     "endDate": "12/6/2025",
     "schedule": "9AM - 1PM",
     "neighborhood": "Miami Beach",
-    "address": "Sagamore Hotel South Beach",
+    "address": "Sagamore Hotel South Beach, 1671 Collins Ave, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://www.eventbrite.com/e/the-24th-iconic-sagamore-brunch-tickets-1948661873119?aff=oddtdtcreator",
-    "link": "https://www.eventbrite.com/e/the-24th-iconic-sagamore-brunch-tickets-1948661873119?aff=oddtdtcreator"
+    "ticketPrice": "$175",
+    "ticketsLink": "https://www.eventbrite.com/e/the-24th-iconic-sagamore-brunch-tickets-1948661873119?aff=oddtdtcreator"
   },
   {
     "id": 3,
@@ -35,8 +35,8 @@
     "neighborhood": "Downtown",
     "address": "34 NE 11th St, Miami, FL 33132",
     "notes": "",
-    "ticketsLink": "https://dice.fm/event/xenqkk-33-hour-space-basel-closing-party-7th-dec-club-space-miami-miami-tickets?pid=99db2a70&_branch_match_id=1263983458127435889&utm_medium=partners_api&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1c8yMkizTDIzMDa2TLQvyEyxtbRMSTJKNDdQqytKTUstKsrMS49PKsovL04tsnXOKMrPTQUA5gTTp0gAAAA%3D",
-    "link": "https://dice.fm/event/xenqkk-33-hour-space-basel-closing-party-7th-dec-club-space-miami-miami-tickets?pid=99db2a70&_branch_match_id=1263983458127435889&utm_medium=partners_api&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1c8yMkizTDIzMDa2TLQvyEyxtbRMSTJKNDdQqytKTUstKsrMS49PKsovL04tsnXOKMrPTQUA5gTTp0gAAAA%3D"
+    "ticketPrice": "$50+",
+    "ticketsLink": "https://dice.fm/event/xenqkk-33-hour-space-basel-closing-party-7th-dec-club-space-miami-miami-tickets?pid=99db2a70&_branch_match_id=1263983458127435889&utm_medium=partners_api&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1c8yMkizTDIzMDa2TLQvyEyxtbRMSTJKNDdQqytKTUstKsrMS49PKsovL04tsnXOKMrPTQUA5gTTp0gAAAA%3D"
   },
   {
     "id": 4,
@@ -48,8 +48,8 @@
     "neighborhood": "North Miami",
     "address": "Maison AfriKin, Scott Galvin Community Center, 1600 NE 126th Street, North Miami, FL 33181",
     "notes": "",
-    "ticketsLink": "https://afrikin.art/",
-    "link": "https://afrikin.art/"
+    "ticketPrice": "$25",
+    "ticketsLink": "https://afrikin.art/"
   },
   {
     "id": 5,
@@ -59,10 +59,10 @@
     "endDate": "12/7/2025",
     "schedule": "10AM - 11AM",
     "neighborhood": "Miami Beach",
-    "address": "SCOPE Art Show - 801 Ocean Dr, Miami Beach, FL 33139",
+    "address": "SCOPE Art Show, 801 Ocean Dr, Miami Beach, FL 33139",
     "notes": "Invite Only",
-    "ticketsLink": "https://scope-art.com/program",
-    "link": "https://scope-art.com/program"
+    "ticketPrice": "$100+",
+    "ticketsLink": "https://scope-art.com/program"
   },
   {
     "id": 6,
@@ -74,8 +74,8 @@
     "neighborhood": "Miami Beach",
     "address": "Aqua Art Miami at the Aqua Hotel, 1530 Collins Avenue, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://www.aquaartmiami.com/",
-    "link": "https://www.aquaartmiami.com/"
+    "ticketPrice": "$25",
+    "ticketsLink": "https://www.aquaartmiami.com/"
   },
   {
     "id": 7,
@@ -87,8 +87,8 @@
     "neighborhood": "Miami Beach",
     "address": "Aqua Art Miami at the Aqua Hotel, 1530 Collins Avenue, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://www.aquaartmiami.com",
-    "link": "https://www.aquaartmiami.com"
+    "ticketPrice": "$100+",
+    "ticketsLink": "https://www.aquaartmiami.com"
   },
   {
     "id": 8,
@@ -98,10 +98,10 @@
     "endDate": "12/6/2025",
     "schedule": "5PM - 11:30PM",
     "neighborhood": "Wynwood",
-    "address": "2217 Northwest Miami Court, Miami, FL 33127",
+    "address": "2217 NW Miami Court, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://www.eventbrite.com/e/art-access-miami-art-week-2025-arlo-wynwood-arlo-after-dark-tickets-1965805714811?aff=odcleoeventsincollection",
-    "link": "https://www.eventbrite.com/e/art-access-miami-art-week-2025-arlo-wynwood-arlo-after-dark-tickets-1965805714811?aff=odcleoeventsincollection"
+    "ticketPrice": "$50+",
+    "ticketsLink": "https://www.eventbrite.com/e/art-access-miami-art-week-2025-arlo-wynwood-arlo-after-dark-tickets-1965805714811?aff=odcleoeventsincollection"
   },
   {
     "id": 9,
@@ -113,8 +113,8 @@
     "neighborhood": "Wynwood",
     "address": "2217 Northwest Miami Court, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://www.eventbrite.com/e/art-access-miami-art-week-2025-arlo-wynwood-afternoon-art-exhibition-tickets-1971508090771?aff=odcleoeventsincollection",
-    "link": "https://www.eventbrite.com/e/art-access-miami-art-week-2025-arlo-wynwood-afternoon-art-exhibition-tickets-1971508090771?aff=odcleoeventsincollection"
+    "ticketPrice": "Free",
+    "ticketsLink": "https://www.eventbrite.com/e/art-access-miami-art-week-2025-arlo-wynwood-afternoon-art-exhibition-tickets-1971508090771?aff=odcleoeventsincollection"
   },
   {
     "id": 10,
@@ -124,10 +124,10 @@
     "endDate": "12/6/2025",
     "schedule": "9AM - 12PM",
     "neighborhood": "Wynwood",
-    "address": "2217 Northwest Miami Court, Miami, FL 33127",
+    "address": "2217 NW Miami Court, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://www.eventbrite.com/e/art-access-miami-art-week-2025-arlo-wynwood-coffee-beats-tickets-1965765956894?aff=odcleoeventsincollection",
-    "link": "https://www.eventbrite.com/e/art-access-miami-art-week-2025-arlo-wynwood-coffee-beats-tickets-1965765956894?aff=odcleoeventsincollection"
+    "ticketPrice": "Free",
+    "ticketsLink": "https://www.eventbrite.com/e/art-access-miami-art-week-2025-arlo-wynwood-coffee-beats-tickets-1965765956894?aff=odcleoeventsincollection"
   },
   {
     "id": 11,
@@ -137,10 +137,10 @@
     "endDate": "12/6/2025",
     "schedule": "8AM - 9AM",
     "neighborhood": "Wynwood",
-    "address": "2217 Northwest Miami Court, Miami, FL 33127",
+    "address": "2217 NW Miami Court, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://www.eventbrite.com/e/art-access-miami-art-week-2025-arlo-wynwood-mad-pop-morning-art-run-club-tickets-1965730563030?aff=odcleoeventsincollection",
-    "link": "https://www.eventbrite.com/e/art-access-miami-art-week-2025-arlo-wynwood-mad-pop-morning-art-run-club-tickets-1965730563030?aff=odcleoeventsincollection"
+    "ticketPrice": "Free",
+    "ticketsLink": "https://www.eventbrite.com/e/art-access-miami-art-week-2025-arlo-wynwood-mad-pop-morning-art-run-club-tickets-1965730563030?aff=odcleoeventsincollection"
   },
   {
     "id": 12,
@@ -150,10 +150,10 @@
     "endDate": "12/6/2025",
     "schedule": "8AM - 12PM",
     "neighborhood": "Wynwood",
-    "address": "2217 Northwest Miami Court, Miami, FL 33127",
+    "address": "2217 NW Miami Court, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://www.eventbrite.com/e/art-access-miami-art-week-2025-arlo-reset-social-yoga-wellness-circuit-tickets-1965783551520?aff=odcleoeventsincollection",
-    "link": "https://www.eventbrite.com/e/art-access-miami-art-week-2025-arlo-reset-social-yoga-wellness-circuit-tickets-1965783551520?aff=odcleoeventsincollection"
+    "ticketPrice": "$25",
+    "ticketsLink": "https://www.eventbrite.com/e/art-access-miami-art-week-2025-arlo-reset-social-yoga-wellness-circuit-tickets-1965783551520?aff=odcleoeventsincollection"
   },
   {
     "id": 13,
@@ -165,8 +165,8 @@
     "neighborhood": "Wynwood",
     "address": "150 NW 21st St, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://posh.vip/e/long-feng-special-guest-with-arodes-peace-control-dwitches-and-hank",
-    "link": "https://posh.vip/e/long-feng-special-guest-with-arodes-peace-control-dwitches-and-hank"
+    "ticketPrice": "$25",
+    "ticketsLink": "https://posh.vip/e/long-feng-special-guest-with-arodes-peace-control-dwitches-and-hank"
   },
   {
     "id": 14,
@@ -176,10 +176,10 @@
     "endDate": "12/5/2025",
     "schedule": "12PM - 5PM",
     "neighborhood": "Miami Beach",
-    "address": "Sagamore Hotel South Beach - An All Suite Hotel, The Sagamore, 1671 Collins Ave, Miami Beach, FL 33139, USA",
+    "address": "Sagamore Hotel South Beach, 1671 Collins Ave, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://luma.com/1qnl4i3f",
-    "link": "https://luma.com/1qnl4i3f"
+    "ticketPrice": "$50+",
+    "ticketsLink": "https://luma.com/1qnl4i3f"
   },
   {
     "id": 15,
@@ -189,10 +189,10 @@
     "endDate": "12/7/2025",
     "schedule": "11AM - 6PM",
     "neighborhood": "Miami Beach",
-    "address": "Miami Beach Convention Center - 1901 Convention Center Drive, FL 33139",
+    "address": "Miami Beach Convention Center, 1901 Convention Center Drive, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://www.artbasel.com/miami-beach/buy-tickets",
-    "link": "https://www.artbasel.com/miami-beach/buy-tickets"
+    "ticketPrice": "$73",
+    "ticketsLink": "https://www.artbasel.com/miami-beach/buy-tickets"
   },
   {
     "id": 16,
@@ -202,10 +202,10 @@
     "endDate": "12/3/2025",
     "schedule": "11AM - 7PM",
     "neighborhood": "Miami Beach",
-    "address": "Miami Beach Convention Center - 1901 Convention Center Drive, FL 33139",
+    "address": "Miami Beach Convention Center, 1901 Convention Center Drive, Miami Beach, FL 33139",
     "notes": "Invite Only",
-    "ticketsLink": "https://www.artbasel.com/miami-beach/buy-tickets",
-    "link": "https://www.artbasel.com/miami-beach/buy-tickets"
+    "ticketPrice": "$73",
+    "ticketsLink": "https://www.artbasel.com/miami-beach/buy-tickets"
   },
   {
     "id": 17,
@@ -215,10 +215,10 @@
     "endDate": "12/4/2025",
     "schedule": "11AM - 7PM",
     "neighborhood": "Miami Beach",
-    "address": "Miami Beach Convention Center - 1901 Convention Center Drive, FL 33139",
+    "address": "Miami Beach Convention Center, 1901 Convention Center Drive, Miami Beach, FL 33139",
     "notes": "Invite Only",
-    "ticketsLink": "https://www.artbasel.com/miami-beach/buy-tickets",
-    "link": "https://www.artbasel.com/miami-beach/buy-tickets"
+    "ticketPrice": "$50+",
+    "ticketsLink": "https://www.artbasel.com/miami-beach/buy-tickets"
   },
   {
     "id": 18,
@@ -228,10 +228,10 @@
     "endDate": "12/4/2025",
     "schedule": "5PM - 8PM",
     "neighborhood": "Wynwood",
-    "address": "FunDimension Game Center",
+    "address": "FunDimension Game Center, 298 NE 61st St, Miami, FL 33137",
     "notes": "",
-    "ticketsLink": "https://luma.com/qgf8n8as",
-    "link": "https://luma.com/qgf8n8as"
+    "ticketPrice": "$25",
+    "ticketsLink": "https://luma.com/qgf8n8as"
   },
   {
     "id": 19,
@@ -241,10 +241,10 @@
     "endDate": "12/7/2025",
     "schedule": "9AM - 10PM",
     "neighborhood": "Miami Beach",
-    "address": "Cadillac Hotel & Beach Club, 3925 Collins Ave, Miami Beach, FL, 33140. Cadillac Hotel Website",
+    "address": "Cadillac Hotel & Beach Club, 3925 Collins Ave, Miami Beach, FL 33140",
     "notes": "No RSVP Required",
-    "ticketsLink": "https://wasitalladreaminc.com/upcoming-events/f/2025-miami-art-week-must-attend-events",
-    "link": "https://wasitalladreaminc.com/upcoming-events/f/2025-miami-art-week-must-attend-events"
+    "ticketPrice": "$100+",
+    "ticketsLink": "https://wasitalladreaminc.com/upcoming-events/f/2025-miami-art-week-must-attend-events"
   },
   {
     "id": 20,
@@ -256,8 +256,8 @@
     "neighborhood": "Miami Beach",
     "address": "Pamplemousse on the Bay, 910 West Ave, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://z.inlist.com/6SzGdOE8mYb",
-    "link": "https://z.inlist.com/6SzGdOE8mYb"
+    "ticketPrice": "$25",
+    "ticketsLink": "https://z.inlist.com/6SzGdOE8mYb"
   },
   {
     "id": 21,
@@ -267,10 +267,10 @@
     "endDate": "12/7/2025",
     "schedule": "11AM - 7PM",
     "neighborhood": "Downtown",
-    "address": "The Art Miami Pavilion, One Herald Plaza, NE 14th Street & Biscayne Bay, Miami, FL 33132",
+    "address": "The Art Miami Pavilion, One Herald Plaza, Miami, FL 33132",
     "notes": "",
-    "ticketsLink": "https://www.artmiami.com/tickets",
-    "link": "https://www.artmiami.com/tickets"
+    "ticketPrice": "$50+",
+    "ticketsLink": "https://www.artmiami.com/tickets"
   },
   {
     "id": 22,
@@ -282,8 +282,8 @@
     "neighborhood": "",
     "address": "",
     "notes": "",
-    "ticketsLink": "https://luma.com/q9lo83k4",
-    "link": "https://luma.com/q9lo83k4"
+    "ticketPrice": "$75",
+    "ticketsLink": "https://luma.com/q9lo83k4"
   },
   {
     "id": 23,
@@ -295,8 +295,8 @@
     "neighborhood": "Miami Beach",
     "address": "2341 Collins Avenue, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://www.sevenrooms.com/events/ahNzfnNldmVucm9vbXMtc2VjdXJlchwLEg9uaWdodGxvb3BfVmVudWUYgIDYwvK8igsM?event_id=ahNzfnNldmVucm9vbXMtc2VjdXJlcjkLEg9uaWdodGxvb3BfVmVudWUYgIDYwvK8igsMCxIQc3JfR2VuVmVudWVFdmVudBiAgM3H2dyaCgw",
-    "link": "https://www.sevenrooms.com/events/ahNzfnNldmVucm9vbXMtc2VjdXJlchwLEg9uaWdodGxvb3BfVmVudWUYgIDYwvK8igsM?event_id=ahNzfnNldmVucm9vbXMtc2VjdXJlcjkLEg9uaWdodGxvb3BfVmVudWUYgIDYwvK8igsMCxIQc3JfR2VuVmVudWVFdmVudBiAgM3H2dyaCgw"
+    "ticketPrice": "$50+",
+    "ticketsLink": "https://www.sevenrooms.com/events/ahNzfnNldmVucm9vbXMtc2VjdXJlchwLEg9uaWdodGxvb3BfVmVudWUYgIDYwvK8igsM?event_id=ahNzfnNldmVucm9vbXMtc2VjdXJlcjkLEg9uaWdodGxvb3BfVmVudWUYgIDYwvK8igsMCxIQc3JfR2VuVmVudWVFdmVudBiAgM3H2dyaCgw"
   },
   {
     "id": 24,
@@ -306,10 +306,10 @@
     "endDate": "12/6/2025",
     "schedule": "2PM - 3AM",
     "neighborhood": "Wynwood",
-    "address": "Green Space at Mana Wynwood - 318 NW 23rd St, Miami, FL 33127",
+    "address": "Green Space at Mana Wynwood, 318 NW 23rd St, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://artwithmemiami.com/?fbclid=PAZXh0bgNhZW0CMTEAAae8sWXXgakjbPUW9rJx1iciifEp97UAygPY25FM-RVHse-j-_IOVzGUdfDEYg_aem_KDCjqm7ryStceOVsJil1Tg",
-    "link": "https://artwithmemiami.com/?fbclid=PAZXh0bgNhZW0CMTEAAae8sWXXgakjbPUW9rJx1iciifEp97UAygPY25FM-RVHse-j-_IOVzGUdfDEYg_aem_KDCjqm7ryStceOVsJil1Tg"
+    "ticketPrice": "$100+",
+    "ticketsLink": "https://artwithmemiami.com/?fbclid=PAZXh0bgNhZW0CMTEAAae8sWXXgakjbPUW9rJx1iciifEp97UAygPY25FM-RVHse-j-_IOVzGUdfDEYg_aem_KDCjqm7ryStceOVsJil1Tg"
   },
   {
     "id": 25,
@@ -319,10 +319,10 @@
     "endDate": "12/4/2025",
     "schedule": "5PM - 9PM",
     "neighborhood": "Wynwood",
-    "address": "The Miami Art Week Gallery, 2300 N. Miami Avenue, Miami FL 33127",
+    "address": "The Miami Art Week Gallery, 2300 N Miami Ave, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://www.miamiartweek.org/tickets",
-    "link": "https://www.miamiartweek.org/tickets"
+    "ticketPrice": "$25",
+    "ticketsLink": "https://www.miamiartweek.org/tickets"
   },
   {
     "id": 26,
@@ -332,10 +332,10 @@
     "endDate": "12/7/2025",
     "schedule": "10PM - 8PM",
     "neighborhood": "Wynwood",
-    "address": "The Miami Art Week Gallery, 2300 N. Miami Avenue, Miami FL 33127",
+    "address": "The Miami Art Week Gallery, 2300 N Miami Ave, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://www.miamiartweek.org/tickets",
-    "link": "https://www.miamiartweek.org/tickets"
+    "ticketPrice": "$25",
+    "ticketsLink": "https://www.miamiartweek.org/tickets"
   },
   {
     "id": 27,
@@ -347,8 +347,8 @@
     "neighborhood": "Downtown",
     "address": "",
     "notes": "",
-    "ticketsLink": "",
-    "link": ""
+    "ticketPrice": "N/A",
+    "ticketsLink": ""
   },
   {
     "id": 28,
@@ -358,10 +358,10 @@
     "endDate": "12/6/2025",
     "schedule": "6PM - 12AM",
     "neighborhood": "Miami Beach",
-    "address": "Sagamore Hotel South Beach",
+    "address": "Sagamore Hotel South Beach, 1671 Collins Ave, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://posh.vip/e/basel-city",
-    "link": "https://posh.vip/e/basel-city"
+    "ticketPrice": "$50+",
+    "ticketsLink": "https://posh.vip/e/basel-city"
   },
   {
     "id": 29,
@@ -371,10 +371,10 @@
     "endDate": "12/7/2025",
     "schedule": "",
     "neighborhood": "Miami Beach",
-    "address": "The Sagamore Hotel - 1671 Collins Ave, Miami Beach, FL 33139",
+    "address": "The Sagamore Hotel, 1671 Collins Ave, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://www.bitbasel.miami/artweek#highlights",
-    "link": "https://www.bitbasel.miami/artweek#highlights"
+    "ticketPrice": "$50+",
+    "ticketsLink": "https://www.bitbasel.miami/artweek#highlights"
   },
   {
     "id": 30,
@@ -384,10 +384,10 @@
     "endDate": "12/3/2025",
     "schedule": "6PM - 12AM",
     "neighborhood": "Miami Beach",
-    "address": "Sagamore Hotel South Beach",
+    "address": "Sagamore Hotel South Beach, 1671 Collins Ave, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://www.bitbasel.miami/artweek#highlights",
-    "link": "https://www.bitbasel.miami/artweek#highlights"
+    "ticketPrice": "$100+",
+    "ticketsLink": "https://www.bitbasel.miami/artweek#highlights"
   },
   {
     "id": 31,
@@ -399,8 +399,8 @@
     "neighborhood": "Miami Beach",
     "address": "The Sagamore, 1671 Collins Ave, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://posh.vip/e/basel-city",
-    "link": "https://posh.vip/e/basel-city"
+    "ticketPrice": "$25",
+    "ticketsLink": "https://posh.vip/e/basel-city"
   },
   {
     "id": 32,
@@ -412,8 +412,8 @@
     "neighborhood": "",
     "address": "",
     "notes": "",
-    "ticketsLink": "https://dice.fm/event/oew86m-black-book-records-space-basel-2025-2nd-dec-club-space-miami-miami-tickets?pid=d6342b83",
-    "link": "https://dice.fm/event/oew86m-black-book-records-space-basel-2025-2nd-dec-club-space-miami-miami-tickets?pid=d6342b83"
+    "ticketPrice": "$60+",
+    "ticketsLink": "https://dice.fm/event/oew86m-black-book-records-space-basel-2025-2nd-dec-club-space-miami-miami-tickets?pid=d6342b83"
   },
   {
     "id": 33,
@@ -423,10 +423,10 @@
     "endDate": "12/5/2025",
     "schedule": "5PM",
     "neighborhood": "Downtown",
-    "address": "73 West Flagler Street",
+    "address": "73 W Flagler St, Miami, FL 33130",
     "notes": "",
-    "ticketsLink": "https://dice.fm/event/53xlok-black-coffee-open-air-at-the-downtown-courthouse-6th-dec-73-west-flagler-street-miami-tickets?lng=en-US",
-    "link": "https://dice.fm/event/53xlok-black-coffee-open-air-at-the-downtown-courthouse-6th-dec-73-west-flagler-street-miami-tickets?lng=en-US"
+    "ticketPrice": "$50+",
+    "ticketsLink": "https://dice.fm/event/53xlok-black-coffee-open-air-at-the-downtown-courthouse-6th-dec-73-west-flagler-street-miami-tickets?lng=en-US"
   },
   {
     "id": 34,
@@ -438,8 +438,8 @@
     "neighborhood": "Wynwood",
     "address": "150 NW 21st St, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://posh.vip/e/long-feng-blondish",
-    "link": "https://posh.vip/e/long-feng-blondish"
+    "ticketPrice": "$25",
+    "ticketsLink": "https://posh.vip/e/long-feng-blondish"
   },
   {
     "id": 35,
@@ -451,8 +451,8 @@
     "neighborhood": "Downtown",
     "address": "",
     "notes": "",
-    "ticketsLink": "",
-    "link": ""
+    "ticketPrice": "N/A",
+    "ticketsLink": ""
   },
   {
     "id": 36,
@@ -462,10 +462,10 @@
     "endDate": "12/7/2025",
     "schedule": "5PM - 11PM",
     "neighborhood": "Miami Beach",
-    "address": "Ritz Carlton South Beach",
+    "address": "The Ritz-Carlton South Beach, 1 Lincoln Rd, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://posh.vip/e/the-brave-new-earth-ritzcarlton-south-beachofficial-art-basel-2025",
-    "link": "https://posh.vip/e/the-brave-new-earth-ritzcarlton-south-beachofficial-art-basel-2025"
+    "ticketPrice": "$100+",
+    "ticketsLink": "https://posh.vip/e/the-brave-new-earth-ritzcarlton-south-beachofficial-art-basel-2025"
   },
   {
     "id": 37,
@@ -475,10 +475,10 @@
     "endDate": "12/4/2025",
     "schedule": "5PM - 11PM",
     "neighborhood": "Miami Beach",
-    "address": "Ritz Carlton South Beach",
+    "address": "The Ritz-Carlton South Beach, 1 Lincoln Rd, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://posh.vip/e/the-brave-new-earth-ritzcarlton-south-beachofficial-art-basel-2025",
-    "link": "https://posh.vip/e/the-brave-new-earth-ritzcarlton-south-beachofficial-art-basel-2025"
+    "ticketPrice": "$100+",
+    "ticketsLink": "https://posh.vip/e/the-brave-new-earth-ritzcarlton-south-beachofficial-art-basel-2025"
   },
   {
     "id": 38,
@@ -490,8 +490,8 @@
     "neighborhood": "Miami Beach",
     "address": "2727 Indian Creek Dr #11, Miami Beach, FL 33140",
     "notes": "",
-    "ticketsLink": "https://posh.vip/e/how-a-sunset-sounds-art-basel",
-    "link": "https://posh.vip/e/how-a-sunset-sounds-art-basel"
+    "ticketPrice": "$75",
+    "ticketsLink": "https://posh.vip/e/how-a-sunset-sounds-art-basel"
   },
   {
     "id": 39,
@@ -501,10 +501,10 @@
     "endDate": null,
     "schedule": "",
     "neighborhood": "Miami Beach",
-    "address": "1111 Lincoln Road",
+    "address": "1111 Lincoln Road, Miami Beach, FL 33139",
     "notes": "Invite Only",
-    "ticketsLink": "",
-    "link": ""
+    "ticketPrice": "N/A",
+    "ticketsLink": ""
   },
   {
     "id": 40,
@@ -516,8 +516,8 @@
     "neighborhood": "Downtown",
     "address": "40 SW North River Dr, Miami, FL 33128",
     "notes": "Only for Table Reservations or Members",
-    "ticketsLink": "https://www.casa-neos.com/miami-art-week-dj-line-up",
-    "link": "https://www.casa-neos.com/miami-art-week-dj-line-up"
+    "ticketPrice": "$50+",
+    "ticketsLink": "https://www.casa-neos.com/miami-art-week-dj-line-up"
   },
   {
     "id": 41,
@@ -529,8 +529,8 @@
     "neighborhood": "Miami Beach",
     "address": "",
     "notes": "Cardmembers Only",
-    "ticketsLink": "https://account.chase.com/sapphire/reserve/reservedbysapphire",
-    "link": "https://account.chase.com/sapphire/reserve/reservedbysapphire"
+    "ticketPrice": "$100+",
+    "ticketsLink": "https://account.chase.com/sapphire/reserve/reservedbysapphire"
   },
   {
     "id": 42,
@@ -542,8 +542,8 @@
     "neighborhood": "Miami Beach",
     "address": "",
     "notes": "Cardmembers Only",
-    "ticketsLink": "https://account.chase.com/sapphire/reserve/reservedbysapphire",
-    "link": "https://account.chase.com/sapphire/reserve/reservedbysapphire"
+    "ticketPrice": "$100+",
+    "ticketsLink": "https://account.chase.com/sapphire/reserve/reservedbysapphire"
   },
   {
     "id": 43,
@@ -553,10 +553,10 @@
     "endDate": "12/3/2025",
     "schedule": "5PM - 11PM",
     "neighborhood": "Miami Beach",
-    "address": "The Gates Hotel South Beach 2360 Collins Ave, Miami Beach, FL 33139, USA",
+    "address": "The Gates Hotel South Beach, 2360 Collins Ave, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://lu.ma/5wev0yu4",
-    "link": "https://lu.ma/5wev0yu4"
+    "ticketPrice": "$25",
+    "ticketsLink": "https://lu.ma/5wev0yu4"
   },
   {
     "id": 44,
@@ -568,8 +568,8 @@
     "neighborhood": "Hialeah",
     "address": "4800 NW 37th Ave, Miami, FL 33142",
     "notes": "",
-    "ticketsLink": "https://www.factorytown.com/event/circoloco-2025-12-06-miami-fl",
-    "link": "https://www.factorytown.com/event/circoloco-2025-12-06-miami-fl"
+    "ticketPrice": "$100+",
+    "ticketsLink": "https://www.factorytown.com/event/circoloco-2025-12-06-miami-fl"
   },
   {
     "id": 45,
@@ -581,8 +581,8 @@
     "neighborhood": "Miami Beach",
     "address": "1235 Washington Ave, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://www.m2miami.com/events",
-    "link": "https://www.m2miami.com/events"
+    "ticketPrice": "$30",
+    "ticketsLink": "https://www.m2miami.com/events"
   },
   {
     "id": 46,
@@ -594,8 +594,8 @@
     "neighborhood": "Downtown",
     "address": "34 NE 11th St, Miami, FL 33132",
     "notes": "",
-    "ticketsLink": "https://www.clubspace.com/events",
-    "link": "https://www.clubspace.com/events"
+    "ticketPrice": "$50+",
+    "ticketsLink": "https://www.clubspace.com/events"
   },
   {
     "id": 47,
@@ -605,10 +605,10 @@
     "endDate": "12/7/2025",
     "schedule": "11AM - 7PM",
     "neighborhood": "Downtown",
-    "address": "The CONTEXT Art Miami Pavilion, One Herald Plaza, NE 14th Street & Biscayne Bay, Miami, FL 33132",
+    "address": "CONTEXT Art Miami Pavilion, One Herald Plaza, Miami, FL 33132",
     "notes": "",
-    "ticketsLink": "https://www.contextartmiami.com/",
-    "link": "https://www.contextartmiami.com/"
+    "ticketPrice": "$55",
+    "ticketsLink": "https://www.contextartmiami.com/"
   },
   {
     "id": 48,
@@ -618,10 +618,10 @@
     "endDate": "12/2/2025",
     "schedule": "11AM - 4PM",
     "neighborhood": "Downtown",
-    "address": "The CONTEXT Art Miami Pavilion, One Herald Plaza, NE 14th Street & Biscayne Bay, Miami, FL 33132",
+    "address": "CONTEXT Art Miami Pavilion, One Herald Plaza, Miami, FL 33132",
     "notes": "",
-    "ticketsLink": "https://www.contextartmiami.com/",
-    "link": "https://www.contextartmiami.com/"
+    "ticketPrice": "$100+",
+    "ticketsLink": "https://www.contextartmiami.com/"
   },
   {
     "id": 49,
@@ -631,10 +631,10 @@
     "endDate": "12/1/2025",
     "schedule": "7PM - 10PM",
     "neighborhood": "Miami Beach",
-    "address": "1205 Washington Avenue",
+    "address": "1205 Washington Avenue, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://www.eventbrite.com/e/weam-miami-art-week-opening-mark-kostabi-revisited-tickets-1936745119789?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl",
-    "link": "https://www.eventbrite.com/e/weam-miami-art-week-opening-mark-kostabi-revisited-tickets-1936745119789?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl"
+    "ticketPrice": "$25",
+    "ticketsLink": "https://www.eventbrite.com/e/weam-miami-art-week-opening-mark-kostabi-revisited-tickets-1936745119789?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl"
   },
   {
     "id": 50,
@@ -646,8 +646,8 @@
     "neighborhood": "Fort Lauderdale",
     "address": "",
     "notes": "",
-    "ticketsLink": "",
-    "link": ""
+    "ticketPrice": "N/A",
+    "ticketsLink": ""
   },
   {
     "id": 51,
@@ -659,8 +659,8 @@
     "neighborhood": "Wynwood",
     "address": "",
     "notes": "",
-    "ticketsLink": "",
-    "link": ""
+    "ticketPrice": "N/A",
+    "ticketsLink": ""
   },
   {
     "id": 52,
@@ -670,10 +670,10 @@
     "endDate": "12/7/2025",
     "schedule": "11AM - 7PM",
     "neighborhood": "Miami Beach",
-    "address": "Convention Center Drive & 19th Street, Miami Beach",
+    "address": "Convention Center Drive & 19th Street, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://www.designmiami.com",
-    "link": "https://www.designmiami.com"
+    "ticketPrice": "$40",
+    "ticketsLink": "https://www.designmiami.com"
   },
   {
     "id": 53,
@@ -683,10 +683,10 @@
     "endDate": "12/2/2025",
     "schedule": "1PM - 7PM",
     "neighborhood": "Miami Beach",
-    "address": "Convention Center Drive & 19th Street, Miami Beach",
+    "address": "Convention Center Drive & 19th Street, Miami Beach, FL, 33139",
     "notes": "",
-    "ticketsLink": "https://www.designmiami.com",
-    "link": "https://www.designmiami.com"
+    "ticketPrice": "$75+",
+    "ticketsLink": "https://www.designmiami.com"
   },
   {
     "id": 54,
@@ -696,10 +696,10 @@
     "endDate": "12/2/2025",
     "schedule": "11AM - 1PM",
     "neighborhood": "Miami Beach",
-    "address": "Convention Center Drive & 19th Street, Miami Beach",
+    "address": "Convention Center Drive & 19th Street, Miami Beach, FL, 33139",
     "notes": "",
-    "ticketsLink": "https://www.designmiami.com",
-    "link": "https://www.designmiami.com"
+    "ticketPrice": "$100+",
+    "ticketsLink": "https://www.designmiami.com"
   },
   {
     "id": 55,
@@ -709,10 +709,10 @@
     "endDate": "12/5/2025",
     "schedule": "",
     "neighborhood": "Downtown",
-    "address": "29 NE 11th St, Miami, 33132",
+    "address": "29 NE 11th St, Miami, FL 33132",
     "notes": "",
-    "ticketsLink": "https://speakeasygo.com/E11EVEN/E11EVEN-MIAMI-ART-WEEK-FT-DIPLO?eid=EVE-SRV1G7",
-    "link": "https://speakeasygo.com/E11EVEN/E11EVEN-MIAMI-ART-WEEK-FT-DIPLO?eid=EVE-SRV1G7"
+    "ticketPrice": "$50+",
+    "ticketsLink": "https://speakeasygo.com/E11EVEN/E11EVEN-MIAMI-ART-WEEK-FT-DIPLO?eid=EVE-SRV1G7"
   },
   {
     "id": 56,
@@ -722,10 +722,10 @@
     "endDate": "12/6/2025",
     "schedule": "",
     "neighborhood": "Miami Beach",
-    "address": "1819 79th Street Causeway North Bay Village, FL 33141",
+    "address": "1819 79th Street Causeway, North Bay Village, FL 33141",
     "notes": "",
-    "ticketsLink": "https://posh.vip/e/basel-edition-disclosure-dj-set-carlita-presented-by-palm-tree-club-miami",
-    "link": "https://posh.vip/e/basel-edition-disclosure-dj-set-carlita-presented-by-palm-tree-club-miami"
+    "ticketPrice": "$75+",
+    "ticketsLink": "https://posh.vip/e/basel-edition-disclosure-dj-set-carlita-presented-by-palm-tree-club-miami"
   },
   {
     "id": 57,
@@ -737,8 +737,8 @@
     "neighborhood": "",
     "address": "",
     "notes": "",
-    "ticketsLink": "https://shotgun.live/en/venues/churchills-pub",
-    "link": "https://shotgun.live/en/venues/churchills-pub"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://shotgun.live/en/venues/churchills-pub"
   },
   {
     "id": 58,
@@ -748,10 +748,10 @@
     "endDate": "12/6/2025",
     "schedule": "10PM - 5AM",
     "neighborhood": "Miami Beach",
-    "address": "423 16th St, Miami Beach, Florida 33139",
+    "address": "423 16th St, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://donotsitonthefurniture.com/#wpcf7-f245-o2",
-    "link": "https://donotsitonthefurniture.com/#wpcf7-f245-o2"
+    "ticketPrice": "$25",
+    "ticketsLink": "https://donotsitonthefurniture.com/#wpcf7-f245-o2"
   },
   {
     "id": 59,
@@ -761,10 +761,10 @@
     "endDate": "12/2/2025",
     "schedule": "12PM - 8PM",
     "neighborhood": "Miami Beach",
-    "address": "Cadillac Hotel & Beach Club, 3925 Collins Ave, Miami Beach, FL, 33140. Cadillac Hotel Website",
+    "address": "Cadillac Hotel & Beach Club, 3925 Collins Ave, Miami Beach, FL 33140",
     "notes": "",
-    "ticketsLink": "https://www.eventbrite.com/e/during-art-basel-miami-2025-top-events-and-exhibits-miami-art-week-tickets-1972283167045?aff=oddtdtcreator",
-    "link": "https://www.eventbrite.com/e/during-art-basel-miami-2025-top-events-and-exhibits-miami-art-week-tickets-1972283167045?aff=oddtdtcreator"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.eventbrite.com/e/during-art-basel-miami-2025-top-events-and-exhibits-miami-art-week-tickets-1972283167045?aff=oddtdtcreator"
   },
   {
     "id": 60,
@@ -774,10 +774,10 @@
     "endDate": "12/7/2025",
     "schedule": "",
     "neighborhood": "Downtown",
-    "address": "29 NE 11th St, Miami, 33132",
+    "address": "29 NE 11th St, Miami, FL 33132",
     "notes": "",
-    "ticketsLink": "https://www.11miami.com/events",
-    "link": "https://www.11miami.com/events"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.11miami.com/events"
   },
   {
     "id": 61,
@@ -787,10 +787,10 @@
     "endDate": "12/7/2025",
     "schedule": "6PM",
     "neighborhood": "Miami Beach",
-    "address": "The Setai - 2001 Collins Ave, Miami Beach, FL 33139",
+    "address": "The Setai, 2001 Collins Ave, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://www.edenart.com/eden-art-week-miami?utm_source=instagram&utm_medium=social&utm_campaign=miami+events&fbclid=pazxh0bgnhzw0cmteac3j0ywzhchbfawqmmju2mjgxmdqwntu4aagnuwh5q6iw9pypkdv5fbl8t_y3xzvihn-qmkq2wm77aslmzl3jpq2crmuloxy_aem_p9jssptcfryo-sbhs1e-za",
-    "link": "https://www.edenart.com/eden-art-week-miami?utm_source=instagram&utm_medium=social&utm_campaign=miami+events&fbclid=pazxh0bgnhzw0cmteac3j0ywzhchbfawqmmju2mjgxmdqwntu4aagnuwh5q6iw9pypkdv5fbl8t_y3xzvihn-qmkq2wm77aslmzl3jpq2crmuloxy_aem_p9jssptcfryo-sbhs1e-za"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.edenart.com/eden-art-week-miami?utm_source=instagram&utm_medium=social&utm_campaign=miami+events&fbclid=pazxh0bgnhzw0cmteac3j0ywzhchbfawqmmju2mjgxmdqwntu4aagnuwh5q6iw9pypkdv5fbl8t_y3xzvihn-qmkq2wm77aslmzl3jpq2crmuloxy_aem_p9jssptcfryo-sbhs1e-za"
   },
   {
     "id": 62,
@@ -802,8 +802,8 @@
     "neighborhood": "Hialeah",
     "address": "4800 NW 37th Ave, Miami, FL 33142",
     "notes": "",
-    "ticketsLink": "https://www.factorytown.com/events/",
-    "link": "https://www.factorytown.com/events/"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.factorytown.com/events/"
   },
   {
     "id": 63,
@@ -815,8 +815,8 @@
     "neighborhood": "Miami Beach",
     "address": "3201 Collins Ave, Miami Beach, FL 33140",
     "notes": "",
-    "ticketsLink": "https://www.faenaart.org/programs/miami-art-week-2025",
-    "link": "https://www.faenaart.org/programs/miami-art-week-2025"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.faenaart.org/programs/miami-art-week-2025"
   },
   {
     "id": 64,
@@ -828,8 +828,8 @@
     "neighborhood": "Miami Beach",
     "address": "3201 Collins Ave, Miami Beach, FL 33140",
     "notes": "",
-    "ticketsLink": "https://www.eventbrite.com/e/faena-art-sunset-music-series-tickets-1970802142260?aff=oddtdtcreator",
-    "link": "https://www.eventbrite.com/e/faena-art-sunset-music-series-tickets-1970802142260?aff=oddtdtcreator"
+    "ticketPrice": "$75",
+    "ticketsLink": "https://www.eventbrite.com/e/faena-art-sunset-music-series-tickets-1970802142260?aff=oddtdtcreator"
   },
   {
     "id": 65,
@@ -841,8 +841,8 @@
     "neighborhood": "",
     "address": "",
     "notes": "Invite Only",
-    "ticketsLink": "",
-    "link": ""
+    "ticketPrice": "N/A",
+    "ticketsLink": ""
   },
   {
     "id": 66,
@@ -852,10 +852,10 @@
     "endDate": "12/6/2025",
     "schedule": "8PM - 12AM",
     "neighborhood": "Brickell",
-    "address": "Novotel Rooftop (Brickell) 1500 SW 1st Ave, Miami, FL 33129",
+    "address": "Novotel Rooftop (Brickell), 1500 SW 1st Ave, Miami, FL 33129",
     "notes": "",
-    "ticketsLink": "https://posh.vip/e/flower-party-art-basel-vol-2",
-    "link": "https://posh.vip/e/flower-party-art-basel-vol-2"
+    "ticketPrice": "$100+",
+    "ticketsLink": "https://posh.vip/e/flower-party-art-basel-vol-2"
   },
   {
     "id": 67,
@@ -867,8 +867,8 @@
     "neighborhood": "Downtown",
     "address": "34 NE 11th St, Miami, FL 33132",
     "notes": "",
-    "ticketsLink": "https://dice.fm/event/rybmdw-francis-mercier-presents-deep-root-tribe-space-basel-2025-3rd-dec-club-space-miami-miami-tickets?pid=99db2a70&_branch_match_id=1263983458127435889&utm_medium=partners_api&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1fc1M7QwsUxJsrAwsLQvyEyxtQRyjBLNDdTqilLTUouKMvPS45OK8suLU4tsnTOK8nNTAUxT75RIAAAA",
-    "link": "https://dice.fm/event/rybmdw-francis-mercier-presents-deep-root-tribe-space-basel-2025-3rd-dec-club-space-miami-miami-tickets?pid=99db2a70&_branch_match_id=1263983458127435889&utm_medium=partners_api&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1fc1M7QwsUxJsrAwsLQvyEyxtQRyjBLNDdTqilLTUouKMvPS45OK8suLU4tsnTOK8nNTAUxT75RIAAAA"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://dice.fm/event/rybmdw-francis-mercier-presents-deep-root-tribe-space-basel-2025-3rd-dec-club-space-miami-miami-tickets?pid=99db2a70&_branch_match_id=1263983458127435889&utm_medium=partners_api&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1fc1M7QwsUxJsrAwsLQvyEyxtQRyjBLNDdTqilLTUouKMvPS45OK8suLU4tsnTOK8nNTAUxT75RIAAAA"
   },
   {
     "id": 68,
@@ -880,8 +880,8 @@
     "neighborhood": "",
     "address": "",
     "notes": "",
-    "ticketsLink": "https://shotgun.live/en/events/freakquencies-with-lydia-lunch-tim-dahl",
-    "link": "https://shotgun.live/en/events/freakquencies-with-lydia-lunch-tim-dahl"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://shotgun.live/en/events/freakquencies-with-lydia-lunch-tim-dahl"
   },
   {
     "id": 69,
@@ -891,10 +891,10 @@
     "endDate": "12/3/2025",
     "schedule": "9PM - 3AM",
     "neighborhood": "Wynwood",
-    "address": "Electric 23 (144 NW 23rd St, Miami, FL 33127)",
+    "address": "Electric 23, 144 NW 23rd St, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://posh.vip/e/frequency-basel-edition",
-    "link": "https://posh.vip/e/frequency-basel-edition"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://posh.vip/e/frequency-basel-edition"
   },
   {
     "id": 70,
@@ -906,8 +906,8 @@
     "neighborhood": "Wynwood",
     "address": "150 NW 21st St, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://posh.vip/e/long-feng-gordo-x-mahmut",
-    "link": "https://posh.vip/e/long-feng-gordo-x-mahmut"
+    "ticketPrice": "$50+",
+    "ticketsLink": "https://posh.vip/e/long-feng-gordo-x-mahmut"
   },
   {
     "id": 71,
@@ -919,8 +919,8 @@
     "neighborhood": "Wynwood",
     "address": "150 NW 21st St, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://posh.vip/e/phase-3-presents-green-velvet-b2b-joseph-capriati-4-hour-set",
-    "link": "https://posh.vip/e/phase-3-presents-green-velvet-b2b-joseph-capriati-4-hour-set"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://posh.vip/e/phase-3-presents-green-velvet-b2b-joseph-capriati-4-hour-set"
   },
   {
     "id": 72,
@@ -932,8 +932,8 @@
     "neighborhood": "Miami Beach",
     "address": "South Pointe Tavern, 40 South Pointe Dr #109, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://luma.com/xdo9cwks",
-    "link": "https://luma.com/xdo9cwks"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://luma.com/xdo9cwks"
   },
   {
     "id": 73,
@@ -943,10 +943,10 @@
     "endDate": "12/8/2025",
     "schedule": "4PM - 3AM",
     "neighborhood": "Wynwood",
-    "address": "The Wynwood Marketplace - 2250 NW 2nd Ave, Miami, FL 33127",
+    "address": "The Wynwood Marketplace, 2250 NW 2nd Ave, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://www.eventbrite.com/e/hive-2025-a-cocktail-art-and-culinary-village-in-wynwood-miami-art-week-tickets-1967707769909?aff=oddtdtcreator&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4CGNhbGxzaXRlAjE1AAGnMIgJKKo5Zj6kV80uGcLDsuskqSKS3ZOyl4kudmzcY-3pkmv_R5NLH_s0P1Q_aem_YiCo_GiG06aSwXv37JeUFw",
-    "link": "https://www.eventbrite.com/e/hive-2025-a-cocktail-art-and-culinary-village-in-wynwood-miami-art-week-tickets-1967707769909?aff=oddtdtcreator&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4CGNhbGxzaXRlAjE1AAGnMIgJKKo5Zj6kV80uGcLDsuskqSKS3ZOyl4kudmzcY-3pkmv_R5NLH_s0P1Q_aem_YiCo_GiG06aSwXv37JeUFw"
+    "ticketPrice": "$25",
+    "ticketsLink": "https://www.eventbrite.com/e/hive-2025-a-cocktail-art-and-culinary-village-in-wynwood-miami-art-week-tickets-1967707769909?aff=oddtdtcreator&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4CGNhbGxzaXRlAjE1AAGnMIgJKKo5Zj6kV80uGcLDsuskqSKS3ZOyl4kudmzcY-3pkmv_R5NLH_s0P1Q_aem_YiCo_GiG06aSwXv37JeUFw"
   },
   {
     "id": 74,
@@ -958,8 +958,8 @@
     "neighborhood": "Hialeah",
     "address": "4800 NW 37th Ave, Miami, FL 33142",
     "notes": "",
-    "ticketsLink": "https://dice.fm/event/oenkgm-factory-basel-2025-wednesday-pass-3rd-dec-factory-town-miami-tickets",
-    "link": "https://dice.fm/event/oenkgm-factory-basel-2025-wednesday-pass-3rd-dec-factory-town-miami-tickets"
+    "ticketPrice": "$50+",
+    "ticketsLink": "https://dice.fm/event/oenkgm-factory-basel-2025-wednesday-pass-3rd-dec-factory-town-miami-tickets"
   },
   {
     "id": 75,
@@ -969,10 +969,10 @@
     "endDate": "12/3/2025",
     "schedule": "5PM - 3AM",
     "neighborhood": "Little River",
-    "address": "300 Northeast 71st Street, Miami, Florida 33138",
+    "address": "300 NE 71st Street, Miami, FL 33138",
     "notes": "",
-    "ticketsLink": "https://dice.fm/event/2wxoa6-hugel-unkommon-art-week-4th-dec-little-river-studios-miami-tickets",
-    "link": "https://dice.fm/event/2wxoa6-hugel-unkommon-art-week-4th-dec-little-river-studios-miami-tickets"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://dice.fm/event/2wxoa6-hugel-unkommon-art-week-4th-dec-little-river-studios-miami-tickets"
   },
   {
     "id": 76,
@@ -982,10 +982,10 @@
     "endDate": "12/4/2025",
     "schedule": "3PM - 6PM",
     "neighborhood": "Miami Beach",
-    "address": "1108 Lincoln Road",
+    "address": "1108 Lincoln Road, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://partiful.com/e/zgposG39nUptfH57sXs3",
-    "link": "https://partiful.com/e/zgposG39nUptfH57sXs3"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://partiful.com/e/zgposG39nUptfH57sXs3"
   },
   {
     "id": 77,
@@ -995,10 +995,10 @@
     "endDate": "12/6/2025",
     "schedule": "2PM - 9PM",
     "neighborhood": "Miami Beach",
-    "address": "1108 Lincoln Road",
+    "address": "1108 Lincoln Road, Miami Beach, FL 33139",
     "notes": "No RSVP Required",
-    "ticketsLink": "",
-    "link": ""
+    "ticketPrice": "N/A",
+    "ticketsLink": ""
   },
   {
     "id": 78,
@@ -1008,10 +1008,10 @@
     "endDate": "12/4/2025",
     "schedule": "8:30PM - 2:30AM",
     "neighborhood": "Miami Beach",
-    "address": "M2 Miami Beach 1235 Washington Ave, Miami Beach, FL 33139",
+    "address": "M2 Miami Beach, 1235 Washington Ave, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://luma.com/ImmersiveNolcha",
-    "link": "https://luma.com/ImmersiveNolcha"
+    "ticketPrice": "$50+",
+    "ticketsLink": "https://luma.com/ImmersiveNolcha"
   },
   {
     "id": 79,
@@ -1021,10 +1021,10 @@
     "endDate": "12/3/2025",
     "schedule": "9AM - 7PM",
     "neighborhood": "Miami Beach",
-    "address": "Suites of Dorchester, 1850 Collins Ave., Miami Beach, FL 33139",
+    "address": "Suites of Dorchester, 1850 Collins Ave, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://www.inkartfair.com/",
-    "link": "https://www.inkartfair.com/"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.inkartfair.com/"
   },
   {
     "id": 80,
@@ -1034,10 +1034,10 @@
     "endDate": "12/4/2025",
     "schedule": "10AM - 9PM",
     "neighborhood": "Miami Beach",
-    "address": "Suites of Dorchester, 1850 Collins Ave., Miami Beach, FL 33139",
+    "address": "Suites of Dorchester, 1850 Collins Ave, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://www.inkartfair.com/",
-    "link": "https://www.inkartfair.com/"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.inkartfair.com/"
   },
   {
     "id": 81,
@@ -1047,10 +1047,10 @@
     "endDate": "12/6/2025",
     "schedule": "10AM - 7PM",
     "neighborhood": "Miami Beach",
-    "address": "Suites of Dorchester, 1850 Collins Ave., Miami Beach, FL 33139",
+    "address": "Suites of Dorchester, 1850 Collins Ave, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://www.inkartfair.com/",
-    "link": "https://www.inkartfair.com/"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.inkartfair.com/"
   },
   {
     "id": 82,
@@ -1060,10 +1060,10 @@
     "endDate": "12/7/2025",
     "schedule": "10AM - 3PM",
     "neighborhood": "Miami Beach",
-    "address": "Suites of Dorchester, 1850 Collins Ave., Miami Beach, FL 33139",
+    "address": "Suites of Dorchester, 1850 Collins Ave, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://www.inkartfair.com/",
-    "link": "https://www.inkartfair.com/"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.inkartfair.com/"
   },
   {
     "id": 83,
@@ -1073,10 +1073,10 @@
     "endDate": "12/5/2025",
     "schedule": "",
     "neighborhood": "Miami Beach",
-    "address": "1819 79th Street Causeway North Bay Village, FL 33141",
+    "address": "1819 79th Street Causeway, North Bay Village, FL 33141",
     "notes": "",
-    "ticketsLink": "https://posh.vip/e/basel-edition-john-summit-presented-by-palm-tree-club-miami",
-    "link": "https://posh.vip/e/basel-edition-john-summit-presented-by-palm-tree-club-miami"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://posh.vip/e/basel-edition-john-summit-presented-by-palm-tree-club-miami"
   },
   {
     "id": 84,
@@ -1086,10 +1086,10 @@
     "endDate": "12/6/2025",
     "schedule": "5PM - 11PM",
     "neighborhood": "Miami Beach",
-    "address": "1111 Parrot Jungle Trail, Miami, Florida 33132",
+    "address": "Parrot Jungle Trail, 1111 Parrot Jungle Trail, Miami, FL 33132",
     "notes": "",
-    "ticketsLink": "https://dice.fm/partner/tickets/event/q28d79-solene-joia-beach-2nomads-terranova-more-6th-dec-joia-beach-miami-tickets?dice_id=7604957&dice_channel=web&dice_tags=organic&dice_campaign=DICE&dice_feature=mio_marketing&mc_cid=350fff871e&mc_eid=3271efb354&_branch_match_id=1263983458127435889&utm_source=web&utm_campaign=DICE&utm_medium=mio_marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1Y9IS7G0NDZPskxJTLRPzk9JtfX0C%2FZ0cQ1ydHZ2DQ5Wy02OT85MsTU2NUhLS7MwN0wFiaSCRIyAnLQkY1MTtbqi1LTUoqLMvPT4pKL88uLUIlvnjKL83FQABFT%2B2HIAAAA%3D",
-    "link": "https://dice.fm/partner/tickets/event/q28d79-solene-joia-beach-2nomads-terranova-more-6th-dec-joia-beach-miami-tickets?dice_id=7604957&dice_channel=web&dice_tags=organic&dice_campaign=DICE&dice_feature=mio_marketing&mc_cid=350fff871e&mc_eid=3271efb354&_branch_match_id=1263983458127435889&utm_source=web&utm_campaign=DICE&utm_medium=mio_marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1Y9IS7G0NDZPskxJTLRPzk9JtfX0C%2FZ0cQ1ydHZ2DQ5Wy02OT85MsTU2NUhLS7MwN0wFiaSCRIyAnLQkY1MTtbqi1LTUoqLMvPT4pKL88uLUIlvnjKL83FQABFT%2B2HIAAAA%3D"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://dice.fm/partner/tickets/event/q28d79-solene-joia-beach-2nomads-terranova-more-6th-dec-joia-beach-miami-tickets?dice_id=7604957&dice_channel=web&dice_tags=organic&dice_campaign=DICE&dice_feature=mio_marketing&mc_cid=350fff871e&mc_eid=3271efb354&_branch_match_id=1263983458127435889&utm_source=web&utm_campaign=DICE&utm_medium=mio_marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1Y9IS7G0NDZPskxJTLRPzk9JtfX0C%2FZ0cQ1ydHZ2DQ5Wy02OT85MsTU2NUhLS7MwN0wFiaSCRIyAnLQkY1MTtbqi1LTUoqLMvPT4pKL88uLUIlvnjKL83FQABFT%2B2HIAAAA%3D"
   },
   {
     "id": 85,
@@ -1099,10 +1099,10 @@
     "endDate": "12/6/2025",
     "schedule": "8PM - 3AM",
     "neighborhood": "Little River",
-    "address": "300 Northeast 71st Street, Miami, Florida 33138",
+    "address": "300 Northeast 71st Street, Miami, FL 33138",
     "notes": "",
-    "ticketsLink": "https://dice.fm/event/avgexq-unkommon-art-week-3-day-pass-thurs-fri-sat-4th-dec-little-river-studios-miami-tickets",
-    "link": "https://dice.fm/event/avgexq-unkommon-art-week-3-day-pass-thurs-fri-sat-4th-dec-little-river-studios-miami-tickets"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://dice.fm/event/avgexq-unkommon-art-week-3-day-pass-thurs-fri-sat-4th-dec-little-river-studios-miami-tickets"
   },
   {
     "id": 86,
@@ -1112,10 +1112,10 @@
     "endDate": "12/7/2025",
     "schedule": "11:30PM",
     "neighborhood": "Miami Beach",
-    "address": "Fontainebleau Miami Beach - 4441 Collins Avenue, Miami Beach, FL 33140",
+    "address": "Fontainebleau Miami Beach, 4441 Collins Avenue, Miami Beach, FL 33140",
     "notes": "",
-    "ticketsLink": "https://www.livnightclub.com/miami/special-events/liv-miami-basel-edition-2025/",
-    "link": "https://www.livnightclub.com/miami/special-events/liv-miami-basel-edition-2025/"
+    "ticketPrice": "$100+",
+    "ticketsLink": "https://www.livnightclub.com/miami/special-events/liv-miami-basel-edition-2025/"
   },
   {
     "id": 87,
@@ -1125,10 +1125,10 @@
     "endDate": "12/4/2025",
     "schedule": "8PM - 4AM",
     "neighborhood": "Wynwood",
-    "address": "150 NW 21st Miami,FL 33127",
+    "address": "150 NW 21st St, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://posh.vip/e/tehmplo",
-    "link": "https://posh.vip/e/tehmplo"
+    "ticketPrice": "$50+",
+    "ticketsLink": "https://posh.vip/e/tehmplo"
   },
   {
     "id": 88,
@@ -1138,10 +1138,10 @@
     "endDate": "12/3/2025",
     "schedule": "8PM - 4AM",
     "neighborhood": "Wynwood",
-    "address": "150 NW 21st Miami,FL 33127",
+    "address": "150 NW 21st St, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://posh.vip/e/long-feng-gordo-x-mahmut",
-    "link": "https://posh.vip/e/long-feng-gordo-x-mahmut"
+    "ticketPrice": "$30+",
+    "ticketsLink": "https://posh.vip/e/long-feng-gordo-x-mahmut"
   },
   {
     "id": 89,
@@ -1151,10 +1151,10 @@
     "endDate": "12/6/2025",
     "schedule": "",
     "neighborhood": "Downtown",
-    "address": "29 NE 11th St, Miami, 33132",
+    "address": "29 NE 11th St, Miami, FL 33132",
     "notes": "",
-    "ticketsLink": "https://speakeasygo.com/E11EVEN/E11EVEN-MIAMI-ART-WEEK-FT-MARSHMELLO?eid=EVE-1BH8WS",
-    "link": "https://speakeasygo.com/E11EVEN/E11EVEN-MIAMI-ART-WEEK-FT-MARSHMELLO?eid=EVE-1BH8WS"
+    "ticketPrice": "$50+",
+    "ticketsLink": "https://speakeasygo.com/E11EVEN/E11EVEN-MIAMI-ART-WEEK-FT-MARSHMELLO?eid=EVE-1BH8WS"
   },
   {
     "id": 90,
@@ -1166,8 +1166,8 @@
     "neighborhood": "",
     "address": "",
     "notes": "",
-    "ticketsLink": "",
-    "link": ""
+    "ticketPrice": "N/A",
+    "ticketsLink": ""
   },
   {
     "id": 91,
@@ -1179,8 +1179,8 @@
     "neighborhood": "Miami Beach",
     "address": "",
     "notes": "",
-    "ticketsLink": "",
-    "link": ""
+    "ticketPrice": "N/A",
+    "ticketsLink": ""
   },
   {
     "id": 92,
@@ -1190,10 +1190,10 @@
     "endDate": "12/7/2025",
     "schedule": "12PM - 9PM",
     "neighborhood": "Wynwood",
-    "address": "Miami Art Week Wynwood Gallery - 2300 N Miami Ave, Miami, FL 33127, USA",
+    "address": "Miami Art Week Wynwood Gallery, 2300 N Miami Ave, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://www.squadup.com/hosts/8433741/events",
-    "link": "https://www.squadup.com/hosts/8433741/events"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.squadup.com/hosts/8433741/events"
   },
   {
     "id": 93,
@@ -1203,10 +1203,10 @@
     "endDate": "12/7/2025",
     "schedule": "",
     "neighborhood": "Miami Beach",
-    "address": "7275 Collins Avenue, Miami Beach FL. 33141",
+    "address": "7275 Collins Avenue, Miami Beach, FL 33141",
     "notes": "",
-    "ticketsLink": "https://miamibeachbandshell.com/events/",
-    "link": "https://miamibeachbandshell.com/events/"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://miamibeachbandshell.com/events/"
   },
   {
     "id": 94,
@@ -1218,8 +1218,8 @@
     "neighborhood": "Miami Beach",
     "address": "2901 Collins Ave, Miami Beach, FL 33140",
     "notes": "Invite Only",
-    "ticketsLink": "https://www.instagram.com/reel/DQzal-Pkd0O/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    "link": "https://www.instagram.com/reel/DQzal-Pkd0O/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.instagram.com/reel/DQzal-Pkd0O/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     "id": 95,
@@ -1231,8 +1231,8 @@
     "neighborhood": "Design District",
     "address": "40 NE 40th St, Miami, FL 33137",
     "notes": "",
-    "ticketsLink": "https://www.miamidesigndistrict.com/event/3261/miami-concours-cars--coffee-art-week-edition/",
-    "link": "https://www.miamidesigndistrict.com/event/3261/miami-concours-cars--coffee-art-week-edition/"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.miamidesigndistrict.com/event/3261/miami-concours-cars--coffee-art-week-edition/"
   },
   {
     "id": 96,
@@ -1244,8 +1244,8 @@
     "neighborhood": "",
     "address": "",
     "notes": "",
-    "ticketsLink": "https://www.miamidesigndistrict.com/calendar/",
-    "link": "https://www.miamidesigndistrict.com/calendar/"
+    "ticketPrice": "Free",
+    "ticketsLink": "https://www.miamidesigndistrict.com/calendar/"
   },
   {
     "id": 97,
@@ -1257,8 +1257,8 @@
     "neighborhood": "Miami Beach",
     "address": "Gates Hotel Rooftop, 2360 Collins Ave, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://x.com/paperbuddha/status/1991595063919669625?s=46",
-    "link": "https://x.com/paperbuddha/status/1991595063919669625?s=46"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://x.com/paperbuddha/status/1991595063919669625?s=46"
   },
   {
     "id": 98,
@@ -1270,8 +1270,8 @@
     "neighborhood": "Miami Beach",
     "address": "1636 Meridian Ave, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://www.instagram.com/p/DQZ3QXbjvrw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    "link": "https://www.instagram.com/p/DQZ3QXbjvrw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.instagram.com/p/DQZ3QXbjvrw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     "id": 99,
@@ -1281,10 +1281,10 @@
     "endDate": "12/4/2025",
     "schedule": "6PM - 1AM",
     "neighborhood": "Miami Beach",
-    "address": "Sagamore Hotel South Beach",
+    "address": "Sagamore Hotel South Beach, 1671 Collins Ave, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://luma.com/mooon.party",
-    "link": "https://luma.com/mooon.party"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://luma.com/mooon.party"
   },
   {
     "id": 100,
@@ -1294,10 +1294,10 @@
     "endDate": "12/6/2025",
     "schedule": "11AM - 7PM",
     "neighborhood": "Downtown",
-    "address": "NADA Miami - 1400 N Miami Ave, Miami, FL 33136",
+    "address": "NADA Miami, 1400 N Miami Ave, Miami, FL 33136",
     "notes": "",
-    "ticketsLink": "https://www.newartdealers.org/fairs/nada-miami-2025/introduction",
-    "link": "https://www.newartdealers.org/fairs/nada-miami-2025/introduction"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.newartdealers.org/fairs/nada-miami-2025/introduction"
   },
   {
     "id": 101,
@@ -1309,8 +1309,8 @@
     "neighborhood": "Wynwood",
     "address": "Ice Palace Studios, 1400 North Miami Avenue, Miami, FL 33136",
     "notes": "",
-    "ticketsLink": "https://www.newartdealers.org/fairs/nada-miami-2025/introduction",
-    "link": "https://www.newartdealers.org/fairs/nada-miami-2025/introduction"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.newartdealers.org/fairs/nada-miami-2025/introduction"
   },
   {
     "id": 102,
@@ -1322,8 +1322,8 @@
     "neighborhood": "Wynwood",
     "address": "Ice Palace Studios, 1400 North Miami Avenue, Miami, FL 33136",
     "notes": "",
-    "ticketsLink": "https://www.newartdealers.org/fairs/nada-miami-2025/introduction",
-    "link": "https://www.newartdealers.org/fairs/nada-miami-2025/introduction"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.newartdealers.org/fairs/nada-miami-2025/introduction"
   },
   {
     "id": 103,
@@ -1335,8 +1335,8 @@
     "neighborhood": "Wynwood",
     "address": "Ice Palace Studios, 1400 North Miami Avenue, Miami, FL 33136",
     "notes": "",
-    "ticketsLink": "https://www.newartdealers.org/fairs/nada-miami-2025/introduction",
-    "link": "https://www.newartdealers.org/fairs/nada-miami-2025/introduction"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.newartdealers.org/fairs/nada-miami-2025/introduction"
   },
   {
     "id": 104,
@@ -1346,10 +1346,10 @@
     "endDate": "12/5/2025",
     "schedule": "12PM - 12AM",
     "neighborhood": "Miami Beach",
-    "address": "Sagamore Hotel South Beach",
+    "address": "Sagamore Hotel South Beach, 1671 Collins Ave, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://luma.com/vwk1t0lt",
-    "link": "https://luma.com/vwk1t0lt"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://luma.com/vwk1t0lt"
   },
   {
     "id": 105,
@@ -1361,8 +1361,8 @@
     "neighborhood": "Miami Beach",
     "address": "",
     "notes": "",
-    "ticketsLink": "https://www.miamiandbeaches.com/event/no-vacancy-miami-beach/21757",
-    "link": "https://www.miamiandbeaches.com/event/no-vacancy-miami-beach/21757"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.miamiandbeaches.com/event/no-vacancy-miami-beach/21757"
   },
   {
     "id": 106,
@@ -1374,8 +1374,8 @@
     "neighborhood": "",
     "address": "",
     "notes": "Invite Only",
-    "ticketsLink": "",
-    "link": ""
+    "ticketPrice": "N/A",
+    "ticketsLink": ""
   },
   {
     "id": 107,
@@ -1385,10 +1385,10 @@
     "endDate": "12/4/2025",
     "schedule": "3PM - 9PM",
     "neighborhood": "Miami Beach",
-    "address": "The Gates Hotel South Beach 2360 Collins Ave, Miami Beach, FL 33139, USA",
+    "address": "The Gates Hotel South Beach, 2360 Collins Ave, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://luma.com/miamiartweek",
-    "link": "https://luma.com/miamiartweek"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://luma.com/miamiartweek"
   },
   {
     "id": 108,
@@ -1398,10 +1398,10 @@
     "endDate": "12/4/2025",
     "schedule": "6PM - 9PM",
     "neighborhood": "Miami Beach",
-    "address": "Cadillac Hotel & Beach Club, 3925 Collins Ave, Miami Beach, FL, 33140. Cadillac Hotel Website",
+    "address": "Cadillac Hotel & Beach Club, 3925 Collins Ave, Miami Beach, FL 33140",
     "notes": "",
-    "ticketsLink": "https://posh.vip/e/artist-hira-majeed-opening-reception-night",
-    "link": "https://posh.vip/e/artist-hira-majeed-opening-reception-night"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://posh.vip/e/artist-hira-majeed-opening-reception-night"
   },
   {
     "id": 109,
@@ -1411,10 +1411,10 @@
     "endDate": "12/7/2025",
     "schedule": "3PM - 10PM",
     "neighborhood": "Miami Beach",
-    "address": "1819 79th Street Causeway North Bay Village, FL 33141",
+    "address": "1819 79th Street Causeway, North Bay Village, FL 33141",
     "notes": "",
-    "ticketsLink": "https://www.palmtreeclubmiami.com/live-events",
-    "link": "https://www.palmtreeclubmiami.com/live-events"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.palmtreeclubmiami.com/live-events"
   },
   {
     "id": 110,
@@ -1424,10 +1424,10 @@
     "endDate": "12/7/2025",
     "schedule": "5PM - 9PM",
     "neighborhood": "Wynwood",
-    "address": "The Miami Art Week Gallery, 2300 N. Miami Avenue, Miami FL 33127",
+    "address": "The Miami Art Week Gallery, 2300 N Miami Ave, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://www.miamiartweek.org",
-    "link": "https://www.miamiartweek.org"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.miamiartweek.org"
   },
   {
     "id": 111,
@@ -1437,10 +1437,10 @@
     "endDate": "12/7/2025",
     "schedule": "12PM - 8PM",
     "neighborhood": "Coconut Grove",
-    "address": "The Hangar - 3385 Pan American Drive, Coconut Grove, Fl",
+    "address": "The Hangar, 3385 Pan American Drive, Coconut Grove, FL 33133",
     "notes": "",
-    "ticketsLink": "https://www.pinta.art/Miami/Inicio",
-    "link": "https://www.pinta.art/Miami/Inicio"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.pinta.art/Miami/Inicio"
   },
   {
     "id": 112,
@@ -1452,8 +1452,8 @@
     "neighborhood": "Miami Beach",
     "address": "3201 Collins Ave, Miami Beach, FL 33140",
     "notes": "",
-    "ticketsLink": "https://account.chase.com/sapphire/reserve/reservedbysapphire",
-    "link": "https://account.chase.com/sapphire/reserve/reservedbysapphire"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://account.chase.com/sapphire/reserve/reservedbysapphire"
   },
   {
     "id": 113,
@@ -1463,10 +1463,10 @@
     "endDate": "12/5/2025",
     "schedule": "12PM - 5PM",
     "neighborhood": "Miami Beach",
-    "address": "Dec 3-4 TBA / Dec 5 Soho Pool House",
+    "address": "Soho Pool House, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://www.prizm.art/",
-    "link": "https://www.prizm.art/"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.prizm.art/"
   },
   {
     "id": 114,
@@ -1476,10 +1476,10 @@
     "endDate": "12/4/2025",
     "schedule": "11AM - 8PM",
     "neighborhood": "Design District",
-    "address": "Pucci - 140 NE 39th St Suite 102, Miami FL, 33137",
+    "address": "Pucci, 140 NE 39th St Suite 102, Miami, FL 33137",
     "notes": "",
-    "ticketsLink": "https://www.miamidesigndistrict.com/event/3264/pucci-coffee-lab/",
-    "link": "https://www.miamidesigndistrict.com/event/3264/pucci-coffee-lab/"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.miamidesigndistrict.com/event/3264/pucci-coffee-lab/"
   },
   {
     "id": 115,
@@ -1489,10 +1489,10 @@
     "endDate": "12/6/2025",
     "schedule": "8PM - 3AM",
     "neighborhood": "Little River",
-    "address": "300 Northeast 71st Street, Miami, Florida 33138",
+    "address": "300 NE 71st Street, Miami, FL 33138",
     "notes": "",
-    "ticketsLink": "https://dice.fm/event/bbygwg-rampa-unkommon-art-week-6th-dec-little-river-studios-miami-tickets",
-    "link": "https://dice.fm/event/bbygwg-rampa-unkommon-art-week-6th-dec-little-river-studios-miami-tickets"
+    "ticketPrice": "$50+",
+    "ticketsLink": "https://dice.fm/event/bbygwg-rampa-unkommon-art-week-6th-dec-little-river-studios-miami-tickets"
   },
   {
     "id": 116,
@@ -1502,10 +1502,10 @@
     "endDate": "12/7/2025",
     "schedule": "3PM",
     "neighborhood": "Miami Beach",
-    "address": "1819 79th Street Causeway North Bay Village, FL 33141",
+    "address": "1819 79th Street Causeway, North Bay Village, FL 33141",
     "notes": "",
-    "ticketsLink": "https://posh.vip/e/basel-edition-rampa-presented-by-palm-tree-club-miami",
-    "link": "https://posh.vip/e/basel-edition-rampa-presented-by-palm-tree-club-miami"
+    "ticketPrice": "$50+",
+    "ticketsLink": "https://posh.vip/e/basel-edition-rampa-presented-by-palm-tree-club-miami"
   },
   {
     "id": 117,
@@ -1515,10 +1515,10 @@
     "endDate": "12/7/2025",
     "schedule": "12PM - 8PM",
     "neighborhood": "Wynwood",
-    "address": "Mana Wynwood - 2217 NW 5th Avenue, Miami, FL 33127",
+    "address": "Mana Wynwood, 2217 NW 5th Avenue, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://redwoodartgroup.com/red-dot-miami/",
-    "link": "https://redwoodartgroup.com/red-dot-miami/"
+    "ticketPrice": "$25+",
+    "ticketsLink": "https://redwoodartgroup.com/red-dot-miami/"
   },
   {
     "id": 118,
@@ -1528,10 +1528,10 @@
     "endDate": "12/7/2025",
     "schedule": "12PM - 8PM",
     "neighborhood": "Wynwood",
-    "address": "Mana Wynwood, 2217 NW 5th Avenue, NW 22nd St, Miami, FL 33127",
+    "address": "Mana Wynwood, 2217 NW 5th Avenue, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://redwoodartgroup.com/red-dot-miami/",
-    "link": "https://redwoodartgroup.com/red-dot-miami/"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://redwoodartgroup.com/red-dot-miami/"
   },
   {
     "id": 119,
@@ -1541,10 +1541,10 @@
     "endDate": "12/3/2025",
     "schedule": "6PM - 9PM",
     "neighborhood": "Wynwood",
-    "address": "Mana Wynwood, 2217 NW 5th Avenue, NW 22nd St, Miami, FL 33127",
+    "address": "Mana Wynwood, 2217 NW 5th Avenue, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://redwoodartgroup.com/red-dot-miami/",
-    "link": "https://redwoodartgroup.com/red-dot-miami/"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://redwoodartgroup.com/red-dot-miami/"
   },
   {
     "id": 120,
@@ -1554,10 +1554,10 @@
     "endDate": "12/3/2025",
     "schedule": "5PM - 6PM",
     "neighborhood": "Wynwood",
-    "address": "Mana Wynwood, 2217 NW 5th Avenue, NW 22nd St, Miami, FL 33127",
+    "address": "Mana Wynwood, 2217 NW 5th Avenue, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://redwoodartgroup.com/red-dot-miami/",
-    "link": "https://redwoodartgroup.com/red-dot-miami/"
+    "ticketPrice": "$100+",
+    "ticketsLink": "https://redwoodartgroup.com/red-dot-miami/"
   },
   {
     "id": 121,
@@ -1567,10 +1567,10 @@
     "endDate": "12/4/2025",
     "schedule": "6PM - 10PM",
     "neighborhood": "Downtown",
-    "address": "Seafair Mega Yacht, South Dock, Chopin Plaza, Miami, FL 33131, United States",
+    "address": "Seafair Mega Yacht, South Dock, Chopin Plaza, Miami, FL 33131",
     "notes": "",
-    "ticketsLink": "https://luma.com/7pk5812d",
-    "link": "https://luma.com/7pk5812d"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://luma.com/7pk5812d"
   },
   {
     "id": 122,
@@ -1582,8 +1582,8 @@
     "neighborhood": "Wynwood",
     "address": "Hiyakawa Miami, 2700 N Miami Ave #5, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://luma.com/12yxypd4",
-    "link": "https://luma.com/12yxypd4"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://luma.com/12yxypd4"
   },
   {
     "id": 123,
@@ -1593,10 +1593,10 @@
     "endDate": "12/4/2025",
     "schedule": "4PM - 10PM",
     "neighborhood": "Miami Beach",
-    "address": "Collins Avenue (Satellite Hotel)",
+    "address": "Satellite Hotel, Collins Avenue, Miami Beach, FL",
     "notes": "",
-    "ticketsLink": "https://www.satellite-show.com",
-    "link": "https://www.satellite-show.com"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.satellite-show.com"
   },
   {
     "id": 124,
@@ -1606,10 +1606,10 @@
     "endDate": "12/6/2025",
     "schedule": "12PM - 10PM",
     "neighborhood": "Miami Beach",
-    "address": "Collins Avenue (Satellite Hotel)",
+    "address": "Satellite Hotel, Collins Avenue, Miami Beach, FL",
     "notes": "",
-    "ticketsLink": "https://www.satellite-show.com",
-    "link": "https://www.satellite-show.com"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.satellite-show.com"
   },
   {
     "id": 125,
@@ -1619,10 +1619,10 @@
     "endDate": "12/7/2025",
     "schedule": "12PM - 6PM",
     "neighborhood": "Miami Beach",
-    "address": "Collins Avenue (Satellite Hotel)",
+    "address": "Collins Avenue, Miami Beach, FL",
     "notes": "",
-    "ticketsLink": "https://www.satellite-show.com",
-    "link": "https://www.satellite-show.com"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.satellite-show.com"
   },
   {
     "id": 126,
@@ -1632,10 +1632,10 @@
     "endDate": "12/4/2025",
     "schedule": "10AM - 2PM",
     "neighborhood": "Miami Beach",
-    "address": "SCOPE Art Show - 801 Ocean Dr, Miami Beach, FL 33139",
+    "address": "SCOPE Art Show, 801 Ocean Dr, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://scope-art.com/program",
-    "link": "https://scope-art.com/program"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://scope-art.com/program"
   },
   {
     "id": 127,
@@ -1645,10 +1645,10 @@
     "endDate": "12/7/2025",
     "schedule": "11AM - 8PM",
     "neighborhood": "Miami Beach",
-    "address": "801 Ocean Drive, Miami Beach, FL 33139 (between 8th & 10th Street)",
+    "address": "801 Ocean Drive, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://scope-art.com/program",
-    "link": "https://scope-art.com/program"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://scope-art.com/program"
   },
   {
     "id": 128,
@@ -1658,10 +1658,10 @@
     "endDate": "12/2/2025",
     "schedule": "12PM - 4PM",
     "neighborhood": "Miami Beach",
-    "address": "801 Ocean Drive, Miami Beach, FL 33139 (between 8th & 10th Street)",
+    "address": "801 Ocean Drive, Miami Beach, FL 33139",
     "notes": "Invite Only",
-    "ticketsLink": "https://scope-art.com/program",
-    "link": "https://scope-art.com/program"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://scope-art.com/program"
   },
   {
     "id": 129,
@@ -1671,10 +1671,10 @@
     "endDate": "12/2/2025",
     "schedule": "4PM - 8PM",
     "neighborhood": "Miami Beach",
-    "address": "801 Ocean Drive, Miami Beach, FL 33139 (between 8th & 10th Street)",
+    "address": "801 Ocean Drive, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://scope-art.com/program",
-    "link": "https://scope-art.com/program"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://scope-art.com/program"
   },
   {
     "id": 130,
@@ -1684,10 +1684,10 @@
     "endDate": "12/3/2025",
     "schedule": "8PM",
     "neighborhood": "Miami Beach",
-    "address": "SCOPE Art Show - 801 Ocean Dr, Miami Beach, FL 33139",
+    "address": "SCOPE Art Show, 801 Ocean Dr, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://scope-art.com/program",
-    "link": "https://scope-art.com/program"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://scope-art.com/program"
   },
   {
     "id": 131,
@@ -1697,10 +1697,10 @@
     "endDate": "12/4/2025",
     "schedule": "12PM - 5PM",
     "neighborhood": "Miami Beach",
-    "address": "Sagamore Hotel South Beach",
+    "address": "Sagamore Hotel South Beach, 1671 Collins Ave, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://luma.com/zmofrsw3",
-    "link": "https://luma.com/zmofrsw3"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://luma.com/zmofrsw3"
   },
   {
     "id": 132,
@@ -1712,8 +1712,8 @@
     "neighborhood": "",
     "address": "",
     "notes": "Invite Only",
-    "ticketsLink": "",
-    "link": ""
+    "ticketPrice": "N/A",
+    "ticketsLink": ""
   },
   {
     "id": 133,
@@ -1723,10 +1723,10 @@
     "endDate": "12/5/2025",
     "schedule": "12PM - 7PM",
     "neighborhood": "Design District",
-    "address": "Andrew - 54 NE 40th St, Miami, Fl 33137",
+    "address": "Andrew, 54 NE 40th St, Miami, FL 33137",
     "notes": "",
-    "ticketsLink": "https://www.miamidesigndistrict.com/event/3249/slawn-x--andrew-miami/",
-    "link": "https://www.miamidesigndistrict.com/event/3249/slawn-x--andrew-miami/"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.miamidesigndistrict.com/event/3249/slawn-x--andrew-miami/"
   },
   {
     "id": 134,
@@ -1738,8 +1738,8 @@
     "neighborhood": "Miami Beach",
     "address": "4385 Collins Ave, Miami Beach, FL 33140",
     "notes": "Members & Member Guests Only",
-    "ticketsLink": "",
-    "link": ""
+    "ticketPrice": "N/A",
+    "ticketsLink": ""
   },
   {
     "id": 135,
@@ -1751,8 +1751,8 @@
     "neighborhood": "Downtown",
     "address": "34 NE 11th St, Miami, FL 33132",
     "notes": "",
-    "ticketsLink": "https://dice.fm/event/q2a5la-solomun-space-basel-2025-6th-dec-club-space-miami-miami-tickets?pid=99db2a70&_branch_match_id=1263983458127435889&utm_medium=partners_api&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1U8ySzZMTktNMbZISrUvyEyxtbRMSTJKNDdQqytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAO1GqNkgAAAA%3D",
-    "link": "https://dice.fm/event/q2a5la-solomun-space-basel-2025-6th-dec-club-space-miami-miami-tickets?pid=99db2a70&_branch_match_id=1263983458127435889&utm_medium=partners_api&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1U8ySzZMTktNMbZISrUvyEyxtbRMSTJKNDdQqytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAO1GqNkgAAAA%3D"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://dice.fm/event/q2a5la-solomun-space-basel-2025-6th-dec-club-space-miami-miami-tickets?pid=99db2a70&_branch_match_id=1263983458127435889&utm_medium=partners_api&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1U8ySzZMTktNMbZISrUvyEyxtbRMSTJKNDdQqytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAO1GqNkgAAAA%3D"
   },
   {
     "id": 136,
@@ -1764,8 +1764,8 @@
     "neighborhood": "Hialeah",
     "address": "4800 NW 37th Ave, Miami, FL 33142",
     "notes": "",
-    "ticketsLink": "https://dice.fm/event/mx523l-factory-basel-2025-friday-pass-5th-dec-factory-town-miami-tickets",
-    "link": "https://dice.fm/event/mx523l-factory-basel-2025-friday-pass-5th-dec-factory-town-miami-tickets"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://dice.fm/event/mx523l-factory-basel-2025-friday-pass-5th-dec-factory-town-miami-tickets"
   },
   {
     "id": 137,
@@ -1775,10 +1775,10 @@
     "endDate": "12/6/2025",
     "schedule": "12PM - 8PM",
     "neighborhood": "Wynwood",
-    "address": "Mana Wynwood, 2217 NW 5th Avenue, NW 22nd St, Miami, FL 33127",
+    "address": "Mana Wynwood, 2217 NW 5th Avenue, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://redwoodartgroup.com/spectrum-miami",
-    "link": "https://redwoodartgroup.com/spectrum-miami"
+    "ticketPrice": "$30",
+    "ticketsLink": "https://redwoodartgroup.com/spectrum-miami"
   },
   {
     "id": 138,
@@ -1788,10 +1788,10 @@
     "endDate": "12/7/2025",
     "schedule": "12PM - 6PM",
     "neighborhood": "Wynwood",
-    "address": "Mana Wynwood, 2217 NW 5th Avenue, NW 22nd St, Miami, FL 33127",
+    "address": "Mana Wynwood, 2217 NW 5th Avenue, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://redwoodartgroup.com/spectrum-miami",
-    "link": "https://redwoodartgroup.com/spectrum-miami"
+    "ticketPrice": "$30",
+    "ticketsLink": "https://redwoodartgroup.com/spectrum-miami"
   },
   {
     "id": 139,
@@ -1801,10 +1801,10 @@
     "endDate": "12/3/2025",
     "schedule": "6PM - 9PM",
     "neighborhood": "Wynwood",
-    "address": "Mana Wynwood, 2217 NW 5th Avenue, NW 22nd St, Miami, FL 33127",
+    "address": "Mana Wynwood, 2217 NW 5th Avenue, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://redwoodartgroup.com/spectrum-miami",
-    "link": "https://redwoodartgroup.com/spectrum-miami"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://redwoodartgroup.com/spectrum-miami"
   },
   {
     "id": 140,
@@ -1814,10 +1814,10 @@
     "endDate": "12/3/2025",
     "schedule": "5PM - 6PM",
     "neighborhood": "Wynwood",
-    "address": "Mana Wynwood, 2217 NW 5th Avenue, NW 22nd St, Miami, FL 33127",
+    "address": "Mana Wynwood, 2217 NW 5th Avenue, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://redwoodartgroup.com/spectrum-miami",
-    "link": "https://redwoodartgroup.com/spectrum-miami"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://redwoodartgroup.com/spectrum-miami"
   },
   {
     "id": 141,
@@ -1827,10 +1827,10 @@
     "endDate": "12/4/2025",
     "schedule": "10:30AM - 10:30PM",
     "neighborhood": "Wynwood",
-    "address": "The M Building 194 NW 30th St, Miami, FL 33127, USA",
+    "address": "The M Building, 194 NW 30th St, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://lu.ma/stellarhousemiami",
-    "link": "https://lu.ma/stellarhousemiami"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://lu.ma/stellarhousemiami"
   },
   {
     "id": 142,
@@ -1842,8 +1842,8 @@
     "neighborhood": "Miami Beach",
     "address": "601 Washington Avenue, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://www.thegoodtimehotel.com/eventcalendar/",
-    "link": "https://www.thegoodtimehotel.com/eventcalendar/"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.thegoodtimehotel.com/eventcalendar/"
   },
   {
     "id": 143,
@@ -1855,8 +1855,8 @@
     "neighborhood": "Miami Beach",
     "address": "2341 Collins Avenue, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://www.1hotels.com/south-beach/taste/tala-beach",
-    "link": "https://www.1hotels.com/south-beach/taste/tala-beach"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.1hotels.com/south-beach/taste/tala-beach"
   },
   {
     "id": 144,
@@ -1866,14 +1866,14 @@
     "endDate": "12/4/2025",
     "schedule": "8PM - 4AM",
     "neighborhood": "Wynwood",
-    "address": "150 NW 21st Miami,FL 33127",
+    "address": "150 NW 21st St, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://posh.vip/e/tehmplo",
-    "link": "https://posh.vip/e/tehmplo"
+    "ticketPrice": "$25",
+    "ticketsLink": "https://posh.vip/e/tehmplo"
   },
   {
     "id": 145,
-    "event": "Tehmplo Tulum",
+    "event": "Tehmplo: Tulum",
     "eventType": "Party",
     "startDate": "12/4/2025",
     "endDate": "12/4/2025",
@@ -1881,8 +1881,8 @@
     "neighborhood": "Wynwood",
     "address": "150 NW 21st St, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://linktr.ee/phase3?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4CGNhbGxzaXRlAjE1AAGnR7Ewc1RzLlQSdVxJIo01wbcHtzMrAyPFLJB3SwWTKHFdUm0KkCZjcwN1WBk_aem_GpFTGN3B-RMYGmBPaSxJrw",
-    "link": "https://linktr.ee/phase3?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4CGNhbGxzaXRlAjE1AAGnR7Ewc1RzLlQSdVxJIo01wbcHtzMrAyPFLJB3SwWTKHFdUm0KkCZjcwN1WBk_aem_GpFTGN3B-RMYGmBPaSxJrw"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://linktr.ee/phase3?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4CGNhbGxzaXRlAjE1AAGnR7Ewc1RzLlQSdVxJIo01wbcHtzMrAyPFLJB3SwWTKHFdUm0KkCZjcwN1WBk_aem_GpFTGN3B-RMYGmBPaSxJrw"
   },
   {
     "id": 146,
@@ -1892,10 +1892,10 @@
     "endDate": "12/7/2025",
     "schedule": "12PM - 6PM",
     "neighborhood": "Wynwood",
-    "address": "Toe Jam Backlot (Wynwood) 150 NW 21st Street, Miami, Fl, 33127",
+    "address": "Toe Jam Backlot, 150 NW 21st Street, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://toejambacklot.com/events/25-dollar-art-show/",
-    "link": "https://toejambacklot.com/events/25-dollar-art-show/"
+    "ticketPrice": "$25",
+    "ticketsLink": "https://toejambacklot.com/events/25-dollar-art-show/"
   },
   {
     "id": 147,
@@ -1905,10 +1905,10 @@
     "endDate": "12/5/2025",
     "schedule": "2PM - 6PM",
     "neighborhood": "Wynwood",
-    "address": "Toe Jam Backlot (Wynwood) 150 NW 21st Street, Miami, Fl, 33127",
+    "address": "Toe Jam Backlot, 150 NW 21st Street, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://toejambacklot.com/events/25-dollar-art-show/",
-    "link": "https://toejambacklot.com/events/25-dollar-art-show/"
+    "ticketPrice": "$25",
+    "ticketsLink": "https://toejambacklot.com/events/25-dollar-art-show/"
   },
   {
     "id": 148,
@@ -1918,10 +1918,10 @@
     "endDate": "12/7/2025",
     "schedule": "12PM - 7PM",
     "neighborhood": "Miami Beach",
-    "address": "The Ritz Carlton South Beach - 1 Lincoln Rd, Miami Beach, FL 33139",
+    "address": "The Ritz Carlton South Beach, 1 Lincoln Rd, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://posh.vip/e/the-brave-new-earth-ritzcarlton-south-beachofficial-art-basel-2025",
-    "link": "https://posh.vip/e/the-brave-new-earth-ritzcarlton-south-beachofficial-art-basel-2025"
+    "ticketPrice": "$100+",
+    "ticketsLink": "https://posh.vip/e/the-brave-new-earth-ritzcarlton-south-beachofficial-art-basel-2025"
   },
   {
     "id": 149,
@@ -1933,8 +1933,8 @@
     "neighborhood": "Miami Beach",
     "address": "2341 Collins Avenue, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://admitone.com/events/miami%20beach/community/party/miami-art-week-the-coffee-party/170BUC",
-    "link": "https://admitone.com/events/miami%20beach/community/party/miami-art-week-the-coffee-party/170BUC"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://admitone.com/events/miami%20beach/community/party/miami-art-week-the-coffee-party/170BUC"
   },
   {
     "id": 150,
@@ -1944,10 +1944,10 @@
     "endDate": "12/5/2025",
     "schedule": "6PM - 9PM",
     "neighborhood": "Brickell",
-    "address": "Flow Brickell - 275 SW 6th St, 9 Floor, Miami, FL 33130",
+    "address": "Flow Brickell, 275 SW 6th St, Miami, FL 33130",
     "notes": "",
-    "ticketsLink": "https://luma.com/21ivstt6",
-    "link": "https://luma.com/21ivstt6"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://luma.com/21ivstt6"
   },
   {
     "id": 151,
@@ -1957,10 +1957,10 @@
     "endDate": "12/7/2025",
     "schedule": "12PM - 12AM",
     "neighborhood": "Miami Beach",
-    "address": "Sagamore Hotel South Beach - An All Suite Hotel, The Sagamore, 1671 Collins Ave, Miami Beach, FL 33139, USA",
+    "address": "Sagamore Hotel South Beach, 1671 Collins Ave, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://luma.com/ha35a84h",
-    "link": "https://luma.com/ha35a84h"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://luma.com/ha35a84h"
   },
   {
     "id": 152,
@@ -1970,10 +1970,10 @@
     "endDate": "12/1/2025",
     "schedule": "6:30PM - 10PM",
     "neighborhood": "Coral Gables",
-    "address": "The Biltmore Hotel, Coral Gables",
+    "address": "The Biltmore Hotel, 1200 Anastasia Ave, Coral Gables, FL 33134",
     "notes": "Invite Only",
-    "ticketsLink": "",
-    "link": ""
+    "ticketPrice": "N/A",
+    "ticketsLink": ""
   },
   {
     "id": 153,
@@ -1983,10 +1983,10 @@
     "endDate": "12/7/2025",
     "schedule": "12PM - 5PM",
     "neighborhood": "Miami Beach",
-    "address": "Sagamore Hotel South Beach",
+    "address": "Sagamore Hotel South Beach, 1671 Collins Ave, Miami Beach, FL 33139",
     "notes": "",
-    "ticketsLink": "https://luma.com/f5kagz2a",
-    "link": "https://luma.com/f5kagz2a"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://luma.com/f5kagz2a"
   },
   {
     "id": 154,
@@ -1996,10 +1996,10 @@
     "endDate": "12/3/2025",
     "schedule": "8AM - 7PM",
     "neighborhood": "Downtown",
-    "address": "Reserve Miami Seaplane - 1000 MacArthur Cswy, Miami, FL 33132",
+    "address": "Reserve Miami Seaplane, 1000 MacArthur Cswy, Miami, FL 33132",
     "notes": "",
-    "ticketsLink": "https://thewellnessoasis.splashthat.com/?fbclid=PARlRTSAOQMxlleHRuA2FlbQIxMABzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAaenMtkr0modBNpyiof5XSikMRQJlMUgjcoFr2uZn5HX-2lLLx2ooZoMpB8Fow_aem_0HiOAENy7p8sh30Dxbyz0A",
-    "link": "https://thewellnessoasis.splashthat.com/?fbclid=PARlRTSAOQMxlleHRuA2FlbQIxMABzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAaenMtkr0modBNpyiof5XSikMRQJlMUgjcoFr2uZn5HX-2lLLx2ooZoMpB8Fow_aem_0HiOAENy7p8sh30Dxbyz0A"
+    "ticketPrice": "Free",
+    "ticketsLink": "https://thewellnessoasis.splashthat.com/?fbclid=PARlRTSAOQMxlleHRuA2FlbQIxMABzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAaenMtkr0modBNpyiof5XSikMRQJlMUgjcoFr2uZn5HX-2lLLx2ooZoMpB8Fow_aem_0HiOAENy7p8sh30Dxbyz0A"
   },
   {
     "id": 155,
@@ -2011,8 +2011,8 @@
     "neighborhood": "Hialeah",
     "address": "4800 NW 37th Ave, Miami, FL 33142",
     "notes": "",
-    "ticketsLink": "https://dice.fm/event/oenkgm-factory-basel-2025-wednesday-pass-3rd-dec-factory-town-miami-tickets",
-    "link": "https://dice.fm/event/oenkgm-factory-basel-2025-wednesday-pass-3rd-dec-factory-town-miami-tickets"
+    "ticketPrice": "$50+",
+    "ticketsLink": "https://dice.fm/event/oenkgm-factory-basel-2025-wednesday-pass-3rd-dec-factory-town-miami-tickets"
   },
   {
     "id": 156,
@@ -2022,10 +2022,10 @@
     "endDate": "12/5/2025",
     "schedule": "8PM - 3AM",
     "neighborhood": "Little River",
-    "address": "300 Northeast 71st Street, Miami, Florida 33138",
+    "address": "300 NE 71st Street, Miami, FL 33138",
     "notes": "",
-    "ticketsLink": "https://dice.fm/event/6db677-tisto-unkommon-art-week-5th-dec-little-river-studios-miami-tickets",
-    "link": "https://dice.fm/event/6db677-tisto-unkommon-art-week-5th-dec-little-river-studios-miami-tickets"
+    "ticketPrice": "$50+",
+    "ticketsLink": "https://dice.fm/event/6db677-tisto-unkommon-art-week-5th-dec-little-river-studios-miami-tickets"
   },
   {
     "id": 157,
@@ -2037,8 +2037,8 @@
     "neighborhood": "Wynwood",
     "address": "150 NW 21st St, Miami, FL 33127",
     "notes": "",
-    "ticketsLink": "https://toejambacklot.com/",
-    "link": "https://toejambacklot.com/"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://toejambacklot.com/"
   },
   {
     "id": 158,
@@ -2048,10 +2048,10 @@
     "endDate": "12/7/2025",
     "schedule": "11AM - 7PM",
     "neighborhood": "Miami Beach",
-    "address": "Untitled Art Fair (tent) - Ocean Drive and 12th Street, Miami Beach, FL",
+    "address": "Untitled Art Fair (tent), Ocean Drive & 12th Street, Miami Beach, FL",
     "notes": "",
-    "ticketsLink": "https://untitledartfairs.com/",
-    "link": "https://untitledartfairs.com/"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://untitledartfairs.com/"
   },
   {
     "id": 159,
@@ -2061,14 +2061,14 @@
     "endDate": "12/2/2025",
     "schedule": "10AM - 7PM",
     "neighborhood": "Miami Beach",
-    "address": "Ocean Drive & 12th Street, Miami Beach",
+    "address": "Ocean Drive & 12th Street, Miami Beach, FL, 33139",
     "notes": "",
-    "ticketsLink": "https://untitledartfairs.com",
-    "link": "https://untitledartfairs.com"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://untitledartfairs.com"
   },
   {
     "id": 160,
-    "event": "Victim 15 After Party",
+    "event": "Victim 15: After Party",
     "eventType": "Party",
     "startDate": "12/4/2025",
     "endDate": "12/4/2025",
@@ -2076,12 +2076,12 @@
     "neighborhood": "",
     "address": "",
     "notes": "Location Revealed to Ticket Holders",
-    "ticketsLink": "https://checkout.square.site/merchant/MLZ059NFEQHSF/checkout/VIWYIEL75W2FGVMFBTX3QVP5",
-    "link": "https://checkout.square.site/merchant/MLZ059NFEQHSF/checkout/VIWYIEL75W2FGVMFBTX3QVP5"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://checkout.square.site/merchant/MLZ059NFEQHSF/checkout/VIWYIEL75W2FGVMFBTX3QVP5"
   },
   {
     "id": 161,
-    "event": "Victim 15 Fashion Show",
+    "event": "Victim 15: Fashion Show",
     "eventType": "Art Show",
     "startDate": "12/4/2025",
     "endDate": "12/4/2025",
@@ -2089,8 +2089,8 @@
     "neighborhood": "",
     "address": "",
     "notes": "Location Revealed to Ticket Holders",
-    "ticketsLink": "https://victim15.com/pages/contact",
-    "link": "https://victim15.com/pages/contact"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://victim15.com/pages/contact"
   },
   {
     "id": 162,
@@ -2100,10 +2100,10 @@
     "endDate": "12/6/2025",
     "schedule": "11AM - 1PM",
     "neighborhood": "Brickell",
-    "address": "Flow Brickell - 275 SW 6th St, Miami, FL 33130",
+    "address": "Flow Brickell, 275 SW 6th St, Miami, FL 33130",
     "notes": "",
-    "ticketsLink": "https://luma.com/yq6qg1om",
-    "link": "https://luma.com/yq6qg1om"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://luma.com/yq6qg1om"
   },
   {
     "id": 163,
@@ -2115,8 +2115,8 @@
     "neighborhood": "Miami Beach",
     "address": "3201 Collins Ave, Miami Beach, FL 33140",
     "notes": "",
-    "ticketsLink": "https://www.faena.com/miami-beach/things-to-do/event-calendar/wellness-wonderland-0",
-    "link": "https://www.faena.com/miami-beach/things-to-do/event-calendar/wellness-wonderland-0"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.faena.com/miami-beach/things-to-do/event-calendar/wellness-wonderland-0"
   },
   {
     "id": 164,
@@ -2126,10 +2126,10 @@
     "endDate": "12/5/2025",
     "schedule": "10AM - 8PM",
     "neighborhood": "Miami Beach",
-    "address": "Miami Beach FL, USA",
+    "address": "Miami Beach, Miami Beach, FL",
     "notes": "",
-    "ticketsLink": "https://luma.com/yq46jhb0",
-    "link": "https://luma.com/yq46jhb0"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://luma.com/yq46jhb0"
   },
   {
     "id": 165,
@@ -2139,10 +2139,10 @@
     "endDate": "12/5/2025",
     "schedule": "5PM - 11PM",
     "neighborhood": "Coconut Grove",
-    "address": "3400 PAN AMERICAN DR.  MIAMI FL 33133",
+    "address": "3400 Pan American Dr, Miami, FL 33133",
     "notes": "",
-    "ticketsLink": "https://ra.co/events/2305646",
-    "link": "https://ra.co/events/2305646"
+    "ticketPrice": "$75+",
+    "ticketsLink": "https://ra.co/events/2305646"
   },
   {
     "id": 166,
@@ -2152,10 +2152,10 @@
     "endDate": "12/7/2025",
     "schedule": "10:15AM - 11:15AM",
     "neighborhood": "Design District",
-    "address": "Palm Court - 140 NE 39th St, Miami FL, 33137",
+    "address": "Palm Court, 140 NE 39th St, Miami, FL 33137",
     "notes": "",
-    "ticketsLink": "https://www.miamidesigndistrict.com/event/3260/yogart-x-ahana-sunday-service/",
-    "link": "https://www.miamidesigndistrict.com/event/3260/yogart-x-ahana-sunday-service/"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.miamidesigndistrict.com/event/3260/yogart-x-ahana-sunday-service/"
   },
   {
     "id": 167,
@@ -2167,7 +2167,72 @@
     "neighborhood": "Little River",
     "address": "353 NE 61st St, Miami, FL 33137",
     "notes": "",
-    "ticketsLink": "https://zeyzeymiami.com/tickets/",
-    "link": "https://zeyzeymiami.com/tickets/"
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://zeyzeymiami.com/tickets/"
+  },
+  {
+    "id": 168,
+    "event": "Barre for Brunch Basel Reset",
+    "eventType": "Wellness",
+    "startDate": "12/6/2025",
+    "endDate": "12/6/2025",
+    "schedule": "2PM - 5PM",
+    "neighborhood": "Downtown",
+    "address": "270 Biscayne Blvd Way, Miami, FL 33131",
+    "notes": "Ticket Required",
+    "ticketPrice": "$25",
+    "ticketsLink": "https://partiful.com/e/KvtHGTK3Ab1tf6TJ9dqk?source=share"
+  },
+  {
+    "id": 169,
+    "event": "Art Basel Miami 2025 with LADYDAYDAO",
+    "eventType": "Networking",
+    "startDate": "12/3/2025",
+    "endDate": "12/8/2025",
+    "schedule": "",
+    "neighborhood": "Miami Beach",
+    "address": "1 Lincoln Rd, Miami Beach, FL 33139",
+    "notes": "",
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://luma.com/cj5ru4pl"
+  },
+  {
+    "id": 170,
+    "event": "VNTR Basel Open Community Event",
+    "eventType": "Conference",
+    "startDate": "12/4/2025",
+    "endDate": "12/4/2025",
+    "schedule": "2:30PM - 5:30PM",
+    "neighborhood": "Brickell",
+    "address": "1346 S Miami Ave, Miami, FL 33130",
+    "notes": "",
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://www.eventbrite.com/e/art-basel-venture-investor-forums-tickets-1975145966756?aff=oddtdtcreator"
+  },
+  {
+    "id": 171,
+    "event": "Tech Basel Miami Mixer",
+    "eventType": "Networking",
+    "startDate": "12/4/2025",
+    "endDate": "12/4/2025",
+    "schedule": "6:45PM",
+    "neighborhood": "Wynwood",
+    "address": "2250 NW 2nd Avenue, Miami, FL 33127",
+    "notes": "",
+    "ticketPrice": "TBD",
+    "ticketsLink": "https://luma.com/r0xs9oee"
+  },
+  {
+    "id": 172,
+    "event": "Deer Jade: The Coffee Grand Opening",
+    "eventType": "Party",
+    "startDate": "12/3/2025",
+    "endDate": "12/3/2025",
+    "schedule": "5PM - 10PM",
+    "neighborhood": "Wynwood",
+    "address": "136 NW 27th St, Miami, FL 33127",
+    "notes": "RSVP Required",
+    "ticketPrice": "TBD",
+    "ticketsLink": "http://thecoffee.eventbrite.com"
   }
 ]
