@@ -7,6 +7,7 @@ declare global {
   interface Window {
     OneSignalDeferred?: Array<(OneSignal: OneSignalType) => void>;
     OneSignal?: OneSignalType;
+    __ONESIGNAL_LOADED__?: boolean;
   }
 }
 
@@ -29,12 +30,19 @@ let oneSignalInstance: OneSignalType | null = null;
 
 export default function OneSignalProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
-    if (isInitialized || typeof window === 'undefined') return;
+    // Prevent double initialization
+    if (isInitialized || typeof window === 'undefined' || window.__ONESIGNAL_LOADED__) return;
+    window.__ONESIGNAL_LOADED__ = true;
 
     const appId = process.env.NEXT_PUBLIC_ONESIGNAL_APP_ID;
 
     if (!appId) {
       console.warn('OneSignal App ID not configured');
+      return;
+    }
+
+    // Check if script already exists
+    if (document.querySelector('script[src*="OneSignalSDK"]')) {
       return;
     }
 
@@ -47,17 +55,14 @@ export default function OneSignalProvider({ children }: { children: React.ReactN
     // Initialize OneSignal
     window.OneSignalDeferred = window.OneSignalDeferred || [];
     window.OneSignalDeferred.push(async function(OneSignal) {
+      // Prevent double init
+      if (isInitialized) return;
+
       try {
         await OneSignal.init({
           appId,
           safari_web_id: 'web.onesignal.auto.40767e72-dc1c-4bfb-b1c2-39a715222d63',
           allowLocalhostAsSecureOrigin: true,
-          notifyButton: {
-            enable: false,
-          },
-          welcomeNotification: {
-            disable: true,
-          },
         });
 
         isInitialized = true;
@@ -67,14 +72,6 @@ export default function OneSignalProvider({ children }: { children: React.ReactN
         console.error('OneSignal initialization failed:', error);
       }
     });
-
-    return () => {
-      // Cleanup script on unmount
-      const existingScript = document.querySelector('script[src*="OneSignalSDK"]');
-      if (existingScript) {
-        existingScript.remove();
-      }
-    };
   }, []);
 
   return <>{children}</>;
