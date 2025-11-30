@@ -25,9 +25,6 @@ export default function OneSignalProvider({ children }: { children: React.ReactN
           appId,
           safari_web_id: 'web.onesignal.auto.40767e72-dc1c-4bfb-b1c2-39a715222d63',
           allowLocalhostAsSecureOrigin: true,
-          notifyButton: {
-            enable: false, // We'll use our own UI
-          },
           serviceWorkerPath: '/OneSignalSDKWorker.js',
         });
 
