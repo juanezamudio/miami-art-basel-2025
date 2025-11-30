@@ -61,7 +61,7 @@ export default function CalendarView({ events }: CalendarViewProps) {
       <div className="bg-[#1a1a2e] rounded-xl shadow-lg overflow-hidden border border-gray-700/50">
         <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white p-4">
           <h2 className="text-xl font-bold text-center">Miami Art Basel Week 2025</h2>
-          <p className="text-center text-purple-200 text-sm mt-1">
+          <p className="text-center text-purple-200 text-lg mt-1">
             November 30 - December 9
           </p>
         </div>

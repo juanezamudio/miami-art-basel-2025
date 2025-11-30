@@ -23,6 +23,7 @@
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "react-leaflet": "^5.0.0",
+    "react-onesignal": "^3.4.0",
     "viem": "^2.40.3",
     "wagmi": "^3.0.2"
   },
@@ -36,6 +37,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.0.4",
     "ignore-loader": "^0.1.2",
+    "sharp": "^0.34.5",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

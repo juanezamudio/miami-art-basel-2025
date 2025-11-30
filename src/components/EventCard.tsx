@@ -2,8 +2,9 @@
 
 import { useState } from 'react';
 import { Event } from '@/types/event';
-import { Calendar, MapPin, Clock, Tag, Ticket, Share2, Copy, MoreVertical, Flag, Check } from 'lucide-react';
+import { Calendar, MapPin, Clock, Tag, Ticket, Share2, Copy, MoreVertical, Flag, Check, Heart } from 'lucide-react';
 import ReportIssueModal from './ReportIssueModal';
+import { useFavorites } from '@/contexts/FavoritesContext';
 
 interface EventCardProps {
   event: Event;
@@ -24,6 +25,9 @@ export default function EventCard({ event, compact = false }: EventCardProps) {
   const [showMenu, setShowMenu] = useState(false);
   const [showToast, setShowToast] = useState(false);
   const [showMapsMenu, setShowMapsMenu] = useState(false);
+  const { toggleFavorite, isFavorite } = useFavorites();
+  const eventId = String(event.id);
+  const isSaved = isFavorite(eventId);
   const typeColor = eventTypeColors[event.eventType] || 'bg-gray-500/20 text-gray-300 border-gray-500/30';
 
   const getGoogleMapsUrl = (address: string) => {
@@ -32,6 +36,14 @@ export default function EventCard({ event, compact = false }: EventCardProps) {
 
   const getAppleMapsUrl = (address: string) => {
     return `https://maps.apple.com/?q=${encodeURIComponent(address)}`;
+  };
+
+  const getUberUrl = (address: string) => {
+    return `https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=${encodeURIComponent(address)}`;
+  };
+
+  const getLyftUrl = (address: string) => {
+    return `https://lyft.com/ride?destination[address]=${encodeURIComponent(address)}`;
   };
 
   const formatDate = (dateStr: string | null) => {
@@ -46,9 +58,14 @@ export default function EventCard({ event, compact = false }: EventCardProps) {
       : formatDate(event.startDate)
     : 'Date TBA';
 
+  const getEventUrl = () => {
+    const baseUrl = typeof window !== 'undefined' ? window.location.origin : '';
+    return `${baseUrl}/event/${event.id}`;
+  };
+
   const getShareText = () => {
     const shareText = `${event.event}${event.neighborhood ? ` - ${event.neighborhood}` : ''}${event.startDate ? ` (${dateDisplay})` : ''}`;
-    const shareUrl = event.ticketsLink || '';
+    const shareUrl = getEventUrl();
     return { shareText, shareUrl };
   };
 
@@ -141,47 +158,13 @@ export default function EventCard({ event, compact = false }: EventCardProps) {
           )}
 
           {event.address && (
-            <div className="relative pl-6">
+            <div className="pl-6">
               <button
                 onClick={() => setShowMapsMenu(!showMapsMenu)}
                 className="text-gray-500 text-xs text-left line-clamp-2 hover:text-purple-400 hover:underline transition-colors cursor-pointer"
               >
                 {event.address}
               </button>
-              {showMapsMenu && (
-                <>
-                  <div
-                    className="fixed inset-0 z-10"
-                    onClick={() => setShowMapsMenu(false)}
-                  />
-                  <div className="absolute left-6 top-full mt-1 bg-[#252542] border border-gray-700 rounded-lg shadow-xl z-20 py-1 min-w-[150px]">
-                    <a
-                      href={getGoogleMapsUrl(event.address)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={() => setShowMapsMenu(false)}
-                      className="w-full flex items-center gap-2 px-3 py-2 text-sm text-gray-300 hover:bg-gray-700/50 hover:text-white transition-colors"
-                    >
-                      <svg viewBox="0 0 24 24" className="w-4 h-4" fill="currentColor">
-                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                      </svg>
-                      <span>Google Maps</span>
-                    </a>
-                    <a
-                      href={getAppleMapsUrl(event.address)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={() => setShowMapsMenu(false)}
-                      className="w-full flex items-center gap-2 px-3 py-2 text-sm text-gray-300 hover:bg-gray-700/50 hover:text-white transition-colors"
-                    >
-                      <svg viewBox="0 0 24 24" className="w-4 h-4" fill="currentColor">
-                        <path d="M12 2C8.13 2 5 5.13 5 9c0 1.74.5 3.37 1.41 4.84.95 1.54 2.2 2.86 3.16 4.4.47.75.81 1.45 1.17 2.26.26.55.47 1.5 1.26 1.5s1-.95 1.25-1.5c.37-.81.7-1.51 1.17-2.26.96-1.53 2.21-2.85 3.16-4.4C18.5 12.37 19 10.74 19 9c0-3.87-3.13-7-7-7zm0 9.75c-1.52 0-2.75-1.23-2.75-2.75S10.48 6.25 12 6.25s2.75 1.23 2.75 2.75-1.23 2.75-2.75 2.75z"/>
-                      </svg>
-                      <span>Apple Maps</span>
-                    </a>
-                  </div>
-                </>
-              )}
             </div>
           )}
         </div>
@@ -198,7 +181,19 @@ export default function EventCard({ event, compact = false }: EventCardProps) {
               <span>Tickets</span>
             </a>
           )}
-          <div className="relative ml-auto">
+          <div className="flex items-center gap-1 ml-auto">
+            <button
+              onClick={() => toggleFavorite(eventId)}
+              className={`p-2 rounded-lg transition-colors ${
+                isSaved
+                  ? 'text-pink-500 hover:text-pink-400 hover:bg-pink-500/10'
+                  : 'text-gray-400 hover:text-pink-400 hover:bg-gray-700/50'
+              }`}
+              title={isSaved ? 'Remove from My Schedule' : 'Add to My Schedule'}
+            >
+              <Heart size={18} fill={isSaved ? 'currentColor' : 'none'} />
+            </button>
+          <div className="relative">
             <button
               onClick={() => setShowMenu(!showMenu)}
               className="text-gray-400 hover:text-gray-200 transition-colors p-2 rounded-lg hover:bg-gray-700/50"
@@ -246,6 +241,7 @@ export default function EventCard({ event, compact = false }: EventCardProps) {
               </>
             )}
           </div>
+          </div>
         </div>
 
         {/* Copy Toast */}
@@ -262,6 +258,83 @@ export default function EventCard({ event, compact = false }: EventCardProps) {
         isOpen={showReportModal}
         onClose={() => setShowReportModal(false)}
       />
+
+      {/* Maps/Ride Modal */}
+      {showMapsMenu && event.address && (
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4">
+          <div
+            className="absolute inset-0 bg-black/70"
+            onClick={() => setShowMapsMenu(false)}
+          />
+          <div className="relative bg-[#1a1a2e] rounded-xl shadow-2xl w-full max-w-sm border border-gray-700/50 overflow-hidden">
+            <div className="p-4 border-b border-gray-700/50">
+              <h3 className="text-lg font-semibold text-gray-100">Get Directions</h3>
+              <p className="text-sm text-gray-400 mt-1 line-clamp-2">{event.address}</p>
+            </div>
+            <div className="p-2">
+              <p className="text-xs text-gray-500 px-3 py-2">Maps</p>
+              <a
+                href={getGoogleMapsUrl(event.address)}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setShowMapsMenu(false)}
+                className="w-full flex items-center gap-3 px-3 py-3 text-gray-300 hover:bg-gray-700/50 hover:text-white transition-colors rounded-lg"
+              >
+                <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                <span>Google Maps</span>
+              </a>
+              <a
+                href={getAppleMapsUrl(event.address)}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setShowMapsMenu(false)}
+                className="w-full flex items-center gap-3 px-3 py-3 text-gray-300 hover:bg-gray-700/50 hover:text-white transition-colors rounded-lg"
+              >
+                <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 1.74.5 3.37 1.41 4.84.95 1.54 2.2 2.86 3.16 4.4.47.75.81 1.45 1.17 2.26.26.55.47 1.5 1.26 1.5s1-.95 1.25-1.5c.37-.81.7-1.51 1.17-2.26.96-1.53 2.21-2.85 3.16-4.4C18.5 12.37 19 10.74 19 9c0-3.87-3.13-7-7-7zm0 9.75c-1.52 0-2.75-1.23-2.75-2.75S10.48 6.25 12 6.25s2.75 1.23 2.75 2.75-1.23 2.75-2.75 2.75z"/>
+                </svg>
+                <span>Apple Maps</span>
+              </a>
+
+              <p className="text-xs text-gray-500 px-3 py-2 mt-2">Ride There</p>
+              <a
+                href={getUberUrl(event.address)}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setShowMapsMenu(false)}
+                className="w-full flex items-center gap-3 px-3 py-3 text-gray-300 hover:bg-gray-700/50 hover:text-white transition-colors rounded-lg"
+              >
+                <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
+                  <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+                </svg>
+                <span>Uber</span>
+              </a>
+              <a
+                href={getLyftUrl(event.address)}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setShowMapsMenu(false)}
+                className="w-full flex items-center gap-3 px-3 py-3 text-gray-300 hover:bg-gray-700/50 hover:text-white transition-colors rounded-lg"
+              >
+                <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
+                  <path d="M12.3 2L2 7.5v9l10.3 5.5L22 16.5v-9L12.3 2zm0 2.3l7.5 4-7.5 4-7.5-4 7.5-4zM4 9.5l7.3 3.9v7.1L4 16.6V9.5zm16 7.1l-7.3 3.9v-7.1l7.3-3.9v7.1z"/>
+                </svg>
+                <span>Lyft</span>
+              </a>
+            </div>
+            <div className="p-3 border-t border-gray-700/50">
+              <button
+                onClick={() => setShowMapsMenu(false)}
+                className="w-full py-2.5 text-gray-400 hover:text-white hover:bg-gray-700/50 rounded-lg transition-colors"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

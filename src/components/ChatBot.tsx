@@ -71,6 +71,18 @@ export default function ChatBot({ isOpen, onToggle }: ChatBotProps) {
     scrollToBottom();
   }, [messages]);
 
+  // Prevent body scroll when chat is open on mobile
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
+
   const sendMessage = async () => {
     if (!input.trim() || isLoading) return;
 
@@ -129,7 +141,7 @@ export default function ChatBot({ isOpen, onToggle }: ChatBotProps) {
 
       {/* Chat window - full screen on mobile, floating modal on desktop */}
       {isOpen && (
-        <div className="fixed inset-0 md:inset-auto md:bottom-6 md:right-6 md:w-96 md:h-[600px] md:max-h-[calc(100vh-6rem)] bg-white md:rounded-2xl shadow-2xl flex flex-col z-[9999] border-0 md:border md:border-gray-200 overflow-hidden">
+        <div className="fixed inset-0 h-[100dvh] w-screen md:inset-auto md:bottom-6 md:right-6 md:w-96 md:h-[600px] md:max-h-[calc(100vh-6rem)] bg-white md:rounded-2xl shadow-2xl flex flex-col z-[9999] border-0 md:border md:border-gray-200 overflow-hidden">
           {/* Header */}
           <div className="flex items-center justify-between p-4 border-b bg-gradient-to-r from-purple-600 to-pink-600 text-white md:rounded-t-2xl flex-shrink-0">
             <div className="flex items-center gap-2">

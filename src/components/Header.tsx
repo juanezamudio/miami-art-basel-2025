@@ -2,7 +2,8 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { Menu, X, Calendar, List, Map, MessageCircle, PlusCircle } from 'lucide-react';
+import { Menu, X, Calendar, List, Map, MessageCircle, PlusCircle, Heart, Bell } from 'lucide-react';
+import NotificationSettings from './NotificationSettings';
 
 interface HeaderProps {
   onChatToggle: () => void;
@@ -11,6 +12,7 @@ interface HeaderProps {
 export default function Header({ onChatToggle }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [showSubmitModal, setShowSubmitModal] = useState(false);
+  const [showNotificationSettings, setShowNotificationSettings] = useState(false);
 
   // Load YouForm script when modal opens
   useEffect(() => {
@@ -31,7 +33,7 @@ export default function Header({ onChatToggle }: HeaderProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-xl sm:text-3xl font-bold tracking-tight" style={{ fontFamily: 'var(--font-space-grotesk)' }}>BaselAI</span>
+            <span className="text-xl sm:text-3xl font-bold tracking-tight" style={{ fontFamily: 'var(--font-space-grotesk)' }}>Basel.ai</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -57,12 +59,26 @@ export default function Header({ onChatToggle }: HeaderProps) {
               <Map size={18} />
               <span>Map</span>
             </Link>
+            <Link
+              href="/schedule"
+              className="flex items-center space-x-1 hover:text-pink-200 transition-colors"
+            >
+              <Heart size={18} />
+              <span>My Schedule</span>
+            </Link>
             <button
               onClick={() => setShowSubmitModal(true)}
               className="flex items-center space-x-1 hover:text-pink-200 transition-colors"
             >
               <PlusCircle size={18} />
               <span>Submit Event</span>
+            </button>
+            <button
+              onClick={() => setShowNotificationSettings(true)}
+              className="p-2 hover:bg-white/20 rounded-full transition-colors"
+              title="Notifications"
+            >
+              <Bell size={18} />
             </button>
             <button
               onClick={onChatToggle}
@@ -109,6 +125,14 @@ export default function Header({ onChatToggle }: HeaderProps) {
               <Map size={18} />
               <span>Map</span>
             </Link>
+            <Link
+              href="/schedule"
+              className="flex items-center space-x-2 py-2 hover:text-pink-200"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <Heart size={18} />
+              <span>My Schedule</span>
+            </Link>
             <button
               onClick={() => {
                 setShowSubmitModal(true);
@@ -118,6 +142,16 @@ export default function Header({ onChatToggle }: HeaderProps) {
             >
               <PlusCircle size={18} />
               <span>Submit Event</span>
+            </button>
+            <button
+              onClick={() => {
+                setShowNotificationSettings(true);
+                setMobileMenuOpen(false);
+              }}
+              className="flex items-center space-x-2 py-2 hover:text-pink-200 w-full"
+            >
+              <Bell size={18} />
+              <span>Notifications</span>
             </button>
             <button
               onClick={() => {
@@ -132,6 +166,12 @@ export default function Header({ onChatToggle }: HeaderProps) {
           </nav>
         )}
       </div>
+
+      {/* Notification Settings Modal */}
+      <NotificationSettings
+        isOpen={showNotificationSettings}
+        onClose={() => setShowNotificationSettings(false)}
+      />
 
       {/* Submit Event Modal */}
       {showSubmitModal && (

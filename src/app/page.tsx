@@ -5,6 +5,10 @@ import { getEvents, getEventTypes, getNeighborhoods, filterEvents } from '@/lib/
 import EventCard from '@/components/EventCard';
 import EventFilters from '@/components/EventFilters';
 import DonationBar from '@/components/DonationBar';
+import CountdownTimer from '@/components/CountdownTimer';
+import HappeningNow from '@/components/HappeningNow';
+import Weather from '@/components/Weather';
+import PlanMyDay from '@/components/PlanMyDay';
 
 // Pluralize event type names correctly
 function pluralizeType(type: string): string {
@@ -28,6 +32,7 @@ export default function HomePage() {
   const [date, setDate] = useState('');
   const [priceRange, setPriceRange] = useState('');
   const [sortBy, setSortBy] = useState<SortOption>('date');
+  const [showPlanMyDay, setShowPlanMyDay] = useState(false);
 
   const allEvents = useMemo(() => getEvents(), []);
   const eventTypes = useMemo(() => getEventTypes(), []);
@@ -98,19 +103,21 @@ export default function HomePage() {
       {/* Hero Section */}
       <div className="text-center mb-8">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 bg-clip-text text-transparent mb-4" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
-          Your Complete AI-Powered Guide to
+          Your Complete <span className="whitespace-nowrap">AI-Powered</span> Guide to
           <br />
           Miami Art Basel 2025
         </h1>
-        <p className="text-gray-400 text-base sm:text-lg max-w-3xl mx-auto px-4">
+        <p className="text-gray-400 text-base sm:text-lg max-w-3xl mx-auto px-4 mb-6">
           Discover art shows, parties, and wellness events during Miami Art Week.
-          <br />
-          <span className="text-gray-300 font-bold">November 30 - December 9, 2025</span>
         </p>
+        <CountdownTimer />
       </div>
 
       {/* Donation Bar */}
       <DonationBar />
+
+      {/* Weather */}
+      <Weather />
 
       {/* Stats */}
       <div className="grid grid-cols-3 sm:grid-cols-6 gap-2 sm:gap-3 mb-8">
@@ -170,6 +177,9 @@ export default function HomePage() {
         </button>
       </div>
 
+      {/* Happening Now - Only visible during Art Basel week */}
+      <HappeningNow events={allEvents} />
+
       {/* Filters */}
       <EventFilters
         search={search}
@@ -182,6 +192,7 @@ export default function HomePage() {
         onDateChange={setDate}
         priceRange={priceRange}
         onPriceRangeChange={setPriceRange}
+        onPlanMyDay={() => setShowPlanMyDay(true)}
         eventTypes={eventTypes}
         neighborhoods={neighborhoods}
         onClearFilters={clearFilters}
@@ -244,6 +255,13 @@ export default function HomePage() {
           </button>
         </div>
       )}
+
+      {/* Plan My Day Modal */}
+      <PlanMyDay
+        isOpen={showPlanMyDay}
+        onClose={() => setShowPlanMyDay(false)}
+        neighborhoods={neighborhoods}
+      />
     </div>
   );
 }
