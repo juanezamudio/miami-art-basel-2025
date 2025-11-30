@@ -52,21 +52,17 @@ export default function OneSignalProvider({ children }: { children: React.ReactN
           appId,
           safari_web_id: 'web.onesignal.auto.40767e72-dc1c-4bfb-b1c2-39a715222d63',
           allowLocalhostAsSecureOrigin: true,
+          notifyButton: {
+            enable: false,
+          },
+          welcomeNotification: {
+            disable: true,
+          },
         });
 
         isInitialized = true;
         oneSignalInstance = OneSignal;
         console.log('OneSignal initialized successfully');
-
-        // Set up tags for segmentation
-        const favorites = localStorage.getItem('basel-ai-favorites');
-        if (favorites) {
-          const count = JSON.parse(favorites).length;
-          await OneSignal.User.addTags({
-            has_saved_events: count > 0 ? 'true' : 'false',
-            saved_events_count: String(count),
-          });
-        }
       } catch (error) {
         console.error('OneSignal initialization failed:', error);
       }

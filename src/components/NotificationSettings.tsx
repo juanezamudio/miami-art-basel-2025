@@ -10,7 +10,7 @@ interface NotificationSettingsProps {
 }
 
 export default function NotificationSettings({ isOpen, onClose }: NotificationSettingsProps) {
-  const { isSubscribed, isSupported, subscribe, updateTags } = useOneSignal();
+  const { isSubscribed, isSupported, subscribe } = useOneSignal();
   const [isLoading, setIsLoading] = useState(false);
   const [preferences, setPreferences] = useState({
     eventReminders: true,
@@ -32,17 +32,10 @@ export default function NotificationSettings({ isOpen, onClose }: NotificationSe
     setIsLoading(false);
   };
 
-  const handlePreferenceChange = async (key: keyof typeof preferences) => {
+  const handlePreferenceChange = (key: keyof typeof preferences) => {
     const newPrefs = { ...preferences, [key]: !preferences[key] };
     setPreferences(newPrefs);
     localStorage.setItem('basel-ai-notification-prefs', JSON.stringify(newPrefs));
-
-    // Update OneSignal tags for segmentation
-    await updateTags({
-      event_reminders: newPrefs.eventReminders ? 'true' : 'false',
-      new_events: newPrefs.newEvents ? 'true' : 'false',
-      daily_digest: newPrefs.dailyDigest ? 'true' : 'false',
-    });
   };
 
   if (!isOpen) return null;
