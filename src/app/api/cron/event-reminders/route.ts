@@ -47,6 +47,7 @@ export async function GET(request: Request) {
     // Track notifications sent
     const notificationsSent: string[] = [];
     const skippedEvents: string[] = [];
+    const debugEvents: Array<{ name: string; startDate: string; endDate?: string; schedule: string; isActive: boolean; startTime: string | null; inWindow: boolean }> = [];
 
     // Notification window: 15-45 minutes from now
     // This works well with 15-min cron intervals
@@ -68,12 +69,31 @@ export async function GET(request: Request) {
         now
       );
 
+      // Get the event start time for today
+      const eventStartTime = getEventStartTimeToday(event.schedule, now);
+
+      // Check if in window
+      const inWindow = eventStartTime
+        ? (eventStartTime >= fifteenMinutesFromNow && eventStartTime < fortyFiveMinutesFromNow)
+        : false;
+
+      // Debug: track ZeyZey and other events happening today
+      if (event.event.toLowerCase().includes('zey') || (isActiveToday && eventStartTime)) {
+        debugEvents.push({
+          name: event.event,
+          startDate: event.startDate,
+          endDate: event.endDate,
+          schedule: event.schedule,
+          isActive: isActiveToday,
+          startTime: eventStartTime?.toLocaleString('en-US', { timeZone: 'America/New_York' }) || null,
+          inWindow,
+        });
+      }
+
       if (!isActiveToday) {
         continue;
       }
 
-      // Get the event start time for today
-      const eventStartTime = getEventStartTimeToday(event.schedule, now);
       if (!eventStartTime) {
         skippedEvents.push(`${event.event} (no parseable time)`);
         continue;
@@ -113,6 +133,7 @@ export async function GET(request: Request) {
       notificationsSent: notificationsSent.length,
       events: notificationsSent,
       skipped: skippedEvents.length > 0 ? skippedEvents : undefined,
+      debug: debugEvents,
     });
   } catch (error) {
     console.error('Cron job error:', error);
