@@ -56,6 +56,30 @@ export async function sendToAll(heading: string, message: string, url?: string) 
   });
 }
 
+// Emoji options for event notifications
+const EVENT_EMOJIS = [
+  '🎨', '🎭', '✨', '🔥', '🎉', '💫', '🌟', '🎪', '🍾', '🪩', '🌴', '🎶', '⚡️', '🌙', '🎊'
+];
+
+// Phrase options for notification titles
+const EVENT_PHRASES = [
+  'Starting Soon',
+  'Happening Soon',
+  'Don\'t Miss',
+  'Coming Up',
+  'Almost Time',
+  'Get Ready For',
+  'Heads Up',
+  'On Deck',
+  'About to Start',
+  'Time to Go',
+];
+
+// Pick a random item from an array
+function pickRandom<T>(arr: T[]): T {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
 // Send notification about an event to all subscribers
 export async function sendEventNotification(
   eventName: string,
@@ -64,8 +88,11 @@ export async function sendEventNotification(
   eventId: number | string,
   baseUrl: string
 ) {
+  const emoji = pickRandom(EVENT_EMOJIS);
+  const phrase = pickRandom(EVENT_PHRASES);
+
   return sendNotification({
-    headings: { en: `🎨 Starting Soon: ${eventName}` },
+    headings: { en: `${emoji} ${phrase}: ${eventName}` },
     contents: { en: `${eventTime} at ${eventLocation}` },
     url: `${baseUrl}/event/${eventId}`,
     included_segments: ['All'],
