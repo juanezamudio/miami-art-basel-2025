@@ -47,7 +47,7 @@ export async function GET(request: Request) {
     // Track notifications sent
     const notificationsSent: string[] = [];
     const skippedEvents: string[] = [];
-    const debugEvents: Array<{ name: string; startDate: string; endDate?: string; schedule: string; isActive: boolean; startTime: string | null; inWindow: boolean }> = [];
+    const debugEvents: Array<{ name: string; startDate: string; endDate: string | null; schedule: string; isActive: boolean; startTime: string | null; inWindow: boolean }> = [];
 
     // Notification window: 15-45 minutes from now
     // This works well with 15-min cron intervals
