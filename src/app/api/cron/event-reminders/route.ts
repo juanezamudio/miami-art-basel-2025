@@ -221,12 +221,47 @@ function isEventActiveToday(startDateStr: string, endDateStr: string | null, tod
   return todayStart.getTime() === eventStart.getTime();
 }
 
-// Get event start time for today
+// Get event start time for today (in Miami/Eastern timezone)
 function getEventStartTimeToday(schedule: string, today: Date): Date | null {
   const time = parseTime(schedule);
   if (!time) return null;
 
-  const eventTime = new Date(today);
-  eventTime.setHours(time.hours, time.minutes, 0, 0);
-  return eventTime;
+  // Get today's date in Eastern timezone
+  const easternDate = new Date(today.toLocaleString('en-US', { timeZone: 'America/New_York' }));
+
+  // Create event time in Eastern timezone
+  const eventTimeEastern = new Date(
+    easternDate.getFullYear(),
+    easternDate.getMonth(),
+    easternDate.getDate(),
+    time.hours,
+    time.minutes,
+    0,
+    0
+  );
+
+  // Convert back to UTC for comparison
+  // Eastern is UTC-5 (EST) or UTC-4 (EDT)
+  // We need to find the offset by comparing local interpretation
+  const offsetMs = eventTimeEastern.getTime() - new Date(eventTimeEastern.toLocaleString('en-US', { timeZone: 'America/New_York' })).getTime();
+
+  // Actually, simpler approach: create the time directly using timezone offset
+  // Miami is America/New_York timezone
+  const formatter = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/New_York',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  });
+  const parts = formatter.formatToParts(today);
+  const year = parseInt(parts.find(p => p.type === 'year')?.value || '2025');
+  const month = parseInt(parts.find(p => p.type === 'month')?.value || '1') - 1;
+  const day = parseInt(parts.find(p => p.type === 'day')?.value || '1');
+
+  // Create date string in ISO format for Eastern time, then parse
+  // Format: YYYY-MM-DDTHH:MM:SS-05:00 (EST) or -04:00 (EDT)
+  // December is EST (UTC-5)
+  const isoString = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}T${String(time.hours).padStart(2, '0')}:${String(time.minutes).padStart(2, '0')}:00-05:00`;
+
+  return new Date(isoString);
 }
