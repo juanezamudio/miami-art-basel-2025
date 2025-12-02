@@ -115,7 +115,10 @@ export default function EventCard({ event, compact = false }: EventCardProps) {
   }
 
   return (
-    <div className="h-full flex flex-col bg-[#1a1a2e] rounded-xl shadow-lg hover:shadow-xl transition-all overflow-hidden border border-gray-700/50 hover:border-purple-500/30">
+    <div
+      data-event-id={event.id}
+      className="h-full flex flex-col bg-[#1a1a2e] rounded-xl shadow-lg hover:shadow-xl transition-all overflow-hidden border border-gray-700/50 hover:border-purple-500/30"
+    >
       <div className="p-5 flex flex-col flex-1">
         <div className="flex justify-between items-start gap-3 mb-3">
           <h3 className="text-lg font-semibold text-gray-100 leading-tight">
