@@ -9,6 +9,7 @@ import CountdownTimer from '@/components/CountdownTimer';
 import HappeningNow from '@/components/HappeningNow';
 import Weather from '@/components/Weather';
 import PlanMyDay from '@/components/PlanMyDay';
+import AdBar from '@/components/AdBar';
 
 // Pluralize event type names correctly
 function pluralizeType(type: string): string {
@@ -115,6 +116,9 @@ export default function HomePage() {
 
       {/* Donation Bar */}
       <DonationBar />
+
+      {/* Ad Bar */}
+      <AdBar />
 
       {/* Weather */}
       <Weather />
