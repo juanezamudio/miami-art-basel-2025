@@ -122,10 +122,20 @@ export async function GET(request: Request) {
       }
     }
 
+    // Get today's date in Eastern for the response
+    const easternFormatter = new Intl.DateTimeFormat('en-US', {
+      timeZone: 'America/New_York',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+    });
+    const easternDateStr = easternFormatter.format(now);
+
     return NextResponse.json({
       success: true,
       timestamp: now.toISOString(),
       localTime: now.toLocaleString('en-US', { timeZone: 'America/New_York' }),
+      easternDate: easternDateStr,
       notificationWindow: {
         from: fifteenMinutesFromNow.toLocaleString('en-US', { timeZone: 'America/New_York' }),
         to: fortyFiveMinutesFromNow.toLocaleString('en-US', { timeZone: 'America/New_York' }),
@@ -200,13 +210,25 @@ function parseTime(schedule: string): { hours: number; minutes: number } | null 
   return null;
 }
 
-// Check if today falls within the event's date range
+// Check if today falls within the event's date range (using Eastern timezone)
 function isEventActiveToday(startDateStr: string, endDateStr: string | null, today: Date): boolean {
   const startDate = parseDate(startDateStr);
   if (!startDate) return false;
 
-  // Normalize dates to compare just the date portion
-  const todayStart = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+  // Get today's date in Eastern timezone
+  const formatter = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/New_York',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  });
+  const parts = formatter.formatToParts(today);
+  const todayYear = parseInt(parts.find(p => p.type === 'year')?.value || '2025');
+  const todayMonth = parseInt(parts.find(p => p.type === 'month')?.value || '1') - 1;
+  const todayDay = parseInt(parts.find(p => p.type === 'day')?.value || '1');
+  const todayStart = new Date(todayYear, todayMonth, todayDay);
+
+  // Normalize event dates to just date portion
   const eventStart = new Date(startDate.getFullYear(), startDate.getMonth(), startDate.getDate());
 
   if (endDateStr) {
