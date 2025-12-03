@@ -90,7 +90,13 @@ body {
 }
 
 .animate-ticker {
-  animation: ticker 30s linear infinite;
+  animation: ticker 5s linear infinite;
+}
+
+@media (min-width: 640px) {
+  .animate-ticker {
+    animation: ticker 30s linear infinite;
+  }
 }
 
 .animate-ticker:hover {
