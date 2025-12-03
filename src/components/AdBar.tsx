@@ -20,19 +20,20 @@ export default function AdBar() {
       onClick={handleAdClick}
       className="block mb-8 bg-gradient-to-br from-sky-900/30 to-blue-900/30 rounded-xl border border-sky-500/20 hover:border-sky-500/40 transition-all p-3 sm:p-4"
     >
-      <div className="flex items-start gap-3 sm:gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4">
         {/* Full Ad Image - scaled down */}
-        <div className="relative h-28 sm:h-32 aspect-[3/1] rounded-lg overflow-hidden flex-shrink-0">
+        <div className="relative h-20 sm:h-32 w-full sm:w-auto sm:aspect-[3/1] flex-shrink-0 bg-gradient-to-r from-sky-200 to-sky-300 rounded-xl" style={{ overflow: 'hidden' }}>
           <Image
             src="/basel_ad.png"
             alt="My Marketing Pro"
             fill
-            className="object-contain"
+            className="object-cover sm:object-contain sm:object-left scale-90 sm:scale-100"
+            style={{ objectPosition: '50% 35%' }}
           />
         </div>
 
         {/* Ad Content */}
-        <div className="flex-1 min-w-0 pt-1">
+        <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 flex-wrap">
             <span className="text-white font-bold text-base sm:text-xl tracking-tight" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
               Get 100 Free Leads

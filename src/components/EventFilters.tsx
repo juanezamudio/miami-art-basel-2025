@@ -135,7 +135,7 @@ export default function EventFilters({
 
           <button
             onClick={onPlanMyDay}
-            className="w-full py-2 flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium rounded-lg hover:from-purple-500 hover:to-pink-500 transition-colors"
+            className="col-span-2 sm:col-span-1 w-full py-2 flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium rounded-lg hover:from-purple-500 hover:to-pink-500 transition-colors"
           >
             <Sparkles size={16} />
             <span>Plan My Day</span>
