@@ -1,7 +1,7 @@
 import { Event } from '@/types/event';
 import eventsData from '@/data/events.json';
 
-// Neighborhood coordinates for Miami areas
+// Neighborhood fallback coordinates for Miami areas (used if no pre-computed coordinates exist)
 const neighborhoodCoordinates: Record<string, { lat: number; lng: number }> = {
   'Miami Beach': { lat: 25.7907, lng: -80.1300 },
   'Downtown': { lat: 25.7751, lng: -80.1947 },
@@ -13,10 +13,18 @@ const neighborhoodCoordinates: Record<string, { lat: number; lng: number }> = {
   'Little River': { lat: 25.8352, lng: -80.1798 },
   'Hialeah': { lat: 25.8576, lng: -80.2781 },
   'Fort Lauderdale': { lat: 26.1224, lng: -80.1373 },
+  'Coral Gables': { lat: 25.7215, lng: -80.2684 },
+  'North Miami': { lat: 25.8900, lng: -80.1867 },
 };
 
 export function getEvents(): Event[] {
-  return (eventsData as Event[]).map((event, index) => {
+  return (eventsData as Event[]).map((event) => {
+    // If event already has coordinates from the JSON file, use them
+    if (event.coordinates) {
+      return event;
+    }
+
+    // Otherwise, fallback to neighborhood-based coordinates
     const neighborhood = event.neighborhood?.trim() || '';
     const coords = neighborhoodCoordinates[neighborhood];
 

@@ -126,7 +126,7 @@ export default function EventFilters({
           {hasActiveFilters && (
             <button
               onClick={onClearFilters}
-              className={`${buttonClasses} flex items-center justify-center gap-1 text-gray-400 hover:text-white hover:bg-gray-700/50 transition-colors`}
+              className={`${buttonClasses} col-span-2 sm:col-span-1 flex items-center justify-center gap-1 text-gray-400 hover:text-white hover:bg-gray-700/50 transition-colors`}
             >
               <X size={16} />
               <span>Clear</span>

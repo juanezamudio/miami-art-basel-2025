@@ -114,6 +114,9 @@ export default function HomePage() {
         <CountdownTimer />
       </div>
 
+      {/* Happening Now - Only visible during Art Basel week */}
+      <HappeningNow events={allEvents} />
+
       {/* Donation Bar */}
       <DonationBar />
 
@@ -180,9 +183,6 @@ export default function HomePage() {
           <div className="text-gray-400 text-xs sm:text-sm">Pop Ups</div>
         </button>
       </div>
-
-      {/* Happening Now - Only visible during Art Basel week */}
-      <HappeningNow events={allEvents} />
 
       {/* Filters */}
       <EventFilters

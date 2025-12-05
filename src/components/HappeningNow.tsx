@@ -74,7 +74,9 @@ export default function HappeningNow({ events }: HappeningNowProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const happeningNowEvents = useMemo(() => {
-    return events.filter(isEventHappeningNow);
+    const filtered = events.filter(isEventHappeningNow);
+    // Shuffle the events randomly
+    return filtered.sort(() => Math.random() - 0.5);
   }, [events]);
 
   // Check visibility based on current date
@@ -94,9 +96,6 @@ export default function HappeningNow({ events }: HappeningNowProps) {
   if (!isVisible || happeningNowEvents.length === 0) {
     return null;
   }
-
-  // Duplicate events for seamless infinite scroll
-  const duplicatedEvents = [...happeningNowEvents, ...happeningNowEvents];
 
   return (
     <div className="mb-6 bg-gradient-to-r from-green-900/20 to-emerald-900/20 rounded-lg border border-green-500/30 overflow-hidden">
@@ -118,16 +117,29 @@ export default function HappeningNow({ events }: HappeningNowProps) {
           ref={scrollRef}
           className="flex-1 overflow-hidden relative ticker-fade"
         >
-          <div className="flex gap-3 animate-ticker">
-            {duplicatedEvents.map((event, index) => (
-              <button
-                key={`${event.id}-${index}`}
-                onClick={() => scrollToEvent(event.id)}
-                className="flex-shrink-0 px-3 py-1.5 bg-green-500/10 hover:bg-green-500/20 border border-green-500/30 rounded-lg text-sm text-green-300 hover:text-green-200 transition-colors whitespace-nowrap"
-              >
-                {event.event}
-              </button>
-            ))}
+          <div className="flex animate-ticker" style={{ width: 'max-content' }}>
+            <div className="flex gap-3 pr-3">
+              {happeningNowEvents.map((event) => (
+                <button
+                  key={`first-${event.id}`}
+                  onClick={() => scrollToEvent(event.id)}
+                  className="flex-shrink-0 px-3 py-1.5 bg-green-500/10 hover:bg-green-500/20 border border-green-500/30 rounded-lg text-sm text-green-300 hover:text-green-200 transition-colors whitespace-nowrap"
+                >
+                  {event.event}
+                </button>
+              ))}
+            </div>
+            <div className="flex gap-3 pr-3">
+              {happeningNowEvents.map((event) => (
+                <button
+                  key={`second-${event.id}`}
+                  onClick={() => scrollToEvent(event.id)}
+                  className="flex-shrink-0 px-3 py-1.5 bg-green-500/10 hover:bg-green-500/20 border border-green-500/30 rounded-lg text-sm text-green-300 hover:text-green-200 transition-colors whitespace-nowrap"
+                >
+                  {event.event}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       </div>
