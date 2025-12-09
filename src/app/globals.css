@@ -79,29 +79,7 @@ body {
   animation: slideUp 0.4s ease-out;
 }
 
-/* Continuous ticker scroll animation */
-@keyframes ticker {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.animate-ticker {
-  animation: ticker 130s linear infinite;
-}
-
-@media (min-width: 640px) {
-  .animate-ticker {
-    animation: ticker 30s linear infinite;
-  }
-}
-
-.animate-ticker:hover {
-  animation-play-state: paused;
-}
+/* Ticker content - using JS animation for smooth infinite loop */
 
 /* Ticker fade effect on edges */
 .ticker-fade {

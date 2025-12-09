@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useMemo, useRef } from 'react';
+import { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import { Event } from '@/types/event';
 import { Radio } from 'lucide-react';
 
@@ -69,15 +69,48 @@ function scrollToEvent(eventId: number) {
   }
 }
 
+// Single event button component
+function EventButton({ event, keyPrefix }: { event: Event; keyPrefix: string }) {
+  return (
+    <button
+      key={`${keyPrefix}-${event.id}`}
+      onClick={() => scrollToEvent(event.id)}
+      className="flex-shrink-0 px-3 py-1.5 bg-green-500/10 hover:bg-green-500/20 border border-green-500/30 rounded-lg text-sm text-green-300 hover:text-green-200 transition-colors whitespace-nowrap"
+    >
+      {event.event}
+    </button>
+  );
+}
+
 export default function HappeningNow({ events }: HappeningNowProps) {
   const [isVisible, setIsVisible] = useState(false);
-  const scrollRef = useRef<HTMLDivElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
+  const [containerWidth, setContainerWidth] = useState(0);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
+  const animationRef = useRef<number | null>(null);
+  const lastTimeRef = useRef<number | null>(null);
+  const positionRef = useRef(0);
+  const [, forceUpdate] = useState(0);
 
-  const happeningNowEvents = useMemo(() => {
-    const filtered = events.filter(isEventHappeningNow);
-    // Shuffle the events randomly
-    return filtered.sort(() => Math.random() - 0.5);
+  // Filter events happening now (memoized)
+  const filteredEvents = useMemo(() => {
+    return events.filter(isEventHappeningNow);
   }, [events]);
+
+  // Shuffle only once when filtered events change, using a stable shuffle
+  const [happeningNowEvents, setHappeningNowEvents] = useState<Event[]>([]);
+
+  useEffect(() => {
+    // Fisher-Yates shuffle for stable randomization
+    const shuffled = [...filteredEvents];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    setHappeningNowEvents(shuffled);
+  }, [filteredEvents]);
 
   // Check visibility based on current date
   useEffect(() => {
@@ -85,13 +118,104 @@ export default function HappeningNow({ events }: HappeningNowProps) {
       const now = new Date();
       const eventStart = new Date('2025-11-30');
       const eventEnd = new Date('2025-12-09T23:59:59');
-      setIsVisible(now >= eventStart && now <= eventEnd && happeningNowEvents.length > 0);
+      setIsVisible(now >= eventStart && now <= eventEnd && filteredEvents.length > 0);
     };
 
     checkVisibility();
     const interval = setInterval(checkVisibility, 60000);
     return () => clearInterval(interval);
-  }, [happeningNowEvents.length]);
+  }, [filteredEvents.length]);
+
+  // Check if mobile and measure container
+  useEffect(() => {
+    const updateMeasurements = () => {
+      setIsMobile(window.innerWidth < 640);
+      if (containerRef.current) {
+        setContainerWidth(containerRef.current.offsetWidth);
+      }
+    };
+    updateMeasurements();
+    window.addEventListener('resize', updateMeasurements);
+    return () => window.removeEventListener('resize', updateMeasurements);
+  }, []);
+
+  // Re-measure container when it becomes visible
+  useEffect(() => {
+    if (isVisible && containerRef.current) {
+      // Small delay to ensure DOM is rendered
+      const timer = setTimeout(() => {
+        if (containerRef.current) {
+          setContainerWidth(containerRef.current.offsetWidth);
+        }
+      }, 50);
+      return () => clearTimeout(timer);
+    }
+  }, [isVisible, happeningNowEvents]);
+
+  // Animation loop
+  const animate = useCallback((timestamp: number) => {
+    if (!containerRef.current || !contentRef.current) {
+      animationRef.current = requestAnimationFrame(animate);
+      return;
+    }
+
+    if (isPaused) {
+      lastTimeRef.current = null;
+      animationRef.current = requestAnimationFrame(animate);
+      return;
+    }
+
+    if (lastTimeRef.current === null) {
+      lastTimeRef.current = timestamp;
+    }
+
+    const deltaTime = timestamp - lastTimeRef.current;
+    lastTimeRef.current = timestamp;
+
+    // Speed in pixels per millisecond
+    const speed = isMobile ? 0.03 : 0.05;
+    positionRef.current += deltaTime * speed;
+
+    // Get the width of one set (first child)
+    const firstSet = contentRef.current.children[0] as HTMLElement;
+    if (firstSet) {
+      const setWidth = firstSet.offsetWidth;
+
+      // Reset when we've scrolled one full set width (seamless loop)
+      if (positionRef.current >= setWidth) {
+        positionRef.current = positionRef.current - setWidth;
+      }
+    }
+
+    // Apply transform directly to DOM for performance
+    contentRef.current.style.transform = `translateX(-${positionRef.current}px)`;
+
+    animationRef.current = requestAnimationFrame(animate);
+  }, [isMobile, isPaused]);
+
+  // Start animation
+  useEffect(() => {
+    if (isVisible && happeningNowEvents.length > 0) {
+      positionRef.current = 0;
+      animationRef.current = requestAnimationFrame(animate);
+    }
+
+    return () => {
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
+      }
+    };
+  }, [isVisible, happeningNowEvents, animate]);
+
+  // Reset position when events change
+  useEffect(() => {
+    positionRef.current = 0;
+    forceUpdate(n => n + 1);
+  }, [happeningNowEvents]);
+
+  // Buffer space = container width so events fully exit before reappearing
+  // This ensures the last event scrolls completely off before the first event comes back
+  const bufferSpace = containerWidth || 500; // fallback to 500px if not measured yet
 
   if (!isVisible || happeningNowEvents.length === 0) {
     return null;
@@ -114,30 +238,35 @@ export default function HappeningNow({ events }: HappeningNowProps) {
 
         {/* Continuous scrolling ticker */}
         <div
-          ref={scrollRef}
+          ref={containerRef}
           className="flex-1 overflow-hidden relative ticker-fade"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+          onTouchStart={() => setIsPaused(true)}
+          onTouchEnd={() => setIsPaused(false)}
         >
-          <div className="flex animate-ticker" style={{ width: 'max-content' }}>
-            <div className="flex gap-3 pr-3">
+          <div
+            ref={contentRef}
+            className="flex items-center"
+            style={{ willChange: 'transform' }}
+          >
+            {/* First set of events + buffer space (container width) */}
+            <div
+              className="flex items-center gap-3 flex-shrink-0"
+              style={{ paddingRight: `${bufferSpace}px` }}
+            >
               {happeningNowEvents.map((event) => (
-                <button
-                  key={`first-${event.id}`}
-                  onClick={() => scrollToEvent(event.id)}
-                  className="flex-shrink-0 px-3 py-1.5 bg-green-500/10 hover:bg-green-500/20 border border-green-500/30 rounded-lg text-sm text-green-300 hover:text-green-200 transition-colors whitespace-nowrap"
-                >
-                  {event.event}
-                </button>
+                <EventButton key={`set1-${event.id}`} event={event} keyPrefix="set1" />
               ))}
             </div>
-            <div className="flex gap-3 pr-3">
+
+            {/* Second set - duplicate for seamless loop + buffer space */}
+            <div
+              className="flex items-center gap-3 flex-shrink-0"
+              style={{ paddingRight: `${bufferSpace}px` }}
+            >
               {happeningNowEvents.map((event) => (
-                <button
-                  key={`second-${event.id}`}
-                  onClick={() => scrollToEvent(event.id)}
-                  className="flex-shrink-0 px-3 py-1.5 bg-green-500/10 hover:bg-green-500/20 border border-green-500/30 rounded-lg text-sm text-green-300 hover:text-green-200 transition-colors whitespace-nowrap"
-                >
-                  {event.event}
-                </button>
+                <EventButton key={`set2-${event.id}`} event={event} keyPrefix="set2" />
               ))}
             </div>
           </div>
