@@ -85,13 +85,14 @@ function EventButton({ event, keyPrefix }: { event: Event; keyPrefix: string }) 
 export default function HappeningNow({ events }: HappeningNowProps) {
   const [isVisible, setIsVisible] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const [isPaused, setIsPaused] = useState(false);
   const [containerWidth, setContainerWidth] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   const animationRef = useRef<number | null>(null);
   const lastTimeRef = useRef<number | null>(null);
   const positionRef = useRef(0);
+  const isPausedRef = useRef(false);
+  const setWidthRef = useRef(0);
   const [, forceUpdate] = useState(0);
 
   // Filter events happening now (memoized)
@@ -152,15 +153,31 @@ export default function HappeningNow({ events }: HappeningNowProps) {
     }
   }, [isVisible, happeningNowEvents]);
 
-  // Animation loop
+  // Measure set width once and cache it
+  useEffect(() => {
+    if (contentRef.current && happeningNowEvents.length > 0 && containerWidth > 0) {
+      const timer = setTimeout(() => {
+        if (contentRef.current) {
+          const firstSet = contentRef.current.children[0] as HTMLElement;
+          if (firstSet) {
+            setWidthRef.current = firstSet.offsetWidth;
+          }
+        }
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [happeningNowEvents, containerWidth]);
+
+  // Animation loop - use refs to avoid re-creating callback
   const animate = useCallback((timestamp: number) => {
     if (!containerRef.current || !contentRef.current) {
       animationRef.current = requestAnimationFrame(animate);
       return;
     }
 
-    if (isPaused) {
-      lastTimeRef.current = null;
+    if (isPausedRef.current) {
+      // Keep updating lastTimeRef while paused so there's no jump when resuming
+      lastTimeRef.current = timestamp;
       animationRef.current = requestAnimationFrame(animate);
       return;
     }
@@ -176,22 +193,17 @@ export default function HappeningNow({ events }: HappeningNowProps) {
     const speed = isMobile ? 0.03 : 0.05;
     positionRef.current += deltaTime * speed;
 
-    // Get the width of one set (first child)
-    const firstSet = contentRef.current.children[0] as HTMLElement;
-    if (firstSet) {
-      const setWidth = firstSet.offsetWidth;
-
-      // Reset when we've scrolled one full set width (seamless loop)
-      if (positionRef.current >= setWidth) {
-        positionRef.current = positionRef.current - setWidth;
-      }
+    // Use cached set width for consistent looping
+    const setWidth = setWidthRef.current;
+    if (setWidth > 0 && positionRef.current >= setWidth) {
+      positionRef.current = positionRef.current - setWidth;
     }
 
     // Apply transform directly to DOM for performance
     contentRef.current.style.transform = `translateX(-${positionRef.current}px)`;
 
     animationRef.current = requestAnimationFrame(animate);
-  }, [isMobile, isPaused]);
+  }, [isMobile]);
 
   // Start animation
   useEffect(() => {
@@ -240,10 +252,10 @@ export default function HappeningNow({ events }: HappeningNowProps) {
         <div
           ref={containerRef}
           className="flex-1 overflow-hidden relative ticker-fade"
-          onMouseEnter={() => setIsPaused(true)}
-          onMouseLeave={() => setIsPaused(false)}
-          onTouchStart={() => setIsPaused(true)}
-          onTouchEnd={() => setIsPaused(false)}
+          onMouseEnter={() => { isPausedRef.current = true; }}
+          onMouseLeave={() => { isPausedRef.current = false; }}
+          onTouchStart={() => { isPausedRef.current = true; }}
+          onTouchEnd={() => { isPausedRef.current = false; }}
         >
           <div
             ref={contentRef}
