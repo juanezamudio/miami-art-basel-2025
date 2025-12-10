@@ -5,6 +5,9 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Calendar, List, Map, MessageCircle, PlusCircle, Heart, Bell, Archive } from 'lucide-react';
 import NotificationSettings from './NotificationSettings';
 
+// Art Basel 2025 end date
+const EVENT_END_DATE = new Date('2025-12-09T23:59:59');
+
 interface HeaderProps {
   onChatToggle: () => void;
 }
@@ -13,6 +16,17 @@ export default function Header({ onChatToggle }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [showSubmitModal, setShowSubmitModal] = useState(false);
   const [showNotificationSettings, setShowNotificationSettings] = useState(false);
+  const [isArtBaselOver, setIsArtBaselOver] = useState(false);
+
+  // Check if Art Basel has ended
+  useEffect(() => {
+    const checkIfOver = () => {
+      setIsArtBaselOver(new Date() > EVENT_END_DATE);
+    };
+    checkIfOver();
+    const interval = setInterval(checkIfOver, 60000);
+    return () => clearInterval(interval);
+  }, []);
 
   // Load YouForm script when modal opens
   useEffect(() => {
@@ -38,34 +52,38 @@ export default function Header({ onChatToggle }: HeaderProps) {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            <Link
-              href="/"
-              className="flex items-center space-x-1 hover:text-pink-200 transition-colors"
-            >
-              <List size={18} />
-              <span>Events</span>
-            </Link>
-            <Link
-              href="/calendar"
-              className="flex items-center space-x-1 hover:text-pink-200 transition-colors"
-            >
-              <Calendar size={18} />
-              <span>Calendar</span>
-            </Link>
-            <Link
-              href="/map"
-              className="flex items-center space-x-1 hover:text-pink-200 transition-colors"
-            >
-              <Map size={18} />
-              <span>Map</span>
-            </Link>
-            <Link
-              href="/schedule"
-              className="flex items-center space-x-1 hover:text-pink-200 transition-colors"
-            >
-              <Heart size={18} />
-              <span>My Schedule</span>
-            </Link>
+            {!isArtBaselOver && (
+              <>
+                <Link
+                  href="/"
+                  className="flex items-center space-x-1 hover:text-pink-200 transition-colors"
+                >
+                  <List size={18} />
+                  <span>Events</span>
+                </Link>
+                <Link
+                  href="/calendar"
+                  className="flex items-center space-x-1 hover:text-pink-200 transition-colors"
+                >
+                  <Calendar size={18} />
+                  <span>Calendar</span>
+                </Link>
+                <Link
+                  href="/map"
+                  className="flex items-center space-x-1 hover:text-pink-200 transition-colors"
+                >
+                  <Map size={18} />
+                  <span>Map</span>
+                </Link>
+                <Link
+                  href="/schedule"
+                  className="flex items-center space-x-1 hover:text-pink-200 transition-colors"
+                >
+                  <Heart size={18} />
+                  <span>My Schedule</span>
+                </Link>
+              </>
+            )}
             <button
               onClick={() => setShowSubmitModal(true)}
               className="flex items-center space-x-1 hover:text-pink-200 transition-colors"
@@ -80,13 +98,15 @@ export default function Header({ onChatToggle }: HeaderProps) {
               <Archive size={18} />
               <span>Archive</span>
             </Link>
-            <button
-              onClick={() => setShowNotificationSettings(true)}
-              className="p-2 hover:bg-white/20 rounded-full transition-colors"
-              title="Notifications"
-            >
-              <Bell size={18} />
-            </button>
+            {!isArtBaselOver && (
+              <button
+                onClick={() => setShowNotificationSettings(true)}
+                className="p-2 hover:bg-white/20 rounded-full transition-colors"
+                title="Notifications"
+              >
+                <Bell size={18} />
+              </button>
+            )}
             <button
               onClick={onChatToggle}
               className="flex items-center space-x-1 bg-white/20 hover:bg-white/30 px-4 py-2 rounded-full transition-colors"
@@ -108,38 +128,42 @@ export default function Header({ onChatToggle }: HeaderProps) {
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
           <nav className="md:hidden py-4 space-y-2">
-            <Link
-              href="/"
-              className="flex items-center space-x-2 py-2 hover:text-pink-200"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              <List size={18} />
-              <span>Events</span>
-            </Link>
-            <Link
-              href="/calendar"
-              className="flex items-center space-x-2 py-2 hover:text-pink-200"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              <Calendar size={18} />
-              <span>Calendar</span>
-            </Link>
-            <Link
-              href="/map"
-              className="flex items-center space-x-2 py-2 hover:text-pink-200"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              <Map size={18} />
-              <span>Map</span>
-            </Link>
-            <Link
-              href="/schedule"
-              className="flex items-center space-x-2 py-2 hover:text-pink-200"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              <Heart size={18} />
-              <span>My Schedule</span>
-            </Link>
+            {!isArtBaselOver && (
+              <>
+                <Link
+                  href="/"
+                  className="flex items-center space-x-2 py-2 hover:text-pink-200"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <List size={18} />
+                  <span>Events</span>
+                </Link>
+                <Link
+                  href="/calendar"
+                  className="flex items-center space-x-2 py-2 hover:text-pink-200"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <Calendar size={18} />
+                  <span>Calendar</span>
+                </Link>
+                <Link
+                  href="/map"
+                  className="flex items-center space-x-2 py-2 hover:text-pink-200"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <Map size={18} />
+                  <span>Map</span>
+                </Link>
+                <Link
+                  href="/schedule"
+                  className="flex items-center space-x-2 py-2 hover:text-pink-200"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <Heart size={18} />
+                  <span>My Schedule</span>
+                </Link>
+              </>
+            )}
             <button
               onClick={() => {
                 setShowSubmitModal(true);
@@ -158,16 +182,18 @@ export default function Header({ onChatToggle }: HeaderProps) {
               <Archive size={18} />
               <span>Archive</span>
             </Link>
-            <button
-              onClick={() => {
-                setShowNotificationSettings(true);
-                setMobileMenuOpen(false);
-              }}
-              className="flex items-center space-x-2 py-2 hover:text-pink-200 w-full"
-            >
-              <Bell size={18} />
-              <span>Notifications</span>
-            </button>
+            {!isArtBaselOver && (
+              <button
+                onClick={() => {
+                  setShowNotificationSettings(true);
+                  setMobileMenuOpen(false);
+                }}
+                className="flex items-center space-x-2 py-2 hover:text-pink-200 w-full"
+              >
+                <Bell size={18} />
+                <span>Notifications</span>
+              </button>
+            )}
             <button
               onClick={() => {
                 onChatToggle();

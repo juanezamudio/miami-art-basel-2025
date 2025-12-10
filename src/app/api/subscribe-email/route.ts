@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const CONVERTKIT_API_KEY = process.env.CONVERTKIT_API_KEY!;
+const CONVERTKIT_API_SECRET = process.env.CONVERTKIT_API_SECRET!;
 const CONVERTKIT_FORM_ID = process.env.CONVERTKIT_FORM_ID!;
 
 export async function POST(request: NextRequest) {
@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    if (!CONVERTKIT_API_KEY || !CONVERTKIT_FORM_ID) {
+    if (!CONVERTKIT_API_SECRET || !CONVERTKIT_FORM_ID) {
       console.error('ConvertKit credentials not configured');
       return NextResponse.json(
         { error: 'Email service not configured' },
@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Subscribe email to ConvertKit form
+    // Subscribe email to ConvertKit form using v3 API
     const response = await fetch(
       `https://api.convertkit.com/v3/forms/${CONVERTKIT_FORM_ID}/subscribe`,
       {
@@ -31,9 +31,8 @@ export async function POST(request: NextRequest) {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          api_key: CONVERTKIT_API_KEY,
+          api_secret: CONVERTKIT_API_SECRET,
           email,
-          tags: tags ? Object.keys(tags) : [],
         }),
       }
     );
@@ -43,7 +42,7 @@ export async function POST(request: NextRequest) {
     if (!response.ok) {
       console.error('ConvertKit API error:', data);
       return NextResponse.json(
-        { error: data.message || 'Failed to subscribe. Please try again.' },
+        { error: data.message || data.error || 'Failed to subscribe. Please try again.' },
         { status: response.status }
       );
     }

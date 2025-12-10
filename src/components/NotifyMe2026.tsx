@@ -48,7 +48,7 @@ export default function NotifyMe2026() {
 
   if (status === 'success') {
     return (
-      <div className="w-full max-w-md mx-auto mb-8">
+      <div className="w-full max-w-2xl mx-auto mb-8">
         <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6 text-center">
           <div className="flex items-center justify-center gap-2 text-green-400 mb-2">
             <Check size={24} />
@@ -63,7 +63,7 @@ export default function NotifyMe2026() {
   }
 
   return (
-    <div className="w-full max-w-md mx-auto mb-8">
+    <div className="w-full max-w-2xl mx-auto mb-8">
       <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 border border-purple-500/30 rounded-xl p-6">
         <div className="flex items-center justify-center gap-2 text-purple-300 mb-3">
           <Bell size={20} />
