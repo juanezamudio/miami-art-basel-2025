@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { getEvents, getEventTypes, getNeighborhoods, filterEvents } from '@/lib/events';
 import EventCard from '@/components/EventCard';
 import EventFilters from '@/components/EventFilters';
@@ -10,6 +10,9 @@ import HappeningNow from '@/components/HappeningNow';
 import Weather from '@/components/Weather';
 import PlanMyDay from '@/components/PlanMyDay';
 import AdBar from '@/components/AdBar';
+
+// Art Basel 2025 dates
+const EVENT_END_DATE = new Date('2025-12-09T23:59:59');
 
 // Pluralize event type names correctly
 function pluralizeType(type: string): string {
@@ -34,6 +37,18 @@ export default function HomePage() {
   const [priceRange, setPriceRange] = useState('');
   const [sortBy, setSortBy] = useState<SortOption>('date');
   const [showPlanMyDay, setShowPlanMyDay] = useState(false);
+  const [isArtBaselOver, setIsArtBaselOver] = useState(false);
+
+  // Check if Art Basel has ended
+  useEffect(() => {
+    const checkIfOver = () => {
+      setIsArtBaselOver(new Date() > EVENT_END_DATE);
+    };
+    checkIfOver();
+    // Check every minute in case we cross the end time
+    const interval = setInterval(checkIfOver, 60000);
+    return () => clearInterval(interval);
+  }, []);
 
   const allEvents = useMemo(() => getEvents(), []);
   const eventTypes = useMemo(() => getEventTypes(), []);
@@ -115,19 +130,19 @@ export default function HomePage() {
       </div>
 
       {/* Happening Now - Only visible during Art Basel week */}
-      <HappeningNow events={allEvents} />
+      {!isArtBaselOver && <HappeningNow events={allEvents} />}
 
       {/* Donation Bar */}
       <DonationBar />
 
-      {/* Ad Bar */}
-      <AdBar />
+      {/* Ad Bar - Hide after Art Basel */}
+      {!isArtBaselOver && <AdBar />}
 
-      {/* Weather */}
-      <Weather />
+      {/* Weather - Hide after Art Basel */}
+      {!isArtBaselOver && <Weather />}
 
-      {/* Stats */}
-      <div className="grid grid-cols-3 sm:grid-cols-6 gap-2 sm:gap-3 mb-8">
+      {/* Stats - Only show during Art Basel */}
+      {!isArtBaselOver && <div className="grid grid-cols-3 sm:grid-cols-6 gap-2 sm:gap-3 mb-8">
         <button
           onClick={() => scrollToSection('art-show')}
           className="bg-[#1a1a2e] rounded-xl shadow-lg p-3 sm:p-4 text-center border border-purple-500/20 hover:border-purple-500/50 hover:bg-purple-500/10 transition-all cursor-pointer"
@@ -182,90 +197,98 @@ export default function HomePage() {
           </div>
           <div className="text-gray-400 text-xs sm:text-sm">Pop Ups</div>
         </button>
-      </div>
+      </div>}
 
-      {/* Filters */}
-      <EventFilters
-        search={search}
-        onSearchChange={setSearch}
-        eventType={eventType}
-        onEventTypeChange={setEventType}
-        neighborhood={neighborhood}
-        onNeighborhoodChange={setNeighborhood}
-        date={date}
-        onDateChange={setDate}
-        priceRange={priceRange}
-        onPriceRangeChange={setPriceRange}
-        onPlanMyDay={() => setShowPlanMyDay(true)}
-        eventTypes={eventTypes}
-        neighborhoods={neighborhoods}
-        onClearFilters={clearFilters}
-      />
+      {/* Filters - Only show during Art Basel */}
+      {!isArtBaselOver && (
+        <EventFilters
+          search={search}
+          onSearchChange={setSearch}
+          eventType={eventType}
+          onEventTypeChange={setEventType}
+          neighborhood={neighborhood}
+          onNeighborhoodChange={setNeighborhood}
+          date={date}
+          onDateChange={setDate}
+          priceRange={priceRange}
+          onPriceRangeChange={setPriceRange}
+          onPlanMyDay={() => setShowPlanMyDay(true)}
+          eventTypes={eventTypes}
+          neighborhoods={neighborhoods}
+          onClearFilters={clearFilters}
+        />
+      )}
 
-      {/* Results count and sort */}
-      <div className="mb-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-        <div className="text-gray-400">
-          Showing {filteredEvents.length} of {allEvents.length} events
-        </div>
-        <div className="flex items-center gap-2">
-          <span className="text-gray-500 text-sm">Sort by:</span>
-          <select
-            value={sortBy}
-            onChange={(e) => setSortBy(e.target.value as SortOption)}
-            className="px-3 py-1.5 bg-[#1a1a2e] border border-gray-700 rounded-lg text-gray-200 text-sm focus:outline-none appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%239ca3af%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:16px] bg-[right_0.5rem_center] bg-no-repeat pr-8"
-          >
-            <option value="date">Date</option>
-            <option value="alphabetical">A-Z</option>
-          </select>
-        </div>
-      </div>
-
-      {/* Event Grid */}
-      {Object.keys(groupedEvents).length > 0 ? (
-        Object.entries(groupedEvents).map(([type, events]) => {
-          const typeColors: Record<string, string> = {
-            'Art Show': 'bg-purple-500',
-            'Party': 'bg-pink-500',
-            'Wellness': 'bg-green-500',
-            'Conference': 'bg-blue-500',
-            'Networking': 'bg-orange-500',
-            'Pop Up': 'bg-cyan-500',
-          };
-          const anchorId = type.toLowerCase().replace(/\s+/g, '-');
-
-          return (
-            <div key={type} id={anchorId} className="mb-8 scroll-mt-20">
-              <h2 className="text-2xl font-bold text-gray-100 mb-4 flex items-center gap-2">
-                <span className={`w-3 h-3 rounded-full ${typeColors[type] || 'bg-gray-500'}`} />
-                {pluralizeType(type)}
-                <span className="text-gray-500 font-normal text-lg">({events.length})</span>
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {events.map((event) => (
-                  <EventCard key={event.id} event={event} />
-                ))}
-              </div>
-            </div>
-          );
-        })
-      ) : (
-        <div className="text-center py-12">
-          <p className="text-gray-500 text-lg">No events match your filters.</p>
-          <button
-            onClick={clearFilters}
-            className="mt-4 text-purple-400 hover:text-purple-300 underline"
-          >
-            Clear all filters
-          </button>
+      {/* Results count and sort - Only show during Art Basel */}
+      {!isArtBaselOver && (
+        <div className="mb-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+          <div className="text-gray-400">
+            Showing {filteredEvents.length} of {allEvents.length} events
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="text-gray-500 text-sm">Sort by:</span>
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value as SortOption)}
+              className="px-3 py-1.5 bg-[#1a1a2e] border border-gray-700 rounded-lg text-gray-200 text-sm focus:outline-none appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%239ca3af%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:16px] bg-[right_0.5rem_center] bg-no-repeat pr-8"
+            >
+              <option value="date">Date</option>
+              <option value="alphabetical">A-Z</option>
+            </select>
+          </div>
         </div>
       )}
 
+      {/* Event Grid - Only show during Art Basel */}
+      {!isArtBaselOver && (
+        Object.keys(groupedEvents).length > 0 ? (
+          Object.entries(groupedEvents).map(([type, events]) => {
+            const typeColors: Record<string, string> = {
+              'Art Show': 'bg-purple-500',
+              'Party': 'bg-pink-500',
+              'Wellness': 'bg-green-500',
+              'Conference': 'bg-blue-500',
+              'Networking': 'bg-orange-500',
+              'Pop Up': 'bg-cyan-500',
+            };
+            const anchorId = type.toLowerCase().replace(/\s+/g, '-');
+
+            return (
+              <div key={type} id={anchorId} className="mb-8 scroll-mt-20">
+                <h2 className="text-2xl font-bold text-gray-100 mb-4 flex items-center gap-2">
+                  <span className={`w-3 h-3 rounded-full ${typeColors[type] || 'bg-gray-500'}`} />
+                  {pluralizeType(type)}
+                  <span className="text-gray-500 font-normal text-lg">({events.length})</span>
+                </h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {events.map((event) => (
+                    <EventCard key={event.id} event={event} />
+                  ))}
+                </div>
+              </div>
+            );
+          })
+        ) : (
+          <div className="text-center py-12">
+            <p className="text-gray-500 text-lg">No events match your filters.</p>
+            <button
+              onClick={clearFilters}
+              className="mt-4 text-purple-400 hover:text-purple-300 underline"
+            >
+              Clear all filters
+            </button>
+          </div>
+        )
+      )}
+
       {/* Plan My Day Modal */}
-      <PlanMyDay
-        isOpen={showPlanMyDay}
-        onClose={() => setShowPlanMyDay(false)}
-        neighborhoods={neighborhoods}
-      />
+      {!isArtBaselOver && (
+        <PlanMyDay
+          isOpen={showPlanMyDay}
+          onClose={() => setShowPlanMyDay(false)}
+          neighborhoods={neighborhoods}
+        />
+      )}
     </div>
   );
 }

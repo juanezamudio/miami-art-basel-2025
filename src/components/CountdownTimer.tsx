@@ -1,7 +1,9 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Heart, Calendar, Sparkles } from 'lucide-react';
+import { Heart, Calendar, Sparkles, Archive } from 'lucide-react';
+import Link from 'next/link';
+import NotifyMe2026 from './NotifyMe2026';
 
 // Art Basel 2025 dates
 const EVENT_START_DATE_2025 = new Date('2025-11-30T00:00:00');
@@ -144,6 +146,15 @@ export default function CountdownTimer() {
             We&apos;re honored to be your official events platform and can&apos;t wait to bring you
             even more next year. Stay tuned for Art Basel Miami 2026!
           </p>
+
+          {/* Archive Button */}
+          <Link
+            href="/archive"
+            className="inline-flex items-center gap-2 mt-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-medium rounded-xl transition-all shadow-lg hover:shadow-purple-500/25"
+          >
+            <Archive size={18} />
+            <span>View 2025 Archive</span>
+          </Link>
         </div>
 
         {/* Divider */}
@@ -152,6 +163,9 @@ export default function CountdownTimer() {
           <Calendar size={16} className="text-purple-400" />
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent"></div>
         </div>
+
+        {/* Notify Me for 2026 */}
+        <NotifyMe2026 />
 
         {/* Countdown to 2026 */}
         <CountdownDisplay label="Art Basel Miami 2026 starts in" />

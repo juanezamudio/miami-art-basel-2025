@@ -9,7 +9,8 @@
     "lint": "eslint",
     "preprocess-data": "node scripts/preprocess-csv.js",
     "update-data": "node scripts/convert-csv.js",
-    "geocode": "node scripts/geocode-events.js"
+    "geocode": "node scripts/geocode-events.js",
+    "archive": "node scripts/archive-events.js"
   },
   "dependencies": {
     "@coinbase/wallet-sdk": "^4.3.7",

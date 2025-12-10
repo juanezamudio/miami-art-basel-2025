@@ -163,7 +163,7 @@ export default function EventCard({ event, compact = false }: EventCardProps) {
           {event.address && (
             <button
               onClick={() => setShowMapsMenu(!showMapsMenu)}
-              className="flex items-start gap-2 mt-1 px-2 py-1.5 bg-purple-500/10 hover:bg-purple-500/20 border border-purple-500/30 rounded-lg text-xs text-purple-300 hover:text-purple-200 transition-colors cursor-pointer text-left"
+              className="w-full flex items-start gap-2 mt-1 px-2 py-1.5 bg-purple-500/10 hover:bg-purple-500/20 border border-purple-500/30 rounded-lg text-xs text-purple-300 hover:text-purple-200 transition-colors cursor-pointer text-left"
             >
               <span className="flex-1">{event.address}</span>
               <Navigation size={14} className="flex-shrink-0 mt-0.5 text-purple-400" />

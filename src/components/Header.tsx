@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { Menu, X, Calendar, List, Map, MessageCircle, PlusCircle, Heart, Bell } from 'lucide-react';
+import { Menu, X, Calendar, List, Map, MessageCircle, PlusCircle, Heart, Bell, Archive } from 'lucide-react';
 import NotificationSettings from './NotificationSettings';
 
 interface HeaderProps {
@@ -73,6 +73,13 @@ export default function Header({ onChatToggle }: HeaderProps) {
               <PlusCircle size={18} />
               <span>Submit Event</span>
             </button>
+            <Link
+              href="/archive"
+              className="flex items-center space-x-1 hover:text-pink-200 transition-colors"
+            >
+              <Archive size={18} />
+              <span>Archive</span>
+            </Link>
             <button
               onClick={() => setShowNotificationSettings(true)}
               className="p-2 hover:bg-white/20 rounded-full transition-colors"
@@ -143,6 +150,14 @@ export default function Header({ onChatToggle }: HeaderProps) {
               <PlusCircle size={18} />
               <span>Submit Event</span>
             </button>
+            <Link
+              href="/archive"
+              className="flex items-center space-x-2 py-2 hover:text-pink-200"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <Archive size={18} />
+              <span>Archive</span>
+            </Link>
             <button
               onClick={() => {
                 setShowNotificationSettings(true);
