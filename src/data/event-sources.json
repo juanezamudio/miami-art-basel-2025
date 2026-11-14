@@ -1,0 +1,48 @@
+{
+  "season": 2026,
+  "sources": [
+    {
+      "id": "khami-2026",
+      "kind": "google-sheet",
+      "name": "Khami’s 2026 Basel Art Week Guide",
+      "url": "https://docs.google.com/spreadsheets/d/1hAQIMd8sW3oOcS8D9INO4aq_0T8aFMbIKZSpgUJjRIE/htmlview#gid=1004567442",
+      "spreadsheetId": "1hAQIMd8sW3oOcS8D9INO4aq_0T8aFMbIKZSpgUJjRIE",
+      "sheetId": 1004567442,
+      "sheetName": "2026 EVENT GUIDE",
+      "format": "khami",
+      "notes": [
+        "2026 tab includes copied 2025 events and weekday/date conflicts.",
+        "Separate 2025 EVENT ARCHIVE tab: gid=0; use only to find organizer leads.",
+        "RSVP URLs are embedded hyperlinks; plain CSV loses some destinations."
+      ]
+    },
+    {
+      "id": "sheeets-2026",
+      "kind": "google-sheet",
+      "name": "sheeets.xyz Art Basel Miami 2026",
+      "url": "https://docs.google.com/spreadsheets/d/1xWmIHyEyOmPHfkYuZkucPRlLGWbb9CF6Oqvfl8FUV6k/htmlview#gid=1607985947",
+      "spreadsheetId": "1xWmIHyEyOmPHfkYuZkucPRlLGWbb9CF6Oqvfl8FUV6k",
+      "sheetId": 1607985947,
+      "sheetName": "Art Basel Miami 2026",
+      "format": "sheeets",
+      "notes": [
+        "Main header is row 14, not row 1; ignore template counters and ads.",
+        "Contains an Event Canceled row; do not publish it.",
+        "Free label for the main BitBasel event conflicts with organizer ticketing.",
+        "Later contribution/other-event sections require separate review."
+      ]
+    },
+    {
+      "id": "miamibasel-2026",
+      "kind": "public-event-feed",
+      "name": "MiamiBasel 2026",
+      "url": "https://miamibasel.com/2026",
+      "publicApiOrigin": "https://ebmjopjlppkvrbclmljv.supabase.co",
+      "notes": [
+        "Public page uses an approved-events query filtered to season=2026.",
+        "Capture factual fields and event links only, not descriptions, images, or editorial copy.",
+        "121 approved rows observed on 2026-11-14; each remains an unverified discovery lead."
+      ]
+    }
+  ]
+}

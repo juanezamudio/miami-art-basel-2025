@@ -1,8 +1,10 @@
 'use client';
 
+import { parseEventDate } from '@/lib/event-dates';
+
 import { useMemo, useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
-import { getEvents } from '@/lib/events';
+import { getAllEvents } from '@/lib/catalog';
 import EventCard from '@/components/EventCard';
 import { CalendarHeart, AlertCircle, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
@@ -11,7 +13,7 @@ export default function SharedScheduleContent() {
   const searchParams = useSearchParams();
   const [decodedIds, setDecodedIds] = useState<string[]>([]);
   const [error, setError] = useState(false);
-  const allEvents = useMemo(() => getEvents(), []);
+  const allEvents = useMemo(() => getAllEvents(), []);
 
   useEffect(() => {
     const encoded = searchParams.get('s');
@@ -50,7 +52,8 @@ export default function SharedScheduleContent() {
 
   const formatDateHeader = (dateStr: string) => {
     if (dateStr === 'TBA') return 'Date TBA';
-    const date = new Date(dateStr);
+    const date = parseEventDate(dateStr);
+    if (!date) return 'Date TBA';
     return date.toLocaleDateString('en-US', {
       weekday: 'long',
       month: 'long',

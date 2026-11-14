@@ -184,7 +184,7 @@ export default function DonationBar() {
             {showAdDropdown && (
               <div className="absolute right-0 mt-2 w-48 bg-[#1a1a2e] border border-gray-700 rounded-lg shadow-xl z-50 overflow-hidden">
                 <a
-                  href={`mailto:${AD_SALES_EMAIL}?subject=Art Basel 2025 - Advertising Inquiry`}
+                  href={`mailto:${AD_SALES_EMAIL}?subject=Miami Art Week - Advertising Inquiry`}
                   className="flex items-center gap-2 px-4 py-2.5 text-sm text-gray-200 hover:bg-purple-600/20 transition-colors"
                   onClick={() => setShowAdDropdown(false)}
                 >

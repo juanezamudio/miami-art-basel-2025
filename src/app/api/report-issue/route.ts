@@ -39,7 +39,7 @@ export async function POST(request: NextRequest) {
 ${issueList}
 
 ---
-_Reported from Miami Art Basel 2025_
+_Reported from Basel.ai_
     `.trim();
 
     // Send to Telegram

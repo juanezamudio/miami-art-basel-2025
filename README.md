@@ -1,143 +1,108 @@
-# Miami Art Basel 2025
+# Basel.ai — Miami Art Week 2026
 
-![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js)
-![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-38B2AC?style=flat-square&logo=tailwind-css)
-![Gemini AI](https://img.shields.io/badge/Gemini-AI-8E75B2?style=flat-square&logo=google)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+An independent guide to Miami Art Week, November 30–December 6, 2026. Art Basel Miami Beach public fair dates are December 4–6. Basel.ai is not affiliated with Art Basel.
 
-Your complete guide to art shows, parties, and wellness events during Miami Art Basel Week 2025 (November 30 - December 9).
+The app uses Next.js 16, React 19, TypeScript, Tailwind CSS 4, Leaflet, and Gemini. It includes searchable listings, a calendar, a map, saved/shared schedules, a 2025 archive, and AI assistance.
 
-## Features
+## Local development
 
-- **Event Listings** - Browse 100+ events with search and filters by type, neighborhood, and date
-- **Calendar View** - Interactive calendar showing events for each day of Art Basel week
-- **Map View** - Explore event locations across Miami neighborhoods with Leaflet maps
-- **AI Assistant** - Gemini-powered chatbot to help plan your Art Basel experience
-- **Dark Mode** - Sleek dark theme with vibrant gradient accents
-- **Fully Responsive** - Optimized for mobile, tablet, and desktop
+Use Node.js **22.18+** (22 LTS recommended). Data scripts and tests use Node's built-in TypeScript stripping.
 
-## Tech Stack
-
-- **Framework:** Next.js 16 (App Router)
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS 4
-- **AI:** Google Gemini 2.0 Flash
-- **Maps:** Leaflet
-- **Icons:** Lucide React
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18+
-- npm or yarn
-- Gemini API key ([Get one here](https://makersuite.google.com/app/apikey))
-
-### Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/miami-art-basel-2025.git
-   cd miami-art-basel-2025
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Set up environment variables:**
-   ```bash
-   cp .env.local.example .env.local
-   ```
-   Then edit `.env.local` and add your Gemini API key:
-   ```
-   GEMINI_API_KEY=your_api_key_here
-   ```
-
-4. **Run the development server:**
-   ```bash
-   npm run dev
-   ```
-
-5. **Open in browser:**
-   Navigate to [http://localhost:3000](http://localhost:3000)
-
-## Available Scripts
-
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server |
-| `npm run build` | Build for production |
-| `npm run start` | Start production server |
-| `npm run lint` | Run ESLint |
-| `npm run update-data` | Regenerate event data from CSV |
-
-## Updating Event Data
-
-Event data is stored in `art-basel-2025.csv`. To update:
-
-1. Edit the CSV file with new/updated events
-2. Run `npm run update-data`
-3. Restart the dev server or rebuild
-
-### CSV Format
-
-```
-ID,Event,Event Type,Start Date,End Date,Schedule,Neighborhood,Address,Notes,Tickets Link,Link
+```sh
+npm ci
+cp .env.local.example .env.local
+npm run dev
 ```
 
-**Event Types:** `Art Show`, `Party`, `Wellness`
+Open http://localhost:3000. Listings, filtering, the calendar, archive, and local saved schedules do not need API credentials.
 
-## Project Structure
+Optional integrations:
 
+| Variable | Purpose |
+| --- | --- |
+| `GEMINI_API_KEY` | AI chat and itinerary generation |
+| `GEMINI_MODEL` | Gemini model override; defaults to `gemini-2.5-flash` |
+| `NEXT_PUBLIC_BASE_URL` | Canonical origin for notifications and wallet metadata |
+| `NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID` | Existing wallet donation integration |
+| `NEXT_PUBLIC_ONESIGNAL_APP_ID`, `ONESIGNAL_REST_API_KEY` | Push notification integration |
+| `CRON_SECRET` | Authenticate reminder requests |
+| `CONVERTKIT_API_SECRET`, `CONVERTKIT_FORM_ID` | Email subscriptions |
+| `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID` | Event issue reports |
+
+Never commit `.env.local` or credentials. Configure production environment values through the existing hosting setup.
+
+## Project checklist and discovery sources
+
+See [TODO.md](TODO.md) for the prioritized 2026 launch checklist and [the source review](docs/event-source-review.md) for findings from the two public spreadsheets and MiamiBasel. Run `npm run sources:check` to capture local added/changed/missing reports. Monitoring requires Python 3.9+ and network access; it is manual and never publishes events.
+
+## Current data and editorial workflow
+
+`src/data/season.json` controls the current edition, Miami timezone, week dates, and fair dates. `art-basel-2026.csv` is the editable source; `src/data/events.json` is the published catalog. The current catalog has **11 reviewed listings**. The original three fairs were checked November 13, 2026:
+
+- [Art Basel Miami Beach](https://www.artbasel.com/miami-beach?blLocaleCode=en)
+- [Art Miami](https://www.artmiami.com/practical-info)
+- [Untitled Art, Miami Beach](https://untitledartfairs.com/?switch=miami)
+
+Eight more listings were reviewed and imported on November 14: five BitBasel program sessions, the Factory Basel five-night GA pass, Oolite Arts’ brunch/open studios, and AfriKin’s public exhibition. [Editorial decisions](src/data/editorial-review.json) retain organizer evidence, discovery identities, and held/historical leads. This manual ledger is not yet an enforced publish gate or review UI.
+
+Week dates come from the [Greater Miami Convention & Visitors Bureau](https://www.miamiandbeaches.com/events/art-basel/miami-art-week-fairs). This is a starting catalog, not complete Miami Art Week coverage. Blank prices and hours mean **unverified**, never free or open all day. Private previews are not included in public date ranges.
+
+1. Check an organizer's page for this edition. Verify dates, location, access restrictions, and ticket information independently.
+2. Add the event to the CSV with a permanent ID, edition, organizer source URL, and the date actually checked. Use ISO `YYYY-MM-DD` dates. Leave unknown prices and schedules blank.
+3. Run `npm run preprocess-data` to validate editorial input without changing it. AI no longer estimates ticket prices or addresses.
+4. Run `npm run update-data` to validate and import. Invalid data is rejected before the live catalog is written. Multiline values, quoted commas, and escaped quotes are supported. Existing coordinates are retained only if the address and neighborhood are unchanged.
+5. Run `npm run audit-data`, `npm test`, and `npm run build` before release.
+
+Required CSV columns:
+
+```text
+ID,Event,Event Type,Start Date,End Date,Schedule,Neighborhood,Address,Notes,Ticket Price,Tickets Link,Edition,Source URL,Last Verified At
 ```
-src/
-├── app/
-│   ├── api/chat/       # Gemini AI chat endpoint
-│   ├── calendar/       # Calendar view page
-│   ├── map/            # Map view page
-│   ├── page.tsx        # Home page (event listings)
-│   └── layout.tsx      # Root layout
-├── components/
-│   ├── CalendarView.tsx
-│   ├── ChatBot.tsx
-│   ├── EventCard.tsx
-│   ├── EventFilters.tsx
-│   ├── Header.tsx
-│   ├── MapContainer.tsx
-│   └── MapView.tsx
-├── data/
-│   └── events.json     # Generated event data
-├── lib/
-│   └── events.ts       # Event utilities
-└── types/
-    └── event.ts        # TypeScript types
+
+Event types: `Art Show`, `Party`, `Wellness`, `Conference`, `Networking`, `Pop Up`.
+
+IDs are permanent across editions; **never reuse an archived event's ID**. New 2026 entries start at `2026001`. Existing 2025 shared event URLs and saved schedules continue to resolve against the archive.
+
+The audit rejects wrong-year/invalid dates, duplicate or reused IDs, duplicate title/date/venue entries, unsafe URLs, missing provenance, and future verification dates. It warns about source checks older than 14 days, unknown prices, and missing venue coordinates. It validates the recorded evidence fields; an editor must still check that a source supports the listing. The production build runs this audit automatically.
+
+The map uses stable, labeled neighborhood centers when venue coordinates are missing. Events in one neighborhood share that location. Use the event's actual address for navigation. `npm run geocode` calls the public Nominatim service and writes coordinates; review its results before release.
+
+## Archive safety
+
+`src/data/archive/events-2025.json` preserves all 172 historical events. Historical prices and other details have not been reverified. The original 2025 CSV remains available for reference.
+
+```sh
+npm run archive -- 2026
 ```
 
-## Deployment
+Archive only after reviewing the final catalog. The command validates edition dates and refuses to overwrite an existing snapshot. Register the resulting file in `src/lib/archive.ts` before advancing the current season.
 
-### Vercel (Recommended)
+## Commands
 
-1. Push your code to GitHub
-2. Import the repository on [Vercel](https://vercel.com)
-3. Add the `GEMINI_API_KEY` environment variable
-4. Deploy
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | Development server |
+| `npm run build` | Audit the catalog and build production output |
+| `npm start` | Serve the production build |
+| `npm run typecheck` | Regenerate route types and check TypeScript |
+| `npm test` | Regression tests for dates, timezones, locations, CSV, validation, and archive protection |
+| `npm run audit-data` | Check published catalog; exit nonzero on errors |
+| `npm run preprocess-data` | Check the editable CSV without changing it |
+| `npm run update-data` | Import reviewed current-edition CSV |
+| `npm run geocode` | Geocode catalog addresses; requires network access |
+| `npm run archive -- 2026` | Create a protected historical snapshot |
+| `npm run lint` | Existing ESLint configuration |
+| `npm run sources:check` | Refresh public discovery sources into local review reports |
+| `npm run test:sources` | Test source parsing and change detection offline |
 
-### Other Platforms
+Inspect an older catalog with `npm run audit-data -- --year=2025 --file=src/data/archive/events-2025.json`.
 
-The app can be deployed to any platform that supports Next.js:
-- Netlify
-- AWS Amplify
-- Railway
-- Self-hosted with `npm run build && npm run start`
+## Review and remaining launch work
 
-## License
+The initial review found scattered 2025 date constants, a homepage hidden behind the expired season cutoff, a manual CSV-only data pipeline, speculative AI price enrichment, random map positions, unsafe HTML interpolation in map popups, an unprotected archive overwrite command, and a retired Gemini model. This pass addresses those paths and updates Next.js/React within their existing major versions.
 
-MIT License - feel free to use this project for your own events!
+Pending launch work is tracked in [TODO.md](TODO.md), including verified coverage, editorial review, structured occurrences, API abuse limits, notification delivery, browser QA, and release operations.
 
----
+Validation for this pass: 10 regression tests, TypeScript checks, CSV validation/import, the production build, eight local page responses (including current and archived event URLs), and three API input/empty-result checks passed. The 2025 snapshot remains unchanged. Browser interaction checks and live external integrations were not exercised.
 
-Built with ❤️ for Miami Art Basel 2025 by Juan Zamudio
+No production deployment is performed by the review workflow.

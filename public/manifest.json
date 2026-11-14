@@ -1,7 +1,7 @@
 {
-  "name": "Basel.ai - Miami Art Basel 2025",
+  "name": "Basel.ai \u2013 Miami Art Week 2026",
   "short_name": "Basel.ai",
-  "description": "Your complete guide to Miami Art Basel 2025. Discover art shows, parties, wellness events, and more.",
+  "description": "Independent guide to Miami Art Week 2026 events, fairs, and exhibitions.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0a0a0f",
@@ -58,7 +58,11 @@
       "purpose": "maskable any"
     }
   ],
-  "categories": ["entertainment", "lifestyle", "events"],
+  "categories": [
+    "entertainment",
+    "lifestyle",
+    "events"
+  ],
   "screenshots": [],
   "prefer_related_applications": false
 }

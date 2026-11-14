@@ -5,7 +5,7 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { Event } from '@/types/event';
 
-interface MapContainerProps {
+export interface MapContainerProps {
   events: Event[];
   onEventSelect: (event: Event | null) => void;
   selectedEvent: Event | null;
@@ -78,13 +78,24 @@ export default function MapContainer({
         iconAnchor: [12, 12],
       });
 
+      // Event content is external data. Keep it out of Leaflet's HTML parser.
+      const popup = document.createElement('div');
+      const title = document.createElement('strong');
+      title.textContent = event.event;
+      const details = document.createElement('div');
+      details.textContent = `${event.eventType} · ${event.neighborhood || 'Miami'}`;
+      popup.append(title, details);
+      if (event.coordinateAccuracy === 'neighborhood') {
+        const accuracy = document.createElement('p');
+        accuracy.textContent = 'Approximate neighborhood location. Use the event address for directions.';
+        popup.append(accuracy);
+      }
+
       const marker = L.marker([event.coordinates.lat, event.coordinates.lng], {
         icon,
       })
         .addTo(mapInstanceRef.current!)
-        .bindPopup(
-          `<strong>${event.event}</strong><br/>${event.eventType}<br/>${event.neighborhood || 'Miami'}`
-        );
+        .bindPopup(popup);
 
       marker.on('click', () => {
         onEventSelect(event);

@@ -1,60 +1,36 @@
 const fs = require('fs');
 const path = require('path');
+const season = require('../src/data/season.json');
+const { csvToEvents } = require('./lib/csv');
+const { auditCatalog } = require('./lib/catalog');
+const { archivedIds } = require('./audit-events');
 
-// Check if preprocessed file exists, otherwise use original
-const preprocessedPath = path.join(__dirname, '..', 'art-basel-2025-preprocessed.csv');
-const originalPath = path.join(__dirname, '..', 'art-basel-2025.csv');
-const csvPath = fs.existsSync(preprocessedPath) ? preprocessedPath : originalPath;
-const jsonPath = path.join(__dirname, '..', 'src', 'data', 'events.json');
-
-const csvContent = fs.readFileSync(csvPath, 'utf-8');
-const lines = csvContent.split('\n');
-const headers = lines[0].split(',').map(h => h.trim());
-
-console.log('Reading from:', csvPath);
-console.log('Headers found:', headers);
-
-const events = [];
-
-for (let i = 1; i < lines.length; i++) {
-  const line = lines[i];
-  if (!line.trim()) continue;
-
-  // Parse CSV line handling quoted values with commas
-  const values = [];
-  let current = '';
-  let inQuotes = false;
-
-  for (let j = 0; j < line.length; j++) {
-    const char = line[j];
-    if (char === '"') {
-      inQuotes = !inQuotes;
-    } else if (char === ',' && !inQuotes) {
-      values.push(current.trim());
-      current = '';
-    } else {
-      current += char;
+try {
+  const csvPath = path.join(__dirname, `../art-basel-${season.year}.csv`);
+  const jsonPath = path.join(__dirname, '../src/data/events.json');
+  const events = csvToEvents(fs.readFileSync(csvPath, 'utf8'));
+  const report = auditCatalog(events, { year: season.year, archivedIds: archivedIds(season.year) });
+  if (report.errors.length) throw new Error(report.errors.join('\n'));
+  // Preserve previously reviewed coordinates when editorial data is reimported.
+  const previous = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+  const existing = new Map(previous.map(event => [event.id, event]));
+  for (const event of events) {
+    const old = existing.get(event.id);
+    if (old?.coordinates && old.address === event.address && old.neighborhood === event.neighborhood) {
+      event.coordinates = old.coordinates;
+      if (old.coordinateAccuracy) event.coordinateAccuracy = old.coordinateAccuracy;
     }
   }
-  values.push(current.trim());
-
-  const event = {
-    id: parseInt(values[0]) || i,
-    event: values[1] || '',
-    eventType: values[2]?.trim() || '',
-    startDate: values[3] || null,
-    endDate: values[4] || null,
-    schedule: values[5] || '',
-    neighborhood: values[6] || '',
-    address: values[7] || '',
-    notes: values[8] || '',
-    ticketPrice: values[9] || '',
-    ticketsLink: values[10] || '',
-  };
-
-  events.push(event);
+  const temporaryPath = `${jsonPath}.${process.pid}.tmp`;
+  try {
+    fs.writeFileSync(temporaryPath, JSON.stringify(events, null, 2) + '\n', { flag: 'wx' });
+    fs.renameSync(temporaryPath, jsonPath);
+  } finally {
+    if (fs.existsSync(temporaryPath)) fs.unlinkSync(temporaryPath);
+  }
+  console.log(`Imported ${events.length} reviewed ${season.year} events from ${csvPath}`);
+  for (const warning of report.warnings) console.warn(warning);
+} catch (error) {
+  console.error(`Import failed; live catalog unchanged: ${error.message}`);
+  process.exitCode = 1;
 }
-
-fs.writeFileSync(jsonPath, JSON.stringify(events, null, 2));
-console.log(`Converted ${events.length} events to JSON`);
-console.log('Output saved to:', jsonPath);

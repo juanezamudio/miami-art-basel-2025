@@ -1,41 +1,10 @@
 import { Event } from '@/types/event';
 import eventsData from '@/data/events.json';
-
-// Neighborhood fallback coordinates for Miami areas (used if no pre-computed coordinates exist)
-const neighborhoodCoordinates: Record<string, { lat: number; lng: number }> = {
-  'Miami Beach': { lat: 25.7907, lng: -80.1300 },
-  'Downtown': { lat: 25.7751, lng: -80.1947 },
-  'Downtown ': { lat: 25.7751, lng: -80.1947 },
-  'Wynwood': { lat: 25.8010, lng: -80.1990 },
-  'Design District': { lat: 25.8126, lng: -80.1925 },
-  'Coconut Grove': { lat: 25.7270, lng: -80.2413 },
-  'Brickell': { lat: 25.7617, lng: -80.1918 },
-  'Little River': { lat: 25.8352, lng: -80.1798 },
-  'Hialeah': { lat: 25.8576, lng: -80.2781 },
-  'Fort Lauderdale': { lat: 26.1224, lng: -80.1373 },
-  'Coral Gables': { lat: 25.7215, lng: -80.2684 },
-  'North Miami': { lat: 25.8900, lng: -80.1867 },
-};
+import { isEventOnDate } from './event-dates';
+import { withEventCoordinates } from './event-locations';
 
 export function getEvents(): Event[] {
-  return (eventsData as Event[]).map((event) => {
-    // If event already has coordinates from the JSON file, use them
-    if (event.coordinates) {
-      return event;
-    }
-
-    // Otherwise, fallback to neighborhood-based coordinates
-    const neighborhood = event.neighborhood?.trim() || '';
-    const coords = neighborhoodCoordinates[neighborhood];
-
-    return {
-      ...event,
-      coordinates: coords ? {
-        lat: coords.lat + (Math.random() - 0.5) * 0.01,
-        lng: coords.lng + (Math.random() - 0.5) * 0.01,
-      } : undefined,
-    };
-  });
+  return (eventsData as Event[]).map(withEventCoordinates);
 }
 
 export function getEventById(id: number): Event | undefined {
@@ -108,18 +77,7 @@ export function filterEvents(
       if (filters.date === 'tba') {
         if (event.startDate) return false;
       } else {
-        const filterDate = new Date(filters.date);
-        const startDate = event.startDate ? new Date(event.startDate) : null;
-        const endDate = event.endDate ? new Date(event.endDate) : startDate;
-
-        if (startDate && endDate) {
-          if (filterDate < startDate || filterDate > endDate) return false;
-        } else if (startDate) {
-          if (filterDate.toDateString() !== startDate.toDateString()) return false;
-        } else {
-          // No start date means TBA - exclude from specific date filters
-          return false;
-        }
+        if (!isEventOnDate(event, filters.date)) return false;
       }
     }
 
@@ -152,22 +110,10 @@ export function filterEvents(
 }
 
 export function getEventsForDate(events: Event[], date: Date): Event[] {
-  return events.filter(event => {
-    if (!event.startDate) return false;
-
-    const startDate = new Date(event.startDate);
-    const endDate = event.endDate ? new Date(event.endDate) : startDate;
-
-    startDate.setHours(0, 0, 0, 0);
-    endDate.setHours(23, 59, 59, 999);
-    date.setHours(12, 0, 0, 0);
-
-    return date >= startDate && date <= endDate;
-  });
+  return events.filter(event => isEventOnDate(event, date));
 }
 
-export function getEventsContext(): string {
-  const events = getEvents();
+export function getEventsContext(events: Event[] = getEvents()): string {
   return events.map(e => {
     const parts = [
       `Event: ${e.event}`,
@@ -177,7 +123,10 @@ export function getEventsContext(): string {
       e.neighborhood && `Neighborhood: ${e.neighborhood}`,
       e.address && `Address: ${e.address}`,
       e.notes && `Notes: ${e.notes}`,
+      `Price: ${e.ticketPrice || 'Not verified; check organizer'}`,
       e.ticketsLink && `Tickets: ${e.ticketsLink}`,
+      e.sourceUrl && `Source: ${e.sourceUrl}`,
+      e.lastVerifiedAt && `Last checked: ${e.lastVerifiedAt}`,
     ].filter(Boolean);
     return parts.join(' | ');
   }).join('\n');

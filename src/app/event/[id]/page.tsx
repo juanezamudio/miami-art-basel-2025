@@ -1,8 +1,10 @@
 'use client';
 
+import { parseEventDate } from '@/lib/event-dates';
+
 import { useMemo, useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
-import { getEvents } from '@/lib/events';
+import { getAllEvents } from '@/lib/catalog';
 import EventCard from '@/components/EventCard';
 import { Calendar, MapPin, Clock, Tag, Ticket, Heart, X, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
@@ -11,7 +13,7 @@ import { useFavorites } from '@/contexts/FavoritesContext';
 export default function EventPage() {
   const params = useParams();
   const eventId = params.id as string;
-  const allEvents = useMemo(() => getEvents(), []);
+  const allEvents = useMemo(() => getAllEvents(), []);
   const [showModal, setShowModal] = useState(true);
   const { toggleFavorite, isFavorite } = useFavorites();
 
@@ -27,7 +29,7 @@ export default function EventPage() {
     return allEvents
       .filter(
         (e) =>
-          e.id !== event.id &&
+          e.id !== event.id && e.edition === event.edition &&
           (e.eventType === event.eventType || e.neighborhood === event.neighborhood)
       )
       .slice(0, 6);
@@ -35,7 +37,8 @@ export default function EventPage() {
 
   const formatDate = (dateStr: string | null) => {
     if (!dateStr) return null;
-    const date = new Date(dateStr);
+    const date = parseEventDate(dateStr);
+    if (!date) return 'Date TBA';
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
   };
 
@@ -172,7 +175,7 @@ export default function EventPage() {
             {/* CTA */}
             <div className="p-4 bg-gradient-to-r from-purple-600/10 to-pink-600/10 border-t border-gray-700/50">
               <p className="text-center text-gray-300 text-sm mb-3">
-                Discover more events at Art Basel Miami 2025
+                Discover more Miami Art Week events
               </p>
               <Link
                 href="/"

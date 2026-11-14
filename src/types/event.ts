@@ -10,6 +10,10 @@ export interface Event {
   notes: string;
   ticketPrice: string;
   ticketsLink: string;
+  edition?: number;
+  sourceUrl?: string;
+  lastVerifiedAt?: string;
+  coordinateAccuracy?: 'venue' | 'neighborhood';
   coordinates?: {
     lat: number;
     lng: number;

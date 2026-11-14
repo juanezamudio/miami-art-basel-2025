@@ -3,8 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { X, Send, Bot, User, Loader2, MessageCircle } from 'lucide-react';
 
-// Art Basel 2025 end date
-const EVENT_END_DATE = new Date('2025-12-09T23:59:59');
+import { CURRENT_SEASON } from '@/lib/season';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -55,37 +54,13 @@ interface ChatBotProps {
 }
 
 export default function ChatBot({ isOpen, onToggle }: ChatBotProps) {
-  const [isArtBaselOver, setIsArtBaselOver] = useState(false);
-
-  // Check if Art Basel has ended
-  useEffect(() => {
-    const checkIfOver = () => {
-      setIsArtBaselOver(new Date() > EVENT_END_DATE);
-    };
-    checkIfOver();
-  }, []);
-
-  const getInitialMessage = () => {
-    if (isArtBaselOver) {
-      return "Hi! I'm your Art Basel Miami assistant.\n\nArt Basel 2025 has wrapped up, but I can help you:\n\n   Explore the 2025 archive\n   Plan for Art Basel 2026\n   Learn about Miami's art scene\n   Get tips for next year's visit\n\nWhat would you like to know?";
-    }
-    return "Hi! I'm your Miami Art Basel 2025 assistant.\n\nAsk me anything about events, parties, art shows, wellness activities, or recommendations for your visit!";
-  };
-
-  const [messages, setMessages] = useState<Message[]>([
-    {
-      role: 'assistant',
-      content: getInitialMessage(),
-    },
-  ]);
+  const [messages, setMessages] = useState<Message[]>([{
+    role: 'assistant',
+    content: `Hi! I'm your Miami Art Week ${CURRENT_SEASON.year} assistant. Ask me about the listings we've checked, including dates, neighborhoods, and organizer links. We're adding more events as we verify them.`,
+  }]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
-
-  // Update initial message when isArtBaselOver changes
-  useEffect(() => {
-    setMessages([{ role: 'assistant', content: getInitialMessage() }]);
-  }, [isArtBaselOver]);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -121,15 +96,11 @@ export default function ChatBot({ isOpen, onToggle }: ChatBotProps) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           messages: [...messages, { role: 'user', content: userMessage }],
-          isArtBaselOver,
         }),
       });
 
-      if (!response.ok) {
-        throw new Error('Failed to get response');
-      }
-
       const data = await response.json();
+      if (!response.ok) throw new Error(data.message || 'The assistant is temporarily unavailable.');
       const formattedMessage = formatResponse(data.message);
       setMessages((prev) => [...prev, { role: 'assistant', content: formattedMessage }]);
     } catch (error) {
@@ -137,7 +108,7 @@ export default function ChatBot({ isOpen, onToggle }: ChatBotProps) {
         ...prev,
         {
           role: 'assistant',
-          content: 'Sorry, I encountered an error. Please make sure the Gemini API key is configured correctly.',
+          content: error instanceof Error ? error.message : 'The assistant is temporarily unavailable. Please browse the event listings.',
         },
       ]);
     } finally {
@@ -234,7 +205,7 @@ export default function ChatBot({ isOpen, onToggle }: ChatBotProps) {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder={isArtBaselOver ? "Ask about 2025 highlights, 2026 planning..." : "Ask about events, parties, art shows..."}
+                placeholder="Ask about events, dates, and organizer details..."
                 className="flex-1 px-4 py-2.5 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500 min-w-0 text-base md:text-sm text-gray-900 placeholder-gray-500"
                 disabled={isLoading}
               />

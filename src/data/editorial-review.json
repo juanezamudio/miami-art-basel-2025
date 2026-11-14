@@ -1,0 +1,161 @@
+{
+  "batchId": "2026-11-14-first-organizer-batch",
+  "reviewedAt": "2026-11-14",
+  "reviewer": "Codex organizer-source review",
+  "scope": "Factual review of the first four organizers; not a review of every discovery record.",
+  "approved": [
+    {
+      "eventId": 2026004,
+      "title": "BitBasel: Seed2Table Investor Night",
+      "organizerEvidence": [
+        "https://bitbasel.miami/program/seed2table/",
+        "https://luma.com/bitbasel-u8lo"
+      ],
+      "decision": "Date, venue, hours and All Access restriction agree on the organizer program page and linked Luma program.",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "7a150b9f-908e-4b00-aefc-c726884923b0"
+        }
+      ]
+    },
+    {
+      "eventId": 2026005,
+      "title": "BitBasel: Family Office Forum",
+      "organizerEvidence": [
+        "https://bitbasel.miami/program/family-office-forum/",
+        "https://luma.com/bitbasel-u8lo"
+      ],
+      "decision": "Organizer confirms date, hours and All Access restriction; the shared ticket URL is not a separate free registration.",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "f5294200-d054-4b96-b858-9d94c64451cb"
+        }
+      ]
+    },
+    {
+      "eventId": 2026006,
+      "title": "BitBasel Day and .ART Awards",
+      "organizerEvidence": [
+        "https://bitbasel.miami/program/bitbasel-day-art-awards/",
+        "https://luma.com/bitbasel-u8lo"
+      ],
+      "decision": "Use the organizer program identity, not a second copy of the four-day BitBasel umbrella listing.",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "6dccf8da-c59a-4d12-8e20-fcd406333b7c"
+        }
+      ]
+    },
+    {
+      "eventId": 2026007,
+      "title": "The 25th Iconic Sagamore Brunch",
+      "organizerEvidence": [
+        "https://bitbasel.miami/program/sagamore-brunch/",
+        "https://luma.com/bitbasel-u8lo"
+      ],
+      "decision": "Confirmed 2026 edition and Saturday hours; kept distinct from the historical 24th brunch and afternoon Jamaica ticket.",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "2d78c49f-5abf-42e3-8a23-8600bd583e2f"
+        }
+      ]
+    },
+    {
+      "eventId": 2026008,
+      "title": "Jamaica Basel at BitBasel",
+      "organizerEvidence": [
+        "https://bitbasel.miami/jamaica-basel/",
+        "https://luma.com/bitbasel-u8lo"
+      ],
+      "decision": "Advertised Jamaica-only price switches to $65 after Nov 11. The organizer page and Luma describe entry from 3 PM.",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "e7373468-4ab6-4abf-878f-bba0b91447a4"
+        }
+      ]
+    },
+    {
+      "eventId": 2026009,
+      "title": "Factory Basel 2026 — Five-night GA pass",
+      "organizerEvidence": [
+        "https://www.factorytown.com/factory-basel-2026/",
+        "https://www.insomniac.com/events/our-world/factory-town/"
+      ],
+      "decision": "Dates represent opening nights. Closing continues into the next day, finally Dec 7. Price remains unverified; organizer ticket redirect could not be read by the web tool.",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "4d9d3ea9-11d9-4eab-93c7-f906fc0c130a"
+        },
+        {
+          "sourceId": "khami-2026",
+          "row": 28
+        }
+      ]
+    },
+    {
+      "eventId": 2026010,
+      "title": "Oolite Arts: Art Week Brunch, Open Studios and Exhibition",
+      "organizerEvidence": [
+        "https://oolitearts.org/event/art-week-brunch-2026/",
+        "https://secure.qgiv.com/for/exhibitionslectures/event/awbosaec/"
+      ],
+      "decision": "Organizer event page and linked registration agree on date, hours, address and free admission; corrected the discovery sheet weekday.",
+      "discoveryReferences": [
+        {
+          "sourceId": "khami-2026",
+          "row": 37
+        }
+      ]
+    },
+    {
+      "eventId": 2026011,
+      "title": "AfriKin Art Fair 2026: GRIOT",
+      "organizerEvidence": [
+        "https://www.afrikin.org/afrikin-artfair"
+      ],
+      "decision": "Separate public-view hours from opening-night and runway tickets. Eventbrite returned 429, so no checkout price or availability is claimed.",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "5c7c7207-4f69-4976-be60-01b489091862"
+        }
+      ]
+    }
+  ],
+  "held": [
+    {
+      "key": "sheeets-mooon-cancellation",
+      "discoveryUrl": "https://luma.com/event/evt-mutIcLImxrBRD6c",
+      "reason": "Discovery row is marked canceled. Do not equate it with the entire BitBasel program or publish a replacement until identities are reconciled."
+    },
+    {
+      "key": "afrikin-vernissage-2026",
+      "discoveryUrl": "https://www.afrikin.org/afrikin-artfair",
+      "candidateDate": "2026-11-29",
+      "reason": "Confirmed organizer offering, but outside the current calendar/planner selectors. Add surrounding-date support and a separate admission record before import."
+    },
+    {
+      "key": "bitbasel-umbrella",
+      "discoveryUrl": "https://luma.com/bitbasel-u8lo",
+      "reason": "Represented by five distinct verified program listings; do not add the same four-day umbrella as a duplicate itinerary stop."
+    },
+    {
+      "key": "factory-nightly-and-stage-events",
+      "discoveryUrl": "https://www.factorytown.com/factory-basel-2026/",
+      "reason": "Only the five-night GA pass is in this batch. Nightly/venue-stage events require distinct ticket scopes and verified occurrences before import."
+    }
+  ],
+  "historical": [
+    {
+      "key": "fountainhead-session8-2025",
+      "sourceUrl": "https://www.fountainheadarts.org/upcoming/session8",
+      "reason": "The linked organizer event explicitly belongs to 2025; no date rollover or 2026 replacement was inferred."
+    }
+  ]
+}

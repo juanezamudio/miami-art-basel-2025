@@ -68,7 +68,7 @@ async function main() {
     const event = events[i];
 
     // Skip if already has coordinates
-    if (event.coordinates) {
+    if (event.coordinates && event.coordinateAccuracy !== 'neighborhood') {
       skippedCount++;
       continue;
     }
@@ -83,6 +83,7 @@ async function main() {
       const coords = await geocodeAddress(event.address);
       if (coords) {
         event.coordinates = coords;
+        event.coordinateAccuracy = 'venue';
         console.log(`  ✓ Found: ${coords.lat}, ${coords.lng}`);
         geocodedCount++;
         continue;
@@ -93,11 +94,8 @@ async function main() {
     const neighborhood = event.neighborhood?.trim();
     if (neighborhood && neighborhoodCoordinates[neighborhood]) {
       const baseCoords = neighborhoodCoordinates[neighborhood];
-      // Add small random offset so markers don't stack
-      event.coordinates = {
-        lat: baseCoords.lat + (Math.random() - 0.5) * 0.01,
-        lng: baseCoords.lng + (Math.random() - 0.5) * 0.01,
-      };
+      event.coordinates = { ...baseCoords };
+      event.coordinateAccuracy = 'neighborhood';
       console.log(`  → Fallback to neighborhood: ${neighborhood}`);
       fallbackCount++;
     } else {

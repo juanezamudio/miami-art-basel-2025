@@ -6,23 +6,27 @@ import { WagmiProvider, createConfig, http } from 'wagmi';
 import { mainnet } from 'wagmi/chains';
 import { walletConnect, injected, coinbaseWallet } from 'wagmi/connectors';
 import { ReactNode } from 'react';
+import { CURRENT_SEASON } from '@/lib/season';
 
 // Get a project ID from https://cloud.walletconnect.com - it's free
 const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || 'demo';
 
 const metadata = {
-  name: 'Miami Art Basel 2025',
-  description: 'Your guide to Miami Art Basel 2025 events',
+  name: `Basel.ai – Miami Art Week ${CURRENT_SEASON.year}`,
+  description: `Your guide to Miami Art Week ${CURRENT_SEASON.year} events`,
   url: 'https://miami-art-basel-2025.vercel.app',
   icons: ['https://miami-art-basel-2025.vercel.app/icon.png'],
 };
 
 const config = createConfig({
+  ssr: true,
   chains: [mainnet],
   transports: {
     [mainnet.id]: http(),
   },
-  connectors: [
+  // Connector setup opens browser storage immediately. Do not instantiate
+  // wallet clients while Next.js prerenders event pages on the server.
+  connectors: typeof window === 'undefined' ? [] : [
     walletConnect({ projectId, metadata, showQrModal: false }),
     injected({ shimDisconnect: true }),
     coinbaseWallet({
@@ -34,7 +38,7 @@ const config = createConfig({
 
 const queryClient = new QueryClient();
 
-createWeb3Modal({
+if (typeof window !== 'undefined') createWeb3Modal({
   wagmiConfig: config,
   projectId,
   enableAnalytics: false,

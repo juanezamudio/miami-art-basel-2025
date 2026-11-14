@@ -1,7 +1,9 @@
 'use client';
 
+import { parseEventDate } from '@/lib/event-dates';
+
 import { useMemo, useState } from 'react';
-import { getEvents } from '@/lib/events';
+import { getAllEvents } from '@/lib/catalog';
 import EventCard from '@/components/EventCard';
 import { useFavorites } from '@/contexts/FavoritesContext';
 import { Heart, CalendarHeart, Share2, Check, Copy } from 'lucide-react';
@@ -9,7 +11,7 @@ import Link from 'next/link';
 
 export default function SchedulePage() {
   const { favorites } = useFavorites();
-  const allEvents = useMemo(() => getEvents(), []);
+  const allEvents = useMemo(() => getAllEvents(), []);
   const [showShareModal, setShowShareModal] = useState(false);
   const [copied, setCopied] = useState(false);
 
@@ -38,7 +40,8 @@ export default function SchedulePage() {
 
   const formatDateHeader = (dateStr: string) => {
     if (dateStr === 'TBA') return 'Date TBA';
-    const date = new Date(dateStr);
+    const date = parseEventDate(dateStr);
+    if (!date) return 'Date TBA';
     return date.toLocaleDateString('en-US', {
       weekday: 'long',
       month: 'long',
@@ -55,8 +58,8 @@ export default function SchedulePage() {
   const handleShare = async () => {
     const shareUrl = getShareUrl();
     const shareData = {
-      title: 'My Art Basel 2025 Schedule',
-      text: `Check out my Art Basel Miami 2025 schedule with ${savedEvents.length} events!`,
+      title: 'My Miami Art Week Schedule',
+      text: `Check out my Miami Art Week schedule with ${savedEvents.length} events!`,
       url: shareUrl,
     };
 

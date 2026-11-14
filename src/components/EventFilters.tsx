@@ -1,6 +1,9 @@
 'use client';
 
 import { Search, X, Sparkles } from 'lucide-react';
+import { getSeasonDates } from '@/lib/season';
+
+const dates = getSeasonDates();
 
 interface EventFiltersProps {
   search: string;
@@ -48,6 +51,7 @@ export default function EventFilters({
         <div className="relative">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" size={20} />
           <input
+            aria-label="Search events, venues, and artists"
             type="text"
             placeholder="Search events, venues, artists..."
             value={search}
@@ -56,6 +60,7 @@ export default function EventFilters({
           />
           {search && (
             <button
+              aria-label="Clear search"
               onClick={() => onSearchChange('')}
               className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-300 transition-colors"
             >
@@ -67,6 +72,7 @@ export default function EventFilters({
         {/* Filters Grid */}
         <div className={`grid grid-cols-2 sm:grid-cols-3 gap-3 ${hasActiveFilters ? 'lg:grid-cols-6' : 'lg:grid-cols-5'}`}>
           <select
+            aria-label="Event type"
             value={eventType}
             onChange={(e) => onEventTypeChange(e.target.value)}
             className={selectClasses}
@@ -80,6 +86,7 @@ export default function EventFilters({
           </select>
 
           <select
+            aria-label="Neighborhood"
             value={neighborhood}
             onChange={(e) => onNeighborhoodChange(e.target.value)}
             className={selectClasses}
@@ -93,25 +100,20 @@ export default function EventFilters({
           </select>
 
           <select
+            aria-label="Event date"
             value={date}
             onChange={(e) => onDateChange(e.target.value)}
             className={selectClasses}
           >
             <option value="">All Dates</option>
-            <option value="2025-11-30">Nov 30</option>
-            <option value="2025-12-01">Dec 1</option>
-            <option value="2025-12-02">Dec 2</option>
-            <option value="2025-12-03">Dec 3</option>
-            <option value="2025-12-04">Dec 4</option>
-            <option value="2025-12-05">Dec 5</option>
-            <option value="2025-12-06">Dec 6</option>
-            <option value="2025-12-07">Dec 7</option>
-            <option value="2025-12-08">Dec 8</option>
-            <option value="2025-12-09">Dec 9</option>
+            {dates.map(({ value, label }) => (
+              <option key={value} value={value}>{label}</option>
+            ))}
             <option value="tba">Date TBA</option>
           </select>
 
           <select
+            aria-label="Ticket price"
             value={priceRange}
             onChange={(e) => onPriceRangeChange(e.target.value)}
             className={selectClasses}

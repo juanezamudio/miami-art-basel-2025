@@ -1,59 +1,14 @@
 'use client';
 
+import { EVENT_START_DATE, EVENT_END_DATE } from '@/lib/season';
+import { isEventOnDate, miamiDateKey } from '@/lib/event-dates';
+
 import { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import { Event } from '@/types/event';
 import { Radio } from 'lucide-react';
 
 interface HappeningNowProps {
   events: Event[];
-}
-
-// Parse date string in various formats (MM/DD/YYYY, YYYY-MM-DD, etc.)
-function parseDate(dateStr: string): Date | null {
-  if (!dateStr) return null;
-
-  // Try MM/DD/YYYY format
-  const mdyMatch = dateStr.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
-  if (mdyMatch) {
-    const month = parseInt(mdyMatch[1], 10) - 1;
-    const day = parseInt(mdyMatch[2], 10);
-    const year = parseInt(mdyMatch[3], 10);
-    return new Date(year, month, day);
-  }
-
-  // Try YYYY-MM-DD format
-  const ymdMatch = dateStr.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
-  if (ymdMatch) {
-    const year = parseInt(ymdMatch[1], 10);
-    const month = parseInt(ymdMatch[2], 10) - 1;
-    const day = parseInt(ymdMatch[3], 10);
-    return new Date(year, month, day);
-  }
-
-  // Fallback
-  const date = new Date(dateStr);
-  return isNaN(date.getTime()) ? null : date;
-}
-
-// Check if an event is happening today
-function isEventHappeningNow(event: Event): boolean {
-  if (!event.startDate) return false;
-
-  const now = new Date();
-  const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-
-  const startDate = parseDate(event.startDate);
-  if (!startDate) return false;
-
-  const endDate = event.endDate ? parseDate(event.endDate) : startDate;
-  if (!endDate) return false;
-
-  // Normalize to just dates
-  const eventStart = new Date(startDate.getFullYear(), startDate.getMonth(), startDate.getDate());
-  const eventEnd = new Date(endDate.getFullYear(), endDate.getMonth(), endDate.getDate());
-
-  // Check if today falls within the event date range
-  return todayStart >= eventStart && todayStart <= eventEnd;
 }
 
 // Scroll to event card on the page
@@ -95,10 +50,18 @@ export default function HappeningNow({ events }: HappeningNowProps) {
   const setWidthRef = useRef(0);
   const [, forceUpdate] = useState(0);
 
-  // Filter events happening now (memoized)
+  // A date-only listing establishes that an event is scheduled today, not that
+  // its venue is open at this moment. Refresh across midnight in Miami.
+  const [today, setToday] = useState('');
+  useEffect(() => {
+    const update = () => setToday(miamiDateKey());
+    update();
+    const timer = setInterval(update, 60000);
+    return () => clearInterval(timer);
+  }, []);
   const filteredEvents = useMemo(() => {
-    return events.filter(isEventHappeningNow);
-  }, [events]);
+    return events.filter(event => isEventOnDate(event, today));
+  }, [events, today]);
 
   // Shuffle only once when filtered events change, using a stable shuffle
   const [happeningNowEvents, setHappeningNowEvents] = useState<Event[]>([]);
@@ -117,8 +80,8 @@ export default function HappeningNow({ events }: HappeningNowProps) {
   useEffect(() => {
     const checkVisibility = () => {
       const now = new Date();
-      const eventStart = new Date('2025-11-30');
-      const eventEnd = new Date('2025-12-09T23:59:59');
+      const eventStart = EVENT_START_DATE;
+      const eventEnd = EVENT_END_DATE;
       setIsVisible(now >= eventStart && now <= eventEnd && filteredEvents.length > 0);
     };
 
@@ -244,7 +207,7 @@ export default function HappeningNow({ events }: HappeningNowProps) {
           </span>
           <span className="text-green-400 text-sm font-medium flex items-center gap-1.5">
             <Radio size={14} />
-            Live
+            Today
           </span>
         </div>
 

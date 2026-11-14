@@ -1,5 +1,8 @@
 'use client';
 
+import { parseEventDate } from '@/lib/event-dates';
+import { CURRENT_SEASON } from '@/lib/season';
+
 import { useState } from 'react';
 import { Event } from '@/types/event';
 import { Calendar, MapPin, Clock, Tag, Ticket, Share2, Copy, MoreVertical, Flag, Check, Heart, Navigation } from 'lucide-react';
@@ -48,7 +51,8 @@ export default function EventCard({ event, compact = false }: EventCardProps) {
 
   const formatDate = (dateStr: string | null) => {
     if (!dateStr) return null;
-    const date = new Date(dateStr);
+    const date = parseEventDate(dateStr);
+    if (!date) return 'Date TBA';
     return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
   };
 
@@ -132,6 +136,18 @@ export default function EventCard({ event, compact = false }: EventCardProps) {
         <div className="space-y-2 text-sm text-gray-300 flex-1">
           {event.notes && (
             <p className="text-orange-400 text-xs italic">{event.notes}</p>
+          )}
+          {event.edition && event.edition < CURRENT_SEASON.year && (
+            <p className="text-gray-400 text-xs">{event.edition} archive · past event</p>
+          )}
+          {!event.ticketPrice && <p className="text-gray-500 text-xs">Price not verified · check organizer</p>}
+          {event.sourceUrl && (
+            <p className="text-xs text-gray-400">
+              <a href={event.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-purple-300 underline">
+                Organizer website
+              </a>
+              {event.lastVerifiedAt && ` · Checked ${event.lastVerifiedAt}`}
+            </p>
           )}
 
           <div className="flex items-center gap-2">

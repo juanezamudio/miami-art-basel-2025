@@ -43,3 +43,8 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .env*.local
+
+# Local discovery baselines and review reports
+/.local/event-sources/
+__pycache__/
+*.pyc

@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Space_Grotesk } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import ClientLayout from "@/components/ClientLayout";
+import { CURRENT_SEASON } from "@/lib/season";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,9 +22,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Miami Art Basel 2025 | Events, Parties & More",
-  description: "Your complete guide to Miami Art Basel 2025. Discover art shows, parties, wellness events, and more happening during Art Basel week in Miami.",
-  keywords: "Art Basel, Miami, 2025, art shows, parties, events, Wynwood, Miami Beach, Design District",
+  title: `Miami Art Week ${CURRENT_SEASON.year} | Basel.ai Events Guide`,
+  description: `An independent guide to Miami Art Week ${CURRENT_SEASON.year}. Find art fairs, exhibitions, parties, and events with source links and checked dates.`,
+  keywords: `Art Basel, Miami, ${CURRENT_SEASON.year}, art shows, parties, events, Wynwood, Miami Beach, Design District`,
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,

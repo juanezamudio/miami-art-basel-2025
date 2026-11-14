@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { X, Sparkles, Calendar, Clock, MapPin, DollarSign, Zap, Loader2, Heart, Lightbulb } from 'lucide-react';
 import { useFavorites } from '@/contexts/FavoritesContext';
 import { getEvents } from '@/lib/events';
+import { getSeasonDates } from '@/lib/season';
 
 interface PlanEvent {
   time: string;
@@ -38,18 +39,7 @@ const EVENT_TYPES = [
   { id: 'Pop Up', label: 'Pop Ups', emoji: '✨' },
 ];
 
-const DATES = [
-  { value: '2025-11-30', label: 'Nov 30 (Sun)' },
-  { value: '2025-12-01', label: 'Dec 1 (Mon)' },
-  { value: '2025-12-02', label: 'Dec 2 (Tue)' },
-  { value: '2025-12-03', label: 'Dec 3 (Wed)' },
-  { value: '2025-12-04', label: 'Dec 4 (Thu)' },
-  { value: '2025-12-05', label: 'Dec 5 (Fri)' },
-  { value: '2025-12-06', label: 'Dec 6 (Sat)' },
-  { value: '2025-12-07', label: 'Dec 7 (Sun)' },
-  { value: '2025-12-08', label: 'Dec 8 (Mon)' },
-  { value: '2025-12-09', label: 'Dec 9 (Tue)' },
-];
+const DATES = getSeasonDates();
 
 export default function PlanMyDay({ isOpen, onClose, neighborhoods }: PlanMyDayProps) {
   const [step, setStep] = useState<'form' | 'loading' | 'result'>('form');
@@ -73,17 +63,9 @@ export default function PlanMyDay({ isOpen, onClose, neighborhoods }: PlanMyDayP
     const normalizedName = eventName.toLowerCase().trim();
 
     // Try exact match first
-    let event = allEvents.find(
+    const event = allEvents.find(
       (e) => e.event.toLowerCase().trim() === normalizedName
     );
-
-    // If no exact match, try partial match (event name contains search or vice versa)
-    if (!event) {
-      event = allEvents.find(
-        (e) => e.event.toLowerCase().includes(normalizedName) ||
-               normalizedName.includes(e.event.toLowerCase())
-      );
-    }
 
     return event ? String(event.id) : null;
   };

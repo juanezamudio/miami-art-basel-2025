@@ -5,8 +5,6 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Calendar, List, Map, MessageCircle, PlusCircle, Heart, Bell, Archive } from 'lucide-react';
 import NotificationSettings from './NotificationSettings';
 
-// Art Basel 2025 end date
-const EVENT_END_DATE = new Date('2025-12-09T23:59:59');
 
 interface HeaderProps {
   onChatToggle: () => void;
@@ -16,18 +14,6 @@ export default function Header({ onChatToggle }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [showSubmitModal, setShowSubmitModal] = useState(false);
   const [showNotificationSettings, setShowNotificationSettings] = useState(false);
-  const [isArtBaselOver, setIsArtBaselOver] = useState(false);
-
-  // Check if Art Basel has ended
-  useEffect(() => {
-    const checkIfOver = () => {
-      setIsArtBaselOver(new Date() > EVENT_END_DATE);
-    };
-    checkIfOver();
-    const interval = setInterval(checkIfOver, 60000);
-    return () => clearInterval(interval);
-  }, []);
-
   // Load YouForm script when modal opens
   useEffect(() => {
     if (showSubmitModal) {
@@ -52,7 +38,7 @@ export default function Header({ onChatToggle }: HeaderProps) {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            {!isArtBaselOver && (
+            {(
               <>
                 <Link
                   href="/"
@@ -98,7 +84,7 @@ export default function Header({ onChatToggle }: HeaderProps) {
               <Archive size={18} />
               <span>Archive</span>
             </Link>
-            {!isArtBaselOver && (
+            {(
               <button
                 onClick={() => setShowNotificationSettings(true)}
                 className="p-2 hover:bg-white/20 rounded-full transition-colors"
@@ -119,6 +105,8 @@ export default function Header({ onChatToggle }: HeaderProps) {
           {/* Mobile menu button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label={mobileMenuOpen ? 'Close navigation' : 'Open navigation'}
+            aria-expanded={mobileMenuOpen}
             className="md:hidden p-2"
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -128,7 +116,7 @@ export default function Header({ onChatToggle }: HeaderProps) {
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
           <nav className="md:hidden py-4 space-y-2">
-            {!isArtBaselOver && (
+            {(
               <>
                 <Link
                   href="/"
@@ -182,7 +170,7 @@ export default function Header({ onChatToggle }: HeaderProps) {
               <Archive size={18} />
               <span>Archive</span>
             </Link>
-            {!isArtBaselOver && (
+            {(
               <button
                 onClick={() => {
                   setShowNotificationSettings(true);

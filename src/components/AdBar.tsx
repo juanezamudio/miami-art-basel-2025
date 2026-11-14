@@ -7,7 +7,7 @@ export default function AdBar() {
   const handleAdClick = () => {
     track('ad_click', {
       advertiser: 'mymarketingpro',
-      campaign: 'art_basel_2025',
+      campaign: 'miami_art_week_2026',
       ad_name: 'memory_free_leads',
     });
   };

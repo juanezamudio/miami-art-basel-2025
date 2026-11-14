@@ -4,16 +4,17 @@ import { useState, useEffect, useMemo } from 'react';
 import { getEvents, getEventTypes, getNeighborhoods, filterEvents } from '@/lib/events';
 import EventCard from '@/components/EventCard';
 import EventFilters from '@/components/EventFilters';
-import DonationBar from '@/components/DonationBar';
+import dynamic from 'next/dynamic';
 import HappeningNow from '@/components/HappeningNow';
 import Weather from '@/components/Weather';
 import PlanMyDay from '@/components/PlanMyDay';
 import AdBar from '@/components/AdBar';
+import Link from 'next/link';
+import { CURRENT_SEASON, EVENT_START_DATE, EVENT_END_DATE } from '@/lib/season';
 
-// Art Basel dates (update these each year)
-const EVENT_START_DATE = new Date('2025-11-30T00:00:00');
-const EVENT_END_DATE = new Date('2025-12-09T23:59:59');
-const EVENT_YEAR = 2025;
+const EVENT_YEAR = CURRENT_SEASON.year;
+// Donation controls use browser-only wallet hooks; keep listings prerendered.
+const DonationBar = dynamic(() => import('@/components/DonationBar'), { ssr: false });
 
 interface TimeLeft {
   days: number;
@@ -46,7 +47,7 @@ export default function ActiveArtBaselHero() {
   const [sortBy, setSortBy] = useState<SortOption>('date');
   const [showPlanMyDay, setShowPlanMyDay] = useState(false);
   const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(null);
-  const [status, setStatus] = useState<'before' | 'during'>('before');
+  const [status, setStatus] = useState<'before' | 'during' | 'after'>('before');
 
   // Countdown timer
   useEffect(() => {
@@ -65,6 +66,9 @@ export default function ActiveArtBaselHero() {
         });
       } else if (now <= EVENT_END_DATE) {
         setStatus('during');
+        setTimeLeft(null);
+      } else {
+        setStatus('after');
         setTimeLeft(null);
       }
     };
@@ -134,12 +138,12 @@ export default function ActiveArtBaselHero() {
   }, [sortedEvents]);
 
   // Countdown display component
-  const CountdownDisplay = () => {
+  const renderCountdown = () => {
     if (!timeLeft) return null;
 
     return (
       <div className="flex flex-col items-center gap-3">
-        <div className="text-gray-400 text-sm">Art Basel Miami {EVENT_YEAR} starts in</div>
+        <div className="text-gray-400 text-sm">Miami Art Week {EVENT_YEAR} starts in</div>
         <div className="flex gap-2 sm:gap-4">
           <div className="flex flex-col items-center">
             <div className="bg-gradient-to-b from-purple-600 to-purple-800 text-white text-2xl sm:text-3xl font-bold px-3 sm:px-4 py-2 rounded-lg min-w-[60px] sm:min-w-[70px] text-center" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
@@ -171,13 +175,13 @@ export default function ActiveArtBaselHero() {
   };
 
   // Happening Now indicator
-  const HappeningNowIndicator = () => (
+  const renderHappeningNowIndicator = () => (
     <div className="flex items-center justify-center gap-2 text-green-400 font-medium">
       <span className="relative flex h-3 w-3">
         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
         <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
       </span>
-      <span>Art Basel Miami is Happening Now!</span>
+      <span>Miami Art Week is Happening Now!</span>
     </div>
   );
 
@@ -186,16 +190,26 @@ export default function ActiveArtBaselHero() {
       {/* Hero Section */}
       <div className="text-center mb-8">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 bg-clip-text text-transparent mb-4" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
-          Your Complete <span className="whitespace-nowrap">AI-Powered</span> Guide to
+          Your Guide to
           <br />
-          Miami Art Basel {EVENT_YEAR}
+          Miami Art Week {EVENT_YEAR}
         </h1>
         <p className="text-gray-400 text-base sm:text-lg max-w-3xl mx-auto px-4 mb-6">
           Discover art shows, parties, and wellness events during Miami Art Week.
         </p>
+        <p className="text-gray-300 mb-3">{CURRENT_SEASON.dateLabel} · Art Basel public days: {CURRENT_SEASON.fairDateLabel}</p>
+        <p className="text-gray-400 text-sm max-w-2xl mx-auto mb-4">
+          We&apos;re building this year&apos;s guide. Each listing links to its source and shows when
+          we checked it. More events will be added as we verify them.
+        </p>
+        <Link href="/archive" className="inline-block text-purple-300 underline mb-6">
+          Explore the 2025 archive
+        </Link>
 
         {/* Countdown or Happening Now */}
-        {status === 'before' ? <CountdownDisplay /> : <HappeningNowIndicator />}
+        {status === 'before' ? renderCountdown() : status === 'during' ? renderHappeningNowIndicator() : (
+          <p className="text-gray-400">Miami Art Week {EVENT_YEAR} has ended. Browse this edition&apos;s listings below.</p>
+        )}
       </div>
 
       {/* Happening Now Ticker */}

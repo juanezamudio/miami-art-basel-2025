@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import { Event } from '@/types/event';
 import EventCard from './EventCard';
+import { getEventsForDate } from '@/lib/events';
+import { CURRENT_SEASON, getSeasonDates } from '@/lib/season';
 
 interface CalendarViewProps {
   events: Event[];
@@ -13,36 +15,7 @@ const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 export default function CalendarView({ events }: CalendarViewProps) {
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
 
-  // Art Basel 2025 dates: December 2-9
-  const baselDates = [
-    new Date(2025, 10, 30), // Nov 30
-    new Date(2025, 11, 1),  // Dec 1
-    new Date(2025, 11, 2),  // Dec 2
-    new Date(2025, 11, 3),  // Dec 3
-    new Date(2025, 11, 4),  // Dec 4
-    new Date(2025, 11, 5),  // Dec 5
-    new Date(2025, 11, 6),  // Dec 6
-    new Date(2025, 11, 7),  // Dec 7
-    new Date(2025, 11, 8),  // Dec 8
-    new Date(2025, 11, 9),  // Dec 9
-  ];
-
-  const getEventsForDate = (date: Date): Event[] => {
-    return events.filter((event) => {
-      if (!event.startDate) return false;
-
-      const startDate = new Date(event.startDate);
-      const endDate = event.endDate ? new Date(event.endDate) : startDate;
-
-      startDate.setHours(0, 0, 0, 0);
-      endDate.setHours(23, 59, 59, 999);
-
-      const checkDate = new Date(date);
-      checkDate.setHours(12, 0, 0, 0);
-
-      return checkDate >= startDate && checkDate <= endDate;
-    });
-  };
+  const baselDates = getSeasonDates().map(({ date }) => date);
 
   const eventTypeColors: Record<string, string> = {
     'Art Show': 'bg-purple-500',
@@ -53,22 +26,22 @@ export default function CalendarView({ events }: CalendarViewProps) {
     'Pop Up': 'bg-cyan-500',
   };
 
-  const selectedEvents = selectedDate ? getEventsForDate(selectedDate) : [];
+  const selectedEvents = selectedDate ? getEventsForDate(events, selectedDate) : [];
 
   return (
     <div className="space-y-6">
       {/* Calendar Grid */}
       <div className="bg-[#1a1a2e] rounded-xl shadow-lg overflow-hidden border border-gray-700/50">
         <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white p-4">
-          <h2 className="text-xl font-bold text-center">Miami Art Basel Week 2025</h2>
+          <h2 className="text-xl font-bold text-center">Miami Art Week {CURRENT_SEASON.year}</h2>
           <p className="text-center text-purple-200 text-lg mt-1">
-            November 30 - December 9
+            {CURRENT_SEASON.dateLabel}
           </p>
         </div>
 
         <div className="grid grid-cols-5 md:grid-cols-10 gap-1 p-4">
           {baselDates.map((date) => {
-            const dayEvents = getEventsForDate(date);
+            const dayEvents = getEventsForDate(events, date);
             const isSelected =
               selectedDate?.toDateString() === date.toDateString();
             const hasEvents = dayEvents.length > 0;
@@ -76,6 +49,7 @@ export default function CalendarView({ events }: CalendarViewProps) {
             return (
               <button
                 key={date.toISOString()}
+                aria-pressed={isSelected}
                 onClick={() => setSelectedDate(date)}
                 className={`p-2 md:p-4 rounded-lg transition-all flex flex-col items-center ${
                   isSelected

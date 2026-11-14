@@ -59,6 +59,12 @@ export async function GET(request: Request) {
       if (!event.schedule) {
         continue;
       }
+      // Date-specific or variable hours cannot be interpreted as one daily
+      // start time. Skip these until structured occurrences are available.
+      if (!/^\s*\d{1,2}(?::\d{2})?\s*(?:AM|PM)(?:\s*[-–]\s*\d{1,2}(?::\d{2})?\s*(?:AM|PM))?\s*$/i.test(event.schedule)) {
+        skippedEvents.push(`${event.event} (requires verified occurrence times)`);
+        continue;
+      }
 
       // Check if event is active today (handles multi-day events)
       if (!event.startDate) continue;
