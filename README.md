@@ -83,6 +83,7 @@ Archive only after reviewing the final catalog. The command validates edition da
 | --- | --- |
 | `npm run dev` | Development server |
 | `npm run build` | Audit the catalog and build production output |
+| `npm run generate:social-image` | Render the sharing PNG from the running site’s hero |
 | `npm start` | Serve the production build |
 | `npm run typecheck` | Regenerate route types and check TypeScript |
 | `npm test` | Regression tests for dates, timezones, locations, CSV, validation, and archive protection |
@@ -106,3 +107,11 @@ Pending launch work is tracked in [TODO.md](TODO.md), including verified coverag
 Validation for this pass: 10 regression tests, TypeScript checks, CSV validation/import, the production build, eight local page responses (including current and archived event URLs), and three API input/empty-result checks passed. The 2025 snapshot remains unchanged. Browser interaction checks and live external integrations were not exercised.
 
 No production deployment is performed by the review workflow.
+
+## Sharing preview
+
+Link previews use `public/miami-art-week-2026-share-hero.png`, a 1200×630 PNG rendered from the actual website headline: Space Grotesk Bold, the same gradient, capitalization, two lines, and dark background. Open Graph and Twitter metadata reference its absolute URL; on-site advertising is independent.
+
+To regenerate after a hero change, start the dev server, install Chromium once with `npx playwright install chromium`, then run `npm run generate:social-image -- --origin http://localhost:3000`. The generator checks the headline before capturing and uses the desktop hero’s gradient span so its colors stay consistent. Commit the generated PNG with any metadata changes.
+
+After release, check the server-rendered `og:image` and `twitter:image`, fetch the referenced PNG, and verify its dimensions. Messaging apps may cache older previews; a fresh page URL such as `https://artbasel.space/?share=2026-hero` can be used when an existing conversation retains the old card.

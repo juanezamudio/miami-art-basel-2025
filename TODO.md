@@ -2,6 +2,10 @@
 
 Updated November 16, 2026. Prioritize verified event coverage, repeatable source review, and accurate times/access before further visual work. The app catalog currently has 125 reviewed listings, including 114 additions checked November 16, 2026. Twenty are explicitly free; 111 have reviewed venue/address coordinates. Discovery snapshots are not published listings.
 
+## Current production priorities
+
+- [x] **SHARE-01 — Match sharing previews to the website hero.** Render the actual Space Grotesk Bold headline, gradient, capitalization and two-line layout on the same dark background in a 1200×630 PNG. Explicit Open Graph/Twitter metadata points to the dedicated absolute image URL. The current on-site ad remains. Generator: `npm run generate:social-image`; existing messaging-app caches may need a fresh share URL.
+
 ## Next work, in order
 
 - [x] **DATA-01A — Review and import the first four organizers.** Imported eight listings from BitBasel, Factory Basel, Oolite Arts, and AfriKin with permanent IDs, organizer evidence, and explicit pass/admission notes. Decisions and held leads are recorded in [editorial-review.json](src/data/editorial-review.json).

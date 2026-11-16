@@ -21,11 +21,28 @@ const spaceGrotesk = Space_Grotesk({
   weight: ["400", "500", "600", "700"],
 });
 
+const siteUrl = new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://artbasel.space');
+const shareImage = new URL(`/miami-art-week-${CURRENT_SEASON.year}-share-hero.png`, siteUrl).href;
+const shareTitle = `Your Guide to Miami Art Week ${CURRENT_SEASON.year}`;
+
 export const metadata: Metadata = {
+  metadataBase: siteUrl,
   title: `Miami Art Week ${CURRENT_SEASON.year} | Basel.ai Events Guide`,
   description: `An independent guide to Miami Art Week ${CURRENT_SEASON.year}. Find art fairs, exhibitions, parties, and events with source links and checked dates.`,
   keywords: `Art Basel, Miami, ${CURRENT_SEASON.year}, art shows, parties, events, Wynwood, Miami Beach, Design District`,
   manifest: "/manifest.json",
+  openGraph: {
+    type: 'website',
+    siteName: 'Basel.ai',
+    title: shareTitle,
+    description: 'Discover art shows, parties, and wellness events during Miami Art Week.',
+    images: [{ url: shareImage, width: 1200, height: 630, type: 'image/png', alt: shareTitle }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: shareTitle,
+    images: [{ url: shareImage, alt: shareTitle }],
+  },
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",

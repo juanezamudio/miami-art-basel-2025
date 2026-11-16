@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "npm run audit-data && next build --webpack",
+    "generate:social-image": "node scripts/generate-social-image.mjs",
     "start": "next start",
     "lint": "eslint",
     "preprocess-data": "node --experimental-strip-types scripts/preprocess-csv.js",
@@ -43,6 +44,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.4.6",
     "ignore-loader": "^0.1.2",
+    "playwright": "1.58.0",
     "sharp": "^0.34.5",
     "tailwindcss": "^4",
     "typescript": "^5"
