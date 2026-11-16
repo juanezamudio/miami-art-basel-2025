@@ -37,15 +37,15 @@ See [TODO.md](TODO.md) for the prioritized 2026 launch checklist and [the source
 
 ## Current data and editorial workflow
 
-`src/data/season.json` controls the current edition, Miami timezone, week dates, and fair dates. `art-basel-2026.csv` is the editable source; `src/data/events.json` is the published catalog. The current catalog has **11 reviewed listings**. The original three fairs were checked November 13, 2026:
+`src/data/season.json` controls the current edition, Miami timezone, week dates, and fair dates. `art-basel-2026.csv` is the editable source; `src/data/events.json` is the published catalog. The current catalog has **125 reviewed listings**, including 114 additions checked November 16, 2026, across 14 areas and all six event categories. Twenty listings explicitly offer free general admission or public viewing. The original three fairs were checked November 13, 2026:
 
 - [Art Basel Miami Beach](https://www.artbasel.com/miami-beach?blLocaleCode=en)
 - [Art Miami](https://www.artmiami.com/practical-info)
 - [Untitled Art, Miami Beach](https://untitledartfairs.com/?switch=miami)
 
-Eight more listings were reviewed and imported on November 14: five BitBasel program sessions, the Factory Basel five-night GA pass, Oolite Arts’ brunch/open studios, and AfriKin’s public exhibition. [Editorial decisions](src/data/editorial-review.json) retain organizer evidence, discovery identities, and held/historical leads. This manual ledger is not yet an enforced publish gate or review UI.
+Eight more listings were reviewed and imported on November 14: five BitBasel program sessions, the Factory Basel five-night GA pass, Oolite Arts’ brunch/open studios, and AfriKin’s public exhibition. [Editorial decisions](src/data/editorial-review.json) retain organizer evidence, discovery identities, and held/historical leads. This manual ledger is not yet an enforced publish gate or review UI. The [November 16 review ledger](src/data/catalog-review-2026-11-16.json) records the larger launch batch, 126 discovery dispositions, held leads, and venue-coordinate evidence. See the [catalog release notes](docs/catalog-expansion-2026-11-16.md) for coverage and verification limits.
 
-Week dates come from the [Greater Miami Convention & Visitors Bureau](https://www.miamiandbeaches.com/events/art-basel/miami-art-week-fairs). This is a starting catalog, not complete Miami Art Week coverage. Blank prices and hours mean **unverified**, never free or open all day. Private previews are not included in public date ranges.
+Week dates come from the [Greater Miami Convention & Visitors Bureau](https://www.miamiandbeaches.com/events/art-basel/miami-art-week-fairs). Coverage remains open to further verified additions. Browsing dates also include the confirmed November 29 vernissage, while the official week remains November 30–December 6. Longer exhibitions use an explicitly described Art Week viewing window; their full run appears in the notes. Blank prices and hours mean **unverified**, never free or open all day. Private previews are not included in public date ranges.
 
 1. Check an organizer's page for this edition. Verify dates, location, access restrictions, and ticket information independently.
 2. Add the event to the CSV with a permanent ID, edition, organizer source URL, and the date actually checked. Use ISO `YYYY-MM-DD` dates. Leave unknown prices and schedules blank.

@@ -41,3 +41,26 @@ export function isEventOnDate(
   const end = event.endDate ? eventDateKey(event.endDate) : start;
   return !!(selected && start && end && selected >= start && selected <= end);
 }
+
+// Keep the official week visible, while including published opening nights and
+// adjacent programs in the same date controls as the rest of the catalog.
+export function getCatalogDateKeys(
+  season: { startDate: string; endDate: string },
+  events: { startDate: string | null; endDate: string | null }[],
+): string[] {
+  const start = parseEventDate(season.startDate);
+  const end = parseEventDate(season.endDate);
+  if (!start || !end || end < start) return [];
+  for (const event of events) {
+    const first = parseEventDate(event.startDate);
+    const last = event.endDate ? parseEventDate(event.endDate) : first;
+    if (!first || !last || last < first) continue;
+    if (first < start) start.setTime(first.getTime());
+    if (last > end) end.setTime(last.getTime());
+  }
+  const dates: string[] = [];
+  for (const date = new Date(start); date <= end; date.setDate(date.getDate() + 1)) {
+    dates.push(eventDateKey(date)!);
+  }
+  return dates;
+}

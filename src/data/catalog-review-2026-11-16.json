@@ -1,0 +1,3035 @@
+{
+  "batchId": "2026-11-16-public-launch-catalog",
+  "reviewedAt": "2026-11-16",
+  "scope": "114 additional factual listings from organizer, venue, producer, host-authored ticketing and City of Miami Beach 2026 programs. Discovery records are leads, not authority. Exhibition viewing windows are scoped to Art Week; full runs are disclosed in notes. Overnight events use their opening-night date. No copied promotional descriptions or imagery.",
+  "approved": [
+    {
+      "eventId": 2026012,
+      "primarySources": [
+        "https://www.contextartmiami.com/practical-info",
+        "https://www.artmiami.com/tickets"
+      ],
+      "evidence": "CONTEXT practical information gives public Dec 1 opening at 4 PM and daily hours; excludes VIP-only morning/afternoon previews. Art Miami ticket page states $71 one-day admission with both public opening schedules.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "e3c654e9-db3f-459d-82d8-da73e6e7b200"
+        }
+      ]
+    },
+    {
+      "eventId": 2026013,
+      "primarySources": [
+        "https://designmiami.com/fair/miami-2026"
+      ],
+      "evidence": "Organizer explicitly distinguishes Dec 1 preview and Dec 2 11 AM–1 PM VIP preview from the public show days.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "a9fe1099-e6ef-4051-9fff-2fe64e88365b"
+        }
+      ]
+    },
+    {
+      "eventId": 2026014,
+      "primarySources": [
+        "https://www.newartdealers.org/fairs/nada-miami-2026/visit"
+      ],
+      "evidence": "NADA visit page confirms Dec 1–5, public opening 4 PM; separate official tickets page confirms $55 single day.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "58e926eb-5753-4e81-b920-afea969eeb68"
+        }
+      ]
+    },
+    {
+      "eventId": 2026015,
+      "primarySources": [
+        "https://www.aquaartmiami.com/visitors"
+      ],
+      "evidence": "Organizer visitor page explicitly labels Dec 2 VIP and Dec 3–6 public hours.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "48fb4e50-773a-4559-a83b-067e078b81aa"
+        }
+      ]
+    },
+    {
+      "eventId": 2026016,
+      "primarySources": [
+        "https://inkartfair.com/events-schedule"
+      ],
+      "evidence": "INK 2026 schedule and linked practical information confirm free registration, dates, hours and address. Primary INK hours override inconsistent city calendar.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "4980481b-ff75-41bb-a8d0-b04dd93eeff2"
+        },
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "5a14be45-bd53-4f06-99ea-67bf6cc7a6e3"
+        },
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "8dff0d57-5ac0-4881-8bc0-1edb81691ebd"
+        }
+      ]
+    },
+    {
+      "eventId": 2026017,
+      "primarySources": [
+        "https://redwoodartgroup.com/spectrum-miami/"
+      ],
+      "evidence": "Fair visitor information plus shared TicketSpice checkout: $30 GA valid Dec 3–6; $70 all-access includes Dec 2 6–9 PM opening. 5–6 PM is VIP/press only.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "b0fa6e86-a364-4944-9d90-ca2d68ebe738"
+        },
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "d8b101de-3e66-4222-a5b9-46ab68610f46"
+        }
+      ]
+    },
+    {
+      "eventId": 2026018,
+      "primarySources": [
+        "https://redwoodartgroup.com/red-dot-miami/"
+      ],
+      "evidence": "Fair visitor information plus shared TicketSpice checkout: $30 GA valid Dec 3–6; $70 all-access includes Dec 2 6–9 PM opening. 5–6 PM is VIP/press only.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "a98b8484-a267-4731-9003-257cd19d3a33"
+        },
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "b0fa6e86-a364-4944-9d90-ca2d68ebe738"
+        }
+      ]
+    },
+    {
+      "eventId": 2026019,
+      "primarySources": [
+        "https://wl.eventim.us/event/pinta-miami-2026/704616?afflky=PintaMiami"
+      ],
+      "evidence": "Official Pinta links to this Eventim checkout; public ticket valid Dec 3–6, schedule excludes Dec 3 11 AM–3 PM preview. Generic information page Dec 2 text conflicts, checkout used.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "5b4b7dc6-bca4-40f8-83cd-4f521b3aad84"
+        }
+      ]
+    },
+    {
+      "eventId": 2026020,
+      "primarySources": [
+        "https://www.prizm.art/event-details/prizm-2026-single-day-pass"
+      ],
+      "evidence": "Organizer checkout confirms Dec 2–6 and daily ticket prices. Sunday metadata says 4 PM but ticket description says 6 PM; conflict is disclosed, no Sunday hours supplied for planning.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "9b010211-c578-4d12-8ec3-8d81f3ad098b"
+        }
+      ]
+    },
+    {
+      "eventId": 2026021,
+      "primarySources": [
+        "https://inscopeart.com/experiences"
+      ],
+      "evidence": "InScope experiences page states GA Dec 2–6, daily 11 AM–7 PM, $60 one-day/$120 week early bird; Dec 1 not public GA.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "347ef4d4-0ca2-4aa8-a3fa-50e4463dd080"
+        }
+      ]
+    },
+    {
+      "eventId": 2026022,
+      "primarySources": [
+        "https://www.keyartfair.com/",
+        "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/"
+      ],
+      "evidence": "KEY homepage confirms Dec 2–6 2026 and 4601 Collins; City Art Week 2026 program confirms 11 AM–6 PM daily.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "986cd593-5046-4d8a-97b3-e0c86d2157e8"
+        }
+      ]
+    },
+    {
+      "eventId": 2026023,
+      "primarySources": [
+        "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/"
+      ],
+      "evidence": "City 2026 Art Week program lists Art Gaysel Dec 3–6, 5 PM–midnight at 1409 Lincoln; host page confirms fair identity.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026024,
+      "primarySources": [
+        "https://afrikin.org/afrikin-artfair.html"
+      ],
+      "evidence": "AfriKin organizer 2026 program explicitly states Nov 29 6–9 PM, doors 5:30 PM; Eventbrite has stale 2025 prose so primary program controls.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "43061f07-510b-4285-a8c0-2716a0d53dc5"
+        }
+      ]
+    },
+    {
+      "eventId": 2026025,
+      "primarySources": [
+        "https://afrikin.org/afrikin-rhythm-soul-workshop.html"
+      ],
+      "evidence": "Reviewed the organizer or host listing for the 2026 date, venue, schedule and stated access. Unpublished fields remain unknown.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "ca43bce4-f72b-43e8-a853-3f3a8312db8f"
+        }
+      ]
+    },
+    {
+      "eventId": 2026026,
+      "primarySources": [
+        "https://afrikin.org/afrikin-changa.html"
+      ],
+      "evidence": "Reviewed the organizer or host listing for the 2026 date, venue, schedule and stated access. Unpublished fields remain unknown.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "c5560b1e-0f76-4fe6-9ac4-e474411e34db"
+        }
+      ]
+    },
+    {
+      "eventId": 2026027,
+      "primarySources": [
+        "https://afrikin.org/afrikin-fashion.html"
+      ],
+      "evidence": "Detailed African Fashion Week 2026 page confirms First Frost Dec 5 11 AM–7 PM; this supersedes 11 AM–9 PM umbrella description.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026028,
+      "primarySources": [
+        "https://afrikin.org/afrikin-fashion.html"
+      ],
+      "evidence": "Reviewed the organizer or host listing for the 2026 date, venue, schedule and stated access. Unpublished fields remain unknown.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "d0bd04df-d946-4535-93ae-1eee209bad1a"
+        }
+      ]
+    },
+    {
+      "eventId": 2026029,
+      "primarySources": [
+        "https://www.faena.com/miami-beach/things-to-do/event-calendar/miami-art-week-at-faena"
+      ],
+      "evidence": "Reviewed the organizer or host listing for the 2026 date, venue, schedule and stated access. Unpublished fields remain unknown.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "50973862-e0bb-4b6e-b0c7-e131fae6b002"
+        },
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "b8c69071-566f-4818-952c-8f217db1b165"
+        }
+      ]
+    },
+    {
+      "eventId": 2026030,
+      "primarySources": [
+        "https://www.faena.com/miami-beach/things-to-do/event-calendar/miami-art-week-at-faena"
+      ],
+      "evidence": "Reviewed the organizer or host listing for the 2026 date, venue, schedule and stated access. Unpublished fields remain unknown.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "50973862-e0bb-4b6e-b0c7-e131fae6b002"
+        },
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "ee759fa2-c976-402c-a1c3-0b7b859ffdf1"
+        }
+      ]
+    },
+    {
+      "eventId": 2026031,
+      "primarySources": [
+        "https://www.faenaart.org/major-lazer"
+      ],
+      "evidence": "Reviewed the organizer or host listing for the 2026 date, venue, schedule and stated access. Unpublished fields remain unknown.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "0ebe0a39-2229-487b-a945-9fa6c952adca"
+        }
+      ]
+    },
+    {
+      "eventId": 2026032,
+      "primarySources": [
+        "https://www.jmofl.org/events/art-basel-brunch/"
+      ],
+      "evidence": "Reviewed the organizer or host listing for the 2026 date, venue, schedule and stated access. Unpublished fields remain unknown.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "cf1b3966-c215-4114-9cc1-bc6d8de77761"
+        }
+      ]
+    },
+    {
+      "eventId": 2026033,
+      "primarySources": [
+        "https://www.jmofl.org/exhibitions/wondering-jew/",
+        "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/"
+      ],
+      "evidence": "Museum confirms Nov 19 2026–March 2027 exhibition and admission inclusion; City Art Week gives Wed–Sun 10 AM–4 PM.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "f113d220-41ec-4438-b4c6-dfdbebf47467"
+        }
+      ]
+    },
+    {
+      "eventId": 2026034,
+      "primarySources": [
+        "https://youngarts.org/calendar/miami-art-week-hank-willis-thomas-resident-open-studios/"
+      ],
+      "evidence": "Reviewed the organizer or host listing for the 2026 date, venue, schedule and stated access. Unpublished fields remain unknown.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "8d10eb4e-07de-4107-9138-ba964e4d5f75"
+        }
+      ]
+    },
+    {
+      "eventId": 2026035,
+      "primarySources": [
+        "https://www.miamidesigndistrict.com/event/3255/lvmh-the-studio-miami"
+      ],
+      "evidence": "District host page dates Dec 2–6 11 AM–4 PM; linked Google Calendar dates=20261202T160000Z/20261206T210000Z establishes year.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "b7897d20-70e9-4823-89f4-ef9e7c236f75"
+        }
+      ]
+    },
+    {
+      "eventId": 2026036,
+      "primarySources": [
+        "https://www.miamiartweek.org/events"
+      ],
+      "evidence": "Producer MiamiArtWeek.org 2026 text schedule supplies separate exhibition identities, shared venue and public hours; private sessions excluded.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "6167d118-9627-4a3b-a653-2cbc64a9bc7c"
+        }
+      ]
+    },
+    {
+      "eventId": 2026037,
+      "primarySources": [
+        "https://www.miamiartweek.org/events"
+      ],
+      "evidence": "Producer MiamiArtWeek.org 2026 text schedule supplies separate exhibition identities, shared venue and public hours; private sessions excluded.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "656b0cf0-4083-4ca5-89d8-7b9cfee9e29d"
+        }
+      ]
+    },
+    {
+      "eventId": 2026038,
+      "primarySources": [
+        "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/",
+        "https://www.miamibeachfl.gov/city-hall/tourism-culture/culture-art-in-public-places/no-vacancy/"
+      ],
+      "evidence": "City 2026 No Vacancy program and Nov 9 Art Week release verify artist, work, hotel/address and full Nov 12–Dec 19 run. Catalog intentionally scoped to Nov 30–Dec 6; no invented daily hours or price.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026039,
+      "primarySources": [
+        "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/",
+        "https://www.miamibeachfl.gov/city-hall/tourism-culture/culture-art-in-public-places/no-vacancy/"
+      ],
+      "evidence": "City 2026 No Vacancy program and Nov 9 Art Week release verify artist, work, hotel/address and full Nov 12–Dec 19 run. Catalog intentionally scoped to Nov 30–Dec 6; no invented daily hours or price.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026040,
+      "primarySources": [
+        "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/",
+        "https://www.miamibeachfl.gov/city-hall/tourism-culture/culture-art-in-public-places/no-vacancy/"
+      ],
+      "evidence": "City 2026 No Vacancy program and Nov 9 Art Week release verify artist, work, hotel/address and full Nov 12–Dec 19 run. Catalog intentionally scoped to Nov 30–Dec 6; no invented daily hours or price.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026041,
+      "primarySources": [
+        "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/",
+        "https://www.miamibeachfl.gov/city-hall/tourism-culture/culture-art-in-public-places/no-vacancy/"
+      ],
+      "evidence": "City 2026 No Vacancy program and Nov 9 Art Week release verify artist, work, hotel/address and full Nov 12–Dec 19 run. Catalog intentionally scoped to Nov 30–Dec 6; no invented daily hours or price.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026042,
+      "primarySources": [
+        "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/",
+        "https://www.miamibeachfl.gov/city-hall/tourism-culture/culture-art-in-public-places/no-vacancy/"
+      ],
+      "evidence": "City 2026 No Vacancy program and Nov 9 Art Week release verify artist, work, hotel/address and full Nov 12–Dec 19 run. Catalog intentionally scoped to Nov 30–Dec 6; no invented daily hours or price.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026043,
+      "primarySources": [
+        "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/",
+        "https://www.miamibeachfl.gov/city-hall/tourism-culture/culture-art-in-public-places/no-vacancy/"
+      ],
+      "evidence": "City 2026 No Vacancy program and Nov 9 Art Week release verify artist, work, hotel/address and full Nov 12–Dec 19 run. Catalog intentionally scoped to Nov 30–Dec 6; no invented daily hours or price.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026044,
+      "primarySources": [
+        "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/",
+        "https://www.miamibeachfl.gov/city-hall/tourism-culture/culture-art-in-public-places/no-vacancy/"
+      ],
+      "evidence": "City 2026 No Vacancy program and Nov 9 Art Week release verify artist, work, hotel/address and full Nov 12–Dec 19 run. Catalog intentionally scoped to Nov 30–Dec 6; no invented daily hours or price.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026045,
+      "primarySources": [
+        "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/",
+        "https://www.miamibeachfl.gov/city-hall/tourism-culture/culture-art-in-public-places/no-vacancy/"
+      ],
+      "evidence": "City 2026 No Vacancy program and Nov 9 Art Week release verify artist, work, hotel/address and full Nov 12–Dec 19 run. Catalog intentionally scoped to Nov 30–Dec 6; no invented daily hours or price.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026046,
+      "primarySources": [
+        "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/",
+        "https://www.miamibeachfl.gov/city-hall/tourism-culture/culture-art-in-public-places/no-vacancy/"
+      ],
+      "evidence": "City 2026 No Vacancy program and Nov 9 Art Week release verify artist, work, hotel/address and full Nov 12–Dec 19 run. Catalog intentionally scoped to Nov 30–Dec 6; no invented daily hours or price.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026047,
+      "primarySources": [
+        "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/",
+        "https://www.miamibeachfl.gov/city-hall/tourism-culture/culture-art-in-public-places/no-vacancy/"
+      ],
+      "evidence": "City 2026 No Vacancy program and Nov 9 Art Week release verify artist, work, hotel/address and full Nov 12–Dec 19 run. Catalog intentionally scoped to Nov 30–Dec 6; no invented daily hours or price.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026048,
+      "primarySources": [
+        "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/",
+        "https://www.miamibeachfl.gov/city-hall/tourism-culture/culture-art-in-public-places/no-vacancy/"
+      ],
+      "evidence": "City 2026 No Vacancy program and Nov 9 Art Week release verify artist, work, hotel/address and full Nov 12–Dec 19 run. Catalog intentionally scoped to Nov 30–Dec 6; no invented daily hours or price.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026049,
+      "primarySources": [
+        "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/",
+        "https://www.miamibeachfl.gov/city-hall/tourism-culture/culture-art-in-public-places/no-vacancy/"
+      ],
+      "evidence": "City 2026 No Vacancy program and Nov 9 Art Week release verify artist, work, hotel/address and full Nov 12–Dec 19 run. Catalog intentionally scoped to Nov 30–Dec 6; no invented daily hours or price.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026050,
+      "primarySources": [
+        "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/"
+      ],
+      "evidence": "Reviewed the organizer or host listing for the 2026 date, venue, schedule and stated access. Unpublished fields remain unknown.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026051,
+      "primarySources": [
+        "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/"
+      ],
+      "evidence": "Reviewed the organizer or host listing for the 2026 date, venue, schedule and stated access. Unpublished fields remain unknown.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026052,
+      "primarySources": [
+        "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/"
+      ],
+      "evidence": "Reviewed the organizer or host listing for the 2026 date, venue, schedule and stated access. Unpublished fields remain unknown.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "b611d814-cb55-4f5f-9866-1645cf6d9d8a"
+        }
+      ]
+    },
+    {
+      "eventId": 2026053,
+      "primarySources": [
+        "https://thebass.org/event/art-cares-painting-with-the-pros/"
+      ],
+      "evidence": "Reviewed the organizer or host listing for the 2026 date, venue, schedule and stated access. Unpublished fields remain unknown.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "b611d814-cb55-4f5f-9866-1645cf6d9d8a"
+        }
+      ]
+    },
+    {
+      "eventId": 2026054,
+      "primarySources": [
+        "https://thebass.org/event/the-bass-dialogues-architects-johnston-marklee-in-conversation-with-tom-healy/"
+      ],
+      "evidence": "Reviewed the organizer or host listing for the 2026 date, venue, schedule and stated access. Unpublished fields remain unknown.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "4979569d-b576-4925-8d62-061b5ad4203e"
+        }
+      ]
+    },
+    {
+      "eventId": 2026055,
+      "primarySources": [
+        "https://17147.blackbaudhosting.com/17147/PP---120226-The-Bass-Dialogues---PEDRO-Y-JUANA",
+        "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/"
+      ],
+      "evidence": "Reviewed the organizer or host listing for the 2026 date, venue, schedule and stated access. Unpublished fields remain unknown.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "8da05e00-10d1-4801-ae0c-fcf1d2a1780d"
+        }
+      ]
+    },
+    {
+      "eventId": 2026056,
+      "primarySources": [
+        "https://17147.blackbaudhosting.com/17147/PP---120426-The-Bass-Dialogues---PICA",
+        "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/"
+      ],
+      "evidence": "Reviewed the organizer or host listing for the 2026 date, venue, schedule and stated access. Unpublished fields remain unknown.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "8f1bec63-d56e-4249-bf3c-f8bd12f11b5d"
+        }
+      ]
+    },
+    {
+      "eventId": 2026057,
+      "primarySources": [
+        "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/"
+      ],
+      "evidence": "Reviewed the organizer or host listing for the 2026 date, venue, schedule and stated access. Unpublished fields remain unknown.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026058,
+      "primarySources": [
+        "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/"
+      ],
+      "evidence": "Reviewed the organizer or host listing for the 2026 date, venue, schedule and stated access. Unpublished fields remain unknown.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026059,
+      "primarySources": [
+        "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/"
+      ],
+      "evidence": "City 2026 Art Week announcement identifies artist, installation, 400 block and run through April 2027. Viewing window scoped to Art Week; no invented hours.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026060,
+      "primarySources": [
+        "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/"
+      ],
+      "evidence": "Reviewed the organizer or host listing for the 2026 date, venue, schedule and stated access. Unpublished fields remain unknown.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026061,
+      "primarySources": [
+        "https://ninajohnson.com/exhibitions/16746/"
+      ],
+      "evidence": "Individual exhibition confirms full run and gallery footer confirms Tue–Sat 11 AM–5 PM. Only consecutive open days Dec 1–5 included.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "340c2200-d522-4e13-b130-928d01eb7e26"
+        }
+      ]
+    },
+    {
+      "eventId": 2026062,
+      "primarySources": [
+        "https://ninajohnson.com/exhibitions/let-me-fix-your-crown/"
+      ],
+      "evidence": "Individual exhibition confirms full run and gallery footer confirms Tue–Sat 11 AM–5 PM. Only consecutive open days Dec 1–5 included.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "340c2200-d522-4e13-b130-928d01eb7e26"
+        }
+      ]
+    },
+    {
+      "eventId": 2026063,
+      "primarySources": [
+        "https://ninajohnson.com/exhibitions/the-void-which-binds/"
+      ],
+      "evidence": "Individual exhibition confirms full run and gallery footer confirms Tue–Sat 11 AM–5 PM. Only consecutive open days Dec 1–5 included.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "340c2200-d522-4e13-b130-928d01eb7e26"
+        }
+      ]
+    },
+    {
+      "eventId": 2026064,
+      "primarySources": [
+        "https://spinelloprojects.com/program/"
+      ],
+      "evidence": "Spinello program identifies Becoming Landscape Nov 30–Jan 9 2027; gallery says open Wed–Sat noon–5 PM. Only Dec 2–5 open days included.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "1eeb6ee3-c769-42d1-9615-5fd46849442a"
+        }
+      ]
+    },
+    {
+      "eventId": 2026065,
+      "primarySources": [
+        "https://www.miamidesigndistrict.com/event/dale-zine-x-kelly-breeze-opening-reception/"
+      ],
+      "evidence": "Reviewed district host event details and linked Google Calendar 2026 timestamps for date/year, clock times and street address; paraphrased access/purchase requirements.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026066,
+      "primarySources": [
+        "https://www.miamidesigndistrict.com/event/gallery-ecry-presents-the-quiet-language-of-form/"
+      ],
+      "evidence": "Reviewed district host event details and linked Google Calendar 2026 timestamps for date/year, clock times and street address; paraphrased access/purchase requirements.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026067,
+      "primarySources": [
+        "https://www.miamidesigndistrict.com/event/jeffrey-deitch-x-urs-fischer-opening-reception/"
+      ],
+      "evidence": "Reviewed district host event details and linked Google Calendar 2026 timestamps for date/year, clock times and street address; paraphrased access/purchase requirements.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026068,
+      "primarySources": [
+        "https://www.miamidesigndistrict.com/event/nereida-garcia-ferraz-joyce-billet-the-infinite-place-of-memory-opening-reception/"
+      ],
+      "evidence": "Reviewed district host event details and linked Google Calendar 2026 timestamps for date/year, clock times and street address; paraphrased access/purchase requirements.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026069,
+      "primarySources": [
+        "https://www.miamidesigndistrict.com/event/spinello-projects-from-his-rib-opening-reception/"
+      ],
+      "evidence": "Reviewed district host event details and linked Google Calendar 2026 timestamps for date/year, clock times and street address; paraphrased access/purchase requirements.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "59f937fc-b871-4312-8f92-972dd264c157"
+        }
+      ]
+    },
+    {
+      "eventId": 2026070,
+      "primarySources": [
+        "https://www.miamidesigndistrict.com/event/the-moore-rooftop-dj-set-with-benny-benassi/"
+      ],
+      "evidence": "Reviewed district host event details and linked Google Calendar 2026 timestamps for date/year, clock times and street address; paraphrased access/purchase requirements.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026071,
+      "primarySources": [
+        "https://www.miamidesigndistrict.com/event/sevan-bicakci-eureka/"
+      ],
+      "evidence": "Reviewed district host event details and linked Google Calendar 2026 timestamps for date/year, clock times and street address; paraphrased access/purchase requirements.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026072,
+      "primarySources": [
+        "https://www.miamidesigndistrict.com/event/a-l-c-watercolor-portraits/"
+      ],
+      "evidence": "Reviewed district host event details and linked Google Calendar 2026 timestamps for date/year, clock times and street address; paraphrased access/purchase requirements.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026073,
+      "primarySources": [
+        "https://www.miamidesigndistrict.com/event/zadig-voltaire-an-afternoon-with-jormi/"
+      ],
+      "evidence": "Reviewed district host event details and linked Google Calendar 2026 timestamps for date/year, clock times and street address; paraphrased access/purchase requirements.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026074,
+      "primarySources": [
+        "https://www.eventbrite.com/e/bakers-brunch-open-studios-cafecito-tickets-1998371923217"
+      ],
+      "evidence": "Organizer-authored event page and Event JSON-LD agree on 2026 date, local start/end, venue and advertised offers. Overnight listing belongs to opening night, with next-day close stated.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "5f61e41d-4f9d-4379-8770-4e0d923e91f6"
+        }
+      ]
+    },
+    {
+      "eventId": 2026075,
+      "primarySources": [
+        "https://www.eventbrite.com/e/breakfast-in-the-park-tickets-1994308381053"
+      ],
+      "evidence": "Organizer-authored event page and Event JSON-LD agree on 2026 date, local start/end, venue and advertised offers. Overnight listing belongs to opening night, with next-day close stated.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "297416bb-77bc-47a1-8fba-1401e546deea"
+        }
+      ]
+    },
+    {
+      "eventId": 2026076,
+      "primarySources": [
+        "https://www.eventbrite.com/e/chroma-2026-a-miami-art-week-fair-for-contemporary-art-community-tickets-1994898904324"
+      ],
+      "evidence": "Organizer-authored event page and Event JSON-LD agree on 2026 date, local start/end, venue and advertised offers. Overnight listing belongs to opening night, with next-day close stated.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "b631969c-c0ce-4217-8e3e-49b86918a7a0"
+        }
+      ]
+    },
+    {
+      "eventId": 2026077,
+      "primarySources": [
+        "https://www.eventbrite.com/e/miami-nice-2026-art-basel-weekend-all-black-yacht-party-tickets-1998699233210"
+      ],
+      "evidence": "Organizer-authored event page and Event JSON-LD agree on 2026 date, local start/end, venue and advertised offers. Overnight listing belongs to opening night, with next-day close stated.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "0461d434-055c-476e-a18e-431f5063a38f"
+        }
+      ]
+    },
+    {
+      "eventId": 2026078,
+      "primarySources": [
+        "https://www.eventbrite.com/e/stamped-aya-x-friends-hosted-by-333-club-miami-art-basel-26-tickets-1987042705221"
+      ],
+      "evidence": "Organizer-authored event page and Event JSON-LD agree on 2026 date, local start/end, venue and advertised offers. Overnight listing belongs to opening night, with next-day close stated.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "ce86e8bb-bed4-4eb9-b137-f1b1dc5fc1b2"
+        }
+      ]
+    },
+    {
+      "eventId": 2026079,
+      "primarySources": [
+        "https://www.eventbrite.com/e/feria-clandestina-v-edition-times-like-these-tickets-2003454255610"
+      ],
+      "evidence": "Clandestina authored Eventbrite title, 2026 exhibitor section, Dec 3–5 listing and daily noon–7 PM agenda agree. Opening party is included in notes, not duplicate fair record.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026080,
+      "primarySources": [
+        "https://feverup.com/m/829431?thm=19802"
+      ],
+      "evidence": "Official Fever listing confirms Dec 5 2026 2–10 PM, park/address and sponsored complimentary GA; do not mistake VIP price for GA.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026081,
+      "primarySources": [
+        "https://luma.com/nachon-6o9j"
+      ],
+      "evidence": "Organizer Luma Event JSON-LD confirms Dec 4 5–8 PM, venue and $0 offer; visible listing explicitly requires screening and approval.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "9467b25c-5573-43b0-8b39-b50a4ffc15e6"
+        }
+      ]
+    },
+    {
+      "eventId": 2026082,
+      "primarySources": [
+        "https://dice.fm/event/6dgv68-modern-love-affair-floyd-basel-2026-3rd-dec-floyd-miami-miami-tickets"
+      ],
+      "evidence": "Promoter-authored DICE MusicEvent plus visible ticket listing verify exact name, 2026 start/end, venue, age/access and current advertised minimum price. Opening-night date retained for overnight events.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "0a633a76-2e4b-4c07-a9e2-f5eeaeca9fa1"
+        }
+      ]
+    },
+    {
+      "eventId": 2026083,
+      "primarySources": [
+        "https://dice.fm/event/ekgky2-nts-miami-ground-basel-2026-5th-dec-the-ground-miami-miami-tickets?_branch_match_id=1585028266089585943&utm_medium=partners_api&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1c9LNTQyMTC0TE5JM7KvK0pNSy0qysxLj08qyi8vTi2ydc4oys9NBQApsGa3OwAAAA%3D%3D&lng=en-US"
+      ],
+      "evidence": "Promoter-authored DICE MusicEvent plus visible ticket listing verify exact name, 2026 start/end, venue, age/access and current advertised minimum price. Opening-night date retained for overnight events.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026084,
+      "primarySources": [
+        "https://dice.fm/event/eo9lxd-iii-points-basel-latin-mafia-friends-3rd-dec-hialeah-park-casino-hialeah-tickets"
+      ],
+      "evidence": "Promoter-authored DICE MusicEvent plus visible ticket listing verify exact name, 2026 start/end, venue, age/access and current advertised minimum price. Opening-night date retained for overnight events.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "8e446df5-117e-4e5d-ba16-f385b4c1cd7c"
+        }
+      ]
+    },
+    {
+      "eventId": 2026085,
+      "primarySources": [
+        "https://dice.fm/event/g588g2-basel-afterjam-3rd-dec-jolene-sound-room-miami-miami-tickets"
+      ],
+      "evidence": "Promoter-authored DICE MusicEvent plus visible ticket listing verify exact name, 2026 start/end, venue, age/access and current advertised minimum price. Opening-night date retained for overnight events.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "bb560772-0374-4755-b14f-ba0586aee5a4"
+        }
+      ]
+    },
+    {
+      "eventId": 2026086,
+      "primarySources": [
+        "https://dice.fm/event/v357ad-iii-points-basel-kaytranada-yung-lean-arca-dj-set-shygirl-4th-dec-hialeah-park-casino-hialeah-tickets?lng=en-US"
+      ],
+      "evidence": "Promoter-authored DICE MusicEvent plus visible ticket listing verify exact name, 2026 start/end, venue, age/access and current advertised minimum price. Opening-night date retained for overnight events.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026087,
+      "primarySources": [
+        "https://dice.fm/event/v3lvwd-iii-points-basel-michael-bibis-one-life-5th-dec-hialeah-park-casino-hialeah-tickets"
+      ],
+      "evidence": "Promoter-authored DICE MusicEvent plus visible ticket listing verify exact name, 2026 start/end, venue, age/access and current advertised minimum price. Opening-night date retained for overnight events.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "48c7c5f4-2c0c-4b07-9154-70a9433c3daf"
+        }
+      ]
+    },
+    {
+      "eventId": 2026088,
+      "primarySources": [
+        "https://dice.fm/event/x9v96e-shygirl-presents-club-shy-ground-basel-2026-4th-dec-the-ground-miami-miami-tickets?_branch_match_id=1585028266089585943&utm_medium=partners_api&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1Q9INDQ0MjRLMU9KMrSvK0pNSy0qysxLj08qyi8vTi2ydc4oys9NBQB5ojYwOwAAAA%3D%3D&lng=en-US"
+      ],
+      "evidence": "Promoter-authored DICE MusicEvent plus visible ticket listing verify exact name, 2026 start/end, venue, age/access and current advertised minimum price. Opening-night date retained for overnight events.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026089,
+      "primarySources": [
+        "https://link.dice.fm/2g0Yv0pss6b"
+      ],
+      "evidence": "Promoter-authored DICE MusicEvent plus visible ticket listing verify exact name, 2026 start/end, venue, age/access and current advertised minimum price. Opening-night date retained for overnight events.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "2ce0186d-6db5-4583-902f-2be3ecc7e5f5"
+        }
+      ]
+    },
+    {
+      "eventId": 2026090,
+      "primarySources": [
+        "https://link.dice.fm/Cede1c7a2b94"
+      ],
+      "evidence": "Promoter-authored DICE MusicEvent plus visible ticket listing verify exact name, 2026 start/end, venue, age/access and current advertised minimum price. Opening-night date retained for overnight events.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "c0bf1cee-c3ba-4c09-8316-4d7cac2c84eb"
+        }
+      ]
+    },
+    {
+      "eventId": 2026091,
+      "primarySources": [
+        "https://link.dice.fm/G0243a84d904"
+      ],
+      "evidence": "Promoter-authored DICE MusicEvent plus visible ticket listing verify exact name, 2026 start/end, venue, age/access and current advertised minimum price. Opening-night date retained for overnight events.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "c914b93f-5005-4c8f-a599-e79cbd47ede8"
+        }
+      ]
+    },
+    {
+      "eventId": 2026092,
+      "primarySources": [
+        "https://link.dice.fm/Wcd024c0e917"
+      ],
+      "evidence": "Promoter-authored DICE MusicEvent plus visible ticket listing verify exact name, 2026 start/end, venue, age/access and current advertised minimum price. Opening-night date retained for overnight events.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "cc112424-9d45-460d-bd02-f84bec0936f7"
+        }
+      ]
+    },
+    {
+      "eventId": 2026093,
+      "primarySources": [
+        "https://link.dice.fm/Y3628e823af5"
+      ],
+      "evidence": "Promoter-authored DICE MusicEvent plus visible ticket listing verify exact name, 2026 start/end, venue, age/access and current advertised minimum price. Opening-night date retained for overnight events.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "23b450cc-7caa-42ef-9826-b404e2ee3ddc"
+        }
+      ]
+    },
+    {
+      "eventId": 2026094,
+      "primarySources": [
+        "https://link.dice.fm/Z15c38f5ba1c"
+      ],
+      "evidence": "Promoter-authored DICE MusicEvent plus visible ticket listing verify exact name, 2026 start/end, venue, age/access and current advertised minimum price. Opening-night date retained for overnight events.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "5d1976fa-fe6b-4f55-83df-25e80ee20a47"
+        }
+      ]
+    },
+    {
+      "eventId": 2026095,
+      "primarySources": [
+        "https://link.dice.fm/cc59a15e4102"
+      ],
+      "evidence": "Promoter-authored DICE MusicEvent plus visible ticket listing verify exact name, 2026 start/end, venue, age/access and current advertised minimum price. Opening-night date retained for overnight events.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "4d2ce1a8-8d3b-4080-9ab6-716aa18928dd"
+        }
+      ]
+    },
+    {
+      "eventId": 2026096,
+      "primarySources": [
+        "https://link.dice.fm/le592a0f4462"
+      ],
+      "evidence": "Promoter-authored DICE MusicEvent plus visible ticket listing verify exact name, 2026 start/end, venue, age/access and current advertised minimum price. Opening-night date retained for overnight events.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "131aa020-4a4f-41a5-92b0-406d492839a1"
+        }
+      ]
+    },
+    {
+      "eventId": 2026097,
+      "primarySources": [
+        "https://link.dice.fm/prospabasel26"
+      ],
+      "evidence": "Promoter-authored DICE MusicEvent plus visible ticket listing verify exact name, 2026 start/end, venue, age/access and current advertised minimum price. Opening-night date retained for overnight events.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "3e93fd6f-cfbe-4a1f-b507-1fb2d4b31348"
+        }
+      ]
+    },
+    {
+      "eventId": 2026098,
+      "primarySources": [
+        "https://link.dice.fm/x138501660f2"
+      ],
+      "evidence": "Promoter-authored DICE MusicEvent plus visible ticket listing verify exact name, 2026 start/end, venue, age/access and current advertised minimum price. Opening-night date retained for overnight events.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "edb59c25-da00-42a2-8662-9e92dc80b6fd"
+        }
+      ]
+    },
+    {
+      "eventId": 2026099,
+      "primarySources": [
+        "https://link.dice.fm/x17e154ed620"
+      ],
+      "evidence": "Promoter-authored DICE MusicEvent plus visible ticket listing verify exact name, 2026 start/end, venue, age/access and current advertised minimum price. Opening-night date retained for overnight events.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "3ec0c3a2-6553-4b49-8aef-58c9818cc069"
+        }
+      ]
+    },
+    {
+      "eventId": 2026100,
+      "primarySources": [
+        "https://link.dice.fm/ye57c184e3cd"
+      ],
+      "evidence": "Promoter-authored DICE MusicEvent plus visible ticket listing verify exact name, 2026 start/end, venue, age/access and current advertised minimum price. Opening-night date retained for overnight events.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "437bb3ae-6c21-4d4b-8682-a23b942feadd"
+        }
+      ]
+    },
+    {
+      "eventId": 2026101,
+      "primarySources": [
+        "https://calendar.zeyzeymiami.com/shows/a-trak-friends-04-dec"
+      ],
+      "evidence": "ZeyZey’s own calendar confirms 2026 event date, venue, advertised door time and price text. No invented closing time; mixed free/paid offers are labeled conditional, not unconditional free.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026102,
+      "primarySources": [
+        "https://calendar.zeyzeymiami.com/shows/sam-gellaitry-darius-05-dec"
+      ],
+      "evidence": "ZeyZey’s own calendar confirms 2026 event date, venue, advertised door time and price text. No invented closing time; mixed free/paid offers are labeled conditional, not unconditional free.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026103,
+      "primarySources": [
+        "https://calendar.zeyzeymiami.com/shows/soulection-friends-05-dec"
+      ],
+      "evidence": "ZeyZey’s own calendar confirms 2026 event date, venue, advertised door time and price text. No invented closing time; mixed free/paid offers are labeled conditional, not unconditional free.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026104,
+      "primarySources": [
+        "https://calendar.zeyzeymiami.com/shows/through-the-wall-afters-with-rochelle-jordan-live-special-guests-03-dec"
+      ],
+      "evidence": "ZeyZey’s own calendar confirms 2026 event date, venue, advertised door time and price text. No invented closing time; mixed free/paid offers are labeled conditional, not unconditional free.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026105,
+      "primarySources": [
+        "https://calendar.zeyzeymiami.com/shows/carla-s-home-a-listening-experience-by-carla-03-dec"
+      ],
+      "evidence": "ZeyZey’s own calendar confirms 2026 event date, venue, advertised door time and price text. No invented closing time; mixed free/paid offers are labeled conditional, not unconditional free.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026106,
+      "primarySources": [
+        "https://calendar.zeyzeymiami.com/shows/pnk-basel-04-dec"
+      ],
+      "evidence": "ZeyZey’s own calendar confirms 2026 event date, venue, advertised door time and price text. No invented closing time; mixed free/paid offers are labeled conditional, not unconditional free.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026107,
+      "primarySources": [
+        "https://calendar.zeyzeymiami.com/shows/sg-lewis-02-dec"
+      ],
+      "evidence": "ZeyZey’s own calendar confirms 2026 event date, venue, advertised door time and price text. No invented closing time; mixed free/paid offers are labeled conditional, not unconditional free.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026108,
+      "primarySources": [
+        "https://wowbasel.com/model-casting-party"
+      ],
+      "evidence": "Reviewed the organizer or host listing for the 2026 date, venue, schedule and stated access. Unpublished fields remain unknown.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "1a5db516-2cac-4b48-b38d-59292a41faf5"
+        }
+      ]
+    },
+    {
+      "eventId": 2026109,
+      "primarySources": [
+        "https://wowbasel.com/block-party"
+      ],
+      "evidence": "WOW producer block-party page details Dec 5 10 AM–2 PM wellness program at FLOW; registration page says pricing unreleased. Listed as a specific program, no duplicate full-day umbrella.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "6e8b2f66-a02a-48fd-a00a-9cf3c8260144"
+        }
+      ]
+    },
+    {
+      "eventId": 2026110,
+      "primarySources": [
+        "https://wowbasel.com/block-party"
+      ],
+      "evidence": "Reviewed the organizer or host listing for the 2026 date, venue, schedule and stated access. Unpublished fields remain unknown.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "6e8b2f66-a02a-48fd-a00a-9cf3c8260144"
+        }
+      ]
+    },
+    {
+      "eventId": 2026111,
+      "primarySources": [
+        "https://wowbasel.com/block-party"
+      ],
+      "evidence": "Reviewed the organizer or host listing for the 2026 date, venue, schedule and stated access. Unpublished fields remain unknown.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "6e8b2f66-a02a-48fd-a00a-9cf3c8260144"
+        }
+      ]
+    },
+    {
+      "eventId": 2026112,
+      "primarySources": [
+        "https://oolitearts.org/oolite-arts-announces-2026-miami-art-week-program/"
+      ],
+      "evidence": "Reviewed the organizer or host listing for the 2026 date, venue, schedule and stated access. Unpublished fields remain unknown.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026113,
+      "primarySources": [
+        "https://oolitearts.org/oolite-arts-announces-2026-miami-art-week-program/"
+      ],
+      "evidence": "Oolite current 2026 release describes the accessible 24/7 public window-gallery program, artists, cross streets and full run. Free sidewalk viewing, not a ticketed indoor event.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026114,
+      "primarySources": [
+        "https://oolitearts.org/oolite-arts-announces-2026-miami-art-week-program/"
+      ],
+      "evidence": "Oolite current 2026 release describes the accessible 24/7 public window-gallery program, artists, cross streets and full run. Free sidewalk viewing, not a ticketed indoor event.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026115,
+      "primarySources": [
+        "https://icamiami.org/calendar/friedrich-kunath-ill-romanticize-this-later-panel-conversation/"
+      ],
+      "evidence": "Reviewed the organizer or host listing for the 2026 date, venue, schedule and stated access. Unpublished fields remain unknown.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "04f4a288-72f5-41aa-bf02-ac0ac839db44"
+        }
+      ]
+    },
+    {
+      "eventId": 2026116,
+      "primarySources": [
+        "https://www.livnightclub.com/miami/event/EVE112156200020261203/prospa/"
+      ],
+      "evidence": "LIV official dated event page and Event JSON-LD confirm 2026 date and 4441 Collins; visible event details give 11:30 PM doors. No invented artist for Saturday or ticket price.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "426c9819-e99f-4d60-9d82-072d4fd84a16"
+        }
+      ]
+    },
+    {
+      "eventId": 2026117,
+      "primarySources": [
+        "https://www.livnightclub.com/miami/event/EVE112156200020261204/pawsa/"
+      ],
+      "evidence": "LIV official dated event page and Event JSON-LD confirm 2026 date and 4441 Collins; visible event details give 11:30 PM doors. No invented artist for Saturday or ticket price.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "2049e85e-c68f-41e6-b4ac-2fea4fb2c42b"
+        }
+      ]
+    },
+    {
+      "eventId": 2026118,
+      "primarySources": [
+        "https://www.livnightclub.com/miami/event/EVE112156200020261205/basel-week-saturday/"
+      ],
+      "evidence": "LIV official dated event page and Event JSON-LD confirm 2026 date and 4441 Collins; visible event details give 11:30 PM doors. No invented artist for Saturday or ticket price.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "d1695863-9ac8-44ce-9c90-5fae348de380"
+        }
+      ]
+    },
+    {
+      "eventId": 2026119,
+      "primarySources": [
+        "https://www.eventbrite.com/e/miami-worldcenter-night-market-fridays-at-500pm-tickets-1997909900294"
+      ],
+      "evidence": "Miami Worldcenter’s own Eventbrite recurring Friday series runs Sep 18–Dec 18 2026, 5–9 PM; Dec 4 is Friday in this range. Not imported as an every-day three-month event.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "2453025f-84bd-4b68-b8be-7d2be42fce1f"
+        }
+      ]
+    },
+    {
+      "eventId": 2026120,
+      "primarySources": [
+        "https://link.dice.fm/Gef7c6ee7d71"
+      ],
+      "evidence": "DICE promoter page confirms Dec 5 at Little River, 21+ and $45; structured start 9 PM conflicts with prose 8 PM. Both disclosed; no exact hours included in planning data.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "e7e7d853-a074-4d41-bd45-3f57bdff3567"
+        }
+      ]
+    },
+    {
+      "eventId": 2026121,
+      "primarySources": [
+        "https://qcal.app/event/genderchill-fashion-show-v-miami-fl-us?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAacIT4rRfE9SzvVLpdOVTp2DhHGq-a2ZCauu4Bt9SiGfv5Sdl5hkgHsORf0ZWg_aem_6kM5odBmw-l6u6axBotE1A"
+      ],
+      "evidence": "QueerCalendar marks details confirmed by GenderChill; visible Dec 4 2026 7–11 PM and $23.17 price supersede lower stale JSON-LD offer and spreadsheet date.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026122,
+      "primarySources": [
+        "https://wynwoodshop.com/pages/wynwood-art-market-basel-edition-2026-miami-art-week"
+      ],
+      "evidence": "The Wynwood Shop’s own 2026 Basel event page confirms Dec 4–6 and store identity; street address, clock times and admission not published, so omitted.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "d22e0e23-b1d5-4e47-b81f-57b9fc1f585e"
+        }
+      ]
+    },
+    {
+      "eventId": 2026123,
+      "primarySources": [
+        "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/"
+      ],
+      "evidence": "City of Miami Beach 2026 Art Week program explicitly lists daily free museum admission at 1001 Washington from 10 AM; no closing time invented.",
+      "decision": "approved",
+      "discoveryReferences": []
+    },
+    {
+      "eventId": 2026124,
+      "primarySources": [
+        "https://www.artmiami.com/events-and-exhibitions"
+      ],
+      "evidence": "Art Miami official Events & Exhibitions 2026 page explicitly identifies Shepard Fairey CONTEXT opening DJ set 7:30–9 PM; CONTEXT public Dec 1 hours cover it.",
+      "decision": "approved",
+      "discoveryReferences": [
+        {
+          "sourceId": "miamibasel-2026",
+          "upstreamId": "85ccf008-fd4b-4440-854c-96d011f53eed"
+        }
+      ]
+    },
+    {
+      "eventId": 2026125,
+      "primarySources": [
+        "https://www.artmiami.com/events-and-exhibitions"
+      ],
+      "evidence": "Art Miami’s current 2026 Events & Exhibitions page lists Harry Benson birthday program Wednesday Dec 2 1–3 PM at booth AM135. Matches 2026 weekday; excludes other entries with stale weekdays.",
+      "decision": "approved",
+      "discoveryReferences": []
+    }
+  ],
+  "updated": [
+    {
+      "eventId": 2026002,
+      "primarySources": [
+        "https://www.artmiami.com/tickets"
+      ],
+      "decision": "Confirmed $71 one-day ticket and online-only sales."
+    },
+    {
+      "eventId": 2026009,
+      "primarySources": [
+        "https://dice.fm/event/py38bl-factory-basel-2026-5-day-pass-2nd-dec-factory-town-miami-tickets"
+      ],
+      "decision": "Confirmed $399.99 starting five-night pass price, GA18+/VIP21+ and canonical DICE ticket URL."
+    },
+    {
+      "eventId": 2026001,
+      "primarySources": [
+        "https://www.artbasel.com/miami-beach/buy-tickets"
+      ],
+      "decision": "Current ticket page confirms Dec 4–6 2026; add direct official ticket link."
+    },
+    {
+      "eventId": 2026003,
+      "primarySources": [
+        "https://untitledartfairs.com/tickets"
+      ],
+      "decision": "Official page says tickets are live for Miami Beach 2026; add direct ticket page link."
+    }
+  ],
+  "held": [
+    {
+      "title": "Faena Commissions Preview",
+      "reason": "Invitation-only preview not confirmed on dated event page; public installations are represented separately."
+    },
+    {
+      "title": "Museum of Sex: The Life Force VIP Reception",
+      "reason": "Discovery has no event URL or primary date evidence."
+    },
+    {
+      "title": "The Future Perfect: Under the Libra Sun",
+      "reason": "Generic location page does not establish this exhibition’s 2026 date."
+    },
+    {
+      "title": "Rachel Lee Hovnanian: The Perfect Trade-Off",
+      "reason": "Artist confirms a forthcoming 2026 exhibition but no exact date or Art Week viewing access."
+    },
+    {
+      "title": "S.A.F.E. Capital Circle Kick Off Social",
+      "reason": "Discovery Dec 2 date conflicts with current WOW program starting Dec 3; exact venue unpublished."
+    },
+    {
+      "title": "Art Basel sponsor lounges, booths, Zero 10 and Conversations",
+      "reason": "Generic ticket links do not establish program-specific dates, hours or access; fair represented, subevents need direct evidence."
+    },
+    {
+      "title": "Pinta December 2 VIP preview",
+      "reason": "Generic information date conflicts with current organizer-linked checkout Dec 3 preview; only public checkout-confirmed dates imported."
+    },
+    {
+      "title": "El Espacio 23: Nothing Is Linear",
+      "reason": "Current official exhibition and visit pages say closed for installation; no confirmed 2026 opening in fetched program."
+    },
+    {
+      "title": "Art Beat Miami 2026",
+      "reason": "Organizer confirms Dec 2–6 but venue-specific 2026 pages have no readable schedule/venue details; do not inherit prior-year venue."
+    },
+    {
+      "title": "WOW Basel Annual BBQ Showdown",
+      "reason": "Producer page says venue/hours and bookable tickets await confirmation; not independently publishable as confirmed admission."
+    },
+    {
+      "title": "WOW Basel Ethereal After the Heat / La Plage Reset / Capital Circle Dinner",
+      "reason": "Exact street venue or time/access not released; do not assume other WOW venue applies."
+    },
+    {
+      "title": "ARTWEEK Miami Media Festival screenings and Forum sessions",
+      "reason": "Producer schedule explicitly marks screening times tentative; public admission and finalized program pending."
+    },
+    {
+      "title": "STAMPED Ghana Independence listing in spreadsheet",
+      "reason": "Linked organizer Eventbrite page is March 6, 2027. Correct Dec 6, 2026 Basel event imported separately."
+    },
+    {
+      "title": "TRVPFEST rap show and EDM afterparty",
+      "reason": "Ticket pages expose only titles, no independently readable time/address evidence."
+    },
+    {
+      "title": "Resident Advisor and Shotgun-only leads",
+      "reason": "Public fetches returned 403/429; event details not verified from those responses. No access controls bypassed."
+    },
+    {
+      "title": "The Mix Lab",
+      "reason": "Luma page confirms program and location but fetched public content omits the event date. Approval-only access; date needs explicit primary confirmation."
+    },
+    {
+      "title": "Miami Basel B.A.E. Black Art Experience",
+      "reason": "Official tourism listing confirms Dec 4 and venue; linked organizer details and hours still need direct review."
+    }
+  ],
+  "locationVerification": {
+    "provider": "OpenStreetMap Nominatim",
+    "checkedAt": "2026-11-16",
+    "policy": "https://operations.osmfoundation.org/policies/nominatim/",
+    "attribution": "© OpenStreetMap contributors; address lookup results under ODbL 1.0. https://www.openstreetmap.org/copyright",
+    "method": "One-time, single-thread, locally cached address queries spaced at least 1.2 seconds apart. Accepted matches require exact house number, Miami-area bounding box and consistent Miami Beach municipality. Matched street/address display reviewed before import. Unmatched points remain approximate.",
+    "matches": [
+      {
+        "eventId": 2026001,
+        "query": "1901 Convention Center Drive, Miami Beach, FL 33139",
+        "osmUrl": "https://www.openstreetmap.org/way/76689875"
+      },
+      {
+        "eventId": 2026004,
+        "query": "1671 Collins Avenue, Miami Beach, FL 33139",
+        "osmUrl": "https://www.openstreetmap.org/way/263592328"
+      },
+      {
+        "eventId": 2026005,
+        "query": "1671 Collins Avenue, Miami Beach, FL 33139",
+        "osmUrl": "https://www.openstreetmap.org/way/263592328"
+      },
+      {
+        "eventId": 2026006,
+        "query": "1671 Collins Avenue, Miami Beach, FL 33139",
+        "osmUrl": "https://www.openstreetmap.org/way/263592328"
+      },
+      {
+        "eventId": 2026007,
+        "query": "1671 Collins Avenue, Miami Beach, FL 33139",
+        "osmUrl": "https://www.openstreetmap.org/way/263592328"
+      },
+      {
+        "eventId": 2026008,
+        "query": "1671 Collins Avenue, Miami Beach, FL 33139",
+        "osmUrl": "https://www.openstreetmap.org/way/263592328"
+      },
+      {
+        "eventId": 2026010,
+        "query": "924 Lincoln Road, Miami Beach, FL 33139",
+        "osmUrl": "https://www.openstreetmap.org/node/903620843"
+      },
+      {
+        "eventId": 2026011,
+        "query": "1600 NE 126th Street, North Miami, FL 33181",
+        "osmUrl": "https://www.openstreetmap.org/way/639789499"
+      },
+      {
+        "eventId": 2026014,
+        "query": "1400 North Miami Avenue, Miami, FL 33136",
+        "osmUrl": "https://www.openstreetmap.org/node/6085499054"
+      },
+      {
+        "eventId": 2026015,
+        "query": "1530 Collins Avenue, Miami Beach, FL 33139",
+        "osmUrl": "https://www.openstreetmap.org/way/435845136"
+      },
+      {
+        "eventId": 2026016,
+        "query": "1850 Collins Avenue, Miami Beach, FL 33139",
+        "osmUrl": "https://www.openstreetmap.org/node/6037322534"
+      },
+      {
+        "eventId": 2026017,
+        "query": "2217 NW 5th Avenue, Miami, FL 33127",
+        "osmUrl": "https://www.openstreetmap.org/node/6091344197"
+      },
+      {
+        "eventId": 2026018,
+        "query": "2217 NW 5th Avenue, Miami, FL 33127",
+        "osmUrl": "https://www.openstreetmap.org/node/6091344197"
+      },
+      {
+        "eventId": 2026019,
+        "query": "3385 Pan American Drive, Miami, FL 33133",
+        "osmUrl": "https://www.openstreetmap.org/way/435881445"
+      },
+      {
+        "eventId": 2026020,
+        "query": "640 Ocean Drive, Miami Beach, FL 33139",
+        "osmUrl": "https://www.openstreetmap.org/way/255394411"
+      },
+      {
+        "eventId": 2026022,
+        "query": "4601 Collins Avenue, Miami Beach, FL",
+        "osmUrl": "https://www.openstreetmap.org/way/1001831339"
+      },
+      {
+        "eventId": 2026023,
+        "query": "1409 Lincoln Road, Miami Beach, FL",
+        "osmUrl": "https://www.openstreetmap.org/way/258238120"
+      },
+      {
+        "eventId": 2026024,
+        "query": "1600 NE 126th Street, North Miami, FL 33181",
+        "osmUrl": "https://www.openstreetmap.org/way/639789499"
+      },
+      {
+        "eventId": 2026025,
+        "query": "1600 NE 126th Street, North Miami, FL 33181",
+        "osmUrl": "https://www.openstreetmap.org/way/639789499"
+      },
+      {
+        "eventId": 2026026,
+        "query": "1600 NE 126th Street, North Miami, FL 33181",
+        "osmUrl": "https://www.openstreetmap.org/way/639789499"
+      },
+      {
+        "eventId": 2026027,
+        "query": "1600 NE 126th Street, North Miami, FL 33181",
+        "osmUrl": "https://www.openstreetmap.org/way/639789499"
+      },
+      {
+        "eventId": 2026028,
+        "query": "1600 NE 126th Street, North Miami, FL 33181",
+        "osmUrl": "https://www.openstreetmap.org/way/639789499"
+      },
+      {
+        "eventId": 2026029,
+        "query": "3201 Collins Avenue, Miami Beach, FL 33140",
+        "osmUrl": "https://www.openstreetmap.org/way/436123285"
+      },
+      {
+        "eventId": 2026030,
+        "query": "3201 Collins Avenue, Miami Beach, FL 33140",
+        "osmUrl": "https://www.openstreetmap.org/way/436123285"
+      },
+      {
+        "eventId": 2026031,
+        "query": "3201 Collins Avenue, Miami Beach, FL 33140",
+        "osmUrl": "https://www.openstreetmap.org/way/436123285"
+      },
+      {
+        "eventId": 2026032,
+        "query": "301 Washington Avenue, Miami Beach, FL 33139",
+        "osmUrl": "https://www.openstreetmap.org/way/435731605"
+      },
+      {
+        "eventId": 2026033,
+        "query": "301 Washington Avenue, Miami Beach, FL 33139",
+        "osmUrl": "https://www.openstreetmap.org/way/435731605"
+      },
+      {
+        "eventId": 2026034,
+        "query": "2100 Biscayne Boulevard, Miami, FL 33137",
+        "osmUrl": "https://www.openstreetmap.org/way/1315061420"
+      },
+      {
+        "eventId": 2026035,
+        "query": "140 NE 39th Street, Miami, FL 33137",
+        "osmUrl": "https://www.openstreetmap.org/way/436123359"
+      },
+      {
+        "eventId": 2026036,
+        "query": "2300 N Miami Avenue, Miami, FL 33127",
+        "osmUrl": "https://www.openstreetmap.org/node/6091344318"
+      },
+      {
+        "eventId": 2026037,
+        "query": "2300 N Miami Avenue, Miami, FL 33127",
+        "osmUrl": "https://www.openstreetmap.org/node/6091344318"
+      },
+      {
+        "eventId": 2026038,
+        "query": "700 Ocean Drive, Miami Beach, FL",
+        "osmUrl": "https://www.openstreetmap.org/way/380861898"
+      },
+      {
+        "eventId": 2026039,
+        "query": "350 Ocean Drive, Miami Beach, FL",
+        "osmUrl": "https://www.openstreetmap.org/way/263075233"
+      },
+      {
+        "eventId": 2026040,
+        "query": "1440 Ocean Drive, Miami Beach, FL",
+        "osmUrl": "https://www.openstreetmap.org/way/337803266"
+      },
+      {
+        "eventId": 2026041,
+        "query": "3500 Collins Avenue, Miami Beach, FL",
+        "osmUrl": "https://www.openstreetmap.org/way/435567295"
+      },
+      {
+        "eventId": 2026042,
+        "query": "4525 Collins Avenue, Miami Beach, FL",
+        "osmUrl": "https://www.openstreetmap.org/way/135296603"
+      },
+      {
+        "eventId": 2026043,
+        "query": "3720 Collins Avenue, Miami Beach, FL",
+        "osmUrl": "https://www.openstreetmap.org/way/380005155"
+      },
+      {
+        "eventId": 2026044,
+        "query": "2301 Normandy Drive, Miami Beach, FL",
+        "osmUrl": "https://www.openstreetmap.org/way/435848608"
+      },
+      {
+        "eventId": 2026045,
+        "query": "1717 Collins Avenue, Miami Beach, FL",
+        "osmUrl": "https://www.openstreetmap.org/way/263592315"
+      },
+      {
+        "eventId": 2026046,
+        "query": "161 Ocean Drive, Miami Beach, FL",
+        "osmUrl": "https://www.openstreetmap.org/way/117913336"
+      },
+      {
+        "eventId": 2026047,
+        "query": "1545 Collins Avenue, Miami Beach, FL",
+        "osmUrl": "https://www.openstreetmap.org/way/917283053"
+      },
+      {
+        "eventId": 2026048,
+        "query": "1801 Collins Avenue, Miami Beach, FL",
+        "osmUrl": "https://www.openstreetmap.org/way/917311823"
+      },
+      {
+        "eventId": 2026049,
+        "query": "6565 Collins Avenue, Miami Beach, FL",
+        "osmUrl": "https://www.openstreetmap.org/way/350186177"
+      },
+      {
+        "eventId": 2026050,
+        "query": "1618 Washington Avenue, Miami Beach, FL",
+        "osmUrl": "https://www.openstreetmap.org/node/5647692522"
+      },
+      {
+        "eventId": 2026052,
+        "query": "2100 Collins Avenue, Miami Beach, FL 33139",
+        "osmUrl": "https://www.openstreetmap.org/way/483322279"
+      },
+      {
+        "eventId": 2026053,
+        "query": "2100 Collins Avenue, Miami Beach, FL 33139",
+        "osmUrl": "https://www.openstreetmap.org/way/483322279"
+      },
+      {
+        "eventId": 2026054,
+        "query": "2100 Collins Avenue, Miami Beach, FL 33139",
+        "osmUrl": "https://www.openstreetmap.org/way/483322279"
+      },
+      {
+        "eventId": 2026055,
+        "query": "2100 Collins Avenue, Miami Beach, FL 33139",
+        "osmUrl": "https://www.openstreetmap.org/way/483322279"
+      },
+      {
+        "eventId": 2026056,
+        "query": "2100 Collins Avenue, Miami Beach, FL 33139",
+        "osmUrl": "https://www.openstreetmap.org/way/483322279"
+      },
+      {
+        "eventId": 2026057,
+        "query": "1433 Collins Avenue, Miami Beach, FL",
+        "osmUrl": "https://www.openstreetmap.org/node/6037317219"
+      },
+      {
+        "eventId": 2026058,
+        "query": "4041 Collins Avenue, Miami Beach, FL",
+        "osmUrl": "https://www.openstreetmap.org/way/436109883"
+      },
+      {
+        "eventId": 2026061,
+        "query": "6315 NW 2nd Avenue, Miami, FL 33150",
+        "osmUrl": "https://www.openstreetmap.org/way/435739442"
+      },
+      {
+        "eventId": 2026062,
+        "query": "6315 NW 2nd Avenue, Miami, FL 33150",
+        "osmUrl": "https://www.openstreetmap.org/way/435739442"
+      },
+      {
+        "eventId": 2026063,
+        "query": "6315 NW 2nd Avenue, Miami, FL 33150",
+        "osmUrl": "https://www.openstreetmap.org/way/435739442"
+      },
+      {
+        "eventId": 2026064,
+        "query": "2930 NW 7th Avenue, Miami, FL 33127",
+        "osmUrl": "https://www.openstreetmap.org/node/6093635272"
+      },
+      {
+        "eventId": 2026065,
+        "query": "50 NE 40th Street, Miami, FL",
+        "osmUrl": "https://www.openstreetmap.org/node/6096703494"
+      },
+      {
+        "eventId": 2026066,
+        "query": "35 NE 40th Street, Miami, FL",
+        "osmUrl": "https://www.openstreetmap.org/node/6096703654"
+      },
+      {
+        "eventId": 2026067,
+        "query": "45 NE 39th Street, Miami, FL",
+        "osmUrl": "https://www.openstreetmap.org/node/6096703660"
+      },
+      {
+        "eventId": 2026068,
+        "query": "35 NE 40th Street, Miami, FL",
+        "osmUrl": "https://www.openstreetmap.org/node/6096703654"
+      },
+      {
+        "eventId": 2026069,
+        "query": "3918 N Miami Avenue, Miami, FL",
+        "osmUrl": "https://www.openstreetmap.org/node/3200978083"
+      },
+      {
+        "eventId": 2026070,
+        "query": "4040 NE 2nd Avenue, Miami, FL",
+        "osmUrl": "https://www.openstreetmap.org/node/8075288367"
+      },
+      {
+        "eventId": 2026071,
+        "query": "151 NE 41st Street, Miami, FL",
+        "osmUrl": "https://www.openstreetmap.org/node/8075287753"
+      },
+      {
+        "eventId": 2026072,
+        "query": "90 NE 40th Street, Miami, FL",
+        "osmUrl": "https://www.openstreetmap.org/way/11166013"
+      },
+      {
+        "eventId": 2026073,
+        "query": "102 NE 40th Street, Miami, FL",
+        "osmUrl": "https://www.openstreetmap.org/node/6096704992"
+      },
+      {
+        "eventId": 2026077,
+        "query": "3400 Pan American Drive, Miami, FL 33133",
+        "osmUrl": "https://www.openstreetmap.org/way/958615199"
+      },
+      {
+        "eventId": 2026078,
+        "query": "2217 NW Miami Ct, Miami, FL 33127",
+        "osmUrl": "https://www.openstreetmap.org/node/6091344219"
+      },
+      {
+        "eventId": 2026079,
+        "query": "7700 Biscayne Boulevard, Miami, FL 33138",
+        "osmUrl": "https://www.openstreetmap.org/way/290631073"
+      },
+      {
+        "eventId": 2026080,
+        "query": "1075 Biscayne Boulevard, Miami, FL 33132",
+        "osmUrl": "https://www.openstreetmap.org/way/435738524"
+      },
+      {
+        "eventId": 2026081,
+        "query": "1906 Collins Avenue, Miami Beach, FL 33139",
+        "osmUrl": "https://www.openstreetmap.org/way/1001428035"
+      },
+      {
+        "eventId": 2026101,
+        "query": "353 NE 61st Street, Miami, FL 33137",
+        "osmUrl": "https://www.openstreetmap.org/way/338998660"
+      },
+      {
+        "eventId": 2026102,
+        "query": "353 NE 61st Street, Miami, FL 33137",
+        "osmUrl": "https://www.openstreetmap.org/way/338998660"
+      },
+      {
+        "eventId": 2026103,
+        "query": "353 NE 61st Street, Miami, FL 33137",
+        "osmUrl": "https://www.openstreetmap.org/way/338998660"
+      },
+      {
+        "eventId": 2026104,
+        "query": "353 NE 61st Street, Miami, FL 33137",
+        "osmUrl": "https://www.openstreetmap.org/way/338998660"
+      },
+      {
+        "eventId": 2026105,
+        "query": "353 NE 61st Street, Miami, FL 33137",
+        "osmUrl": "https://www.openstreetmap.org/way/338998660"
+      },
+      {
+        "eventId": 2026106,
+        "query": "353 NE 61st Street, Miami, FL 33137",
+        "osmUrl": "https://www.openstreetmap.org/way/338998660"
+      },
+      {
+        "eventId": 2026107,
+        "query": "353 NE 61st Street, Miami, FL 33137",
+        "osmUrl": "https://www.openstreetmap.org/way/338998660"
+      },
+      {
+        "eventId": 2026108,
+        "query": "176 NW 25th Street, Miami, FL 33127",
+        "osmUrl": "https://www.openstreetmap.org/way/11168530"
+      },
+      {
+        "eventId": 2026109,
+        "query": "176 NW 25th Street, Miami, FL 33127",
+        "osmUrl": "https://www.openstreetmap.org/way/11168530"
+      },
+      {
+        "eventId": 2026110,
+        "query": "176 NW 25th Street, Miami, FL 33127",
+        "osmUrl": "https://www.openstreetmap.org/way/11168530"
+      },
+      {
+        "eventId": 2026111,
+        "query": "176 NW 25th Street, Miami, FL 33127",
+        "osmUrl": "https://www.openstreetmap.org/way/11168530"
+      },
+      {
+        "eventId": 2026112,
+        "query": "928 Lincoln Road, Miami Beach, FL 33139",
+        "osmUrl": "https://www.openstreetmap.org/node/4109806099"
+      },
+      {
+        "eventId": 2026115,
+        "query": "23 NE 41st Street, Miami, FL",
+        "osmUrl": "https://www.openstreetmap.org/way/436106309"
+      },
+      {
+        "eventId": 2026116,
+        "query": "4441 Collins Avenue, Miami Beach, FL 33140",
+        "osmUrl": "https://www.openstreetmap.org/way/447042031"
+      },
+      {
+        "eventId": 2026117,
+        "query": "4441 Collins Avenue, Miami Beach, FL 33140",
+        "osmUrl": "https://www.openstreetmap.org/way/447042031"
+      },
+      {
+        "eventId": 2026118,
+        "query": "4441 Collins Avenue, Miami Beach, FL 33140",
+        "osmUrl": "https://www.openstreetmap.org/way/447042031"
+      },
+      {
+        "eventId": 2026119,
+        "query": "850 NE 2nd Avenue, Miami, FL 33132",
+        "osmUrl": "https://www.openstreetmap.org/node/7685362622"
+      },
+      {
+        "eventId": 2026120,
+        "query": "300 NE 71st Street, Miami, FL 33138",
+        "osmUrl": "https://www.openstreetmap.org/way/435809264"
+      },
+      {
+        "eventId": 2026121,
+        "query": "5865 NE 2nd Avenue, Miami, FL 33137",
+        "osmUrl": "https://www.openstreetmap.org/node/6099040245"
+      },
+      {
+        "eventId": 2026123,
+        "query": "1001 Washington Avenue, Miami Beach, FL 33139",
+        "osmUrl": "https://www.openstreetmap.org/way/449002308"
+      },
+      {
+        "eventId": 2026074,
+        "query": "561 NW 32nd Street, Miami, FL 33127",
+        "osmUrl": "https://www.openstreetmap.org/way/435846976"
+      },
+      {
+        "eventId": 2026075,
+        "query": "10975 SW 17th Street, Miami, FL 33199",
+        "osmUrl": "https://www.openstreetmap.org/way/112768020"
+      }
+    ]
+  },
+  "discoveryReconciliation": [
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "43061f07-510b-4285-a8c0-2716a0d53dc5",
+      "discoveredTitle": "AfriKin Vernissage: GRIOT, An All-White Affair",
+      "status": "represented",
+      "eventIds": [
+        2026024
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "918a4c25-8ca7-4c2d-9946-bc3fe0e0c7ce",
+      "discoveredTitle": "Faena Art Commissions Preview, presented by Chase Sapphire Reserve",
+      "status": "held",
+      "reason": "Private preview lacks an explicit dated primary program."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "2d4cc04e-913e-4898-b4c8-d2164717f1c0",
+      "discoveredTitle": "The Margulies Collection at the Warehouse: Art Week Early Hours",
+      "status": "held",
+      "reason": "Margulies homepage not yet sufficient for November 30 special early hours."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "5c7c7207-4f69-4976-be60-01b489091862",
+      "discoveredTitle": "AfriKin Art Fair: GRIOT, Urgent Storytelling for Our Times",
+      "status": "represented",
+      "eventIds": [
+        2026011
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "78a182a1-75d5-47ff-a40e-070d84eec6f3",
+      "discoveredTitle": "The Life Force: VIP Reception at Museum of Sex Miami",
+      "status": "held",
+      "reason": "No event URL in discovery."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "340c2200-d522-4e13-b130-928d01eb7e26",
+      "discoveredTitle": "Germane Barnes, Ana Benaroya and Balarama Heller at Nina Johnson",
+      "status": "represented",
+      "eventIds": [
+        2026061,
+        2026062,
+        2026063
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "1eeb6ee3-c769-42d1-9615-5fd46849442a",
+      "discoveredTitle": "Marlon Portales: Becoming Landscape at Spinello Projects",
+      "status": "represented",
+      "eventIds": [
+        2026064
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "93dc8c3b-1649-4a3c-89e0-0662c49dc541",
+      "discoveredTitle": "Natalia Triantafylli: Under the Libra Sun at The Future Perfect",
+      "status": "held",
+      "reason": "Generic location page does not verify named exhibition dates."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "59f937fc-b871-4312-8f92-972dd264c157",
+      "discoveredTitle": "From His Rib: Amy Bravo and Elliot & Erick Jiménez at Spinello Projects",
+      "status": "represented",
+      "eventIds": [
+        2026069
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "04f4a288-72f5-41aa-bf02-ac0ac839db44",
+      "discoveredTitle": "Friedrich Kunath in Conversation with Klaus Biesenbach at ICA Miami",
+      "status": "represented",
+      "eventIds": [
+        2026115
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "a0073562-aff7-4625-8d41-f3ca5ba429ea",
+      "discoveredTitle": "Art Miami 2026",
+      "status": "represented",
+      "eventIds": [
+        2026002
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "a9fe1099-e6ef-4051-9fff-2fe64e88365b",
+      "discoveredTitle": "Design Miami 2026",
+      "status": "represented",
+      "eventIds": [
+        2026013
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "58e926eb-5753-4e81-b920-afea969eeb68",
+      "discoveredTitle": "NADA Miami 2026",
+      "status": "represented",
+      "eventIds": [
+        2026014
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "1ef88469-6e06-4e2e-a95e-ef0bf23df7d5",
+      "discoveredTitle": "Untitled Art, Miami Beach 2026",
+      "status": "represented",
+      "eventIds": [
+        2026003
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "437bb3ae-6c21-4d4b-8682-a23b942feadd",
+      "discoveredTitle": "Space Basel 2026 Week Pass",
+      "status": "represented",
+      "eventIds": [
+        2026100
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "50973862-e0bb-4b6e-b0c7-e131fae6b002",
+      "discoveredTitle": "Miami Art Week at Faena",
+      "status": "represented",
+      "eventIds": [
+        2026029,
+        2026030
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "ca43bce4-f72b-43e8-a853-3f3a8312db8f",
+      "discoveredTitle": "Rhythm and Soul Mosaic Workshop with JoKeeta",
+      "status": "represented",
+      "eventIds": [
+        2026025
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "8d10eb4e-07de-4107-9138-ba964e4d5f75",
+      "discoveredTitle": "Hank Willis Thomas and Resident Open Studios at YoungArts",
+      "status": "represented",
+      "eventIds": [
+        2026034
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "ceb94e38-5d15-4030-8730-1907d996c9b3",
+      "discoveredTitle": "ICA Miami VIP Opening Reception: Miami Art Week 2026 presented by W Magazine",
+      "status": "held",
+      "reason": "Verified private members/VIP reception; held from this public-discovery expansion."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "09db3524-0774-4104-8df7-10a57c1b39c5",
+      "discoveredTitle": "Rachel Lee Hovnanian: The Perfect Trade-Off",
+      "status": "held",
+      "reason": "Exact opening date and public hours unpublished."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "9b010211-c578-4d12-8ec3-8d81f3ad098b",
+      "discoveredTitle": "Prizm Art Fair 2026",
+      "status": "represented",
+      "eventIds": [
+        2026020
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "3e93fd6f-cfbe-4a1f-b507-1fb2d4b31348",
+      "discoveredTitle": "Space Basel: Prophecy presented by Prospa",
+      "status": "represented",
+      "eventIds": [
+        2026097
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "e3c654e9-db3f-459d-82d8-da73e6e7b200",
+      "discoveredTitle": "CONTEXT Art Miami 2026",
+      "status": "represented",
+      "eventIds": [
+        2026012
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "ee759fa2-c976-402c-a1c3-0b7b859ffdf1",
+      "discoveredTitle": "An Expanded Baroque Crown: Marinella Senatore at the Faena Cathedral",
+      "status": "represented",
+      "eventIds": [
+        2026030
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "85ccf008-fd4b-4440-854c-96d011f53eed",
+      "discoveredTitle": "Shepard Fairey DJ Set at CONTEXT Art Miami Opening Night",
+      "status": "represented",
+      "eventIds": [
+        2026124
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "b8c69071-566f-4818-952c-8f217db1b165",
+      "discoveredTitle": "A Lore Supreme: Christopher Joshua Benton on Faena Beach",
+      "status": "represented",
+      "eventIds": [
+        2026029
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "6167d118-9627-4a3b-a653-2cbc64a9bc7c",
+      "discoveredTitle": "arteNXT Contemporary Art Exhibition",
+      "status": "represented",
+      "eventIds": [
+        2026036
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "656b0cf0-4083-4ca5-89d8-7b9cfee9e29d",
+      "discoveredTitle": "photoMIAMI Photography Exhibition",
+      "status": "represented",
+      "eventIds": [
+        2026037
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "0ebe0a39-2229-487b-a945-9fa6c952adca",
+      "discoveredTitle": "Faena Art Music Series: Major Lazer at A Lore Supreme",
+      "status": "represented",
+      "eventIds": [
+        2026031
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "f113d220-41ec-4438-b4c6-dfdbebf47467",
+      "discoveredTitle": "The Wondering Jew: Chagall, the School of Paris and the Worlds They Inspired",
+      "status": "represented",
+      "eventIds": [
+        2026033
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "5597f29a-23d6-4ddb-be6a-ea40d3d33d7b",
+      "discoveredTitle": "UBS Lounge and Art Studio: LA in MIA",
+      "status": "held",
+      "reason": "Generic fair ticket page does not establish sponsor program access."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "4980481b-ff75-41bb-a8d0-b04dd93eeff2",
+      "discoveredTitle": "INK Miami Art Fair 2026",
+      "status": "represented",
+      "eventIds": [
+        2026016
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "45f50e0b-84a1-47e3-b2ac-b7f49b7bbb10",
+      "discoveredTitle": "S.A.F.E. Capital Circle Kick Off Social",
+      "status": "held",
+      "reason": "Current organizer program starts Dec 3, not discovery Dec 2; venue not released."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "42b5f98d-33b4-4b27-869a-f843faf2bf2d",
+      "discoveredTitle": "Sotheby's International Realty Gallery at Art Basel",
+      "status": "held",
+      "reason": "Generic fair ticket URL not program evidence."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "a98b8484-a267-4731-9003-257cd19d3a33",
+      "discoveredTitle": "Red Dot Miami 2026",
+      "status": "represented",
+      "eventIds": [
+        2026018
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "b0fa6e86-a364-4944-9d90-ca2d68ebe738",
+      "discoveredTitle": "Spectrum Miami and Red Dot Miami Opening Night Preview",
+      "status": "represented",
+      "eventIds": [
+        2026017,
+        2026018
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "590102c9-3696-4806-b1d1-9f91af29205d",
+      "discoveredTitle": "The Bass Art Week Exhibition Opening Reception",
+      "status": "held",
+      "reason": "Verified invitation-only/members opening; held from this public-discovery expansion."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "7a150b9f-908e-4b00-aefc-c726884923b0",
+      "discoveredTitle": "Seed2Table: Web3 and Crypto Investor Night at BitBasel",
+      "status": "represented",
+      "eventIds": [
+        2026004
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "c914b93f-5005-4c8f-a599-e79cbd47ede8",
+      "discoveredTitle": "unKommon Art Week: Guy Gerber Rumors",
+      "status": "represented",
+      "eventIds": [
+        2026091
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "263f5384-2abd-495d-b288-25f832c8ec8d",
+      "discoveredTitle": "The Florida Family Office & High Net Worth Conference",
+      "status": "held",
+      "reason": "Conference date/venue confirmed but registration eligibility, hours and public access need review."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "347ef4d4-0ca2-4aa8-a3fa-50e4463dd080",
+      "discoveredTitle": "InScope 2026",
+      "status": "represented",
+      "eventIds": [
+        2026021
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "e8fe7b51-e5e4-47ad-8d21-11794076bc58",
+      "discoveredTitle": "Do Not Sit on Art Week: Deron",
+      "status": "held",
+      "reason": "Syndicated listing has event details; direct organizer/ticket confirmation still needed."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "b7897d20-70e9-4823-89f4-ef9e7c236f75",
+      "discoveredTitle": "LVMH The Studio Miami",
+      "status": "represented",
+      "eventIds": [
+        2026035
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "5a14be45-bd53-4f06-99ea-67bf6cc7a6e3",
+      "discoveredTitle": "INK Miami Opening Brunch",
+      "status": "represented",
+      "eventIds": [
+        2026016
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "635b985b-e0cd-42d5-946f-cd7cd5bfd604",
+      "discoveredTitle": "Diego Singh: Deeper and Deeper at ICA Miami",
+      "status": "held",
+      "reason": "Generic museum tickets page does not establish exact exhibition run."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "2a9e9b34-984a-4871-8041-82bd0326ed50",
+      "discoveredTitle": "Art Basel Conversations 2026",
+      "status": "held",
+      "reason": "Generic fair ticket URL is not a dated conversation program."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "3464e037-bb61-468a-a313-40e46b3070f7",
+      "discoveredTitle": "Art Beat Miami 2026",
+      "status": "held",
+      "reason": "2026 dates exist, venue-specific schedule not readable."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "860b7377-85fe-4679-9872-1c416e67e57a",
+      "discoveredTitle": "City of Miami Beach Legacy Purchase Prize",
+      "status": "held",
+      "reason": "Prize process is not a verified standalone public event."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "986cd593-5046-4d8a-97b3-e0c86d2157e8",
+      "discoveredTitle": "KEY Art + Design Fair 2026",
+      "status": "represented",
+      "eventIds": [
+        2026022
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "48fb4e50-773a-4559-a83b-067e078b81aa",
+      "discoveredTitle": "Aqua Art Miami 2026",
+      "status": "represented",
+      "eventIds": [
+        2026015
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "71be2d78-eadd-45eb-8888-6864f23c8a76",
+      "discoveredTitle": "NetJets Private Lounge at Art Basel Miami Beach",
+      "status": "held",
+      "reason": "Contact page cannot establish lounge date/access."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "1d30d46f-bfa1-4b38-8c19-73cf50f969f5",
+      "discoveredTitle": "Ruinart Bar and Conversations with Nature at Art Basel",
+      "status": "held",
+      "reason": "Generic fair ticket URL cannot establish sponsor program."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "2e2c0d9b-62ff-47d9-8745-ff6e185e7cc6",
+      "discoveredTitle": "Salone del Mobile.Milano Collectors Lounge",
+      "status": "held",
+      "reason": "Generic fair ticket URL cannot establish sponsor program."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "a4f1c3e0-bdf8-458b-b1ba-8b49607adbfd",
+      "discoveredTitle": "Samsung Art Store Booth at Art Basel Miami Beach",
+      "status": "held",
+      "reason": "Generic fair ticket URL cannot establish sponsor program."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "a56a8f18-6d14-400b-af77-0553afda990b",
+      "discoveredTitle": "Untitled Art Podcast Lounge Live Recordings",
+      "status": "held",
+      "reason": "Generic Untitled tickets page lacks recording dates/access."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "d8b101de-3e66-4222-a5b9-46ab68610f46",
+      "discoveredTitle": "Spectrum Miami 2026",
+      "status": "represented",
+      "eventIds": [
+        2026017
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "b631969c-c0ce-4217-8e3e-49b86918a7a0",
+      "discoveredTitle": "CHROMA 2026 at Lucid Art Gallery",
+      "status": "represented",
+      "eventIds": [
+        2026076
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "aa9cbce6-3bc4-4878-b2be-b49ee1d663f5",
+      "discoveredTitle": "Pinta Miami EFG VIP First Choice and VIP Preview",
+      "status": "held",
+      "reason": "Discovery Dec 2 private preview conflicts with organizer-linked Dec 3 checkout."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "71d78ee6-5c17-49f2-bae7-538deb654da4",
+      "discoveredTitle": "BitBasel Miami 2026: The Next Renaissance",
+      "status": "represented",
+      "eventIds": [
+        2026004,
+        2026005,
+        2026006,
+        2026007,
+        2026008
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "4d2ce1a8-8d3b-4080-9ab6-716aa18928dd",
+      "discoveredTitle": "Space Basel: Beltools",
+      "status": "represented",
+      "eventIds": [
+        2026095
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "4d9d3ea9-11d9-4eab-93c7-f906fc0c130a",
+      "discoveredTitle": "Factory Basel 2026",
+      "status": "represented",
+      "eventIds": [
+        2026009
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "3d9b4571-d204-4f7b-bccb-9fef67d015c1",
+      "discoveredTitle": "Shepard Fairey DJ Set at Aqua Art Miami",
+      "status": "held",
+      "reason": "Aqua DJ program exists, but exact set time not published."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "8da05e00-10d1-4801-ae0c-fcf1d2a1780d",
+      "discoveredTitle": "The Bass Dialogues: Pedro y Juana",
+      "status": "represented",
+      "eventIds": [
+        2026055
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "b3c658b3-0661-45c8-80fe-f5611baea52d",
+      "discoveredTitle": "Art Basel Miami Beach 2026",
+      "status": "represented",
+      "eventIds": [
+        2026001
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "e9ac1202-e2dc-4b01-8927-a0be39d4aea4",
+      "discoveredTitle": "Zero 10: Generation at Art Basel Miami Beach",
+      "status": "held",
+      "reason": "Generic fair ticket link lacks subprogram schedule/access."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "1a5db516-2cac-4b48-b38d-59292a41faf5",
+      "discoveredTitle": "WOW Basel: Global Model Casting & Performing Artist Entertainment Party",
+      "status": "represented",
+      "eventIds": [
+        2026108
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "5b4b7dc6-bca4-40f8-83cd-4f521b3aad84",
+      "discoveredTitle": "Pinta Miami 2026",
+      "status": "represented",
+      "eventIds": [
+        2026019
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "fc61584c-1854-472c-a785-49a7551e5343",
+      "discoveredTitle": "Where Are My Keys? Miami Basel",
+      "status": "held",
+      "reason": "Resident Advisor public request returned 403; not independently verified."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "7e88b487-2e2c-442f-897f-b62e9a0f0e5f",
+      "discoveredTitle": "Pantone Color of the Year 2027 Experience: Beyond the Color",
+      "status": "held",
+      "reason": "Pantone generic page does not establish dated Miami experience."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "426c9819-e99f-4d60-9d82-072d4fd84a16",
+      "discoveredTitle": "LIV Basel Week: Prospa",
+      "status": "represented",
+      "eventIds": [
+        2026116
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "8dff0d57-5ac0-4881-8bc0-1edb81691ebd",
+      "discoveredTitle": "INK Miami Pulp Party",
+      "status": "represented",
+      "eventIds": [
+        2026016
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "c5560b1e-0f76-4fe6-9ac4-e474411e34db",
+      "discoveredTitle": "CHANGÁ: Griot Moves, film screening and talk",
+      "status": "represented",
+      "eventIds": [
+        2026026
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "bd2d99d8-97f8-4308-a5ee-cb3ad82699bd",
+      "discoveredTitle": "The Wellness Oasis at InScope",
+      "status": "held",
+      "reason": "InScope umbrella references wellness but exact sessions/access not confirmed."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "2ce0186d-6db5-4583-902f-2be3ecc7e5f5",
+      "discoveredTitle": "Space Basel: Paradise",
+      "status": "represented",
+      "eventIds": [
+        2026089
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "45f90c61-78da-42e4-bdc9-e3f8ccdf3f50",
+      "discoveredTitle": "Nothing Is Linear at El Espacio 23",
+      "status": "held",
+      "reason": "Current official El Espacio pages state closed for installation."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "0a633a76-2e4b-4c07-a9e2-f5eeaeca9fa1",
+      "discoveredTitle": "Floyd Basel: Modern Love Affair",
+      "status": "represented",
+      "eventIds": [
+        2026082
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "5f61e41d-4f9d-4379-8770-4e0d923e91f6",
+      "discoveredTitle": "Baker's Brunch: Open Studios and Cafecito",
+      "status": "represented",
+      "eventIds": [
+        2026074
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "f5294200-d054-4b96-b858-9d94c64451cb",
+      "discoveredTitle": "BitBasel Family Office Forum",
+      "status": "represented",
+      "eventIds": [
+        2026005
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "4fdc08b0-992e-49e0-8cd6-143ed8da88bc",
+      "discoveredTitle": "Art Coral Gables Panel Series, Session 1",
+      "status": "held",
+      "reason": "Producer program needs final public registration; broader schedule marked tentative."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "8e446df5-117e-4e5d-ba16-f385b4c1cd7c",
+      "discoveredTitle": "III Points Basel: Latin Mafia and Friends",
+      "status": "represented",
+      "eventIds": [
+        2026084
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "edb59c25-da00-42a2-8662-9e92dc80b6fd",
+      "discoveredTitle": "unKommon Art Week: Francis Mercier Presents Solèy",
+      "status": "represented",
+      "eventIds": [
+        2026098
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "ad68597c-739c-4228-b65d-5fe5edd886eb",
+      "discoveredTitle": "Guy J: Art Basel at La Otra Wynwood",
+      "status": "held",
+      "reason": "Resident Advisor public request returned 403."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "bb560772-0374-4755-b14f-ba0586aee5a4",
+      "discoveredTitle": "Jolene Basel: AFTERJAM with Jamback",
+      "status": "represented",
+      "eventIds": [
+        2026085
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "7fe644b3-05b0-4d20-a27b-667f1a2bfd61",
+      "discoveredTitle": "RAW CUTS at The Ground: HAAi, salute, Bakke",
+      "status": "held",
+      "reason": "Resident Advisor public request returned 403."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "1a93f3bf-632a-491d-811e-57a93a3d235a",
+      "discoveredTitle": "Do Not Sit on Art Week: Nandu b2b Nico Morano",
+      "status": "held",
+      "reason": "Resident Advisor public request returned 403."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "a51843eb-ed80-47b0-b1a0-f179c509780c",
+      "discoveredTitle": "Art Basel Awards Night 2026",
+      "status": "held",
+      "reason": "Awards site lacks sufficient reviewed public event access details."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "8431bee1-7bdd-43bf-a5df-03d8b8000751",
+      "discoveredTitle": "Art Miami Dinner with Daniel Boulud at Boulud Sud",
+      "status": "held",
+      "reason": "Generic events page did not establish this dinner in reviewed content."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "4979569d-b576-4925-8d62-061b5ad4203e",
+      "discoveredTitle": "The Bass Dialogues: Johnston Marklee with Tom Healy",
+      "status": "represented",
+      "eventIds": [
+        2026054
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "3ec0c3a2-6553-4b49-8aef-58c9818cc069",
+      "discoveredTitle": "unKommon Art Week: Bedouin Presents SAGA",
+      "status": "represented",
+      "eventIds": [
+        2026099
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "8f121f6c-156e-4269-a923-d1e4e36eaefd",
+      "discoveredTitle": "WOW Basel: Ethereal After the Heat",
+      "status": "held",
+      "reason": "Street venue and exact hours incomplete."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "2453025f-84bd-4b68-b8be-7d2be42fce1f",
+      "discoveredTitle": "Miami Worldcenter Night Market",
+      "status": "represented",
+      "eventIds": [
+        2026119
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "cab58a28-ff00-45ee-b1e5-69541296d2e9",
+      "discoveredTitle": "Do Not Sit on Art Week: Patrice Bäumel",
+      "status": "held",
+      "reason": "Public DICE redirect did not reveal event details."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "9467b25c-5573-43b0-8b39-b50a4ffc15e6",
+      "discoveredTitle": "NachoFriday: Art Basel Tech Founder + VC Pre-Party",
+      "status": "represented",
+      "eventIds": [
+        2026081
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "2bdc60e0-1075-44d9-85c5-6920bc2aaaed",
+      "discoveredTitle": "Dimensions Variable Miami Art Week Member Brunch",
+      "status": "held",
+      "reason": "Verified members-only brunch; public access restricted."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "6dccf8da-c59a-4d12-8e20-fcd406333b7c",
+      "discoveredTitle": "BitBasel Day and .ART Awards",
+      "status": "represented",
+      "eventIds": [
+        2026006
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "d22e0e23-b1d5-4e47-b81f-57b9fc1f585e",
+      "discoveredTitle": "Wynwood Art Market: Basel Edition",
+      "status": "represented",
+      "eventIds": [
+        2026122
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "5f85bfd2-97b8-4440-af43-c636aaead2a0",
+      "discoveredTitle": "arteNXT and photoMIAMI VIP Reception and Art After Dark",
+      "status": "held",
+      "reason": "Private reception already described in exhibition notes; no separate public listing."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "561f0f66-2429-4d25-8372-a97cf6cc3b5e",
+      "discoveredTitle": "Basel B.A.E.: Black Art Experience",
+      "status": "held",
+      "reason": "Tourism listing exists; direct organizer hours/access need review."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "23b450cc-7caa-42ef-9826-b404e2ee3ddc",
+      "discoveredTitle": "Space Basel: Music On",
+      "status": "represented",
+      "eventIds": [
+        2026093
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "2049e85e-c68f-41e6-b4ac-2fea4fb2c42b",
+      "discoveredTitle": "LIV Basel Week: PAWSA",
+      "status": "represented",
+      "eventIds": [
+        2026117
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "8f1bec63-d56e-4249-bf3c-f8bd12f11b5d",
+      "discoveredTitle": "The Bass Dialogues: Amalia Pica",
+      "status": "represented",
+      "eventIds": [
+        2026056
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "131aa020-4a4f-41a5-92b0-406d492839a1",
+      "discoveredTitle": "Framework x unKommon: ANOTR at Watson Island Park",
+      "status": "represented",
+      "eventIds": [
+        2026096
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "aa196f20-5d70-4a68-ba96-7aa9ad255d52",
+      "discoveredTitle": "ARTWEEK Miami Media Festival at O Cinema South Beach",
+      "status": "held",
+      "reason": "Producer program marks screening time tentative."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "0461d434-055c-476e-a18e-431f5063a38f",
+      "discoveredTitle": "Miami Nice: Art Basel Weekend All Black Yacht Party",
+      "status": "represented",
+      "eventIds": [
+        2026077
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "5c96649b-2e58-4ed7-b23f-a601cc493b78",
+      "discoveredTitle": "Circoloco at Factory Basel",
+      "status": "represented",
+      "eventIds": [
+        2026009
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "cbaf224b-9e2c-40b1-b2e2-fc8af49f7ff4",
+      "discoveredTitle": "Pendulum by Steve Lawler at EDGE Miami",
+      "status": "held",
+      "reason": "Shotgun public request returned 429."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "e7e7d853-a074-4d41-bd45-3f57bdff3567",
+      "discoveredTitle": "unKommon Art Week: Saturday Finale",
+      "status": "represented",
+      "eventIds": [
+        2026120
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "35ade8d3-0417-4263-ac3a-e2c7a15974b7",
+      "discoveredTitle": "WOW Basel Annual BBQ Showdown",
+      "status": "held",
+      "reason": "Producer says venue/hours/bookability await confirmation."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "6e8b2f66-a02a-48fd-a00a-9cf3c8260144",
+      "discoveredTitle": "WOW Calor Ethereal: Rooftop Block Party",
+      "status": "represented",
+      "eventIds": [
+        2026109,
+        2026110,
+        2026111
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "2d78c49f-5abf-42e3-8a23-8600bd583e2f",
+      "discoveredTitle": "The 25th Iconic Sagamore Brunch",
+      "status": "represented",
+      "eventIds": [
+        2026007
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "8fa2ede0-ac9b-4a9f-acb0-9a4fde1c095f",
+      "discoveredTitle": "ARTWEEK Miami Media Festival at the Frost Planetarium",
+      "status": "held",
+      "reason": "Producer program marks screening time tentative."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "e7373468-4ab6-4abf-878f-bba0b91447a4",
+      "discoveredTitle": "Jamaica Basel at BitBasel",
+      "status": "represented",
+      "eventIds": [
+        2026008
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "5d1976fa-fe6b-4f55-83df-25e80ee20a47",
+      "discoveredTitle": "Framework x unKommon: Adriatique b2b Cloonee",
+      "status": "represented",
+      "eventIds": [
+        2026094
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "48c7c5f4-2c0c-4b07-9154-70a9433c3daf",
+      "discoveredTitle": "III Points Basel: Michael Bibi's One Life",
+      "status": "represented",
+      "eventIds": [
+        2026087
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "d1695863-9ac8-44ce-9c90-5fae348de380",
+      "discoveredTitle": "LIV Basel Week: Basel Saturday and LIV on Sunday",
+      "status": "represented",
+      "eventIds": [
+        2026118
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "cf1b3966-c215-4114-9cc1-bc6d8de77761",
+      "discoveredTitle": "Art Basel Brunch: Joseph's Machines at the Jewish Museum of Florida",
+      "status": "represented",
+      "eventIds": [
+        2026032
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "ce86e8bb-bed4-4eb9-b137-f1b1dc5fc1b2",
+      "discoveredTitle": "STAMPED: AYA x Friends, hosted by 333 Club",
+      "status": "represented",
+      "eventIds": [
+        2026078
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "6bb04688-9b94-4837-9bff-024d0db22c9e",
+      "discoveredTitle": "Mixmag Caribbean Sessions x Overtones at EDGE Miami",
+      "status": "held",
+      "reason": "Shotgun public request returned 429."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "15c4fe91-abf2-48be-ba18-e7b459593963",
+      "discoveredTitle": "elrow at Factory Basel: Sunday Closing",
+      "status": "represented",
+      "eventIds": [
+        2026009
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "c0bf1cee-c3ba-4c09-8316-4d7cac2c84eb",
+      "discoveredTitle": "Floyd Basel: Knight Club with MCR-T and Mija",
+      "status": "represented",
+      "eventIds": [
+        2026090
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "907dc8f9-d789-4a35-9e1a-896d66ad1c06",
+      "discoveredTitle": "S.A.F.E. Global Capital Circle Dinner",
+      "status": "held",
+      "reason": "Venue to be released."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "90ba22c4-3470-4440-9e14-175e9ff8e3c5",
+      "discoveredTitle": "WOW La Plage Reset",
+      "status": "held",
+      "reason": "Exact street venue and session times unpublished."
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "cc112424-9d45-460d-bd02-f84bec0936f7",
+      "discoveredTitle": "Club Space Presents GOLFOS at the Downtown Courthouse",
+      "status": "represented",
+      "eventIds": [
+        2026092
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "d0bd04df-d946-4535-93ae-1eee209bad1a",
+      "discoveredTitle": "African Fashion Week Miami: REGENESIS, The African Winter",
+      "status": "represented",
+      "eventIds": [
+        2026028
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "b611d814-cb55-4f5f-9866-1645cf6d9d8a",
+      "discoveredTitle": "The Bass Free Community Day and Painting with the Pros",
+      "status": "represented",
+      "eventIds": [
+        2026052,
+        2026053
+      ]
+    },
+    {
+      "sourceId": "miamibasel-2026",
+      "upstreamId": "297416bb-77bc-47a1-8fba-1401e546deea",
+      "discoveredTitle": "Frost Art Museum Breakfast in the Park",
+      "status": "represented",
+      "eventIds": [
+        2026075
+      ]
+    }
+  ],
+  "discoveryCheckedAt": "2026-11-16",
+  "discoveryRecordCount": 126
+}

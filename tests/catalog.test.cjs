@@ -3,7 +3,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const { execFileSync } = require('node:child_process');
-const { parseEventDate, eventDateKey, isEventOnDate, miamiDateKey } = require('../src/lib/event-dates.ts');
+const { parseEventDate, eventDateKey, isEventOnDate, miamiDateKey, getCatalogDateKeys } = require('../src/lib/event-dates.ts');
 const { withEventCoordinates } = require('../src/lib/event-locations.ts');
 const { auditCatalog } = require('../scripts/lib/catalog');
 const { parseCSV, csvToEvents } = require('../scripts/lib/csv');
@@ -48,6 +48,8 @@ test('today uses Miami calendar time even after UTC midnight', () => {
 
 test('fallback map coordinates are stable, explicitly approximate, and leave source data unchanged', () => {
   const input = { ...catalog[0], neighborhood: 'Miami Beach ' };
+  delete input.coordinates;
+  delete input.coordinateAccuracy;
   const result = withEventCoordinates(input);
   assert.deepEqual(result, withEventCoordinates(input));
   assert.equal(result.coordinateAccuracy, 'neighborhood');
@@ -55,6 +57,65 @@ test('fallback map coordinates are stable, explicitly approximate, and leave sou
   const exact = { ...input, coordinates: { lat: 25.8, lng: -80.1 }, coordinateAccuracy: 'venue' };
   assert.equal(withEventCoordinates(exact), exact);
   assert.equal(withEventCoordinates({ ...input, neighborhood: 'Unknown' }).coordinates, undefined);
+});
+
+test('date controls include the vernissage without changing the official Art Week', () => {
+  const season = require('../src/data/season.json');
+  const dates = getCatalogDateKeys(season, catalog);
+  assert.equal(season.startDate, '2026-11-30');
+  assert.equal(season.endDate, '2026-12-06');
+  assert.ok(dates.includes('2026-11-29'));
+  for (const event of catalog) {
+    assert.ok(dates.includes(event.startDate), event.event);
+    assert.ok(dates.includes(event.endDate || event.startDate), event.event);
+  }
+  assert.equal(new Set(dates).size, dates.length);
+});
+
+test('browse dates retain an empty official week and ignore malformed event intervals', () => {
+  const season = { startDate: '2026-11-30', endDate: '2026-12-06' };
+  const expected = getCatalogDateKeys(season, []);
+  assert.equal(expected.length, 7);
+  assert.deepEqual(getCatalogDateKeys(season, [
+    { startDate: '2026-11-28', endDate: '2026-11-27' },
+    { startDate: 'bad', endDate: null },
+  ]), expected);
+});
+
+test('launch batch approvals cover every added listing and retain a primary source', () => {
+  const review = require('../src/data/catalog-review-2026-11-16.json');
+  const approvals = new Map(review.approved.map(entry => [entry.eventId, entry]));
+  for (const event of catalog.filter(event => event.id >= 2026012)) {
+    const approval = approvals.get(event.id);
+    assert.ok(approval, event.event);
+    assert.ok(approval.primarySources.includes(event.sourceUrl), event.event);
+    assert.ok(approval.evidence.length > 30);
+    assert.equal(event.lastVerifiedAt, review.reviewedAt);
+  }
+  assert.equal(approvals.size, review.approved.length);
+});
+
+test('public fair days exclude private previews and the NADA Sunday closure', () => {
+  const find = name => catalog.find(event => event.event === name);
+  assert.ok(!isEventOnDate(find('Design Miami 2026'), '2026-12-01'));
+  assert.ok(!isEventOnDate(find('Aqua Art Miami 2026'), '2026-12-02'));
+  assert.ok(!isEventOnDate(find('NADA Miami 2026'), '2026-12-06'));
+  assert.ok(isEventOnDate(find('NADA Miami 2026'), '2026-12-05'));
+  assert.ok(!isEventOnDate(find('Spectrum Miami 2026'), '2026-12-02'));
+});
+
+test('recurring markets, gallery closed days and overnight parties use their actual session dates', () => {
+  const find = name => catalog.find(event => event.event === name);
+  const market = find('Miami Worldcenter Night Market — Art Week Friday');
+  assert.ok(isEventOnDate(market, '2026-12-04'));
+  assert.ok(!isEventOnDate(market, '2026-12-05'));
+  const gallery = find('Ana Benaroya: Hide and Seek — Art Week viewing');
+  assert.ok(!isEventOnDate(gallery, '2026-11-30'));
+  assert.ok(!isEventOnDate(gallery, '2026-12-06'));
+  const party = find('NTS Miami (Ground Basel 2026)');
+  assert.equal(party.startDate, '2026-12-05');
+  assert.equal(party.endDate, '2026-12-05');
+  assert.match(party.schedule, /next day/);
 });
 
 test('current catalog has provenance, 2026 dates, and no IDs reused from 2025', () => {

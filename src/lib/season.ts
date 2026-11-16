@@ -1,5 +1,6 @@
 import season from '@/data/season.json';
-import { eventDateKey, parseEventDate } from './event-dates';
+import events from '@/data/events.json';
+import { getCatalogDateKeys, parseEventDate } from './event-dates';
 
 export const CURRENT_SEASON = season;
 export const EVENT_START_DATE = new Date(season.startsAt);
@@ -10,16 +11,12 @@ export function getSeasonPhase(now = new Date()): 'before' | 'during' | 'after' 
 }
 
 export function getSeasonDates() {
-  const dates: { value: string; label: string; date: Date }[] = [];
-  const date = parseEventDate(season.startDate)!;
-  const end = parseEventDate(season.endDate)!;
-  while (date <= end) {
-    dates.push({
-      value: eventDateKey(date)!,
+  return getCatalogDateKeys(season, events).map(value => {
+    const date = parseEventDate(value)!;
+    return {
+      value,
       label: date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', weekday: 'short' }),
-      date: new Date(date),
-    });
-    date.setDate(date.getDate() + 1);
-  }
-  return dates;
+      date,
+    };
+  });
 }
