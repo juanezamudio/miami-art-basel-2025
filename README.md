@@ -37,7 +37,7 @@ See [TODO.md](TODO.md) for the prioritized 2026 launch checklist and [the source
 
 ## Current data and editorial workflow
 
-`src/data/season.json` controls the current edition, Miami timezone, week dates, and fair dates. `art-basel-2026.csv` is the editable source; `src/data/events.json` is the published catalog. The current catalog has **125 reviewed listings**, including 114 additions checked November 16, 2026, across 14 areas and all six event categories. Twenty listings explicitly offer free general admission or public viewing. The original three fairs were checked November 13, 2026:
+`src/data/season.json` controls the current edition, Miami timezone, week dates, and fair dates. `art-basel-2026.csv` is the editable source; `src/data/events.json` is the published catalog. The current catalog has **151 reviewed listings** across 15 areas and all six event categories. Thirty-two listings explicitly offer free general admission or public viewing. The latest [Miami Guide review](src/data/catalog-review-miami-guide-2026-11-16.json) adds 26 organizer-checked listings; see the [review notes](docs/miami-guide-review-2026-11-16.md). The original three fairs were checked November 13, 2026:
 
 - [Art Basel Miami Beach](https://www.artbasel.com/miami-beach?blLocaleCode=en)
 - [Art Miami](https://www.artmiami.com/practical-info)

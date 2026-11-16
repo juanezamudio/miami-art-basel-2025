@@ -82,17 +82,21 @@ test('browse dates retain an empty official week and ignore malformed event inte
   ]), expected);
 });
 
-test('launch batch approvals cover every added listing and retain a primary source', () => {
-  const review = require('../src/data/catalog-review-2026-11-16.json');
-  const approvals = new Map(review.approved.map(entry => [entry.eventId, entry]));
+test('review batches cover every added listing and retain a primary source', () => {
+  const directory = path.join(__dirname, '../src/data');
+  const reviews = fs.readdirSync(directory)
+    .filter(name => /^catalog-review-.*\.json$/.test(name))
+    .map(name => JSON.parse(fs.readFileSync(path.join(directory, name), 'utf8')));
+  const entries = reviews.flatMap(review => review.approved.map(entry => ({ ...entry, reviewedAt: review.reviewedAt })));
+  const approvals = new Map(entries.map(entry => [entry.eventId, entry]));
   for (const event of catalog.filter(event => event.id >= 2026012)) {
     const approval = approvals.get(event.id);
     assert.ok(approval, event.event);
     assert.ok(approval.primarySources.includes(event.sourceUrl), event.event);
     assert.ok(approval.evidence.length > 30);
-    assert.equal(event.lastVerifiedAt, review.reviewedAt);
+    assert.equal(event.lastVerifiedAt, approval.reviewedAt);
   }
-  assert.equal(approvals.size, review.approved.length);
+  assert.equal(approvals.size, entries.length);
 });
 
 test('public fair days exclude private previews and the NADA Sunday closure', () => {

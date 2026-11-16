@@ -1,0 +1,488 @@
+{
+  "batchId": "2026-11-16-miami-guide-organizer-batch",
+  "reviewedAt": "2026-11-16",
+  "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+  "scope": "Review of the supplied Miami Guide article and the current programs of the fairs and museums it names. Adds distinct current public programs and exhibition viewing windows, rather than copying the guide or duplicating existing fairs. Facts checked against organizers, venues and their linked ticket pages; no descriptions or imagery copied.",
+  "approved": [
+    {
+      "eventId": 2026126,
+      "primarySources": [
+        "https://www.fridgeartfair.com/",
+        "https://www.eventbrite.com/e/fridge-art-fair-miami-beach-gianni-madonna-coconuts-tickets-2003236097092"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "Fridge organizer home page and organizer-authored Eventbrite agree on UMA public Dec 2–6 hours. Eventbrite FAQ explicitly confirms free fair admission; do not import Dec 1 VIP preview as public."
+    },
+    {
+      "eventId": 2026127,
+      "primarySources": [
+        "https://www.fridgeartfair.com/",
+        "https://www.eventbrite.com/e/fridge-art-fair-miami-beach-gianni-madonna-coconuts-tickets-2003236097092"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "Fridge current venue schedule and Eventbrite text explicitly give Habitat Hyett Nov 30–Dec 6 10 AM–9 PM. Broad fair heading Dec 1–6 does not override venue-specific hours. FAQ confirms free entry."
+    },
+    {
+      "eventId": 2026128,
+      "primarySources": [
+        "https://pantone.rumor.events/751118"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "Read the rendered Pantone-branded Rumor registration page: Thursday Dec 3 2026, 11 AM–6 PM, free/open public and 1100 NW 23rd. Corrects guide’s 100 NW 23rd typo. Workshop ticket requirement retained."
+    },
+    {
+      "eventId": 2026129,
+      "primarySources": [
+        "https://www.mocanomi.org/posts/miami-art-week-reception-2026",
+        "https://www.mocanomi.org/visit"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "MOCA 2026 reception page explicitly distinguishes $10 public 8:30–10:30 PM from invitation-only 6:30–8:30 PM VIP program. Eligible free categories are conditional, so not tagged unconditionally Free."
+    },
+    {
+      "eventId": 2026130,
+      "primarySources": [
+        "https://www.mocanomi.org/posts/geoffrey-holder-black-magic",
+        "https://www.mocanomi.org/visit"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "Individual exhibition currently states Nov 18 2026–Apr 4 2027. Visit page confirms Wed noon–7 and Thu–Sun 10–5, $10 adult. Its extended-hours block uses 2024 weekdays/dates and is deliberately ignored; closed Mon/Tue excluded."
+    },
+    {
+      "eventId": 2026131,
+      "primarySources": [
+        "https://www.mocanomi.org/posts/josh-aronson-a-sudden-leap",
+        "https://www.mocanomi.org/visit"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "MOCA project page confirms Oct 14 2026–Jan 17 2027 and outdoor pond/plaza site. No 24-hour access, indoor museum ticket requirement or unconditional free price is inferred."
+    },
+    {
+      "eventId": 2026132,
+      "primarySources": [
+        "https://www.pamm.org/en/exhibition/basquiat-figures-signs-symbols/",
+        "https://www.pamm.org/en/visit/"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "Reviewed individual PAMM exhibition run and current museum visitor hours/admission. Catalog entry intentionally scopes to the continuous Thu Dec 3–Sun Dec 6 public window; no Tue/Wed gallery opening is inferred. Shared museum admission, not an additional per-exhibition charge."
+    },
+    {
+      "eventId": 2026133,
+      "primarySources": [
+        "https://www.pamm.org/en/exhibition/picasso-klee-matisse-masterpieces-from-the-museum-berggruen/",
+        "https://www.pamm.org/en/visit/"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "Reviewed individual PAMM exhibition run and current museum visitor hours/admission. Catalog entry intentionally scopes to the continuous Thu Dec 3–Sun Dec 6 public window; no Tue/Wed gallery opening is inferred. Shared museum admission, not an additional per-exhibition charge."
+    },
+    {
+      "eventId": 2026134,
+      "primarySources": [
+        "https://www.pamm.org/en/exhibition/john-baldessari-the-end-of-the-line/",
+        "https://www.pamm.org/en/visit/"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "Reviewed individual PAMM exhibition run and current museum visitor hours/admission. Catalog entry intentionally scopes to the continuous Thu Dec 3–Sun Dec 6 public window; no Tue/Wed gallery opening is inferred. Shared museum admission, not an additional per-exhibition charge."
+    },
+    {
+      "eventId": 2026135,
+      "primarySources": [
+        "https://www.pamm.org/en/exhibition/zoe-buckman-show-me-your-bruises-then/",
+        "https://www.pamm.org/en/visit/"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "Reviewed individual PAMM exhibition run and current museum visitor hours/admission. Catalog entry intentionally scopes to the continuous Thu Dec 3–Sun Dec 6 public window; no Tue/Wed gallery opening is inferred. Shared museum admission, not an additional per-exhibition charge."
+    },
+    {
+      "eventId": 2026136,
+      "primarySources": [
+        "https://www.pamm.org/en/exhibition/techno-firma/",
+        "https://www.pamm.org/en/visit/"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "Reviewed individual PAMM exhibition run and current museum visitor hours/admission. Catalog entry intentionally scopes to the continuous Thu Dec 3–Sun Dec 6 public window; no Tue/Wed gallery opening is inferred. Shared museum admission, not an additional per-exhibition charge."
+    },
+    {
+      "eventId": 2026137,
+      "primarySources": [
+        "https://www.pamm.org/en/events/event/art-talk-techno-firma/",
+        "https://www.pamm.org/en/visit/"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "PAMM dated event page confirms Nov 30 2026 1–2:30 PM, museum location, RSVP and inclusion with $18 adult museum admission."
+    },
+    {
+      "eventId": 2026138,
+      "primarySources": [
+        "https://www.pamm.org/en/events/event/scholl-lecture-series-david-salle-on-john-baldessari/",
+        "https://www.pamm.org/en/visit/"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "PAMM event page specifically confirms Tuesday Dec 1 2026 11 AM–12:30 PM and admission terms despite ordinary Tuesday gallery closure. No general all-day gallery opening inferred."
+    },
+    {
+      "eventId": 2026139,
+      "primarySources": [
+        "https://www.pamm.org/en/visit/"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "PAMM current visit page explicitly grants free admission Thursdays after 5 PM and Thursday opening until 9 PM. December 3 2026 is Thursday; one reviewed occurrence scoped to Art Week."
+    },
+    {
+      "eventId": 2026140,
+      "primarySources": [
+        "https://rubellmuseum.org/miami-exhibitions-2/upcoming-exhibitions",
+        "https://rubellmuseum.org/miami/visit-miami"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "Rubell official upcoming page announces opening Dec 1 2026 and exact current presentation list. Visit page confirms $18 adults, Wed/Thu/Sun 11:30–5:30 and Fri/Sat until7:30. Scope is confirmed regular public Dec 2–6, not an assumed Dec 1 opening time."
+    },
+    {
+      "eventId": 2026141,
+      "primarySources": [
+        "https://www.museumofgraffiti.com/pages/art-basel-miami",
+        "https://www.eventbrite.com/e/museum-of-graffiti-2026-art-week-full-campus-access-tickets-2004616592190",
+        "https://www.eventbrite.com/e/museum-of-graffiti-2026-art-week-full-campus-access-tickets-2004616616262",
+        "https://www.eventbrite.com/e/museum-of-graffiti-2026-art-week-full-campus-access-tickets-2004616653373"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "Museum’s page has stale 2025 SEO title but explicit Lucky 7 2026 body and weekday-matched Dec 2–4 program, noon–6. Three organizer-authored Eventbrite day listings confirm 2026 dates and $27.88 offers. Ticket arrival slots (through5:30) differ from full program hours; retain timed-entry note."
+    },
+    {
+      "eventId": 2026142,
+      "primarySources": [
+        "https://www.eventbrite.com/e/meet-the-artists-of-the-wynwood-public-mural-project-at-museum-of-graffiti-tickets-2004618830886",
+        "https://www.museumofgraffiti.com/pages/art-basel-miami"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "Museum-linked Eventbrite organizer listing confirms Dec 3 2026 4–6 PM, 276 NW 26th, $0 offer and free patio RSVP; separate from the $27.88 campus ticket."
+    },
+    {
+      "eventId": 2026143,
+      "primarySources": [
+        "https://www.eventbrite.com/e/art-beat-miami-brightline-2026-tickets-2004584802105",
+        "https://artbeatmiami.com/art-beat-miami-2026-brightline/"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "Organizer website links to this 2026 Eventbrite. Read all four public agenda sections, including expanded Show all agenda: dates, times and explicit free admission agree. These are discrete programs, not a continuous multi-day opening window."
+    },
+    {
+      "eventId": 2026144,
+      "primarySources": [
+        "https://www.eventbrite.com/e/art-beat-miami-brightline-2026-tickets-2004584802105",
+        "https://artbeatmiami.com/art-beat-miami-2026-brightline/"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "Organizer website links to this 2026 Eventbrite. Read all four public agenda sections, including expanded Show all agenda: dates, times and explicit free admission agree. These are discrete programs, not a continuous multi-day opening window."
+    },
+    {
+      "eventId": 2026145,
+      "primarySources": [
+        "https://www.eventbrite.com/e/art-beat-miami-brightline-2026-tickets-2004584802105",
+        "https://artbeatmiami.com/art-beat-miami-2026-brightline/"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "Organizer website links to this 2026 Eventbrite. Read all four public agenda sections, including expanded Show all agenda: dates, times and explicit free admission agree. These are discrete programs, not a continuous multi-day opening window."
+    },
+    {
+      "eventId": 2026146,
+      "primarySources": [
+        "https://www.eventbrite.com/e/art-beat-miami-brightline-2026-tickets-2004584802105",
+        "https://artbeatmiami.com/art-beat-miami-2026-brightline/"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "Organizer website links to this 2026 Eventbrite. Read all four public agenda sections, including expanded Show all agenda: dates, times and explicit free admission agree. These are discrete programs, not a continuous multi-day opening window."
+    },
+    {
+      "eventId": 2026147,
+      "primarySources": [
+        "https://www.eventbrite.com/e/art-beat-miami-joseph-caleb-center-2026-tickets-2004585377827",
+        "https://artbeatmiami.com/art-beat-miami-2026-joseph-caleb/"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "Organizer-linked 2026 Eventbrite agenda confirms specific date/time, free admission and Joseph Caleb address for this program. The broader exhibition has no verified daily hours and is not separately imported."
+    },
+    {
+      "eventId": 2026148,
+      "primarySources": [
+        "https://www.eventbrite.com/e/art-beat-miami-joseph-caleb-center-2026-tickets-2004585377827",
+        "https://artbeatmiami.com/art-beat-miami-2026-joseph-caleb/"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "Organizer-linked 2026 Eventbrite agenda confirms specific date/time, free admission and Joseph Caleb address for this program. The broader exhibition has no verified daily hours and is not separately imported."
+    },
+    {
+      "eventId": 2026149,
+      "primarySources": [
+        "https://www.eventbrite.com/e/art-beat-miami-joseph-caleb-center-2026-tickets-2004585377827",
+        "https://artbeatmiami.com/art-beat-miami-2026-joseph-caleb/"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "Organizer-linked 2026 Eventbrite agenda confirms specific date/time, free admission and Joseph Caleb address for this program. The broader exhibition has no verified daily hours and is not separately imported."
+    },
+    {
+      "eventId": 2026150,
+      "primarySources": [
+        "https://freedomtower.mdc.edu/exhibition/beyond-time-antonia-eiriz-juan-sanchez-and-pedro-vizcaino/",
+        "https://freedomtower.mdc.edu/visit/plan-your-visit/",
+        "https://feverup.com/m/421689?thm=7097"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "MDC exhibition page confirms Nov1 2026–Mar14 2027; visit page confirms Wed–Sun10–6. Organizer-linked Fever explicitly includes Beyond Time with $18 adult general admission."
+    },
+    {
+      "eventId": 2026151,
+      "primarySources": [
+        "https://freedomtower.mdc.edu/events/film-screening-whale-roads-nwsa/"
+      ],
+      "discoveryUrl": "https://themiamiguide.com/art-basel-miami/",
+      "decision": "approved",
+      "evidence": "MDC dated event page explicitly gives Thursday Dec3 2026 2–4 PM, $18 and MDC eligibility exception; event is at Freedom Tower. The related exhibition’s separate 25 NE2nd venue is not used as the screening address."
+    }
+  ],
+  "representedExistingEventIds": [
+    2026001,
+    2026002,
+    2026003,
+    2026011,
+    2026012,
+    2026013,
+    2026014,
+    2026015,
+    2026016,
+    2026017,
+    2026018,
+    2026019,
+    2026020,
+    2026021,
+    2026029,
+    2026030,
+    2026038,
+    2026039,
+    2026040,
+    2026041,
+    2026042,
+    2026043,
+    2026044,
+    2026045,
+    2026046,
+    2026047,
+    2026048,
+    2026049
+  ],
+  "held": [
+    {
+      "title": "Fridge: Ray of Light / Pop Art Collection",
+      "reason": "Organizer home page now names Wanderlust Cafe, 1200 Washington; visit and Eventbrite still say SoBeVisitor Center,1130 Washington. All leave public dates/times TBD. Hold until venue and dates agree.",
+      "primarySources": [
+        "https://www.fridgeartfair.com/",
+        "https://www.fridgeartfair.com/visit",
+        "https://www.eventbrite.com/e/fridge-art-fair-miami-beach-gianni-madonna-coconuts-tickets-2003236097092"
+      ]
+    },
+    {
+      "title": "Satellite Art Show Miami 2026",
+      "reason": "No dated 2026 Miami program on organizer homepage; do not reuse prior-year hotel/dates.",
+      "primarySources": [
+        "https://www.satellite-show.com/"
+      ]
+    },
+    {
+      "title": "Art Beat Miami general Joseph Caleb exhibition",
+      "reason": "Exhibition prose gives Dec2–6 but event metadata endsDec5; daily access hours unpublished. Imported only the three specifically timed public programs.",
+      "primarySources": [
+        "https://www.eventbrite.com/e/art-beat-miami-joseph-caleb-center-2026-tickets-2004585377827"
+      ]
+    },
+    {
+      "title": "MOCA member breakfast / VIP reception",
+      "reason": "Restricted member/invited access; held from this public-program expansion. Earlier VIP performance not advertised as part of the general reception.",
+      "primarySources": [
+        "https://www.mocanomi.org/posts/member-appreciation-breakfast-2026",
+        "https://www.mocanomi.org/posts/miami-art-week-reception-2026"
+      ]
+    }
+  ],
+  "corrections": [
+    {
+      "subject": "Pantone venue",
+      "decision": "Primary RSVP says1100 NW23rd, replacing the guide’s100NW23rd address."
+    },
+    {
+      "subject": "Public fair preview dates",
+      "decision": "Existing catalog public windows retained for Design Miami,Aqua,InScope,NADA,Spectrum/RedDot; broad guide ranges include private previews."
+    },
+    {
+      "subject": "PRIZM",
+      "decision": "Existing current organizer-confirmed Dec2–6/640Ocean listing retained; guide says datesTBD/Downtown."
+    },
+    {
+      "subject": "Museum hours",
+      "decision": "MOCA ArtWeek hours block has 2024 weekday/date pairs and is ignored. PAMM Tue/Wed closed days and ordinary Rubell/ FreedomTower closed days are excluded from exhibition viewing windows; specifically dated lectures/receptions are kept separate."
+    }
+  ],
+  "locationVerification": {
+    "provider": "OpenStreetMap Nominatim",
+    "checkedAt": "2026-11-16",
+    "policy": "https://operations.osmfoundation.org/policies/nominatim/",
+    "attribution": "© OpenStreetMap contributors, ODbL 1.0. https://www.openstreetmap.org/copyright",
+    "method": "One-time single-thread cached public address lookup, at least1.2 seconds between requests. Exact house number, municipality and Miami bounding box checks; displayed street and venue matches reviewed.",
+    "matches": [
+      {
+        "eventId": 2026127,
+        "query": "441 Lincoln Road, Miami Beach, FL 33139",
+        "osmUrl": "https://www.openstreetmap.org/way/45126145"
+      },
+      {
+        "eventId": 2026128,
+        "query": "1100 NW 23rd Street, Miami, FL 33127",
+        "osmUrl": "https://www.openstreetmap.org/way/435847255"
+      },
+      {
+        "eventId": 2026129,
+        "query": "770 NE 125th Street, North Miami, FL 33161",
+        "osmUrl": "https://www.openstreetmap.org/way/435530625"
+      },
+      {
+        "eventId": 2026130,
+        "query": "770 NE 125th Street, North Miami, FL 33161",
+        "osmUrl": "https://www.openstreetmap.org/way/435530625"
+      },
+      {
+        "eventId": 2026131,
+        "query": "770 NE 125th Street, North Miami, FL 33161",
+        "osmUrl": "https://www.openstreetmap.org/way/435530625"
+      },
+      {
+        "eventId": 2026132,
+        "query": "1103 Biscayne Boulevard, Miami, FL 33132",
+        "osmUrl": "https://www.openstreetmap.org/way/484587327"
+      },
+      {
+        "eventId": 2026133,
+        "query": "1103 Biscayne Boulevard, Miami, FL 33132",
+        "osmUrl": "https://www.openstreetmap.org/way/484587327"
+      },
+      {
+        "eventId": 2026134,
+        "query": "1103 Biscayne Boulevard, Miami, FL 33132",
+        "osmUrl": "https://www.openstreetmap.org/way/484587327"
+      },
+      {
+        "eventId": 2026135,
+        "query": "1103 Biscayne Boulevard, Miami, FL 33132",
+        "osmUrl": "https://www.openstreetmap.org/way/484587327"
+      },
+      {
+        "eventId": 2026136,
+        "query": "1103 Biscayne Boulevard, Miami, FL 33132",
+        "osmUrl": "https://www.openstreetmap.org/way/484587327"
+      },
+      {
+        "eventId": 2026137,
+        "query": "1103 Biscayne Boulevard, Miami, FL 33132",
+        "osmUrl": "https://www.openstreetmap.org/way/484587327"
+      },
+      {
+        "eventId": 2026138,
+        "query": "1103 Biscayne Boulevard, Miami, FL 33132",
+        "osmUrl": "https://www.openstreetmap.org/way/484587327"
+      },
+      {
+        "eventId": 2026139,
+        "query": "1103 Biscayne Boulevard, Miami, FL 33132",
+        "osmUrl": "https://www.openstreetmap.org/way/484587327"
+      },
+      {
+        "eventId": 2026140,
+        "query": "1100 NW 23rd Street, Miami, FL 33127",
+        "osmUrl": "https://www.openstreetmap.org/way/435847255"
+      },
+      {
+        "eventId": 2026141,
+        "query": "276 NW 26th Street, Miami, FL 33127",
+        "osmUrl": "https://www.openstreetmap.org/node/6091344075"
+      },
+      {
+        "eventId": 2026142,
+        "query": "276 NW 26th Street, Miami, FL 33127",
+        "osmUrl": "https://www.openstreetmap.org/node/6091344075"
+      },
+      {
+        "eventId": 2026143,
+        "query": "600 NW 1st Avenue, Miami, FL 33136",
+        "osmUrl": "https://www.openstreetmap.org/node/14190528505"
+      },
+      {
+        "eventId": 2026144,
+        "query": "600 NW 1st Avenue, Miami, FL 33136",
+        "osmUrl": "https://www.openstreetmap.org/node/14190528505"
+      },
+      {
+        "eventId": 2026145,
+        "query": "600 NW 1st Avenue, Miami, FL 33136",
+        "osmUrl": "https://www.openstreetmap.org/node/14190528505"
+      },
+      {
+        "eventId": 2026146,
+        "query": "600 NW 1st Avenue, Miami, FL 33136",
+        "osmUrl": "https://www.openstreetmap.org/node/14190528505"
+      },
+      {
+        "eventId": 2026147,
+        "query": "5400 NW 22nd Avenue, Miami, FL 33142",
+        "osmUrl": "https://www.openstreetmap.org/node/6096731749"
+      },
+      {
+        "eventId": 2026148,
+        "query": "5400 NW 22nd Avenue, Miami, FL 33142",
+        "osmUrl": "https://www.openstreetmap.org/node/6096731749"
+      },
+      {
+        "eventId": 2026149,
+        "query": "5400 NW 22nd Avenue, Miami, FL 33142",
+        "osmUrl": "https://www.openstreetmap.org/node/6096731749"
+      },
+      {
+        "eventId": 2026150,
+        "query": "600 Biscayne Boulevard, Miami, FL 33132",
+        "osmUrl": "https://www.openstreetmap.org/way/290629021"
+      },
+      {
+        "eventId": 2026151,
+        "query": "600 Biscayne Boulevard, Miami, FL 33132",
+        "osmUrl": "https://www.openstreetmap.org/way/290629021"
+      },
+      {
+        "eventId": 2026126,
+        "query": "1775 James Avenue, Miami Beach, FL 33139",
+        "osmUrl": "https://www.openstreetmap.org/node/6037322522"
+      }
+    ]
+  }
+}
