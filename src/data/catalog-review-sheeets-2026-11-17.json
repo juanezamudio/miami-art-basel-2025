@@ -1,0 +1,1764 @@
+{
+  "batchId": "2026-11-17-sheeets-full-rescan",
+  "reviewedAt": "2026-11-17",
+  "discoveryUrl": "https://docs.google.com/spreadsheets/d/1xWmIHyEyOmPHfkYuZkucPRlLGWbb9CF6Oqvfl8FUV6k/htmlview#gid=1607985947",
+  "discoveryCheckedAt": "2026-11-17T18:36:42.590282+00:00",
+  "discoveryRecordCount": 66,
+  "previousDiscoveryRecordCount": 59,
+  "newDiscoveryRecordCount": 7,
+  "scope": "Complete rescan of the exact Art Basel Miami 2026 tab and comparison against the existing 151 listings. All 66 primary-table rows are reconciled; current program facts, access restrictions and public venue information are checked against organizers or host-authored ticketing. No promotional descriptions, images, hidden registration addresses or prior-year dates are copied.",
+  "approved": [
+    {
+      "eventId": 2026152,
+      "primarySources": [
+        "https://luma.com/evc3zc0k"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 15,
+          "eventUrls": [
+            "https://luma.com/evc3zc0k"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Host-authored Luma page and Event structured data confirm 2026 date and time, public venue information, ticket amount and approval requirements. Hidden addresses/coordinates are not imported. Ticket tiers and sold-out complimentary inventory are distinguished from paid access."
+    },
+    {
+      "eventId": 2026153,
+      "primarySources": [
+        "https://luma.com/c1tmy3xx"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 16,
+          "eventUrls": [
+            "https://luma.com/c1tmy3xx"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Host-authored Luma page and Event structured data confirm 2026 date and time, public venue information, ticket amount and approval requirements. Hidden addresses/coordinates are not imported. Ticket tiers and sold-out complimentary inventory are distinguished from paid access."
+    },
+    {
+      "eventId": 2026154,
+      "primarySources": [
+        "https://dice.fm/event/mxyw2l-basel-seth-troxler-30th-nov-jolene-sound-room-miami-miami-tickets"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 17,
+          "eventUrls": [
+            "https://dice.fm/event/mxyw2l-basel-seth-troxler-30th-nov-jolene-sound-room-miami-miami-tickets"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Promoter-authored DICE MusicEvent metadata and visible page agree on the 2026 opening-night date, venue, ticket price and age policy. Next-morning end is disclosed separately from the catalog date; rescheduling and venue access restrictions are retained."
+    },
+    {
+      "eventId": 2026155,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/117802/Coffee-at-the-Warehouse-The-Margulies-Collection-at-the-Warehouse"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 18,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/117802/Coffee-at-the-Warehouse-The-Margulies-Collection-at-the-Warehouse"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026156,
+      "primarySources": [
+        "https://dice.fm/event/g7oyrp-late-groove-basel-ale-de-tuglie-ambrxse-1st-dec-sable-miami-miami-tickets"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 19,
+          "eventUrls": [
+            "https://dice.fm/event/g7oyrp-late-groove-basel-ale-de-tuglie-ambrxse-1st-dec-sable-miami-miami-tickets"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Promoter-authored DICE MusicEvent metadata and visible page agree on the 2026 opening-night date, venue, ticket price and age policy. Next-morning end is disclosed separately from the catalog date; rescheduling and venue access restrictions are retained."
+    },
+    {
+      "eventId": 2026157,
+      "primarySources": [
+        "https://dice.fm/event/avk8vx-basel-paco-osuna-priku-lousy-lover-jonny-from-space-1st-dec-jolene-sound-room-miami-miami-tickets"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 20,
+          "eventUrls": [
+            "https://dice.fm/event/avk8vx-basel-paco-osuna-priku-lousy-lover-jonny-from-space-1st-dec-jolene-sound-room-miami-miami-tickets"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Promoter-authored DICE MusicEvent metadata and visible page agree on the 2026 opening-night date, venue, ticket price and age policy. Next-morning end is disclosed separately from the catalog date; rescheduling and venue access restrictions are retained."
+    },
+    {
+      "eventId": 2026158,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/123362/Anecdotes-50-Years-of-ArtNexus"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 22,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/123362/Anecdotes-50-Years-of-ArtNexus"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026159,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/119102/Art-Kids",
+        "https://d2u3kfwd92fzu7.cloudfront.net/ABMB26_Art_Kids_Pre_Registration_Form.pdf"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 23,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/119102/Art-Kids"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026160,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/123406/Conversations-Artist-one-on-one-Julie-Mehretu-Art-Basel-Awards"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 24,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/123406/Conversations-Artist-one-on-one-Julie-Mehretu-Art-Basel-Awards"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026161,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/123304/Conversations-Patronage-How-to-build-a-biennial"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 25,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/123304/Conversations-Patronage-How-to-build-a-biennial"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026162,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/123452/Conversations-Institutions-Do-museums-need-collections"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 26,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/123452/Conversations-Institutions-Do-museums-need-collections"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026163,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/123453/Conversations-Market-Can-pop-culture-save-the-art-market"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 27,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/123453/Conversations-Market-Can-pop-culture-save-the-art-market"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026164,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/123207/Conversations-Artists-John-Baldessari-Speed-access-and-no-more-boring-art"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 28,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/123207/Conversations-Artists-John-Baldessari-Speed-access-and-no-more-boring-art"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026165,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/120702/Guided-Tours-Art-Basel-Miami-Beach",
+        "https://www.artnexus.com/ABMBtours2026.html"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 29,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/120702/Guided-Tours-Art-Basel-Miami-Beach"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026166,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/123403/Conversations-Artist-one-on-one-Jeff-Koons-and-Tom-Eccles"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 31,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/123403/Conversations-Artist-one-on-one-Jeff-Koons-and-Tom-Eccles"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026167,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/123208/Conversations-Artist-one-on-one-Koo-Jeong-A-and-Emily-Watlington"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 32,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/123208/Conversations-Artist-one-on-one-Koo-Jeong-A-and-Emily-Watlington"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026168,
+      "primarySources": [
+        "https://dice.fm/event/693qgb-art-basel-t-puse-ursul-maccabi-house-oozzaa-2nd-dec-aire-miami-tickets"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 34,
+          "eventUrls": [
+            "https://dice.fm/event/693qgb-art-basel-t-puse-ursul-maccabi-house-oozzaa-2nd-dec-aire-miami-tickets"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Promoter-authored DICE MusicEvent metadata and visible page agree on the 2026 opening-night date, venue, ticket price and age policy. Next-morning end is disclosed separately from the catalog date; rescheduling and venue access restrictions are retained."
+    },
+    {
+      "eventId": 2026169,
+      "primarySources": [
+        "https://dice.fm/event/kxp88p-tehmplo-dixon-jimi-jules-2nd-dec-sable-miami-miami-tickets"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 35,
+          "eventUrls": [
+            "https://dice.fm/event/kxp88p-tehmplo-dixon-jimi-jules-2nd-dec-sable-miami-miami-tickets"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Promoter-authored DICE MusicEvent metadata and visible page agree on the 2026 opening-night date, venue, ticket price and age policy. Next-morning end is disclosed separately from the catalog date; rescheduling and venue access restrictions are retained."
+    },
+    {
+      "eventId": 2026170,
+      "primarySources": [
+        "https://dice.fm/event/l8moop-do-not-sit-on-art-week-deron-defected-armada-2nd-dec-do-not-sit-on-the-furniture-miami-beach-tickets"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 36,
+          "eventUrls": [
+            "https://dice.fm/event/l8moop-do-not-sit-on-art-week-deron-defected-armada-2nd-dec-do-not-sit-on-the-furniture-miami-beach-tickets"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Promoter-authored DICE MusicEvent metadata and visible page agree on the 2026 opening-night date, venue, ticket price and age policy. Next-morning end is disclosed separately from the catalog date; rescheduling and venue access restrictions are retained."
+    },
+    {
+      "eventId": 2026171,
+      "primarySources": [
+        "https://dice.fm/event/avk8av-basel-benny-benassi-italo-disco-set-2nd-dec-jolene-sound-room-miami-miami-tickets"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 37,
+          "eventUrls": [
+            "https://dice.fm/event/avk8av-basel-benny-benassi-italo-disco-set-2nd-dec-jolene-sound-room-miami-miami-tickets"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Promoter-authored DICE MusicEvent metadata and visible page agree on the 2026 opening-night date, venue, ticket price and age policy. Next-morning end is disclosed separately from the catalog date; rescheduling and venue access restrictions are retained."
+    },
+    {
+      "eventId": 2026172,
+      "primarySources": [
+        "https://dice.fm/event/nylv89-whomadewho-hybrid-dj-set-2nd-dec-queen-miami-beach-miami-beach-tickets"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 38,
+          "eventUrls": [
+            "https://dice.fm/event/nylv89-whomadewho-hybrid-dj-set-2nd-dec-queen-miami-beach-miami-beach-tickets"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Promoter-authored DICE MusicEvent metadata and visible page agree on the 2026 opening-night date, venue, ticket price and age policy. Next-morning end is disclosed separately from the catalog date; rescheduling and venue access restrictions are retained."
+    },
+    {
+      "eventId": 2026173,
+      "primarySources": [
+        "https://dice.fm/event/eonl2y-prisma-showcase-floyd-basel-2026-2nd-dec-floyd-miami-miami-tickets"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 39,
+          "eventUrls": [
+            "https://dice.fm/event/eonl2y-prisma-showcase-floyd-basel-2026-2nd-dec-floyd-miami-miami-tickets"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Promoter-authored DICE MusicEvent metadata and visible page agree on the 2026 opening-night date, venue, ticket price and age policy. Next-morning end is disclosed separately from the catalog date; rescheduling and venue access restrictions are retained."
+    },
+    {
+      "eventId": 2026174,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/123205/Ruinart-Commission-by-Tadashi-Kawamata"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 41,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/123205/Ruinart-Commission-by-Tadashi-Kawamata"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026175,
+      "primarySources": [
+        "https://insider.fitt.co/press-release/the-wellness-oasis-presented-by-google-health-returns-to-miami-art-week-at-inscope/",
+        "https://thewellnessoasis.splashthat.com/",
+        "https://inscopeart.com/content"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 43,
+          "eventUrls": [
+            "https://thewellnessoasis.splashthat.com/"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Organizer-issued November 11, 2026 press release explicitly confirms December 3–4, 8:30 AM–6 PM, InScope beach location and $125 daily ticket. Organizer Splash page separately publishes the Thursday/Friday program and sold-out links; older page sections were excluded."
+    },
+    {
+      "eventId": 2026176,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/123404/Conversations-Art-Sport-Are-today-s-stadiums-tomorrow-s-art-institutions"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 45,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/123404/Conversations-Art-Sport-Are-today-s-stadiums-tomorrow-s-art-institutions"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026177,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/123305/Conversations-Art-Sport-When-athletes-become-collectors"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 46,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/123305/Conversations-Art-Sport-When-athletes-become-collectors"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026178,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/123359/Conversations-Art-Sport-Claiming-the-ground-on-women-s-leadership"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 47,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/123359/Conversations-Art-Sport-Claiming-the-ground-on-women-s-leadership"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026179,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/123209/Conversations-Art-Sport-Portraiture-identity-and-legacy-at-the-NFL"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 48,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/123209/Conversations-Art-Sport-Portraiture-identity-and-legacy-at-the-NFL"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026180,
+      "primarySources": [
+        "https://luma.com/n9qmicn9"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 49,
+          "eventUrls": [
+            "https://luma.com/n9qmicn9"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Host-authored Luma page and Event structured data confirm 2026 date and time, public venue information, ticket amount and approval requirements. Hidden addresses/coordinates are not imported. Ticket tiers and sold-out complimentary inventory are distinguished from paid access."
+    },
+    {
+      "eventId": 2026181,
+      "primarySources": [
+        "https://luma.com/nvgnughq"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 50,
+          "eventUrls": [
+            "https://luma.com/nvgnughq"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Host-authored Luma page and Event structured data confirm 2026 date and time, public venue information, ticket amount and approval requirements. Hidden addresses/coordinates are not imported. Ticket tiers and sold-out complimentary inventory are distinguished from paid access."
+    },
+    {
+      "eventId": 2026182,
+      "primarySources": [
+        "https://dice.fm/event/wwkppx-hugel-presents-make-the-girls-dance-on-the-beach-3rd-dec-national-hotel-miami-tickets"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 51,
+          "eventUrls": [
+            "https://dice.fm/event/wwkppx-hugel-presents-make-the-girls-dance-on-the-beach-3rd-dec-national-hotel-miami-tickets"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Promoter-authored DICE MusicEvent metadata and visible page agree on the 2026 opening-night date, venue, ticket price and age policy. Next-morning end is disclosed separately from the catalog date; rescheduling and venue access restrictions are retained."
+    },
+    {
+      "eventId": 2026183,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/123454/Conversations-Art-Sport-Body-image-and-endurance"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 52,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/123454/Conversations-Art-Sport-Body-image-and-endurance"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026184,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/116703/Artists-Walkthrough-New-World-School-of-the-Arts"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 53,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/116703/Artists-Walkthrough-New-World-School-of-the-Arts"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026185,
+      "primarySources": [
+        "https://ra.co/events/2513593"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 54,
+          "eventUrls": [
+            "https://ra.co/events/2513593"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Promoter-authored Resident Advisor listing confirms Dec 3–6, 2026, The Pickle’s 1395 NW 57th Avenue address, separate day/pass ticketing and all four operating windows. Saturday-to-Monday continuity and Sunday entry restrictions are retained; unverified spreadsheet price is not imported."
+    },
+    {
+      "eventId": 2026186,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/117303/Public-Art-Reveal-Art-in-Public-Places",
+        "https://www.eventbrite.com/e/public-art-reveal-grove-central-tickets-1998560164251?aff=oddtdtcreator&keep_tld=true"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 56,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/117303/Public-Art-Reveal-Art-in-Public-Places"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026187,
+      "primarySources": [
+        "https://luma.com/m1vpvbnt"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 57,
+          "eventUrls": [
+            "https://luma.com/m1vpvbnt"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Host-authored Luma page and Event structured data confirm 2026 date and time, public venue information, ticket amount and approval requirements. Hidden addresses/coordinates are not imported. Ticket tiers and sold-out complimentary inventory are distinguished from paid access."
+    },
+    {
+      "eventId": 2026188,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/123456/Conversations-Zero-10-On-the-experiential-turn"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 58,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/123456/Conversations-Zero-10-On-the-experiential-turn"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026189,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/123211/Conversations-Zero-10-New-gods-Tech-and-spirituality"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 59,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/123211/Conversations-Zero-10-New-gods-Tech-and-spirituality"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026190,
+      "primarySources": [
+        "https://luma.com/6sw8yexm"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 60,
+          "eventUrls": [
+            "https://luma.com/6sw8yexm"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Host-authored Luma page and Event structured data confirm 2026 date and time, public venue information, ticket amount and approval requirements. Hidden addresses/coordinates are not imported. Ticket tiers and sold-out complimentary inventory are distinguished from paid access."
+    },
+    {
+      "eventId": 2026191,
+      "primarySources": [
+        "https://luma.com/ekyem6hh"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 61,
+          "eventUrls": [
+            "https://luma.com/ekyem6hh"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Host-authored Luma page and Event structured data confirm 2026 date and time, public venue information, ticket amount and approval requirements. Hidden addresses/coordinates are not imported. Ticket tiers and sold-out complimentary inventory are distinguished from paid access."
+    },
+    {
+      "eventId": 2026192,
+      "primarySources": [
+        "https://luma.com/071ljy0n"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 62,
+          "eventUrls": [
+            "https://luma.com/071ljy0n"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Host-authored Luma page and Event structured data confirm 2026 date and time, public venue information, ticket amount and approval requirements. Hidden addresses/coordinates are not imported. Ticket tiers and sold-out complimentary inventory are distinguished from paid access."
+    },
+    {
+      "eventId": 2026193,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/117652/Curator-Brunch-Girls-Club",
+        "https://www.eventbrite.com/e/curator-brunch-container-for-the-spirit-tickets-1998486966314"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 63,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/117652/Curator-Brunch-Girls-Club"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026194,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/117852/Bike-Art-Tour-The-Underline"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 64,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/117852/Bike-Art-Tour-The-Underline"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026195,
+      "primarySources": [
+        "https://luma.com/wmmlzm46"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 65,
+          "eventUrls": [
+            "https://luma.com/wmmlzm46"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Host-authored Luma page and Event structured data confirm 2026 date and time, public venue information, ticket amount and approval requirements. Hidden addresses/coordinates are not imported. Ticket tiers and sold-out complimentary inventory are distinguished from paid access."
+    },
+    {
+      "eventId": 2026196,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/123212/Conversations-Artists-Basquiat-Then-and-now-from-NYC-to-Miami"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 66,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/123212/Conversations-Artists-Basquiat-Then-and-now-from-NYC-to-Miami"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026197,
+      "primarySources": [
+        "https://luma.com/nbuuxkjx"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 67,
+          "eventUrls": [
+            "https://luma.com/nbuuxkjx"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Host-authored Luma page and Event structured data confirm 2026 date and time, public venue information, ticket amount and approval requirements. Hidden addresses/coordinates are not imported. Ticket tiers and sold-out complimentary inventory are distinguished from paid access."
+    },
+    {
+      "eventId": 2026198,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/123457/Conversations-Moving-Image-Can-we-trust-what-we-see-Three-short-films"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 68,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/123457/Conversations-Moving-Image-Can-we-trust-what-we-see-Three-short-films"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026199,
+      "primarySources": [
+        "https://luma.com/vvaysxts"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 69,
+          "eventUrls": [
+            "https://luma.com/vvaysxts"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Host-authored Luma page and Event structured data confirm 2026 date and time, public venue information, ticket amount and approval requirements. Hidden addresses/coordinates are not imported. Ticket tiers and sold-out complimentary inventory are distinguished from paid access."
+    },
+    {
+      "eventId": 2026200,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/123407/Conversations-Moving-Image-Julia-Weist-Questioning-2026"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 70,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/123407/Conversations-Moving-Image-Julia-Weist-Questioning-2026"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026201,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/116702/Meet-the-Artist-Party-Locust-Projects"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 71,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/116702/Meet-the-Artist-Party-Locust-Projects"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026202,
+      "primarySources": [
+        "https://shotgun.live/en/events/patriarchy-deflowered-florida-tour-ft-mvtant-angel-husk",
+        "https://bnds.us/w839eo"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 72,
+          "eventUrls": [
+            "https://shotgun.live/en/events/patriarchy-deflowered-florida-tour-ft-mvtant-angel-husk"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Promoter-authored Shotgun listing confirms Saturday December 5, 9 PM–5 AM, Las Rosas address and 21+ requirement; the artist’s tour listing confirms 2026. No unverified sheet price is published."
+    },
+    {
+      "eventId": 2026203,
+      "primarySources": [
+        "https://luma.com/2yv42alm"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 73,
+          "eventUrls": [
+            "https://luma.com/2yv42alm"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Host-authored Luma page and Event structured data confirm 2026 date and time, public venue information, ticket amount and approval requirements. Hidden addresses/coordinates are not imported. Ticket tiers and sold-out complimentary inventory are distinguished from paid access."
+    },
+    {
+      "eventId": 2026204,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/117752/Bubbles-Brunch-Lowe-Art-Museum",
+        "https://theloweartmuseum.ticketing.veevartapp.com/tickets/view/list/public-program-art-week-bubbles-and-brunch-featuring-vanessa-german"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 74,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/117752/Bubbles-Brunch-Lowe-Art-Museum"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026205,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/123052/Art-Performance-Coral-Gables-Museum"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 75,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/123052/Art-Performance-Coral-Gables-Museum"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026206,
+      "primarySources": [
+        "https://luma.com/416wy2uh"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 77,
+          "eventUrls": [
+            "https://luma.com/416wy2uh"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Host-authored Luma page and Event structured data confirm 2026 date and time, public venue information, ticket amount and approval requirements. Hidden addresses/coordinates are not imported. Ticket tiers and sold-out complimentary inventory are distinguished from paid access."
+    },
+    {
+      "eventId": 2026207,
+      "primarySources": [
+        "https://luma.com/5uhjh6pt"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 78,
+          "eventUrls": [
+            "https://luma.com/5uhjh6pt"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Host-authored Luma page and Event structured data confirm 2026 date and time, public venue information, ticket amount and approval requirements. Hidden addresses/coordinates are not imported. Ticket tiers and sold-out complimentary inventory are distinguished from paid access."
+    },
+    {
+      "eventId": 2026208,
+      "primarySources": [
+        "https://www.artbasel.com/events/detail/117154/Guided-Tour-Hollywood-Art-and-Culture-Center"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 79,
+          "eventUrls": [
+            "https://www.artbasel.com/events/detail/117154/Guided-Tour-Hollywood-Art-and-Culture-Center"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "Official Art Basel event page publishes current 2026 dates, Public access, named venue and program information. Timed sessions, exhibition opening hours and admission statements were reviewed; no date, free admission or all-day availability is inferred from the sheet."
+    },
+    {
+      "eventId": 2026209,
+      "primarySources": [
+        "https://elrow.com/es/events/1322/miami-12062026",
+        "https://link.dice.fm/Pb2296138825",
+        "https://dice.fm/event/q2d3qo-factory-basel-2026-sunday-pass-6th-dec-factory-town-miami-tickets"
+      ],
+      "discoveryReferences": [
+        {
+          "sourceId": "sheeets-2026",
+          "sourceRow": 80,
+          "eventUrls": [
+            "https://elrow.com/es/events/1322/miami-12062026"
+          ]
+        }
+      ],
+      "decision": "approved",
+      "evidence": "elrow organizer confirms Sunday Dec 6, 2026 at Factory Town and directly links to the Sunday Pass. DICE metadata confirms 10 PM–6 AM next day, $84.99 starting price, 18+ GA and all-stage Sunday access. Spreadsheet Free and 7 AM close are not copied."
+    }
+  ],
+  "updated": [],
+  "held": [],
+  "discoveryReconciliation": [
+    {
+      "sourceRow": 15,
+      "title": "The Art of Natural Design",
+      "eventUrls": [
+        "https://luma.com/evc3zc0k"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026152
+      ]
+    },
+    {
+      "sourceRow": 16,
+      "title": "NMG Book Club - November Edition - Women Only",
+      "eventUrls": [
+        "https://luma.com/c1tmy3xx"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026153
+      ]
+    },
+    {
+      "sourceRow": 17,
+      "title": "Basel: Seth Troxler",
+      "eventUrls": [
+        "https://dice.fm/event/mxyw2l-basel-seth-troxler-30th-nov-jolene-sound-room-miami-miami-tickets"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026154
+      ]
+    },
+    {
+      "sourceRow": 18,
+      "title": "Coffee at the Warehouse | The Margulies Collection at the Warehouse",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/117802/Coffee-at-the-Warehouse-The-Margulies-Collection-at-the-Warehouse"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026155
+      ]
+    },
+    {
+      "sourceRow": 19,
+      "title": "Late Groove Basel: Ale De Tuglie + AMBRXSE",
+      "eventUrls": [
+        "https://dice.fm/event/g7oyrp-late-groove-basel-ale-de-tuglie-ambrxse-1st-dec-sable-miami-miami-tickets"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026156
+      ]
+    },
+    {
+      "sourceRow": 20,
+      "title": "Basel: Paco Osuna, Priku, Lousy Lover & Jonny From Space",
+      "eventUrls": [
+        "https://dice.fm/event/avk8vx-basel-paco-osuna-priku-lousy-lover-jonny-from-space-1st-dec-jolene-sound-room-miami-miami-tickets"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026157
+      ]
+    },
+    {
+      "sourceRow": 21,
+      "title": "Prophecy (Space Basel 2026)",
+      "eventUrls": [
+        "https://dice.fm/event/ryoxbw-prophecy-space-basel-2026-1st-dec-club-space-miami-miami-tickets"
+      ],
+      "decision": "represented",
+      "eventIds": [
+        2026097
+      ]
+    },
+    {
+      "sourceRow": 22,
+      "title": "Anecdotes: 50 Years of ArtNexus",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/123362/Anecdotes-50-Years-of-ArtNexus"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026158
+      ]
+    },
+    {
+      "sourceRow": 23,
+      "title": "Art Kids",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/119102/Art-Kids"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026159
+      ]
+    },
+    {
+      "sourceRow": 24,
+      "title": "Conversations | Artist one-on-one | Julie Mehretu | Art Basel Awards",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/123406/Conversations-Artist-one-on-one-Julie-Mehretu-Art-Basel-Awards"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026160
+      ]
+    },
+    {
+      "sourceRow": 25,
+      "title": "Conversations | Patronage | How to build a biennial?",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/123304/Conversations-Patronage-How-to-build-a-biennial"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026161
+      ]
+    },
+    {
+      "sourceRow": 26,
+      "title": "Conversations | Institutions | Do museums need collections?",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/123452/Conversations-Institutions-Do-museums-need-collections"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026162
+      ]
+    },
+    {
+      "sourceRow": 27,
+      "title": "Conversations | Market | Can pop culture save the art market?",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/123453/Conversations-Market-Can-pop-culture-save-the-art-market"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026163
+      ]
+    },
+    {
+      "sourceRow": 28,
+      "title": "Conversations | Artists | John Baldessari: Speed, access, and no more boring art",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/123207/Conversations-Artists-John-Baldessari-Speed-access-and-no-more-boring-art"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026164
+      ]
+    },
+    {
+      "sourceRow": 29,
+      "title": "Guided Tours | Art Basel Miami Beach",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/120702/Guided-Tours-Art-Basel-Miami-Beach"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026165
+      ]
+    },
+    {
+      "sourceRow": 30,
+      "title": "BitBasel Miami Art Week 2026: The Next Renaissance",
+      "eventUrls": [
+        "https://luma.com/event/evt-Ux4iDupR9suVYCA"
+      ],
+      "decision": "represented",
+      "eventIds": [
+        2026004,
+        2026005,
+        2026006,
+        2026007,
+        2026008
+      ]
+    },
+    {
+      "sourceRow": 31,
+      "title": "Conversations | Artist one-on-one | Jeff Koons and Tom Eccles",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/123403/Conversations-Artist-one-on-one-Jeff-Koons-and-Tom-Eccles"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026166
+      ]
+    },
+    {
+      "sourceRow": 32,
+      "title": "Conversations | Artist one-on-one | Koo Jeong A and Emily Watlington",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/123208/Conversations-Artist-one-on-one-Koo-Jeong-A-and-Emily-Watlington"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026167
+      ]
+    },
+    {
+      "sourceRow": 33,
+      "title": "Guy Gerber Rumors | Miami Art Week 2026",
+      "eventUrls": [
+        "https://dice.fm/event/53mmy8-guy-gerber-rumors-miami-art-week-2026-2nd-dec-little-river-studios-miami-tickets"
+      ],
+      "decision": "represented",
+      "eventIds": [
+        2026091
+      ]
+    },
+    {
+      "sourceRow": 34,
+      "title": "Art Basel: T-Puse (Ursul, Maccabi House), Oozzaa",
+      "eventUrls": [
+        "https://dice.fm/event/693qgb-art-basel-t-puse-ursul-maccabi-house-oozzaa-2nd-dec-aire-miami-tickets"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026168
+      ]
+    },
+    {
+      "sourceRow": 35,
+      "title": "Tehmplo: Dixon + Jimi Jules",
+      "eventUrls": [
+        "https://dice.fm/event/kxp88p-tehmplo-dixon-jimi-jules-2nd-dec-sable-miami-miami-tickets"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026169
+      ]
+    },
+    {
+      "sourceRow": 36,
+      "title": "Do Not Sit on Art Week : Deron [Defected / Armada]",
+      "eventUrls": [
+        "https://dice.fm/event/l8moop-do-not-sit-on-art-week-deron-defected-armada-2nd-dec-do-not-sit-on-the-furniture-miami-beach-tickets"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026170
+      ]
+    },
+    {
+      "sourceRow": 37,
+      "title": "Basel: Benny Benassi (Italo Disco Set)",
+      "eventUrls": [
+        "https://dice.fm/event/avk8av-basel-benny-benassi-italo-disco-set-2nd-dec-jolene-sound-room-miami-miami-tickets"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026171
+      ]
+    },
+    {
+      "sourceRow": 38,
+      "title": "WhoMadeWho ( Hybrid DJ Set )",
+      "eventUrls": [
+        "https://dice.fm/event/nylv89-whomadewho-hybrid-dj-set-2nd-dec-queen-miami-beach-miami-beach-tickets"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026172
+      ]
+    },
+    {
+      "sourceRow": 39,
+      "title": "PRISMA Showcase (Floyd Basel 2026)",
+      "eventUrls": [
+        "https://dice.fm/event/eonl2y-prisma-showcase-floyd-basel-2026-2nd-dec-floyd-miami-miami-tickets"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026173
+      ]
+    },
+    {
+      "sourceRow": 40,
+      "title": "Beltools (Space Basel 2026)",
+      "eventUrls": [
+        "https://dice.fm/event/k62qdq-beltools-space-basel-2026-2nd-dec-club-space-miami-miami-tickets"
+      ],
+      "decision": "represented",
+      "eventIds": [
+        2026095
+      ]
+    },
+    {
+      "sourceRow": 41,
+      "title": "Ruinart Commission by Tadashi Kawamata",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/123205/Ruinart-Commission-by-Tadashi-Kawamata"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026174
+      ]
+    },
+    {
+      "sourceRow": 42,
+      "title": "Baker’s Brunch: Open Studios and Cafecito | Bakehouse Art Complex",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/117304/Baker-s-Brunch-Open-Studios-and-Cafecito-Bakehouse-Art-Complex"
+      ],
+      "decision": "represented",
+      "eventIds": [
+        2026074
+      ]
+    },
+    {
+      "sourceRow": 43,
+      "title": "The Wellness Oasis",
+      "eventUrls": [
+        "https://thewellnessoasis.splashthat.com/"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026175
+      ]
+    },
+    {
+      "sourceRow": 44,
+      "title": "Brunch and Open Studios | Oolite Arts",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/116454/Brunch-and-Open-Studios-Oolite-Arts"
+      ],
+      "decision": "represented",
+      "eventIds": [
+        2026010
+      ]
+    },
+    {
+      "sourceRow": 45,
+      "title": "Conversations | Art & Sport | Are today’s stadiums tomorrow’s art institutions?",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/123404/Conversations-Art-Sport-Are-today-s-stadiums-tomorrow-s-art-institutions"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026176
+      ]
+    },
+    {
+      "sourceRow": 46,
+      "title": "Conversations | Art & Sport | When athletes become collectors",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/123305/Conversations-Art-Sport-When-athletes-become-collectors"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026177
+      ]
+    },
+    {
+      "sourceRow": 47,
+      "title": "Conversations | Art & Sport | Claiming the ground: on women’s leadership",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/123359/Conversations-Art-Sport-Claiming-the-ground-on-women-s-leadership"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026178
+      ]
+    },
+    {
+      "sourceRow": 48,
+      "title": "Conversations | Art & Sport | Portraiture, identity, and legacy at the NFL",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/123209/Conversations-Art-Sport-Portraiture-identity-and-legacy-at-the-NFL"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026179
+      ]
+    },
+    {
+      "sourceRow": 49,
+      "title": "AR Art Walk at Bayfront Park | FRONTERA Miami Art Week",
+      "eventUrls": [
+        "https://luma.com/n9qmicn9"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026180
+      ]
+    },
+    {
+      "sourceRow": 50,
+      "title": "Frontier House I Day Party I Art Basel Miami Beach",
+      "eventUrls": [
+        "https://luma.com/nvgnughq"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026181
+      ]
+    },
+    {
+      "sourceRow": 51,
+      "title": "Hugel Presents Make The Girls Dance - On The Beach",
+      "eventUrls": [
+        "https://dice.fm/event/wwkppx-hugel-presents-make-the-girls-dance-on-the-beach-3rd-dec-national-hotel-miami-tickets"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026182
+      ]
+    },
+    {
+      "sourceRow": 52,
+      "title": "Conversations | Art & Sport | Body, image, and endurance",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/123454/Conversations-Art-Sport-Body-image-and-endurance"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026183
+      ]
+    },
+    {
+      "sourceRow": 53,
+      "title": "Artists' Walkthrough | New World School of the Arts",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/116703/Artists-Walkthrough-New-World-School-of-the-Arts"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026184
+      ]
+    },
+    {
+      "sourceRow": 54,
+      "title": "Where Are My Keys — Miami Basel (opens)",
+      "eventUrls": [
+        "https://ra.co/events/2513593"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026185
+      ]
+    },
+    {
+      "sourceRow": 55,
+      "title": "Space Basel: Paradise",
+      "eventUrls": [
+        "https://dice.fm/event/53kgqk-paradise-space-basel-2026-3rd-dec-club-space-miami-miami-tickets"
+      ],
+      "decision": "represented",
+      "eventIds": [
+        2026089
+      ]
+    },
+    {
+      "sourceRow": 56,
+      "title": "Public Art Reveal | Art in Public Places",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/117303/Public-Art-Reveal-Art-in-Public-Places"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026186
+      ]
+    },
+    {
+      "sourceRow": 57,
+      "title": "ElevenLabs Creative Community Mixer | Art Basel",
+      "eventUrls": [
+        "https://luma.com/m1vpvbnt"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026187
+      ]
+    },
+    {
+      "sourceRow": 58,
+      "title": "Conversations | Zero 10 | On the experiential turn",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/123456/Conversations-Zero-10-On-the-experiential-turn"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026188
+      ]
+    },
+    {
+      "sourceRow": 59,
+      "title": "Conversations | Zero 10 | New gods: Tech and spirituality",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/123211/Conversations-Zero-10-New-gods-Tech-and-spirituality"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026189
+      ]
+    },
+    {
+      "sourceRow": 60,
+      "title": "Art & AI - Founder & Investor Miami Art Week Mixer",
+      "eventUrls": [
+        "https://luma.com/6sw8yexm"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026190
+      ]
+    },
+    {
+      "sourceRow": 61,
+      "title": "303 Studio Special Reception Presented by One Love Art",
+      "eventUrls": [
+        "https://luma.com/ekyem6hh"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026191
+      ]
+    },
+    {
+      "sourceRow": 62,
+      "title": "The Ethereal Runway Show + Live Music & Art",
+      "eventUrls": [
+        "https://luma.com/071ljy0n"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026192
+      ]
+    },
+    {
+      "sourceRow": 63,
+      "title": "Curator Brunch | Girls' Club",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/117652/Curator-Brunch-Girls-Club"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026193
+      ]
+    },
+    {
+      "sourceRow": 64,
+      "title": "Bike Art Tour | The Underline",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/117852/Bike-Art-Tour-The-Underline"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026194
+      ]
+    },
+    {
+      "sourceRow": 65,
+      "title": "Pilates & Matcha: with The Ethereal x JETSET Pilates",
+      "eventUrls": [
+        "https://luma.com/wmmlzm46"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026195
+      ]
+    },
+    {
+      "sourceRow": 66,
+      "title": "Conversations | Artists | Basquiat: Then and now, from NYC to Miami",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/123212/Conversations-Artists-Basquiat-Then-and-now-from-NYC-to-Miami"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026196
+      ]
+    },
+    {
+      "sourceRow": 67,
+      "title": "The Fourth Space | Miami Art Week 2026",
+      "eventUrls": [
+        "https://luma.com/nbuuxkjx"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026197
+      ]
+    },
+    {
+      "sourceRow": 68,
+      "title": "Conversations | Moving Image | Can we trust what we see? Three short films",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/123457/Conversations-Moving-Image-Can-we-trust-what-we-see-Three-short-films"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026198
+      ]
+    },
+    {
+      "sourceRow": 69,
+      "title": "Art Basel Tennis Event - The Art Of Movement",
+      "eventUrls": [
+        "https://luma.com/vvaysxts"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026199
+      ]
+    },
+    {
+      "sourceRow": 70,
+      "title": "Conversations | Moving Image | Julia Weist, Questioning, 2026",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/123407/Conversations-Moving-Image-Julia-Weist-Questioning-2026"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026200
+      ]
+    },
+    {
+      "sourceRow": 71,
+      "title": "Meet the Artist Party | Locust Projects",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/116702/Meet-the-Artist-Party-Locust-Projects"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026201
+      ]
+    },
+    {
+      "sourceRow": 72,
+      "title": "PATRIARCHY + MVTANT @Las Rosas",
+      "eventUrls": [
+        "https://shotgun.live/en/events/patriarchy-deflowered-florida-tour-ft-mvtant-angel-husk"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026202
+      ]
+    },
+    {
+      "sourceRow": 73,
+      "title": "Citizen's Lounge | Miami Art Week 2026",
+      "eventUrls": [
+        "https://luma.com/2yv42alm"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026203
+      ]
+    },
+    {
+      "sourceRow": 74,
+      "title": "Bubbles & Brunch | Lowe Art Museum",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/117752/Bubbles-Brunch-Lowe-Art-Museum"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026204
+      ]
+    },
+    {
+      "sourceRow": 75,
+      "title": "Art Performance | Coral Gables Museum",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/123052/Art-Performance-Coral-Gables-Museum"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026205
+      ]
+    },
+    {
+      "sourceRow": 76,
+      "title": "Breakfast in the Park | Patricia & Phillip Frost Art Museum FIU",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/118202/Breakfast-in-the-Park-Patricia-Phillip-Frost-Art-Museum-FIU"
+      ],
+      "decision": "represented",
+      "eventIds": [
+        2026075
+      ]
+    },
+    {
+      "sourceRow": 77,
+      "title": "Art & Tech @ The House Vol 2",
+      "eventUrls": [
+        "https://luma.com/416wy2uh"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026206
+      ]
+    },
+    {
+      "sourceRow": 78,
+      "title": "The Art of Wellness | Recovery, Sleep, Longevity & Peptides",
+      "eventUrls": [
+        "https://luma.com/5uhjh6pt"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026207
+      ]
+    },
+    {
+      "sourceRow": 79,
+      "title": "Guided Tour | Hollywood Art and Culture Center",
+      "eventUrls": [
+        "https://www.artbasel.com/events/detail/117154/Guided-Tour-Hollywood-Art-and-Culture-Center"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026208
+      ]
+    },
+    {
+      "sourceRow": 80,
+      "title": "elrow Miami — Factory Basel Closing Party",
+      "eventUrls": [
+        "https://elrow.com/es/events/1322/miami-12062026"
+      ],
+      "decision": "added",
+      "eventIds": [
+        2026209
+      ]
+    }
+  ],
+  "supplementarySectionReview": {
+    "scope": "Contribution/header/link areas through row 160, additional columns M:BC through row 130, and event-title/link columns E and I through metadata row 2618. Native connector returned no further event titles or URLs below row 160.",
+    "excluded": [
+      {
+        "sourceRow": 100,
+        "title": "Panel Talk: Tokenization in Action — Exploring Real-World Applications",
+        "eventUrl": "https://www.eventbrite.com/e/panel-talk-tokenization-in-action-exploring-real-world-applications-tickets-1280039335109",
+        "reason": "Only unrelated April 4 lead below the schedule, outside the 2026 Miami Art Week window; not imported."
+      }
+    ]
+  },
+  "locationVerification": {
+    "method": "Coordinates from current organizer-published venues and public ticket pages, reviewed against names/addresses. Gated Luma locations are omitted even when coordinates exist in embedded data. Existing named-neighborhood fallbacks remain approximate.",
+    "venueCoordinates": 50,
+    "hiddenVenueEventIds": [
+      2026152,
+      2026153,
+      2026181,
+      2026187,
+      2026206
+    ]
+  }
+}

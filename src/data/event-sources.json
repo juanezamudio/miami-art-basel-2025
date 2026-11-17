@@ -27,8 +27,8 @@
       "format": "sheeets",
       "notes": [
         "Main header is row 14, not row 1; ignore template counters and ads.",
-        "Contains an Event Canceled row; do not publish it.",
-        "Free label for the main BitBasel event conflicts with organizer ticketing.",
+        "A canceled row was observed in the initial snapshot; honor per-row cancellations and do not infer cancellation from a missing discovery row.",
+        "Verify admission with organizers: historical Free labels for BitBasel, Margulies and elrow conflict with actual ticket requirements.",
         "Later contribution/other-event sections require separate review."
       ]
     },
