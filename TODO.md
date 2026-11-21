@@ -1,6 +1,6 @@
 # Basel.ai 2026 launch checklist
 
-Updated November 17, 2026. Prioritize verified event coverage, repeatable source review, and accurate times/access before further visual work. The app catalog currently has 209 reviewed listings, with 59 explicitly free options. The [latest spreadsheet rescan](src/data/catalog-review-sheeets-2026-11-17.json) adds 58 verified listings and reconciles all 66 current primary-table rows; see the [review notes](docs/sheeets-rescan-2026-11-17.md). Discovery snapshots are not published listings.
+Updated November 20, 2026. Prioritize verified event coverage, repeatable source review, and accurate times/access before further visual work. The app catalog currently has 454 reviewed listings, with 120 explicitly free options. The [Sumwhere scan](src/data/catalog-review-sumwhere-2026-11-20.json) adds 245 listings, reconciles all 512 feed records and retains 124 held leads; see the [scan notes](docs/sumwhere-scan-2026-11-20.md). The prior spreadsheet review remains in [its ledger](src/data/catalog-review-sheeets-2026-11-17.json). Discovery snapshots are not published listings.
 
 ## Current production priorities
 
@@ -52,6 +52,8 @@ Updated November 17, 2026. Prioritize verified event coverage, repeatable source
 - [x] Replace the retired Gemini model setting, constrain planner results to eligible catalog events, and reject malformed requests.
 - [x] Update Next.js/React within their existing major versions and isolate browser-only wallet controls from server rendering.
 - [x] Pass the initial production build, TypeScript checks, ten catalog regression tests, and local page/API smoke checks. Real-browser and live external integration checks remain above.
+
+- [x] **DATA-01E — Scan Sumwhere’s complete 2026 feed.** Captured 512 unique public records across all 13 API pages, added 245 organizer/host-program-checked listings, matched 143 existing records and held 124 leads. Calendar, access, private-location and duplicate corrections are recorded in [the review](docs/sumwhere-scan-2026-11-20.md). Manual monitoring: `npm run sources:check -- --source=sumwhere-2026`; it never publishes automatically.
 
 ## Working commands
 

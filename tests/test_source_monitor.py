@@ -1,5 +1,8 @@
 import importlib.util
 import unittest
+import json
+from unittest.mock import patch
+from urllib.parse import parse_qs, urlsplit
 from pathlib import Path
 
 spec = importlib.util.spec_from_file_location('source_monitor', Path(__file__).resolve().parents[1] / 'scripts/lib/source_monitor.py')
@@ -77,6 +80,51 @@ class SourceMonitorTests(unittest.TestCase):
         self.assertEqual(monitor.candidate_date('Wed, December 2', 2026), ('2026-12-02', []))
         self.assertIsNone(monitor.candidate_date('December 32', 2026)[0])
         self.assertIn('historical_year', monitor.candidate_date('December 4, 2025', 2026)[1])
+
+    def test_sumwhere_reads_every_public_page_and_keeps_discovery_separate(self):
+        source = {'kind': 'public-event-api', 'publicApiUrl': 'https://example.com/public/events'}
+        first = {'id': 'one', 'name': 'Opening', 'date': '2026-12-04', 'rsvpUrl': 'https://example.org/rsvp',
+                 'description': 'Do not republish editorial copy', 'logoUrl': 'https://example.com/image',
+                 'location': {'lat': 25.8, 'lng': -80.1}, 'isFree': True, 'invitationOnly': True,
+                 'status': 'approved', 'provenance': {'sourceUrl': 'https://organizer.example/program'}}
+        second = {'id': 'two', 'name': 'Date pending', 'date': None, 'status': 'canceled', 'needsLocation': True}
+        pages = [{'items': [first], 'total': 2, 'nextCursor': 'opaque-page-2'}, {'items': [second], 'total': 2, 'nextCursor': None}]
+        with patch.object(monitor, 'read_url', side_effect=[json.dumps(p) for p in pages]) as read, patch.object(monitor.time, 'sleep'):
+            records = monitor.fetch_source(source, 2026)
+        self.assertEqual([r['upstreamId'] for r in records], ['one', 'two'])
+        self.assertEqual(parse_qs(urlsplit(read.call_args_list[1].args[0]).query)['cursor'], ['opaque-page-2'])
+        self.assertEqual(records[0]['eventUrls'], ['https://example.org/rsvp', 'https://organizer.example/program'])
+        self.assertIn('organizer_verification_required', records[0]['reviewFlags'])
+        self.assertIn('invitation_required_at_source', records[0]['reviewFlags'])
+        self.assertIn('date_missing', records[1]['reviewFlags'])
+        self.assertIn('canceled_at_source', records[1]['reviewFlags'])
+        for key in ['description', 'logoUrl', 'location', 'lastVerifiedAt']:
+            self.assertNotIn(key, records[0])
+
+    def test_sumwhere_rejects_truncated_changed_and_repeated_pages(self):
+        source = {'publicApiUrl': 'https://example.com/public/events'}
+        event = {'id': 'one', 'name': 'Opening', 'date': '2026-12-04'}
+        first = {'items': [event], 'total': 3, 'nextCursor': 'cursor'}
+        cases = [
+            [{'items': [event], 'total': 2, 'nextCursor': None}],
+            [first, {'items': [event], 'total': 4, 'nextCursor': None}],
+            [first, {'items': [event], 'total': 3, 'nextCursor': 'cursor'}],
+            [{'items': [], 'total': 1001, 'nextCursor': None}],
+            [first, {'items': [], 'total': 3, 'nextCursor': None}],
+        ]
+        for pages in cases:
+            with self.subTest(pages=pages), patch.object(monitor, 'read_url', side_effect=[json.dumps(p) for p in pages]), patch.object(monitor.time, 'sleep'):
+                with self.assertRaises(ValueError):
+                    monitor.fetch_sumwhere(source, 2026)
+
+    def test_sumwhere_rejects_duplicate_ids_and_invalid_dates_without_guessing_years(self):
+        event = {'id': 'same', 'name': 'Opening', 'date': '2026-12-04'}
+        for rows in [[event, event], [{**event, 'date': '2026-02-30'}], [{**event, 'date': 'not a date'}]]:
+            with self.subTest(rows=rows), self.assertRaises(ValueError):
+                monitor.sumwhere_records(rows, 2026)
+        old = monitor.sumwhere_records([{**event, 'date': '2025-12-04'}], 2026)[0]
+        self.assertIsNone(old['candidateStartDate'])
+        self.assertIn('historical_year', old['reviewFlags'])
 
 
 if __name__ == '__main__':

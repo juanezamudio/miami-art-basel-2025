@@ -3,6 +3,7 @@ import base64
 import hashlib
 import json
 import re
+import time
 from datetime import date
 from html.parser import HTMLParser
 from urllib.parse import parse_qs, urlencode, urljoin, urlparse, urlunparse, parse_qsl
@@ -173,10 +174,94 @@ def approved_feed_records(rows):
     return records
 
 
+def sumwhere_records(rows, year):
+    """Retain public factual leads; upstream approval is not editorial approval."""
+    records = []
+    seen = set()
+    for row in rows:
+        if not isinstance(row, dict) or not isinstance(row.get('id'), str) or not row['id'] or not isinstance(row.get('name'), str) or not row['name'].strip():
+            raise ValueError('Unexpected Sumwhere event schema; retain the previous snapshot')
+        if row['id'] in seen:
+            raise ValueError('Duplicate Sumwhere event identity; pagination needs review')
+        seen.add(row['id'])
+        flags = ['organizer_verification_required']
+        day = row.get('date')
+        if day is not None:
+            if not isinstance(day, str) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', day):
+                raise ValueError('Unexpected Sumwhere event date')
+            parsed = date.fromisoformat(day)
+            if parsed.year != year:
+                flags.append('historical_year' if parsed.year < year else 'different_year')
+                day = None
+        else:
+            flags.append('date_missing')
+        if row.get('invitationOnly'):
+            flags.append('invitation_required_at_source')
+        if row.get('needsLocation'):
+            flags.append('location_unconfirmed_at_source')
+        if re.search(r'\bcancell?ed\b', str(row.get('status', '')), re.I):
+            flags.append('canceled_at_source')
+        provenance = row.get('provenance') or {}
+        if not isinstance(provenance, dict):
+            raise ValueError('Unexpected Sumwhere provenance')
+        urls = [row.get('rsvpUrl'), provenance.get('sourceUrl')]
+        records.append({
+            'upstreamId': row['id'], 'title': row['name'],
+            'candidateStartDate': day, 'endDateText': row.get('endDate'),
+            'startTimeText': row.get('startTime'), 'endTimeText': row.get('endTime'),
+            'organizer': row.get('host'), 'venue': row.get('venue'),
+            'addressText': row.get('address'), 'timeZoneText': row.get('timezone'),
+            'categoryText': ', '.join(item.get('label', '') for item in row.get('types', []) if isinstance(item, dict)),
+            'upstreamFreeLabel': row.get('isFree'),
+            'registrationRequired': row.get('registrationRequired'),
+            'invitationOnly': row.get('invitationOnly'), 'statusText': row.get('status'),
+            'eventUrls': sorted({url for value in urls if (url := public_url(value))}),
+            'reviewFlags': flags,
+        })
+    return records
+
+
+def fetch_sumwhere(source, year):
+    """Use the same unauthenticated, cursor-paginated query as Explore."""
+    records = []
+    seen_cursors = set()
+    cursor = None
+    total = None
+    for _ in range(30):
+        query = {'sort': 'time', 'limit': '40'}
+        if cursor:
+            query['cursor'] = cursor
+        page = json.loads(read_url(source['publicApiUrl'] + '?' + urlencode(query)))
+        if not isinstance(page, dict) or type(page.get('total')) is not int or not 0 <= page['total'] <= 1000:
+            raise ValueError('Unexpected or oversized Sumwhere response')
+        if total is None:
+            total = page['total']
+        if page['total'] != total:
+            raise ValueError('Sumwhere changed during pagination; retry a fresh snapshot')
+        items = page.get('items')
+        if not isinstance(items, list) or len(items) > 40 or (not items and len(records) < total):
+            raise ValueError('Unexpected or empty Sumwhere page')
+        records.extend(items)
+        if len(records) > total:
+            raise ValueError('Sumwhere returned more records than advertised')
+        cursor = page.get('nextCursor')
+        if cursor is None:
+            if len(records) != total:
+                raise ValueError('Incomplete Sumwhere pagination; retain the previous snapshot')
+            return sumwhere_records(records, year)
+        if not isinstance(cursor, str) or not cursor or len(cursor) > 512 or cursor in seen_cursors or len(records) >= total:
+            raise ValueError('Unexpected or repeated Sumwhere cursor')
+        seen_cursors.add(cursor)
+        time.sleep(0.3)
+    raise ValueError('Sumwhere pagination exceeded the page limit')
+
+
 def fetch_source(source, year):
     if source['kind'] == 'google-sheet':
         url = f"https://docs.google.com/spreadsheets/d/{source['spreadsheetId']}/htmlview/sheet?headers=true&gid={source['sheetId']}"
         return parse_sheet(read_url(url), source, year)
+    if source['kind'] == 'public-event-api':
+        return fetch_sumwhere(source, year)
     if source['kind'] != 'public-event-feed' or year != 2026:
         raise ValueError('Unsupported discovery adapter')
     # Follow the same module script and read-only approved/2026 query used by

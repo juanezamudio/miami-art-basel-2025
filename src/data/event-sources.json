@@ -33,6 +33,19 @@
       ]
     },
     {
+      "id": "sumwhere-2026",
+      "kind": "public-event-api",
+      "name": "Sumwhere Miami Art Week 2026",
+      "url": "https://go.sumwhere.app/explore",
+      "publicApiUrl": "https://go.sumwhere.app/api/v1/tentpoles/miami-art-week-2026/events",
+      "notes": [
+        "Read the same public cursor-paginated 40-record query used by Explore; no authentication or private endpoints.",
+        "512 public discovery records observed November 20, 2026; all pages must reconcile to the advertised total with unique upstream IDs.",
+        "Different ticket platforms, daily sessions, fair previews and umbrella programs can duplicate existing listings. Verify organizer dates, access and ticket scope before publication.",
+        "Upstream Free, approved and verified labels are discovery data, not our admission or verification decisions. Do not copy descriptions, images or registration-gated locations."
+      ]
+    },
+    {
       "id": "miamibasel-2026",
       "kind": "public-event-feed",
       "name": "MiamiBasel 2026",

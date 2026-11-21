@@ -79,3 +79,11 @@ MiamiBasel's adapter reads the same approved-2026 query as its public page. It d
 ## Recommended next implementation
 
 Turn the saved discovery reports into a durable review queue, deduplicate against our catalog, and work through the organizer batch above. Add field-level verification evidence and a deliberate publish operation before scheduling refreshes. Missing from a source should request review rather than automatically cancel an event.
+
+## Sumwhere expansion — November 20, 2026
+
+[Sumwhere Explore](https://go.sumwhere.app/explore) exposes the same public, read-only cursor-paginated feed that its browser uses. The new `sumwhere-2026` monitor follows every 40-record page and requires a stable advertised total, unique IDs and a complete final page before advancing the baseline. It stops on changed totals, duplicate IDs, repeated cursors, malformed dates or incomplete pagination. The first snapshot contains 512 records over 13 pages.
+
+Only factual discovery fields are retained by the adapter. Upstream approval/free labels do not establish our verification or admission status; descriptions, imagery and coordinates are not copied into monitored records. Refresh manually with `npm run sources:check -- --source=sumwhere-2026`. Monitoring does not schedule future runs or publish events.
+
+The [review ledger](../src/data/catalog-review-sumwhere-2026-11-20.json) reconciles all 512 records: 245 additions, 143 already represented, 124 held. See [the scan notes](sumwhere-scan-2026-11-20.md) for primary-source checks, timing/access corrections and validation.

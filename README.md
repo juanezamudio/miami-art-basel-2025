@@ -33,11 +33,11 @@ Never commit `.env.local` or credentials. Configure production environment value
 
 ## Project checklist and discovery sources
 
-See [TODO.md](TODO.md) for the prioritized 2026 launch checklist and [the source review](docs/event-source-review.md) for findings from the two public spreadsheets and MiamiBasel. Run `npm run sources:check` to capture local added/changed/missing reports. Monitoring requires Python 3.9+ and network access; it is manual and never publishes events.
+See [TODO.md](TODO.md) for the prioritized 2026 launch checklist and [the source review](docs/event-source-review.md) for findings from the two public spreadsheets, MiamiBasel and Sumwhere. Run `npm run sources:check` to capture local added/changed/missing reports, or `npm run sources:check -- --source=sumwhere-2026` for the complete public Sumwhere feed. Monitoring requires Python 3.9+ and network access; it is manual and never publishes events.
 
 ## Current data and editorial workflow
 
-`src/data/season.json` controls the current edition, Miami timezone, week dates, and fair dates. `art-basel-2026.csv` is the editable source; `src/data/events.json` is the published catalog. The current catalog has **209 reviewed listings** across 22 areas and all six event categories. Fifty-nine listings explicitly offer free general admission or public viewing. The latest [spreadsheet rescan](src/data/catalog-review-sheeets-2026-11-17.json) adds 58 organizer-checked listings and reconciles all 66 current schedule rows; see the [review notes](docs/sheeets-rescan-2026-11-17.md). The [Miami Guide batch](src/data/catalog-review-miami-guide-2026-11-16.json) previously added 26 listings. The original three fairs were checked November 13, 2026:
+`src/data/season.json` controls the current edition, Miami timezone, week dates, and fair dates. `art-basel-2026.csv` is the editable source; `src/data/events.json` is the published catalog. The current catalog has **454 reviewed listings** across 31 areas and all six event categories. **120 listings** explicitly offer free general admission or public viewing. The latest [Sumwhere review](src/data/catalog-review-sumwhere-2026-11-20.json) adds 245 listings and reconciles all 512 public feed records: 143 already represented and 124 held for further evidence or scope review. See the [scan notes](docs/sumwhere-scan-2026-11-20.md). The [spreadsheet rescan](src/data/catalog-review-sheeets-2026-11-17.json) previously added 58 listings and [The Miami Guide batch](src/data/catalog-review-miami-guide-2026-11-16.json) added 26. The original three fairs were checked November 13, 2026:
 
 - [Art Basel Miami Beach](https://www.artbasel.com/miami-beach?blLocaleCode=en)
 - [Art Miami](https://www.artmiami.com/practical-info)
